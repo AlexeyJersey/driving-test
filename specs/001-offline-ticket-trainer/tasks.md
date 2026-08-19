@@ -53,7 +53,7 @@ exists yet.
 
 - [ ] T006 Implement the question-data validator in web/scripts/build-content.mjs enforcing every rule in contracts/question-data.md: ids unique across all files, `correct` within `options` range, at least two non-empty options, non-empty `text`, positive integer `page`, non-empty `review` and `note` when present, and `image` resolving to data/images/<VOLUME>/
 - [ ] T007 Extend web/scripts/build-content.mjs to emit a typed content bundle to web/src/generated/content.ts, failing the run and naming the offending question id when validation fails
-- [ ] T008 Extend web/scripts/build-content.mjs to copy data/images/<VOLUME>/ into the build output and carry each question's image reference into the generated bundle, so illustrated volumes work with no code change (FR-007)
+- [ ] T008 Extend web/scripts/build-content.mjs to copy data/images/<VOLUME>/ into the build output, treating a volume with no image directory as normal rather than an error — every volume transcribed so far is text-only, so failing on an absent directory would break the build on day one (FR-007)
 - [ ] T009 [P] Add the identifier-stability diff gate in tools/03_check_ids.py: compare freshly extracted output against the current data/ and refuse to write when an existing id would come to denote different content (Constitution Principle III)
 - [ ] T010 [P] Add web/src/generated/ to web/.gitignore, since it is build output that must never be hand-edited
 - [ ] T011 [P] Define the Question type and its invariants in web/src/domain/question.ts

@@ -262,8 +262,10 @@ confirm exactly those two appear and that removing a bookmark takes it out of th
 ### Key Entities
 
 - **Question**: One exam question. Carries a stable identifier, the volume and slide it came
-  from, its topic, its text, its ordered answer options, the index of the correct option, an
-  optional illustration reference, and an optional dispute note when its key is unverified.
+  from, its topic, its text, its ordered answer options, the index of the correct option, and an
+  optional illustration reference. It may also carry either of two independent remarks: a
+  dispute flag, when its answer key is unverified and the learner must be warned, or an
+  editorial note, when something about the source text was corrected and no warning is due.
 - **Volume**: One source deck of questions, identified by its numeral. Determines which
   questions exist; volumes appear as they are transcribed.
 - **Topic**: The subject grouping a question belongs to, used for filtering and for per-topic
