@@ -1,0 +1,9 @@
+# Source material from the driving school — kept local, not distributed
+source/*.pdf
+
+# Pipeline output: slide renders and the review page (~40 MB, regenerate with tools/)
+build/
+
+node_modules/
+*.log
+.DS_Store

@@ -1,0 +1,281 @@
+---
+
+description: "Task list for the offline driving-ticket trainer"
+---
+
+# Tasks: Offline Driving-Ticket Trainer
+
+**Input**: Design documents from `/specs/001-offline-ticket-trainer/`
+
+**Prerequisites**: plan.md, spec.md, research.md, data-model.md, contracts/, quickstart.md
+
+**Tests**: Included. research.md §6 selected Vitest over the framework-free `domain/` modules and
+`storage/migrate.ts`, on the grounds that every rule worth protecting is a pure function there.
+Screens are not unit-tested; their acceptance is the manual pass in quickstart.md.
+
+**Organization**: Grouped by user story so each can be implemented, tested, and shipped on its
+own.
+
+## Format: `[ID] [P?] [Story] Description`
+
+- **[P]**: Can run in parallel (different files, no dependency on incomplete work)
+- **[Story]**: The user story the task serves (US1…US5)
+- Every task names the exact file it touches
+
+## Path Conventions
+
+Repository root holds four concerns: `source/` (PDFs), `tools/` (Python pipeline), `data/`
+(generated question bank), `web/` (the application). All application paths below are under
+`web/`, per plan.md.
+
+**Starting point**: `web/` is an untouched Vite React-TypeScript scaffold. No feature code
+exists yet.
+
+---
+
+## Phase 1: Setup (Shared Infrastructure)
+
+**Purpose**: Turn the bare scaffold into the project described in plan.md
+
+- [ ] T001 Configure React, Tailwind, and the `@/` path alias in web/vite.config.ts and web/tsconfig.app.json
+- [ ] T002 Wire `dev`, `build`, `preview`, and `test` scripts in web/package.json so that content generation runs before both `dev` and `build`
+- [ ] T003 [P] Replace the starter stylesheet with the Tailwind entry and base styles in web/src/index.css
+- [ ] T004 [P] Add Vitest configuration in web/vitest.config.ts
+- [ ] T005 [P] Delete Vite starter boilerplate (demo component, logos, unused assets) from web/src and web/public
+
+---
+
+## Phase 2: Foundational (Blocking Prerequisites)
+
+**Purpose**: The data path and the two boundaries every story depends on
+
+**⚠️ CRITICAL**: No user story work can begin until this phase is complete
+
+- [ ] T006 Implement the question-data validator in web/scripts/build-content.mjs enforcing every rule in contracts/question-data.md: ids unique across all files, `correct` within `options` range, at least two non-empty options, non-empty `text`, positive integer `page`, non-empty `review` and `note` when present, and `image` resolving to data/images/<VOLUME>/
+- [ ] T007 Extend web/scripts/build-content.mjs to emit a typed content bundle to web/src/generated/content.ts, failing the run and naming the offending question id when validation fails
+- [ ] T008 Extend web/scripts/build-content.mjs to copy data/images/<VOLUME>/ into the build output and carry each question's image reference into the generated bundle, so illustrated volumes work with no code change (FR-007)
+- [ ] T009 [P] Add the identifier-stability diff gate in tools/03_check_ids.py: compare freshly extracted output against the current data/ and refuse to write when an existing id would come to denote different content (Constitution Principle III)
+- [ ] T010 [P] Add web/src/generated/ to web/.gitignore, since it is build output that must never be hand-edited
+- [ ] T011 [P] Define the Question type and its invariants in web/src/domain/question.ts
+- [ ] T012 [P] Define policy constants MASTERY_STREAK = 2 and MAX_SESSION_HISTORY = 50 in web/src/domain/constants.ts
+- [ ] T013 [P] Define LearnerState, QuestionProgress, ActiveSession, and SessionRecord types in web/src/storage/types.ts per data-model.md
+- [ ] T014 Define the ContentProvider interface in web/src/content/provider.ts exactly as specified in contracts/content-provider.md, with no mutation methods
+- [ ] T015 Implement BundledContentProvider over the generated bundle in web/src/content/bundled.ts, returning undefined for unknown ids and preserving caller order in getQuestions
+- [ ] T016 Define the LearnerStore interface in web/src/storage/store.ts per contracts/learner-store.md, including saveActiveSession and clearActiveSession
+- [ ] T017 Implement version handling in web/src/storage/migrate.ts: matching version used as is, older migrated, unparseable or unmigratable discarded cleanly
+- [ ] T018 [P] Unit tests for migration and clean-discard behaviour in web/src/storage/migrate.test.ts
+- [ ] T019 Implement LocalLearnerStore in web/src/storage/local.ts writing one versioned key, trimming sessions to MAX_SESSION_HISTORY, and falling back to an in-memory store with isPersistent false when storage throws
+- [ ] T020 [P] Expose the store to React through useSyncExternalStore in web/src/storage/useLearnerStore.ts
+- [ ] T021 [P] Create the interface string table in web/src/i18n/strings.ts, kept apart from question content
+- [ ] T022 Set up the router and application shell in web/src/main.tsx and web/src/routes/Root.tsx so browser history is the navigation model
+
+**Checkpoint**: Content loads through one boundary, state persists through another, and both are
+typed. User stories can begin.
+
+---
+
+## Phase 3: User Story 1 - Practise questions with immediate feedback (Priority: P1) 🎯 MVP
+
+**Goal**: A learner picks a topic, answers questions one at a time, and learns immediately
+whether they were right — with the answer hidden until they commit.
+
+**Independent Test**: With only volume IV present, answer several questions correctly and
+incorrectly and confirm feedback matches the source slide; confirm nothing reveals the answer
+before submission.
+
+### Tests for User Story 1
+
+- [ ] T023 [P] [US1] Unit tests for question selection, including seeded-shuffle determinism, in web/src/domain/selection.test.ts
+- [ ] T024 [P] [US1] Unit tests for answer recording and streak behaviour in web/src/domain/progress.test.ts
+- [ ] T025 [P] [US1] Unit tests for session progression and tally in web/src/domain/session.test.ts
+
+### Implementation for User Story 1
+
+- [ ] T026 [P] [US1] Implement selection from filters to an ordered QuestionSet in web/src/domain/selection.ts, defaulting to source order with seeded shuffle as an option
+- [ ] T027 [P] [US1] Implement answer recording and per-question derivation in web/src/domain/progress.ts
+- [ ] T028 [US1] Implement session progression, position, and tally in web/src/domain/session.ts (depends on T026)
+- [ ] T029 [P] [US1] Build the question card in web/src/ui/QuestionCard.tsx: options unmarked until submission, then both the learner's choice and the correct option marked
+- [ ] T030 [US1] Render the question's illustration above its options in web/src/ui/QuestionCard.tsx when `image` is present, and nothing when it is absent (FR-007) — currently exercised by zero questions, so verify with a temporary local data edit and revert
+- [ ] T031 [US1] Surface the disputed-key warning in web/src/ui/QuestionCard.tsx for questions carrying `review`, and deliberately not for those carrying only `note` (FR-004)
+- [ ] T032 [US1] Build the home screen with topic selection and the start action in web/src/routes/Home.tsx, including an explanatory state when the chosen volume and topic filters intersect to zero questions
+- [ ] T033 [US1] Build the study screen wiring selection, session, content provider, and store in web/src/routes/Study.tsx
+- [ ] T034 [US1] Persist the active session on every answer, storing its resolved questionIds rather than its filter, in web/src/routes/Study.tsx (FR-031)
+- [ ] T035 [US1] Offer to resume an unfinished session on launch in web/src/routes/Home.tsx
+- [ ] T036 [US1] Build the end-of-set summary with right and wrong tallies in web/src/ui/SetSummary.tsx
+
+**Checkpoint**: The app is usable for study on its own. This is the MVP.
+
+---
+
+## Phase 4: User Story 2 - Drill the questions I got wrong (Priority: P2)
+
+**Goal**: A session made only of the learner's past mistakes, shrinking as they improve.
+
+**Independent Test**: Answer several questions wrong, open the drill, confirm exactly those
+appear, answer one correctly twice, and confirm it leaves while the others remain.
+
+### Tests for User Story 2
+
+- [ ] T037 [P] [US2] Unit tests for mistake-set membership in web/src/domain/progress.test.ts, covering entry on a wrong answer, staying after one correct, leaving on the second consecutive correct, and re-entering when a later wrong answer resets the streak
+
+### Implementation for User Story 2
+
+- [ ] T038 [US2] Implement mistake-set derivation in web/src/domain/progress.ts as attempts > correct AND streak < MASTERY_STREAK, computed rather than stored
+- [ ] T039 [US2] Add the mistakes mode to selection in web/src/domain/selection.ts
+- [ ] T040 [US2] Add the mistakes entry point to web/src/routes/Home.tsx, with an explanatory state when nothing is due rather than an empty screen
+
+**Checkpoint**: US1 and US2 both work independently.
+
+---
+
+## Phase 5: User Story 3 - Study without a network and from the home screen (Priority: P3)
+
+**Goal**: The app installs to the home screen and works identically with no connection.
+
+**Independent Test**: Load once against a production build, disable networking, relaunch from
+the home-screen icon, and confirm every question and all stored progress is available.
+
+- [ ] T041 [US3] Configure vite-plugin-pwa in web/vite.config.ts with the web manifest and a precache covering the app shell, the generated content bundle, and the copied question illustrations (FR-018, SC-002)
+- [ ] T042 [P] [US3] Add application icons in web/public/icons/ and reference them from the manifest
+- [ ] T043 [US3] Request navigator.storage.persist() on first use in web/src/storage/local.ts to reduce eviction risk (research §3)
+- [ ] T044 [P] [US3] Add offline-ready and update-available notices in web/src/ui/ServiceWorkerNotices.tsx
+- [ ] T045 [US3] Verify offline behaviour and installation against `npm run preview`, never the dev server, per quickstart.md
+
+**Checkpoint**: The app is a real installable offline trainer.
+
+---
+
+## Phase 6: User Story 4 - See how ready I am (Priority: P4)
+
+**Goal**: Coverage, overall accuracy, and per-topic accuracy.
+
+**Independent Test**: Answer a known mix across two topics and confirm the reported figures
+match that mix exactly.
+
+### Tests for User Story 4
+
+- [ ] T046 [P] [US4] Unit tests for statistics in web/src/domain/stats.test.ts, covering attempted-versus-answers-given and orphaned progress being ignored
+
+### Implementation for User Story 4
+
+- [ ] T047 [US4] Implement aggregation in web/src/domain/stats.ts over the intersection of stored progress and the current bank, so coverage can never exceed the questions available (FR-032)
+- [ ] T048 [US4] Build the statistics screen in web/src/routes/Stats.tsx
+- [ ] T049 [US4] Add an explanatory empty state for a learner who has answered nothing in web/src/routes/Stats.tsx
+
+**Checkpoint**: Progress is legible.
+
+---
+
+## Phase 7: User Story 5 - Bookmark questions to come back to (Priority: P5)
+
+**Goal**: Mark questions worth revisiting and study only those.
+
+**Independent Test**: Bookmark two questions from different topics, open the bookmarks session,
+confirm exactly those appear, and confirm removing one does not touch answer history.
+
+- [ ] T050 [P] [US5] Add the bookmark toggle to web/src/ui/QuestionCard.tsx
+- [ ] T051 [US5] Add the bookmarks mode to selection in web/src/domain/selection.ts
+- [ ] T052 [US5] Add the bookmarks entry point and empty state to web/src/routes/Home.tsx
+
+**Checkpoint**: All five stories work independently.
+
+---
+
+## Phase 8: Polish & Cross-Cutting Concerns
+
+- [ ] T053 [P] Add deliberate progress reset with a confirmation step in web/src/routes/Settings.tsx (FR-016)
+- [ ] T054 [P] Show a persistent notice when device storage is unavailable, stating that progress will not be saved, in web/src/ui/StorageNotice.tsx (FR-020)
+- [ ] T055 [P] Verify the layout at 360 px width with no horizontal scrolling and no truncated question text, against the manual table in specs/001-offline-ticket-trainer/quickstart.md (SC-007)
+- [ ] T056 [P] Confirm the disputed-key warning appears on the three questions carrying `review` and not on the two carrying only `note`, per the flags in data/questions-IV.json (FR-004)
+- [ ] T057 Confirm no outbound requests for content or learner data occur after first load, against the manual table in specs/001-offline-ticket-trainer/quickstart.md (SC-009)
+- [ ] T058 Run the full quickstart.md validation pass and record any deviation
+- [ ] T059 [P] Write web/README.md covering how to run, how to correct a question, and how to add a transcribed volume
+
+---
+
+## Dependencies & Execution Order
+
+### Phase Dependencies
+
+- **Setup (Phase 1)**: no dependencies
+- **Foundational (Phase 2)**: depends on Setup — **blocks every user story**
+- **User stories (Phases 3–7)**: all depend on Foundational; independent of each other
+- **Polish (Phase 8)**: depends on the stories being delivered
+
+### User Story Dependencies
+
+- **US1 (P1)**: after Foundational. Depends on nothing else.
+- **US2 (P2)**: after Foundational. Shares `progress.ts` and `selection.ts` with US1, so if both
+  are in flight those two files are contention points; the story is independently testable.
+- **US3 (P3)**: after Foundational. Touches build configuration and storage only — genuinely
+  parallel to the others.
+- **US4 (P4)**: after Foundational. Reads progress written by US1, but its own logic and screen
+  are independent.
+- **US5 (P5)**: after Foundational. Shares `selection.ts` and `QuestionCard.tsx` with US1.
+
+### Within Each User Story
+
+Tests are written before the implementation they cover. Domain modules come before screens,
+because screens compose them. Nothing in `routes/` may contain a study rule.
+
+### Parallel Opportunities
+
+- T003, T004, T005 in Setup
+- T009 through T013 in Foundational — the pipeline gate, the ignore rule, and the type
+  definitions touch entirely separate files
+- T023, T024, T025 — all three US1 test files
+- T026 and T027 — selection and progress are independent modules
+- US3 can run alongside any other story; it shares no source file with them
+
+---
+
+## Parallel Example: User Story 1
+
+```bash
+# All three test files first, in parallel:
+Task: "Unit tests for question selection in web/src/domain/selection.test.ts"
+Task: "Unit tests for answer recording in web/src/domain/progress.test.ts"
+Task: "Unit tests for session progression in web/src/domain/session.test.ts"
+
+# Then the two independent domain modules, in parallel:
+Task: "Implement selection in web/src/domain/selection.ts"
+Task: "Implement progress derivation in web/src/domain/progress.ts"
+```
+
+---
+
+## Implementation Strategy
+
+### MVP First (User Story 1 only)
+
+1. Phase 1 Setup
+2. Phase 2 Foundational — blocks everything, do not shortcut it
+3. Phase 3 US1
+4. **Stop and validate**: study several questions against the source slides, confirm no answer
+   leaks before submission
+5. At this point the app already beats reading the PDF, because the PDF cannot hide its answers
+
+### Incremental Delivery
+
+Setup + Foundational → US1 (MVP) → US2 (the drill, the highest-value addition) → US3 (offline
+and installable, at which point it is genuinely a phone app) → US4 → US5. Each step is
+independently shippable.
+
+### Scope Guard
+
+Four features are deliberately absent and must stay absent: exam mode, accounts, translation,
+and in-app editing of questions. Their seams exist (`ContentProvider`, `LearnerStore`, stable
+question ids, session shape). Per Constitution v1.2.0, a seam is a boundary and a data shape —
+adding stub methods, unused parameters, or hidden screens to "prepare" for them is a violation,
+not preparation.
+
+---
+
+## Notes
+
+- [P] marks tasks in different files with no incomplete dependency
+- Question data is read-only to the application; a wrong answer is fixed in `data/`, never in code
+- `web/src/generated/` is build output — never hand-edit it, never commit it
+- The service worker only exists in a production build, so offline work is verified against
+  `npm run preview`
+- Commit after each task or coherent group
