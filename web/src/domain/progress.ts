@@ -40,6 +40,21 @@ export function isMistake(progress: QuestionProgress | undefined): boolean {
   return everWrong && progress.streak < MASTERY_STREAK
 }
 
+/**
+ * How the question went the last time it was answered.
+ *
+ * Derived rather than stored: a streak above zero can only mean the most recent
+ * answer was right, and a streak of zero on a question with attempts can only
+ * mean it was wrong. Keeping this out of storage is what stops the marks and the
+ * counters from ever disagreeing.
+ */
+export type LastOutcome = 'right' | 'wrong' | 'untouched'
+
+export function lastOutcome(progress: QuestionProgress | undefined): LastOutcome {
+  if (!progress || progress.attempts === 0) return 'untouched'
+  return progress.streak > 0 ? 'right' : 'wrong'
+}
+
 export function isMastered(progress: QuestionProgress | undefined): boolean {
   return (progress?.streak ?? 0) >= MASTERY_STREAK
 }

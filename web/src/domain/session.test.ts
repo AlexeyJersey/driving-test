@@ -1,6 +1,14 @@
 import { describe, expect, it } from 'vitest'
 import { allQuestionsFilter } from './selection'
-import { answerCurrent, currentQuestionId, isFinished, startSession, tally, toRecord } from './session'
+import {
+  answerCurrent,
+  currentQuestionId,
+  isFinished,
+  jumpTo,
+  startSession,
+  tally,
+  toRecord,
+} from './session'
 
 const START = '2026-08-20T10:00:00.000Z'
 const END = '2026-08-20T10:05:00.000Z'
@@ -41,6 +49,46 @@ describe('session progression', () => {
     answerCurrent(before, 0, true)
     expect(before.position).toBe(0)
     expect(before.answers).toEqual([])
+  })
+})
+
+describe('jumpTo', () => {
+  it('moves to the requested position', () => {
+    expect(currentQuestionId(jumpTo(fresh(), 2))).toBe('q3')
+  })
+
+  it('clamps to the ends of the set rather than going out of bounds', () => {
+    expect(jumpTo(fresh(), 99).position).toBe(2)
+    expect(jumpTo(fresh(), -5).position).toBe(0)
+  })
+
+  it('returns the same session when already there', () => {
+    const s = fresh()
+    expect(jumpTo(s, 0)).toBe(s)
+  })
+
+  it('keeps answers already given', () => {
+    const s = answerCurrent(fresh(), 1, true)
+    expect(jumpTo(s, 0).answers).toHaveLength(1)
+  })
+})
+
+describe('answering a question twice', () => {
+  it('replaces the earlier answer instead of adding another', () => {
+    // Jump back over an answered question and answer it differently.
+    let s = answerCurrent(fresh(), 0, true)
+    s = jumpTo(s, 0)
+    s = answerCurrent(s, 2, false)
+    expect(s.answers).toHaveLength(1)
+    expect(s.answers[0]).toEqual({ questionId: 'q1', choice: 2, correct: false })
+  })
+
+  it('never reports more answers than the set holds', () => {
+    let s = fresh()
+    for (let i = 0; i < 10; i += 1) {
+      s = answerCurrent(jumpTo(s, i % 3), 0, true)
+    }
+    expect(tally(s).answered).toBeLessThanOrEqual(tally(s).total)
   })
 })
 

@@ -265,6 +265,24 @@ confirm exactly those two appear and that removing a bookmark takes it out of th
   same storage boundary as the rest of learner state rather than written directly to browser
   storage.
 
+**Navigating a long set**
+
+- **FR-037**: Reloading the page mid-run MUST resume the same run at the same
+  question, not restart it. Starting a new run from the home screen MUST still
+  begin a new one.
+- **FR-038**: Users MUST be able to jump to any question in the set, both by
+  typing its number and by picking it from a map of the whole set. Walking to
+  question 110 of 160 one tap at a time is not a thing anyone will do.
+- **FR-039**: That map MUST show, per question, whether the most recent answer was
+  right or wrong, and MUST keep showing it until progress is reset — so a learner
+  who has been through a set can see at a glance where they stand.
+- **FR-040**: Returning to a question that has already been answered in the
+  current run MUST show the answer that was given, rather than presenting it as
+  untouched.
+- **FR-041**: A question MUST hold at most one answer per run. Answering a
+  question again replaces the earlier answer, so a run can never report more
+  answers than it has questions.
+
 **Session continuity and data hygiene**
 
 - **FR-031**: System MUST persist an in-progress study session — its question set, position, and

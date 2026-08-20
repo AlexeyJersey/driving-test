@@ -39,6 +39,11 @@ export function isFinished(session: ActiveSession): boolean {
  * Records an answer to the current question and advances. Answering a finished
  * session is a no-op rather than an error: a double-tap on the last question
  * should not throw.
+ *
+ * One answer per question per session: answering a question that already has an
+ * answer replaces it. Without that, jumping back to an earlier question and
+ * answering again would append a second outcome, and the session could report
+ * more answers than it has questions.
  */
 export function answerCurrent(
   session: ActiveSession,
@@ -48,11 +53,25 @@ export function answerCurrent(
   const questionId = currentQuestionId(session)
   if (questionId === undefined) return session
   const outcome: AnswerOutcome = { questionId, choice, correct: wasCorrect }
+  const seen = session.answers.some((a) => a.questionId === questionId)
   return {
     ...session,
     position: session.position + 1,
-    answers: [...session.answers, outcome],
+    answers: seen
+      ? session.answers.map((a) => (a.questionId === questionId ? outcome : a))
+      : [...session.answers, outcome],
   }
+}
+
+/**
+ * Moves to a given position in the set, clamped to it. Used by the jump control:
+ * in a 160-question set, walking to question 110 one tap at a time is not a
+ * thing anyone will do.
+ */
+export function jumpTo(session: ActiveSession, index: number): ActiveSession {
+  const last = session.questionIds.length - 1
+  const clamped = Math.min(Math.max(index, 0), Math.max(last, 0))
+  return clamped === session.position ? session : { ...session, position: clamped }
 }
 
 export function tally(session: ActiveSession): Tally {

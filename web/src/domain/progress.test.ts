@@ -6,6 +6,7 @@ import {
   isAttempted,
   isMastered,
   isMistake,
+  lastOutcome,
   mistakeIds,
 } from './progress'
 import type { Question } from './question'
@@ -81,6 +82,21 @@ describe('isAttempted and isMastered', () => {
   it('marks a question mastered once the streak reaches the threshold', () => {
     expect(isMastered(replay(true))).toBe(false)
     expect(isMastered(replay(true, true))).toBe(true)
+  })
+})
+
+describe('lastOutcome', () => {
+  it('is untouched before the question has been answered', () => {
+    expect(lastOutcome(undefined)).toBe('untouched')
+  })
+
+  it('reports how the most recent answer went, not the tally', () => {
+    expect(lastOutcome(replay(true))).toBe('right')
+    expect(lastOutcome(replay(false))).toBe('wrong')
+    // Mostly right, but the last one was wrong — the mark must show that.
+    expect(lastOutcome(replay(true, true, false))).toBe('wrong')
+    // Mostly wrong, last one right.
+    expect(lastOutcome(replay(false, false, true))).toBe('right')
   })
 })
 

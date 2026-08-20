@@ -253,6 +253,24 @@ loses the bottom of every slide.
 
 ---
 
+## Phase 12: Navigating a Long Set
+
+**Requested after using the app on a 160-question volume, where the run-forward-
+only design broke down.** Also fixes a crop defect found the same way.
+
+- [X] T078 Fix tools/05_crop_images.py to bound a photograph by where the background is rather than by where the ink is — the density rule cropped the top off any photograph opening on bright sky, which on slide 1 removed the give-way sign the question asks about (FR-007)
+- [X] T079 Cut crops from the slide's own raster instead of from a 150 dpi page render, since the render is a 2x interpolation of it and cropping there baked poppler's smoothing into the file
+- [X] T080 Read every content raster on a page, not just the largest: some slides split their content into one raster per half, and taking the largest silently returned half a slide
+- [X] T081 Add jumpTo and one-answer-per-question to web/src/domain/session.ts so jumping back and re-answering replaces the earlier answer (FR-038, FR-041)
+- [X] T082 Derive lastOutcome from stored progress in web/src/domain/progress.ts — a streak above zero can only mean the last answer was right (FR-039)
+- [X] T083 Build the jump panel in web/src/ui/JumpPanel.tsx: number entry plus a map of the whole set coloured by last outcome (FR-038, FR-039)
+- [X] T084 Resume the run on reload in web/src/routes/Study.tsx by matching the stored session against the URL including its seed (FR-037)
+- [X] T085 Show the answer already given when returning to an answered question in web/src/routes/Study.tsx (FR-040)
+
+**Checkpoint**: a 160-question volume is navigable, and the photographs are whole.
+
+---
+
 ## Dependencies & Execution Order
 
 ### Phase Dependencies

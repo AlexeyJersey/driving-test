@@ -71,6 +71,7 @@ export interface Strings {
     readonly disputedTitle: string
     readonly disputedBody: string
     readonly leave: string
+    readonly jump: string
   }
   readonly summary: {
     readonly title: string
@@ -120,6 +121,7 @@ const me: Strings = {
     disputedBody:
       'Oznaka na originalnom slajdu izgleda sumnjivo. Ne učite ovo pitanje napamet dok ne bude provjereno.',
     leave: 'Izađi',
+    jump: 'Idi na pitanje',
   },
   summary: {
     title: 'Vježbanje završeno',
@@ -179,6 +181,7 @@ const en: Strings = {
     disputedBody:
       'The mark on the source slide looks doubtful. Do not memorise this one until it has been verified.',
     leave: 'Leave',
+    jump: 'Go to question',
   },
   summary: {
     title: 'Session finished',
@@ -238,6 +241,7 @@ const ru: Strings = {
     disputedBody:
       'Отметка на исходном слайде вызывает сомнения. Не заучивайте этот вопрос, пока он не проверен.',
     leave: 'Выйти',
+    jump: 'Перейти к вопросу',
   },
   summary: {
     title: 'Занятие завершено',

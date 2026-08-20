@@ -1,15 +1,24 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router'
 import { content } from '@/content/bundled'
-import { answeredCorrectly, isMistake } from '@/domain/progress'
+import { answeredCorrectly, isMistake, lastOutcome } from '@/domain/progress'
 import type { AnswerValue, Question } from '@/domain/question'
 import { orderTokens } from '@/domain/question'
 import { selectQuestionIds } from '@/domain/selection'
 import type { SelectionFilter } from '@/domain/selection'
-import { answerCurrent, currentQuestionId, isFinished, startSession, tally, toRecord } from '@/domain/session'
+import {
+  answerCurrent,
+  currentQuestionId,
+  isFinished,
+  jumpTo,
+  startSession,
+  tally,
+  toRecord,
+} from '@/domain/session'
 import { useStrings } from '@/i18n/useStrings'
 import type { ActiveSession, SessionMode } from '@/storage/types'
 import { useLearnerState, useLearnerStore } from '@/storage/useLearnerStore'
+import { JumpPanel } from '@/ui/JumpPanel'
 import { QuestionCard } from '@/ui/QuestionCard'
 import { SetSummary } from '@/ui/SetSummary'
 
@@ -17,6 +26,24 @@ const newId = () =>
   typeof crypto !== 'undefined' && 'randomUUID' in crypto
     ? crypto.randomUUID()
     : `s-${String(Date.now())}`
+
+/**
+ * Whether a stored session is the same run the URL is asking for.
+ *
+ * The seed is part of the comparison on purpose: reloading keeps the URL, so the
+ * seed matches and the run resumes where it was. Starting again from the home
+ * screen mints a new seed, so that correctly begins a new run.
+ */
+function isSameRun(session: ActiveSession, mode: SessionMode, filter: SelectionFilter): boolean {
+  const f = session.filter
+  return (
+    session.mode === mode &&
+    f.shuffle === filter.shuffle &&
+    f.seed === filter.seed &&
+    JSON.stringify(f.volumes) === JSON.stringify(filter.volumes) &&
+    JSON.stringify(f.categories) === JSON.stringify(filter.categories)
+  )
+}
 
 function filterFromParams(params: URLSearchParams): SelectionFilter {
   const cat = params.get('cat')
@@ -48,6 +75,10 @@ export function Study() {
   const [session, setSession] = useState<ActiveSession | null>(() => {
     if (resuming) return state.activeSession
     const filter = filterFromParams(params)
+    // A reload lands here with the same URL; pick the run back up rather than
+    // starting it over and losing the learner's place.
+    const stored = state.activeSession
+    if (stored && isSameRun(stored, mode, filter)) return stored
     // The mistakes set is resolved once, here. It shrinks as the learner answers
     // it, so re-deriving it mid-session would hand back a shorter run than the
     // one they started — which is why the resolved ids go into the session.
@@ -62,6 +93,7 @@ export function Study() {
 
   const [selected, setSelected] = useState<AnswerValue | null>(null)
   const [answeredValue, setAnsweredValue] = useState<AnswerValue | null>(null)
+  const [jumping, setJumping] = useState(false)
   const recorded = useRef(false)
 
   const question: Question | undefined = useMemo(() => {
@@ -134,6 +166,14 @@ export function Study() {
     )
   }
 
+  /**
+   * Coming back to a question — by jumping, or after a reload — shows the answer
+   * that was given rather than pretending it is untouched.
+   */
+  const priorAnswer = session.answers.find((a) => a.questionId === question.id)
+  const shownAnswer = answeredValue ?? priorAnswer?.choice ?? null
+  const answered = shownAnswer !== null
+
   const submit = () => {
     if (selected === null || !isComplete) return
     const wasCorrect = answeredCorrectly(question, selected)
@@ -144,14 +184,23 @@ export function Study() {
     store.saveActiveSession(answerCurrent(session, selected, wasCorrect))
   }
 
-  const advance = () => {
-    if (answeredValue === null) return
-    setSession(answerCurrent(session, answeredValue, answeredCorrectly(question, answeredValue)))
+  const jump = (index: number) => {
+    const moved = jumpTo(session, index)
+    setSession(moved)
+    // The position is part of the session, so a jump is worth remembering: come
+    // back later and you are where you left off, not where you started.
+    store.saveActiveSession(moved)
     setSelected(null)
     setAnsweredValue(null)
   }
 
-  const answered = answeredValue !== null
+  const advance = () => {
+    if (shownAnswer === null) return
+    setSession(answerCurrent(session, shownAnswer, answeredCorrectly(question, shownAnswer)))
+    setSelected(null)
+    setAnsweredValue(null)
+  }
+
   /**
    * An order question is only answerable once every vehicle has been placed;
    * a choice question is answerable as soon as an option is picked.
@@ -165,9 +214,14 @@ export function Study() {
   return (
     <div className="flex flex-col gap-5 pb-24">
       <div className="flex items-center justify-between text-sm text-slate-500 dark:text-slate-400">
-        <span className="tabular-nums">
+        <button
+          type="button"
+          onClick={() => setJumping(true)}
+          title={t.study.jump}
+          className="tabular-nums underline decoration-dotted"
+        >
           {t.study.position(session.position + 1, session.questionIds.length)}
-        </span>
+        </button>
         <button type="button" onClick={() => navigate('/')} className="underline">
           {t.study.leave}
         </button>
@@ -176,9 +230,19 @@ export function Study() {
       <QuestionCard
         question={question}
         selected={selected}
-        answeredValue={answeredValue}
+        answeredValue={shownAnswer}
         onSelect={setSelected}
       />
+
+      {jumping && (
+        <JumpPanel
+          total={session.questionIds.length}
+          current={session.position}
+          outcomes={session.questionIds.map((id) => lastOutcome(state.progress[id]))}
+          onJump={jump}
+          onClose={() => setJumping(false)}
+        />
+      )}
 
       <div className="fixed inset-x-0 bottom-0 border-t border-slate-200 bg-white/95 p-4 backdrop-blur dark:border-slate-700 dark:bg-slate-950/95">
         <div className="mx-auto max-w-2xl pb-[env(safe-area-inset-bottom)]">
