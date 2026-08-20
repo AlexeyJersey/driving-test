@@ -18,7 +18,14 @@ const DATA = path.join(ROOT, 'data')
 const IMAGES_SRC = path.join(DATA, 'images')
 const GENERATED = path.join(WEB, 'src', 'generated')
 const IMAGES_OUT = path.join(WEB, 'public', 'images')
-const IMAGE_URL_BASE = '/images'
+/**
+ * Same variable vite.config.ts reads for its `base`. Image URLs are baked into
+ * the generated bundle at this build, so they need the deploy's base path too —
+ * a GitHub Pages project site serves from /driving-test/, not the domain root,
+ * and a hardcoded "/images/..." resolved against the root instead and 404'd.
+ */
+const APP_BASE = (process.env.APP_BASE ?? '/').replace(/\/+$/, '') || ''
+const IMAGE_URL_BASE = `${APP_BASE}/images`
 
 /** Volume order for display: the decks are numbered with Roman numerals. */
 const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']

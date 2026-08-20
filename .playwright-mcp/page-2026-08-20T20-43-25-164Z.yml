@@ -1,0 +1,26 @@
+- generic [ref=f18e3]:
+  - group "Jezik" [ref=f18e5]:
+    - button "CG" [pressed] [ref=f18e6]
+    - button "EN" [ref=f18e7]
+    - button "RU" [ref=f18e8]
+  - main [ref=f18e13]:
+    - generic [ref=f18e14]:
+      - generic [ref=f18e15]:
+        - heading "Ispitni testovi" [level=1] [ref=f18e16]
+        - paragraph [ref=f18e17]: Pitanja za vozački ispit
+      - paragraph [ref=f18e18]: Pređeno 0 od 294
+      - generic [ref=f18e19]:
+        - heading "Rad na greškama" [level=2] [ref=f18e20]
+        - paragraph [ref=f18e21]: Nema grešaka za ponavljanje. Riješite nekoliko pitanja pa se vratite.
+      - generic [ref=f18e22]:
+        - heading "Šta ponavljamo" [level=2] [ref=f18e23]
+        - generic [ref=f18e24]:
+          - button "Sve teme · 294" [pressed] [ref=f18e25]
+          - button "Pravila saobraćaja · 89" [ref=f18e26]
+          - button "Situacije u saobraćaju · 160" [ref=f18e27]
+          - button "Poznavanje vozila · 27" [ref=f18e28]
+          - button "Prva pomoć · 18" [ref=f18e29]
+        - generic [ref=f18e30]:
+          - checkbox "Izmiješaj pitanja" [ref=f18e31]
+          - text: Izmiješaj pitanja
+      - button "Počni vježbanje · 294 pitanja" [ref=f18e32]
