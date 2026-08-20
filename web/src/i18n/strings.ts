@@ -91,6 +91,12 @@ export interface Strings {
     readonly reload: string
     readonly dismiss: string
   }
+  readonly gate: {
+    readonly prompt: string
+    readonly placeholder: string
+    readonly submit: string
+    readonly wrong: string
+  }
   readonly categories: Readonly<Record<string, string>>
   readonly volumes: Readonly<Record<string, string>>
 }
@@ -147,7 +153,13 @@ const me: Strings = {
     reload: 'Osvježi',
     dismiss: 'Sakrij',
   },
-  categories: {
+
+  gate: {
+    prompt: 'Unesite lozinku',
+    placeholder: 'Lozinka',
+    submit: 'Uđi',
+    wrong: 'Pogrešna lozinka',
+  },  categories: {
     vehicle: 'Poznavanje vozila',
     firstaid: 'Prva pomoć',
     situations: 'Situacije u saobraćaju',
@@ -213,7 +225,13 @@ const en: Strings = {
     reload: 'Reload',
     dismiss: 'Dismiss',
   },
-  categories: {
+
+  gate: {
+    prompt: 'Enter the passcode',
+    placeholder: 'Passcode',
+    submit: 'Enter',
+    wrong: 'Wrong passcode',
+  },  categories: {
     vehicle: 'Vehicle knowledge',
     firstaid: 'First aid',
     situations: 'Traffic situations',
@@ -279,7 +297,13 @@ const ru: Strings = {
     reload: 'Обновить',
     dismiss: 'Скрыть',
   },
-  categories: {
+
+  gate: {
+    prompt: 'Введите пароль',
+    placeholder: 'Пароль',
+    submit: 'Войти',
+    wrong: 'Неверный пароль',
+  },  categories: {
     vehicle: 'Устройство автомобиля',
     firstaid: 'Первая помощь',
     situations: 'Ситуации на дороге',

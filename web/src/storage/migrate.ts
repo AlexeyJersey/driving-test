@@ -109,12 +109,12 @@ function readActiveSession(v: unknown): ActiveSession | null {
  * migration this change needs — no version bump, no discarded progress.
  */
 function readSettings(v: unknown): LearnerSettings {
-  const fallback: LearnerSettings = { uiLanguage: DEFAULT_UI_LANGUAGE }
+  const fallback: LearnerSettings = { uiLanguage: DEFAULT_UI_LANGUAGE, unlocked: false }
   if (!isObject(v)) return fallback
-  const candidate = v.uiLanguage
-  return UI_LANGUAGES.includes(candidate as UiLanguage)
-    ? { uiLanguage: candidate as UiLanguage }
-    : fallback
+  const language = UI_LANGUAGES.includes(v.uiLanguage as UiLanguage)
+    ? (v.uiLanguage as UiLanguage)
+    : fallback.uiLanguage
+  return { uiLanguage: language, unlocked: v.unlocked === true }
 }
 
 function readSessions(v: unknown): readonly SessionRecord[] {

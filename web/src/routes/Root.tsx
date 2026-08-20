@@ -2,6 +2,7 @@ import { Outlet } from 'react-router'
 import { useStrings } from '@/i18n/useStrings'
 import { useLearnerStore } from '@/storage/useLearnerStore'
 import { LanguageSwitcher } from '@/ui/LanguageSwitcher'
+import { PasscodeGate } from '@/ui/PasscodeGate'
 import { ServiceWorkerNotices } from '@/ui/ServiceWorkerNotices'
 
 interface RootProps {
@@ -33,11 +34,13 @@ export function Root({ discardedReason }: RootProps) {
         </p>
       )}
 
-      <ServiceWorkerNotices />
+      <PasscodeGate>
+        <ServiceWorkerNotices />
 
-      <main className="grow">
-        <Outlet />
-      </main>
+        <main className="grow">
+          <Outlet />
+        </main>
+      </PasscodeGate>
     </div>
   )
 }

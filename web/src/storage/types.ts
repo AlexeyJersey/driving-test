@@ -76,6 +76,12 @@ export interface SessionRecord {
  */
 export interface LearnerSettings {
   readonly uiLanguage: UiLanguage
+  /**
+   * Whether the passcode gate has been satisfied on this device. Only a flag is
+   * kept, never the passcode itself — pointless anyway, since the build already
+   * contains it.
+   */
+  readonly unlocked: boolean
 }
 
 export interface LearnerState {
@@ -103,7 +109,7 @@ export function emptyLearnerState(now: string): LearnerState {
     bookmarks: [],
     sessions: [],
     activeSession: null,
-    settings: { uiLanguage: DEFAULT_UI_LANGUAGE },
+    settings: { uiLanguage: DEFAULT_UI_LANGUAGE, unlocked: false },
     updatedAt: now,
   }
 }

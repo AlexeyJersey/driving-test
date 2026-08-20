@@ -84,8 +84,13 @@ abstract class BaseLearnerStore implements LearnerStore {
     this.commit({ ...this.state, settings: { ...this.state.settings, uiLanguage: language } })
   }
 
+  unlock(): void {
+    if (this.state.settings.unlocked) return
+    this.commit({ ...this.state, settings: { ...this.state.settings, unlocked: true } })
+  }
+
   reset(): void {
-    this.commit(emptyLearnerState(now()))
+    this.commit({ ...emptyLearnerState(now()), settings: this.state.settings })
   }
 }
 

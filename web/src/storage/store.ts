@@ -27,8 +27,15 @@ export interface LearnerStore {
   saveSession(record: SessionRecord): void
 
   setUiLanguage(language: UiLanguage): void
+  /** Records that the passcode gate was satisfied on this device. */
+  unlock(): void
 
-  /** Destroys everything. The caller must confirm first — the store will not. */
+  /**
+   * Destroys progress, bookmarks and history. Preferences survive: resetting what
+   * you have learned is not a request to change your interface language or to be
+   * asked for the passcode again. The caller must confirm first — the store will
+   * not.
+   */
   reset(): void
 
   /** False when device storage is unavailable and nothing will survive reload. */
