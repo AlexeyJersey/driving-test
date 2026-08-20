@@ -663,6 +663,1415 @@
       ],
       "correct": 0,
       "image": "II-13-b.webp"
+    },
+    {
+      "id": "II-14-1",
+      "page": 14,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "nastaviću kretanje pravo jer zadržavam pravac kretanja",
+        "nastaviću kretanje pravo jer ne radi semafor",
+        "zaustaviću se ispred raskrsnice"
+      ],
+      "correct": 2,
+      "image": "II-14-a.webp"
+    },
+    {
+      "id": "II-14-2",
+      "page": 14,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici dužni ste da postupate:",
+      "options": [
+        "po saobraćajnim znacima",
+        "po semaforu",
+        "po pravilu propuštanja vozila samo sa desne strane"
+      ],
+      "correct": 0,
+      "image": "II-14-a.webp"
+    },
+    {
+      "id": "II-14-3",
+      "page": 14,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "propustiću samo vozila koja dolaze sa desne strane",
+        "propustiću samo vozila sa lijeve strane",
+        "zaustaviću vozilo"
+      ],
+      "correct": 2,
+      "image": "II-14-b.webp"
+    },
+    {
+      "id": "II-14-4",
+      "page": 14,
+      "category": "situations",
+      "kind": "order",
+      "text": "U situaciji prikazanoj na slici redoslijed prolaska vozila kojima je dozvoljen prolazak je:",
+      "answer": "4 3",
+      "image": "II-14-b.webp"
+    },
+    {
+      "id": "II-15-1",
+      "page": 15,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vozač vozila 1 treba da:",
+      "options": [
+        "nastavi kretanje bez propuštanja vozila 2",
+        "se zaustavi i nakon propuštanja vozila 2 nastavi kretanje",
+        "se zaustavi i prestroji u desnu saobraćajnu traku"
+      ],
+      "correct": 1,
+      "image": "II-15-a.webp"
+    },
+    {
+      "id": "II-15-2",
+      "page": 15,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vozač vozila 1 postupiće po:",
+      "options": [
+        "pravilu mimoilaženja vozila različitih kategorija",
+        "pravilu propuštanja vozila sa desne strane",
+        "vertikalnoj i horizontalnoj saobraćajnoj signalizaciji"
+      ],
+      "correct": 2,
+      "image": "II-15-a.webp"
+    },
+    {
+      "id": "II-15-3",
+      "page": 15,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici:",
+      "options": [
+        "treba da nastavim kretanje ulijevo",
+        "mogu izvršti prestrojavanje u desnu traku",
+        "bez prestrojavanja nastaviću kretanje pravo"
+      ],
+      "correct": 1,
+      "image": "II-15-b.webp",
+      "note": "На слайде «izvršti» вместо «izvršiti» — оставлено как в источнике."
+    },
+    {
+      "id": "II-15-4",
+      "page": 15,
+      "category": "situations",
+      "text": "U prikazanoj situaciji strelice na kolovozu obeleježavaju:",
+      "options": [
+        "obavezan smjer kretanja ulijevo",
+        "namjenu saobraćajnih traka",
+        "obavezan smjer kretanja udesno"
+      ],
+      "correct": 1,
+      "image": "II-15-b.webp",
+      "note": "На слайде «obeleježavaju» — нестандартное написание, оставлено как в источнике."
+    },
+    {
+      "id": "II-16-1",
+      "page": 16,
+      "category": "situations",
+      "text": "U raskrsnici kao na slici:",
+      "options": [
+        "nijesam dužan da propustim vozila u kružnom toku",
+        "dužan sam da propustim samo vozila koja mi dolaze sa desne strane",
+        "dužan sam da propustim sva vozila koja se kreću u kružnom toku"
+      ],
+      "correct": 2,
+      "image": "II-16-a.webp"
+    },
+    {
+      "id": "II-16-2",
+      "page": 16,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici teretno vozilo 2:",
+      "options": [
+        "propisno skreće udesno putanjom a",
+        "nepropisno skreće udesno",
+        "propisno skreće udesno putanjom b"
+      ],
+      "correct": 1,
+      "image": "II-16-a.webp"
+    },
+    {
+      "id": "II-16-3",
+      "page": 16,
+      "category": "situations",
+      "text": "Kako ćete postupiti u sitaciji prikazanoj na slici:",
+      "options": [
+        "zaustaviću se ispred raskrsnice i propustiti vozila 4 i 2",
+        "zaustaviću se ispred raskrsnice i propustiti sva vozila",
+        "propustiću samo vozilo 3"
+      ],
+      "correct": 0,
+      "image": "II-16-b.webp",
+      "note": "На слайде «sitaciji» вместо «situaciji» — оставлено как в источнике."
+    },
+    {
+      "id": "II-16-4",
+      "page": 16,
+      "category": "situations",
+      "kind": "order",
+      "text": "U situaciji prikazanoj na slici redoslijed prolaska vozila kroz raskrsnicu je:",
+      "answer": "4 2 1 3",
+      "image": "II-16-b.webp"
+    },
+    {
+      "id": "II-17-1",
+      "page": 17,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "propustiću vozilo 2 i nastaviti kretanje ulijevo",
+        "nastaviću kretanje ulijevo ne propuštajući vozilo 2",
+        "ubrzaću kretanje vozila i proći ispred vozila -"
+      ],
+      "correct": 0,
+      "image": "II-17-a.webp",
+      "note": "В одном из вариантов на слайде вместо номера машины стоит прочерк — дефект источника."
+    },
+    {
+      "id": "II-17-2",
+      "page": 17,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vozilo 2 se kreće:",
+      "options": [
+        "propisno putanjom a",
+        "propisno putanjom b",
+        "propisno bliže desnoj ivici kolovoza"
+      ],
+      "correct": 1,
+      "image": "II-17-a.webp",
+      "note": "Отметка на слайде красная — похоже на исправление преподавателя. Отмеченный вариант однозначен."
+    },
+    {
+      "id": "II-17-3",
+      "page": 17,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "nastaviću kretanje pravo kroz raskrsnicu",
+        "zaustaviću se ispred raskrsnice pa nastaviti kretanje pravo",
+        "nastaviću kretanje u lijevo kroz raskrsnicu"
+      ],
+      "correct": 2,
+      "image": "II-17-b.webp"
+    },
+    {
+      "id": "II-17-4",
+      "page": 17,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici strelice na kolovozu označavaju:",
+      "options": [
+        "obavezan smjer",
+        "namjenu saobraćajnih traka",
+        "putokaz"
+      ],
+      "correct": 0,
+      "image": "II-17-b.webp"
+    },
+    {
+      "id": "II-18-1",
+      "page": 18,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "nastaviću kretanje ulijevo nakon propuštanja vozila 3",
+        "nastaviću kretanje ulijevo bez propuštanja vozila 2 i 3",
+        "zaustaviću se i propustiti vozila 2 i 3"
+      ],
+      "correct": 0,
+      "image": "II-18-a.webp"
+    },
+    {
+      "id": "II-18-2",
+      "page": 18,
+      "category": "situations",
+      "kind": "order",
+      "text": "U situaciji prikazanoj na slici redoslijed prolaska vozila je:",
+      "answer": "3 1 2",
+      "image": "II-18-a.webp"
+    },
+    {
+      "id": "II-18-3",
+      "page": 18,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vozilo:",
+      "options": [
+        "1 treba da nastavi kretanje bez propuštanja vozila 2",
+        "2 treba da propusti vozilo 1 i nastavi kretanje",
+        "1 treba da propusti vozilo 2 pa da nastavi kretanje"
+      ],
+      "correct": 2,
+      "image": "II-18-b.webp"
+    },
+    {
+      "id": "II-18-4",
+      "page": 18,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vozač vozila 1 postupiće po:",
+      "options": [
+        "pravilu propuštanja vozila samo sa desne strane",
+        "pravilu prolaska kroz neregulisanu raskrsnicu",
+        "saobraćajnom znakom"
+      ],
+      "correct": 2,
+      "image": "II-18-b.webp"
+    },
+    {
+      "id": "II-19-1",
+      "page": 19,
+      "category": "situations",
+      "text": "Kako ćete postupiti u sledećoj situaciji:",
+      "options": [
+        "nastaviću kretanje pravo bez propuštanja tramvaja",
+        "nastaviću kretanje pravo nakon propuštanja tramvaja",
+        "zaustaviću se i propustiti tramvaj"
+      ],
+      "correct": 0,
+      "image": "II-19-a.webp"
+    },
+    {
+      "id": "II-19-2",
+      "page": 19,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici prolazak vozila kroz raskrsnicu je regulisan:",
+      "options": [
+        "vertikalnom saobraćajnom signalizacijom",
+        "prednošću prolaska šinskog vozila",
+        "pravilom propuštanja vozila samo sa desne strane"
+      ],
+      "correct": 0,
+      "image": "II-19-a.webp"
+    },
+    {
+      "id": "II-19-3",
+      "page": 19,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "nastaviću kretanje pravo jer imam prvenstvo prolaza",
+        "nastaviću kretanje smanjenom brzinom",
+        "zaustaviću se ispred raskrsnice i propustiti vozila iz suprotnog smjera"
+      ],
+      "correct": 2,
+      "image": "II-19-b.webp"
+    },
+    {
+      "id": "II-19-4",
+      "page": 19,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici dužni ste da postupate po:",
+      "options": [
+        "svjetlosnoj saobraćajnoj signalizaciji",
+        "vertikalnoj saobraćajnoj signalizaciji",
+        "pravilu propuštanja vozila sa desne strane"
+      ],
+      "correct": 1,
+      "image": "II-19-b.webp"
+    },
+    {
+      "id": "II-20-1",
+      "page": 20,
+      "category": "situations",
+      "kind": "order",
+      "text": "U situaciji prikazanoj na slici redoslijed prolaska vozila kroz raskrsnicu je:",
+      "answer": "1 2 3",
+      "image": "II-20-a.webp"
+    },
+    {
+      "id": "II-20-2",
+      "page": 20,
+      "category": "situations",
+      "text": "U raskrsnici sa kružnim tokom saobraćaja, kretanje vozila vrši se:",
+      "options": [
+        "u bilo kojem smjeru",
+        "u smjeru kazaljke na satu",
+        "u suprotnom smjeru kazaljke na satu"
+      ],
+      "correct": 2,
+      "image": "II-20-a.webp"
+    },
+    {
+      "id": "II-20-3",
+      "page": 20,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "zaustaviću se i propustiti vozilo -",
+        "nastaviću kretanje pravo iza vozila 2",
+        "smanjiću brzinu kretanja i propustiti vozilo -"
+      ],
+      "correct": 1,
+      "image": "II-20-b.webp",
+      "note": "В варианте(ах) на слайде вместо номера машины стоит прочерк — дефект источника."
+    },
+    {
+      "id": "II-20-4",
+      "page": 20,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vučno vozilo 3 je tegljač, a vučeno vozilo je:",
+      "options": [
+        "prikolica",
+        "laka prikolica",
+        "poluprikolica"
+      ],
+      "correct": 2,
+      "image": "II-20-b.webp",
+      "note": "Отметка на слайде красная — похоже на исправление преподавателя. Отмеченный вариант однозначен."
+    },
+    {
+      "id": "II-21-1",
+      "page": 21,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici, putničko vozilo 1 skreće ulijevo, a traktor 2 zadržava pravac kretanja. Prvenstvo prolaza ima:",
+      "options": [
+        "traktor 2 jer ima uključeno žuto rotaciono svijetlo",
+        "traktor 2 jer zadržava pravac kretanja",
+        "putničko vozilo 1"
+      ],
+      "correct": 2,
+      "image": "II-21-a.webp"
+    },
+    {
+      "id": "II-21-2",
+      "page": 21,
+      "category": "situations",
+      "text": "Za vrijeme kretanja na traktoru se može nalaziti:",
+      "options": [
+        "vozač i jedno lice",
+        "samo vozač",
+        "vozač i dva lica"
+      ],
+      "correct": 1,
+      "image": "II-21-a.webp"
+    },
+    {
+      "id": "II-21-3",
+      "page": 21,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "nastaviću kretanje pravo kroz raskrnicu jer, je na semaforu zeleno svijetlo",
+        "neću ući u raskrsnicu zbog gustine saobraćaja",
+        "nastaviću kretanje udesno kroz raskrnicu"
+      ],
+      "correct": 1,
+      "image": "II-21-b.webp",
+      "note": "На слайде дважды «raskrnicu» вместо «raskrsnicu» — оставлено как в источнике."
+    },
+    {
+      "id": "II-21-4",
+      "page": 21,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici:",
+      "options": [
+        "smijem da vršim polukružno okretanje",
+        "smijem da se zaustavim u raskrsnici",
+        "ne smijem da vršim polukružno okretanje vozila"
+      ],
+      "correct": 2,
+      "image": "II-21-b.webp"
+    },
+    {
+      "id": "II-22-1",
+      "page": 22,
+      "category": "situations",
+      "text": "Vozač putničkog vozila u situaciji kao na slici, treba da:",
+      "options": [
+        "nastavi kretanje u lijevo bez propuštanja teretnog vozila",
+        "nastavi kretanje pravo bez propuštanja teretnog vozila",
+        "se zaustavi ispred raskrsnice i propusti teretno vozilo"
+      ],
+      "correct": 2,
+      "image": "II-22-a.webp"
+    },
+    {
+      "id": "II-22-2",
+      "page": 22,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vozač putničkog vozila postupiće po:",
+      "options": [
+        "vertikalnoj saobraćajnoj signalizaciji",
+        "pravilu propuštanja vozila sa desne strane",
+        "pravilu propuštanja vozila veće kategorije"
+      ],
+      "correct": 0,
+      "image": "II-22-a.webp"
+    },
+    {
+      "id": "II-22-3",
+      "page": 22,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "zaustaviću vozilo i propustiti pješake",
+        "nastaviću kretanje ne propuštajući pješake",
+        "sirenom ću upozoriti pješake i nastaviti kretanje"
+      ],
+      "correct": 0,
+      "image": "II-22-b.webp"
+    },
+    {
+      "id": "II-22-4",
+      "page": 22,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici poprečne oznake na kolovozu označavaju:",
+      "options": [
+        "pješački prelaz",
+        "pješačko ostrvo",
+        "stazu za pješake"
+      ],
+      "correct": 0,
+      "image": "II-22-b.webp"
+    },
+    {
+      "id": "II-23-1",
+      "page": 23,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici treba da:",
+      "options": [
+        "nastavim kretanje desnom saobraćajnom trakom",
+        "izvršim preticanje policijskog vozila",
+        "zaustavim vozilo"
+      ],
+      "correct": 2,
+      "image": "II-23-a.webp"
+    },
+    {
+      "id": "II-23-2",
+      "page": 23,
+      "category": "situations",
+      "text": "Znak koji daje ovlašćeni policijski službenik:",
+      "options": [
+        "obavezujući je za sve učesnike u saobraćaju",
+        "ne obavezuje kada se daje iz vozila",
+        "obavezujući je samo za bicikliste"
+      ],
+      "correct": 0,
+      "image": "II-23-a.webp"
+    },
+    {
+      "id": "II-23-3",
+      "page": 23,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vozilo 1 pretiče biciklistu:",
+      "options": [
+        "nepropisno, jer prelazi u suprotnu saobraćajnu traku",
+        "nepropisno, jer ugrožava biciklistu",
+        "propisno"
+      ],
+      "correct": 2,
+      "image": "II-23-b.webp"
+    },
+    {
+      "id": "II-23-4",
+      "page": 23,
+      "category": "situations",
+      "text": "Vozač vozila 1 nakon preticanja dužan je:",
+      "options": [
+        "da nastavi kretanje saobraćajnom trakom kojom je vršio preticanje",
+        "da se vrati u svoju saobraćajnu traku i nastavi kretanje",
+        "da nastavi kretanje uz lijevu ivicu kolovoza"
+      ],
+      "correct": 1,
+      "image": "II-23-b.webp"
+    },
+    {
+      "id": "II-24-1",
+      "page": 24,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici brže kretanje vozila kojim upravljaš od vozila 1 i 2:",
+      "options": [
+        "je radnja preticanja vozila",
+        "je radnja obilaženja vozila",
+        "ne smatra se radnjom preticanja vozila"
+      ],
+      "correct": 2,
+      "image": "II-24-a.webp"
+    },
+    {
+      "id": "II-24-2",
+      "page": 24,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vozila 1 i 2, koja se kreću jedno iza drugog:",
+      "options": [
+        "čine kolonu vozila i ne smiju se preticati",
+        "čine kolonu vozila i smiju se preticati",
+        "ne čine kolonu vozila"
+      ],
+      "correct": 2,
+      "image": "II-24-a.webp"
+    },
+    {
+      "id": "II-24-3",
+      "page": 24,
+      "category": "situations",
+      "text": "Na poziciji prikazanoj na slici vozila 1, 2, 3 i 4:",
+      "options": [
+        "ne smiju da se zaustave ili parkiraju",
+        "smiju da se zaustave, ali ne i da se parkiraju",
+        "smiju da se zaustave i parkiraju"
+      ],
+      "correct": 0,
+      "image": "II-24-b.webp"
+    },
+    {
+      "id": "II-24-4",
+      "page": 24,
+      "category": "situations",
+      "text": "Vozač auto-taksi prevoza na ulazu, odnosno izlazu iz garaže:",
+      "options": [
+        "ne smije da se zaustavi",
+        "smije da se zaustavi samo za ulazak ili izlazak putnika",
+        "smije da se parkira najviše 15 minuta"
+      ],
+      "correct": 1,
+      "image": "II-24-b.webp"
+    },
+    {
+      "id": "II-25-1",
+      "page": 25,
+      "category": "situations",
+      "text": "Radnja u kojoj se vozila 1 i 2 kreću suprotnim smjerovima kao na slici je:",
+      "options": [
+        "ukrštanje",
+        "obilaženje",
+        "mimoilaženje"
+      ],
+      "correct": 2,
+      "image": "II-25-a.webp"
+    },
+    {
+      "id": "II-25-2",
+      "page": 25,
+      "category": "situations",
+      "text": "Teret na vozilu 2 prelazi 1,5 m najistureniju tačku na prednjoj strani vozila, a to je:",
+      "options": [
+        "dozvoljeno",
+        "dozvoljeno, ali mora biti označeno crvenom tablom",
+        "nije dozvoljeno"
+      ],
+      "correct": 2,
+      "image": "II-25-a.webp"
+    },
+    {
+      "id": "II-25-3",
+      "page": 25,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici:",
+      "options": [
+        "ubrzaćeš kretanje kako ne bi ometao pješake",
+        "nećeš propustiti pješake, jer nisu na tvojoj saobraćajnoj traci",
+        "zaustavićeš vozilo i propustiti pješake"
+      ],
+      "correct": 2,
+      "image": "II-25-b.webp"
+    },
+    {
+      "id": "II-25-4",
+      "page": 25,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici oznake na kolovozu znače da se u blizini pješačkog prelaza nalazi:",
+      "options": [
+        "zona škole",
+        "putokaz do škole",
+        "dio kolovoza namijenjen za parkiranje školskog autobusa"
+      ],
+      "correct": 0,
+      "image": "II-25-b.webp"
+    },
+    {
+      "id": "II-26-1",
+      "page": 26,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici, na dijelu kolovoza za dvosmjerni saobraćaj vozilo 2:",
+      "options": [
+        "smije da vrši preticanje",
+        "smije da vrši preticanje, ako ne ometa vozila iz suprotnog smjera",
+        "ne smije da vrši preticanje"
+      ],
+      "correct": 2,
+      "image": "II-26-a.webp"
+    },
+    {
+      "id": "II-26-2",
+      "page": 26,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici razdjelna linija označava:",
+      "options": [
+        "zabranu prelaženja i gaženja preko ove linije",
+        "dio kolovoza gdje je dozvoljeno gaženje ove linije",
+        "dio kolovoza gdje je dozvoljeno prelaženje preko ove linije"
+      ],
+      "correct": 0,
+      "image": "II-26-a.webp"
+    },
+    {
+      "id": "II-26-3",
+      "page": 26,
+      "category": "situations",
+      "text": "U situaciji kao na slici vozilo 1 je:",
+      "options": [
+        "propisno parkirano",
+        "propisno zaustavljeno",
+        "nepropisno zaustavljeno ili parkirano"
+      ],
+      "correct": 2,
+      "image": "II-26-b.webp"
+    },
+    {
+      "id": "II-26-4",
+      "page": 26,
+      "category": "situations",
+      "text": "Na ulazu-izlazu iz dvorišta vozač:",
+      "options": [
+        "smije da zaustavi vozilo",
+        "ne smije da se zaustavi ili parkira vozilo",
+        "smije da parkira vozilo"
+      ],
+      "correct": 1,
+      "image": "II-26-b.webp"
+    },
+    {
+      "id": "II-27-1",
+      "page": 27,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici, biciklista se kreće:",
+      "options": [
+        "propisno, jer nema biciklističku traku",
+        "nepropisno",
+        "propisno uz lijevu ivicu kolovoza"
+      ],
+      "correct": 1,
+      "image": "II-27-a.webp"
+    },
+    {
+      "id": "II-27-2",
+      "page": 27,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vozilo 1 je:",
+      "options": [
+        "propisno zaustavljeno",
+        "propisno zaustavljeno ili parkirano",
+        "nepropisno zaustavljeno ili parkirano"
+      ],
+      "correct": 2,
+      "image": "II-27-a.webp"
+    },
+    {
+      "id": "II-27-3",
+      "page": 27,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji kao na slici:",
+      "options": [
+        "nastaviću kretanje pravo bez propuštanja putničkog vozila 2",
+        "propustiću putničko vozulo 2 jer mi dolazi sa desne strane",
+        "pomjeriću vozilo ka lijevoj ivici kolovoza"
+      ],
+      "correct": 0,
+      "image": "II-27-b.webp",
+      "note": "На слайде «vozulo» вместо «vozilo» — оставлено как в источнике."
+    },
+    {
+      "id": "II-27-4",
+      "page": 27,
+      "category": "situations",
+      "text": "Vozač vozila 2 prilikom skretanja ulijevo u situaciji kao na slici će:",
+      "options": [
+        "nastaviti kretanje bez propuštanja vozila koja se kreću putem na koji on nailazi",
+        "nastaviti kretanje jer ima prednost u odnosu na vozilo 1",
+        "zaustaviti vozilo i propustiti sva vozila koja se kreću putem na koji on nailazi"
+      ],
+      "correct": 2,
+      "image": "II-27-b.webp"
+    },
+    {
+      "id": "II-28-1",
+      "page": 28,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici:",
+      "options": [
+        "ne smijem preticati zbog oznaka na kolovozu",
+        "smijem preticati",
+        "smijem preticati ako ne prelazim u traku za suprotan smjer"
+      ],
+      "correct": 1,
+      "image": "II-28-a.webp"
+    },
+    {
+      "id": "II-28-2",
+      "page": 28,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici, na putu van naselja, brzina kojom možete da pretičete:",
+      "options": [
+        "nije ograničena",
+        "je do 80 km/h",
+        "je do 20 km/h više od ograničenja"
+      ],
+      "correct": 1,
+      "image": "II-28-a.webp"
+    },
+    {
+      "id": "II-28-3",
+      "page": 28,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici, putničko vozilo 3 uključiće se sa parkinga na kolovoz:",
+      "options": [
+        "nakon propuštanja putničkog vozila 2",
+        "bez propuštanja putničkog vozila 2",
+        "bez obaveze prema drugim učesnicima u saobraćaju"
+      ],
+      "correct": 0,
+      "image": "II-28-b.webp"
+    },
+    {
+      "id": "II-28-4",
+      "page": 28,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "zaustaviću se ispred rasksnice i propustiti pješake",
+        "zvučnim signalom ću upozoriti pješake i nastaviti kretanje",
+        "ubrzaću kretanje kako bih prošao prije pješaka"
+      ],
+      "correct": 0,
+      "image": "II-28-b.webp",
+      "note": "На слайде «rasksnice» вместо «raskrsnice» — оставлено как в источнике."
+    },
+    {
+      "id": "II-29-1",
+      "page": 29,
+      "category": "situations",
+      "text": "Vozilo 1 u situaciji prikazanoj na slici kreće se:",
+      "options": [
+        "nepropisno",
+        "propisno sredinom kolovoza",
+        "propisno, jer je lijeva saobraćajna traka zauzeta vozilom -"
+      ],
+      "correct": 0,
+      "image": "II-29-a.webp",
+      "note": "В третьем варианте на слайде вместо номера машины стоит прочерк — дефект источника."
+    },
+    {
+      "id": "II-29-2",
+      "page": 29,
+      "category": "situations",
+      "text": "U situaciji kao na slici putničko vozilo 2:",
+      "options": [
+        "smije da se zaustavi ili parkira",
+        "smije da se zaustavi",
+        "ne smije da se zaustavi ili parkira"
+      ],
+      "correct": 2,
+      "image": "II-29-a.webp"
+    },
+    {
+      "id": "II-29-3",
+      "page": 29,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici:",
+      "options": [
+        "smijem izvršiti preticanje putničkog vozila",
+        "ne smijem, jer je kolovoz u lijevoj krivini",
+        "ne smijem, jer je oznakama na kolovozu zabranjeno"
+      ],
+      "correct": 0,
+      "image": "II-29-b.webp"
+    },
+    {
+      "id": "II-29-4",
+      "page": 29,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici razdjelna isprekidana linija:",
+      "options": [
+        "razdvaja kolovoz i ne smije se prelaziti preko nje",
+        "razdvaja kolovoz i smije se gaziti i prelaziti preko nje",
+        "razdavaja kolovoznu traku i ne smije se prelaziti preko nje"
+      ],
+      "correct": 1,
+      "image": "II-29-b.webp",
+      "note": "На слайде «razdavaja» вместо «razdvaja» — оставлено как в источнике."
+    },
+    {
+      "id": "II-30-1",
+      "page": 30,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji kao na slici, kad vas pretiče putničko vozilo 2:",
+      "options": [
+        "povećaću brzinu kretanja",
+        "pomjeriću vozilo ka desnoj ivici kolovoza",
+        "pomjeriću vozilo ka lijevoj ivici kolovoza"
+      ],
+      "correct": 1,
+      "image": "II-30-a.webp"
+    },
+    {
+      "id": "II-30-2",
+      "page": 30,
+      "category": "situations",
+      "text": "Znak izričite naredbe prikazan na slici važi:",
+      "options": [
+        "do prve raskrsnice",
+        "do prvog znaka obavještenja",
+        "do prvog znaka opasnosti"
+      ],
+      "correct": 0,
+      "image": "II-30-a.webp",
+      "note": "Отметка на слайде красная — похоже на исправление преподавателя. Отмеченный вариант однозначен."
+    },
+    {
+      "id": "II-30-3",
+      "page": 30,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vozač teretnog vozila 1 treba da:",
+      "options": [
+        "ubrza vozilo i nastavi kretanje ne propuštajuči pješake",
+        "propusti samo pješaka označenog sa a i nastavi kretanje",
+        "zaustavi se i propusti sve pješake"
+      ],
+      "correct": 2,
+      "image": "II-30-b.webp"
+    },
+    {
+      "id": "II-30-4",
+      "page": 30,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vozač teretnog vozila 1 neposredno nakon prolaska pješačkog prelaza:",
+      "options": [
+        "smije da se zaustavi ili parkira",
+        "smije da se zaustavi",
+        "ne smije da se zaustavi ili parkira"
+      ],
+      "correct": 2,
+      "image": "II-30-b.webp"
+    },
+    {
+      "id": "II-31-1",
+      "page": 31,
+      "category": "situations",
+      "text": "U poziciji prikazanoj na slici putničko vozilo 1 je:",
+      "options": [
+        "propisno zaustavljeno",
+        "propisno zaustavljeno ili parkirano",
+        "nepropisno zaustavljeno ili parkirano"
+      ],
+      "correct": 2,
+      "image": "II-31-a.webp"
+    },
+    {
+      "id": "II-31-2",
+      "page": 31,
+      "category": "situations",
+      "text": "Na slici prikazani znak obavještenja je:",
+      "options": [
+        "udaljenost parkinga",
+        "vremensko ograničenje parkiranja",
+        "parking samo u određenom vremenu"
+      ],
+      "correct": 1,
+      "image": "II-31-a.webp"
+    },
+    {
+      "id": "II-31-3",
+      "page": 31,
+      "category": "situations",
+      "text": "U situaciji kao na slici putničko vozilo 1:",
+      "options": [
+        "smije da se parkira",
+        "ne smije da se zaustavi ili parkira",
+        "smije da se zaustavi"
+      ],
+      "correct": 2,
+      "image": "II-31-b.webp"
+    },
+    {
+      "id": "II-31-4",
+      "page": 31,
+      "category": "situations",
+      "text": "Na kom odstojanju od obilježenog pješačkog prelaza vozač smije da se zaustavi ili parkira:",
+      "options": [
+        "najmanje 10 metara",
+        "najmanje 5 metara",
+        "najmanje 7 metra"
+      ],
+      "correct": 1,
+      "image": "II-31-b.webp"
+    },
+    {
+      "id": "II-32-1",
+      "page": 32,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vozilo 2 kreće se:",
+      "options": [
+        "propisno, ako ne ometa vozila iz suprotnog smjera",
+        "propisno",
+        "nepropisno"
+      ],
+      "correct": 2,
+      "image": "II-32-a.webp"
+    },
+    {
+      "id": "II-32-2",
+      "page": 32,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vozač vozila 2 treba da:",
+      "options": [
+        "se kreće što bliže razdjelnoj liniji",
+        "se kreće što bliže desnoj ivici kolovoza",
+        "se kreće po sredini saobraćajne trake"
+      ],
+      "correct": 1,
+      "image": "II-32-a.webp"
+    },
+    {
+      "id": "II-32-3",
+      "page": 32,
+      "category": "situations",
+      "text": "U situaciji kao na slici:",
+      "options": [
+        "nastaviću kretanje lijevo kroz raskrsnicu",
+        "nastaviću kretanje desno kroz raskrsnicu",
+        "nastaviću kretanje pravo kroz raskrsnicu"
+      ],
+      "correct": 2,
+      "image": "II-32-b.webp"
+    },
+    {
+      "id": "II-32-4",
+      "page": 32,
+      "category": "situations",
+      "text": "Horizontalne oznake na kolovozu znače:",
+      "options": [
+        "namjenu saobraćajnih traka",
+        "obavezan smjer",
+        "linije usmjeravanja"
+      ],
+      "correct": 1,
+      "image": "II-32-b.webp"
+    },
+    {
+      "id": "II-33-1",
+      "page": 33,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici kroz raskrnicu proći ćete:",
+      "options": [
+        "putanjom 1 bez propuštanja pješaka",
+        "putanjom 2 nakon propuštanja pješaka",
+        "putanjom 1 nakon propuštanja pješaka"
+      ],
+      "correct": 2,
+      "image": "II-33-a.webp",
+      "note": "На слайде «raskrnicu» вместо «raskrsnicu» — оставлено как в источнике."
+    },
+    {
+      "id": "II-33-2",
+      "page": 33,
+      "category": "situations",
+      "text": "U situaciji kao na slici vozilo 3:",
+      "options": [
+        "smije da se zaustavi",
+        "ne smije da se zaustavli ili parkira",
+        "smije da se zaustavi ili parkira"
+      ],
+      "correct": 1,
+      "image": "II-33-a.webp",
+      "note": "Отметка на слайде красная — похоже на исправление преподавателя. Отмеченный вариант однозначен. Во втором варианте на слайде «zaustavli» — опечатка источника."
+    },
+    {
+      "id": "II-33-3",
+      "page": 33,
+      "category": "situations",
+      "text": "Putničko vozilo 2 kao na slici:",
+      "options": [
+        "ne smije da se zaustavi ili parkira",
+        "smije da se zaustavi i parkira",
+        "smije da se zaustavi"
+      ],
+      "correct": 0,
+      "image": "II-33-b.webp"
+    },
+    {
+      "id": "II-33-4",
+      "page": 33,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici:",
+      "options": [
+        "ne smijem da se zaustavim ili parkiram",
+        "smijem da se zaustavim ili parkiram",
+        "ne smijem da se parkiram"
+      ],
+      "correct": 1,
+      "image": "II-33-b.webp"
+    },
+    {
+      "id": "II-34-1",
+      "page": 34,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vozilo 1 pretiče biciklistu:",
+      "options": [
+        "propisno, jer je uključen lijevi pokazivač pravca",
+        "propisno, jer nema znaka za zabranu preticanja",
+        "nepropisno zbog prelaska preko neisprekidane linije"
+      ],
+      "correct": 2,
+      "image": "II-34-a.webp"
+    },
+    {
+      "id": "II-34-2",
+      "page": 34,
+      "category": "situations",
+      "text": "Biciklista u situaciji na slici u naselju kreće se:",
+      "options": [
+        "nepropisno, jer treba da se kreće trotoarom",
+        "nepropisno, jer treba da nosi zaštitnu kacigu",
+        "propisno uz desnu ivicu kolovoza"
+      ],
+      "correct": 2,
+      "image": "II-34-a.webp"
+    },
+    {
+      "id": "II-34-3",
+      "page": 34,
+      "category": "situations",
+      "text": "U situaciji na slici, vozim teretno vozilo sa prikolicom i mimoilazim se sa teretnim vozilom 2, zbog nedovoljne širine kolovoza za bezbjedno mimoilažnje:",
+      "options": [
+        "treba da se zaustavi teretno vozilo 2 i omogući meni prolaz",
+        "treba da se zaustavim i omogućim prolazak teretn. vozilu 2",
+        "treba da se zaustavimo i dogovorimo o redoslijedu prolaska"
+      ],
+      "correct": 0,
+      "image": "II-34-b.webp",
+      "note": "На слайде «mimoilažnje» вместо «mimoilaženje» и сокращение «teretn.» — оставлено как в источнике."
+    },
+    {
+      "id": "II-34-4",
+      "page": 34,
+      "category": "situations",
+      "text": "Saobraćajni znak na slici znači:",
+      "options": [
+        "da je kolovoz u nizbrdici do 6%",
+        "da je poprečni nagib kolovoza do 6%",
+        "da je kolovoz u usponu do 6%"
+      ],
+      "correct": 2,
+      "image": "II-34-b.webp"
+    },
+    {
+      "id": "II-35-1",
+      "page": 35,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji kao na slici, kada se vozilo 2 uključuje sa zemljanog puta na kolovoz:",
+      "options": [
+        "prestrojiću se u lijevu kolovoznu traku, kako ne bih ometao vozača vozila 2 da se uključi na kolovoz",
+        "nastaviću kretanje pravo bez propuštanja vozila 2",
+        "zaustaviću se i omogućiti uključenje vozila 2 jer mi dolazi sa desne strane"
+      ],
+      "correct": 1,
+      "image": "II-35-a.webp"
+    },
+    {
+      "id": "II-35-2",
+      "page": 35,
+      "category": "situations",
+      "text": "U situaciji kao na slici saobraćajni znak važi do:",
+      "options": [
+        "prevoja kolovoza",
+        "narednog znaka ograničenja brzine",
+        "prve raskrsnice"
+      ],
+      "correct": 2,
+      "image": "II-35-a.webp",
+      "note": "Отметка на слайде красная — похоже на исправление преподавателя. Отмеченный вариант однозначен."
+    },
+    {
+      "id": "II-35-3",
+      "page": 35,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici teretno vozilo 2 je:",
+      "options": [
+        "zaustavljeno propisno",
+        "parkirano ili zaustavljeno nepropisno",
+        "parkirano ili zaustavljeno propisno"
+      ],
+      "correct": 1,
+      "image": "II-35-b.webp"
+    },
+    {
+      "id": "II-35-4",
+      "page": 35,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici prolazeći pored vozila 2 vršiš radnju:",
+      "options": [
+        "mimoilaženja",
+        "prestrojavanja",
+        "obilaženja"
+      ],
+      "correct": 2,
+      "image": "II-35-b.webp"
+    },
+    {
+      "id": "II-36-1",
+      "page": 36,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici na putu za saobraćaj u oba smjera vozač vozila 1 smije da koristi:",
+      "options": [
+        "obje kolovozne trake",
+        "desnu kolovoznu traku",
+        "lijevu kolovoznu traku"
+      ],
+      "correct": 1,
+      "image": "II-36-a.webp"
+    },
+    {
+      "id": "II-36-2",
+      "page": 36,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vozač vozila 1 u podvožnjaku:",
+      "options": [
+        "smije da se parkira",
+        "ne smije da se zaustavi ili parkira",
+        "smije da se zaustavi uz desnu ivicu kolovoza"
+      ],
+      "correct": 1,
+      "image": "II-36-a.webp"
+    },
+    {
+      "id": "II-36-3",
+      "page": 36,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vozilo 1:",
+      "options": [
+        "smije da se pretiče",
+        "ne smije da se pretiče zbog oznaka na kolovozu",
+        "ne smije da se pretiče sa lijeve strane"
+      ],
+      "correct": 0,
+      "image": "II-36-b.webp"
+    },
+    {
+      "id": "II-36-4",
+      "page": 36,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici oznake na kolovozu znače:",
+      "options": [
+        "dozvoljeno preticanje iz suprotnog smjera",
+        "dozvoljeno preticanje u smjeru kretanja",
+        "dozvoljeno preticanje samo teretnih vozila"
+      ],
+      "correct": 1,
+      "image": "II-36-b.webp"
+    },
+    {
+      "id": "II-37-1",
+      "page": 37,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici:",
+      "options": [
+        "nijesam dužan da propustim pješaka",
+        "dužan sam da uključim sirenu i nastavim kretanje",
+        "dužan sam da propustim pješaka"
+      ],
+      "correct": 2,
+      "image": "II-37-a.webp"
+    },
+    {
+      "id": "II-37-2",
+      "page": 37,
+      "category": "situations",
+      "text": "Da bi pješak prešao kolovoz na pješačkom prelazu na bezbjedan način, kao na slici:",
+      "options": [
+        "dužan je da podigne ruku, pa stupi na pješački prelaz",
+        "nije dužan da se uvjeri da ometa ostale učesnike",
+        "dužan je da se uvjeri da time ne ometa ostale učesnike"
+      ],
+      "correct": 2,
+      "image": "II-37-a.webp"
+    },
+    {
+      "id": "II-37-3",
+      "page": 37,
+      "category": "situations",
+      "text": "Vozilo 1 u poziciji prikazanoj na slici je:",
+      "options": [
+        "parkirano propisno",
+        "nepropisno zaustavljeno ili parkirano",
+        "propisno zaustavljeno ili parkirano"
+      ],
+      "correct": 1,
+      "image": "II-37-b.webp"
+    },
+    {
+      "id": "II-37-4",
+      "page": 37,
+      "category": "situations",
+      "text": "Vozilo 1 u situaciji prikazanoj na slici je:",
+      "options": [
+        "na saobraćajnoj traci u smjeru kretanja",
+        "na saobraćajnoj traci za suprotan smjer kretanja",
+        "na obilježenom parking mjestu"
+      ],
+      "correct": 1,
+      "image": "II-37-b.webp"
+    },
+    {
+      "id": "II-38-1",
+      "page": 38,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vozila uz desnu ivicu kolovoza su:",
+      "options": [
+        "nepropisno zaustavljena ili parkirana",
+        "propisno zaustavljena ili parkirana",
+        "zaustavljena propisno"
+      ],
+      "correct": 0,
+      "image": "II-38-a.webp"
+    },
+    {
+      "id": "II-38-2",
+      "page": 38,
+      "category": "situations",
+      "text": "Uzdužna neisprekidana bijela linija, u situaciji kao na slici, označava:",
+      "options": [
+        "ivicu kolovoza",
+        "razdjelnu liniju",
+        "ivičnu liniju"
+      ],
+      "correct": 1,
+      "image": "II-38-a.webp"
+    },
+    {
+      "id": "II-38-3",
+      "page": 38,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici putničko vozilo 2:",
+      "options": [
+        "polukružno se okreće u skladu sa propisima",
+        "propisno skreće ulijevo",
+        "nepropisno se polukružno okreće"
+      ],
+      "correct": 2,
+      "image": "II-38-b.webp",
+      "note": "Отметка на слайде красная — похоже на исправление преподавателя. Отмеченный вариант однозначен."
+    },
+    {
+      "id": "II-38-4",
+      "page": 38,
+      "category": "situations",
+      "text": "Uzdužna neisprekidana linija dijeli kolovoz:",
+      "options": [
+        "na kolovozne trake",
+        "na saobraćajne trake",
+        "na dva kolovoza"
+      ],
+      "correct": 0,
+      "image": "II-38-b.webp",
+      "note": "Отметка на слайде красная — похоже на исправление преподавателя. Отмеченный вариант однозначен."
+    },
+    {
+      "id": "II-39-1",
+      "page": 39,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici biciklista se:",
+      "options": [
+        "nepropisno kreće jer treba da gura biciklo pored sebe",
+        "propisno kreće",
+        "nepropisno kreće pješačkim prelazom"
+      ],
+      "correct": 1,
+      "image": "II-39-a.webp"
+    },
+    {
+      "id": "II-39-2",
+      "page": 39,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici, crvene široke uzdužne linije preko pješačkog prelaza označavaju:",
+      "options": [
+        "biciklističke staze",
+        "biciklističke trake",
+        "staze za trčanje pješaka"
+      ],
+      "correct": 0,
+      "image": "II-39-a.webp"
+    },
+    {
+      "id": "II-39-3",
+      "page": 39,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici:",
+      "options": [
+        "nastaviću kretanje ne propuštatjući pješake",
+        "usporiću kretanje vozila i propustiti pješake",
+        "ubrzaću kretanje vozila da bih prošao ispred pješaka"
+      ],
+      "correct": 1,
+      "image": "II-39-b.webp",
+      "note": "На слайде «propuštatjući» вместо «propuštajući» — оставлено как в источнике."
+    },
+    {
+      "id": "II-39-4",
+      "page": 39,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici, kada pješaci prelaze kolovoz dužni su da:",
+      "options": [
+        "kolovoz prelaze najkraćim putem",
+        "kolovoz prelaze gdje je najmanje učesnika u saobraćaju",
+        "kolovoz prelaze što sporije"
+      ],
+      "correct": 0,
+      "image": "II-39-b.webp",
+      "note": "Отметка на слайде красная — похоже на исправление преподавателя. Отмеченный вариант однозначен."
+    },
+    {
+      "id": "II-40-1",
+      "page": 40,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici policijsko vozilo 2 je:",
+      "options": [
+        "propisno zaustavljeno ili parkirano",
+        "nepropisno parkirano",
+        "nepropisno zaustavljeno ili parkirano"
+      ],
+      "correct": 2,
+      "image": "II-40-a.webp"
+    },
+    {
+      "id": "II-40-2",
+      "page": 40,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici:",
+      "options": [
+        "ne smijem da se zaustavim ili parkiram iza vozila 2",
+        "smijem da se zaustavim ili parkiram iza vozila 2",
+        "smijem da se parkiram pored vozila 2"
+      ],
+      "correct": 0,
+      "image": "II-40-a.webp"
+    },
+    {
+      "id": "II-40-3",
+      "page": 40,
+      "category": "situations",
+      "text": "U situaciji kao na slici vozač vozila 1:",
+      "options": [
+        "smije da se zaustavi ili parkira",
+        "ne smije da se zaustavi ili parkira",
+        "ne smije da se parkira, a smije da se zaustavi"
+      ],
+      "correct": 1,
+      "image": "II-40-b.webp"
+    },
+    {
+      "id": "II-40-4",
+      "page": 40,
+      "category": "situations",
+      "text": "Na odstojanju manjem od pet metara ispred ili iza obilježenog pješačkog prelaza vozač sa vozilom:",
+      "options": [
+        "smije da se zaustavi",
+        "smije da se zaustavi ili parkira",
+        "ne smije da se zaustavi ili parkira"
+      ],
+      "correct": 0,
+      "image": "II-40-b.webp"
     }
   ]
 }

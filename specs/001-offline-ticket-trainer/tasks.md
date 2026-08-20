@@ -227,9 +227,11 @@ one thing worth finding: the source has a question kind volume IV did not.
 - [X] T068 Build the sequence input in web/src/ui/QuestionCard.tsx: tap the vehicle numbers in order, submit disabled until every vehicle is placed
 - [X] T069 Transcribe slide II-5 into data/questions-II.json — four questions, two photographs, one photograph serving two questions
 
-**Checkpoint**: an illustrated slide works end to end. The remaining 39 slides of
-volume II need the cropping step turned into a committed tool rather than an
-inline probe.
+- [X] T076 Turn the cropping step into tools/05_crop_images.py and run it over all 40 slides of volume II — 80 crops, two per slide, written as WebP
+- [X] T077 Transcribe the remaining 39 slides of volume II into data/questions-II.json — 160 questions, every slide's choice-question count cross-checked against its mark count
+
+**Checkpoint**: volume II is complete. 294 questions across three volumes; only
+volume III remains untranscribed.
 
 ---
 
