@@ -265,7 +265,7 @@ independently shippable.
 
 Four features are deliberately absent and must stay absent: exam mode, accounts, translation,
 and in-app editing of questions. Their seams exist (`ContentProvider`, `LearnerStore`, stable
-question ids, session shape). Per Constitution v1.2.0, a seam is a boundary and a data shape —
+question ids, session shape). Per the Constitution's Development Workflow, a seam is a boundary and a data shape —
 adding stub methods, unused parameters, or hidden screens to "prepare" for them is a violation,
 not preparation.
 

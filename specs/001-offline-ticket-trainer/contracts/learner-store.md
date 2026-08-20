@@ -77,5 +77,5 @@ this interface — likely with async methods and a sync policy. Keeping `Learner
 document that already carries an `owner` slot is what makes that a replacement rather than a
 migration of meaning.
 
-Per Constitution v1.1.0, this release ships no remote implementation, no auth, and no unused
+Per the Constitution's Development Workflow, this release ships no remote implementation, no auth, and no unused
 `owner` handling beyond the constant `"local"`.

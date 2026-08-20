@@ -228,9 +228,10 @@ confirm exactly those two appear and that removing a bookmark takes it out of th
 - **FR-023**: System MUST NOT implement a timed or scored exam session in this release, while
   keeping question selection, session state, and scoring modelled so one can be added without
   restructuring stored data.
-- **FR-024**: System MUST NOT implement accounts, authentication, or remote content management
-  in this release, while reaching all persistence and all question content through single
-  abstraction points that a future remote implementation can replace.
+- **FR-024**: System MUST NOT implement accounts, authentication, remote storage, or remote
+  content management in this release, while reaching all persistence and all question content
+  through single abstraction points that a future remote implementation can replace. Cross-device
+  synchronisation is a decided direction for a later feature, not a possibility being hedged.
 - **FR-025**: System MUST NOT implement translation of question content in this release, while
   keeping question data free of any embedded translated text.
 - **FR-026**: System MUST NOT provide any in-app authoring, editing, or deletion of question
@@ -313,7 +314,7 @@ confirm exactly those two appear and that removing a bookmark takes it out of th
 - **Administrator editing is a known future direction, deliberately not built now.** The
   eventual shape is an administrator who edits the question bank through an interface. This
   release keeps the seam — one content-access boundary and stable, traceable question identity
-  — but adds no write path, no stub, and no hidden screen, per Constitution v1.2.0 Development
+  — but adds no write path, no stub, and no hidden screen, per the Constitution's Development
   Workflow.
 - **Question content is maintained outside the application, by hand.** Both updates (a newly
   transcribed volume) and corrections (a wrong answer key) are made by editing the JSON files
@@ -334,8 +335,15 @@ confirm exactly those two appear and that removing a bookmark takes it out of th
 - **The real exam's format is unknown** — number of questions, time limit, and pass mark have
   not been confirmed with the driving school. This is why exam mode is deferred rather than
   guessed at.
-- **Target device is a modern mobile browser** on a phone; desktop use is supported but not
-  optimised for.
+- **Target device is a modern mobile browser** on a phone. The interface is built mobile-first;
+  a desktop adaptation is a planned follow-up rather than part of this release, because the
+  screen shows one question at a time and larger screens are served by adding breakpoints over
+  the mobile layout.
+- **Cross-device synchronisation is decided but deferred.** The maintainer intends to study on
+  both a phone and a computer with progress following between them, through a remote store keyed
+  by an opaque device-pairing code (Constitution v2.0.0, research §12). This release ships
+  local-only; the `LearnerStore` boundary is what makes adding it later a replacement rather
+  than a rewrite.
 - **All content is Montenegrin**, matching the real exam. Interface text may later be
   translated, and question content may later gain a separate lookup layer, but neither is in
   this release.

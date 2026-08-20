@@ -41,6 +41,6 @@ and come from somewhere other than the bundle. That becomes a second implementat
 interface plus write methods on it. Every consumer — home screen, session runner, statistics —
 is written against the interface and does not change.
 
-Per Constitution v1.1.0, this release ships **no** write methods, no remote implementation, and
+Per the Constitution's Development Workflow, this release ships **no** write methods, no remote implementation, and
 no unused parameters anticipating one. The seam is the interface and the stable question
 identity, not scaffolding.

@@ -40,7 +40,8 @@ manually via `quickstart.md`, because they are properties of the device and brow
 of application code.
 
 **Target Platform**: Modern mobile browsers (iOS Safari, Android Chrome), installable to the
-home screen; desktop browsers supported but not optimised for.
+home screen. Built mobile-first; desktop browsers run it, and a proper desktop adaptation is a
+planned follow-up (research §13).
 
 **Project Type**: Static single-page application, no backend, no server rendering.
 
@@ -60,12 +61,12 @@ Single learner, single device, no concurrency.
 
 *GATE: Must pass before Phase 0 research. Re-checked after Phase 1 design.*
 
-Gates derive from Constitution v1.1.0.
+Gates derive from Constitution v2.0.0.
 
 | # | Gate (from principle) | Pre-Phase 0 | Post-Phase 1 |
 |---|----------------------|-------------|--------------|
 | I | Every question keeps `id`, volume and slide provenance; disputed keys surface to the learner; a published id always denotes the same question; the app never mutates an answer key | PASS | PASS — provenance required in data-model.md; `review` reserved for doubted keys with editorial remarks split into `note`; identifier stability made a pipeline obligation with a diff gate; `ContentProvider` exposes no mutation |
-| II | No component touches storage directly; content reached only via a provider; learner state shaped as ownable by an identity; no accounts implemented | PASS | PASS — `LearnerStore` and `ContentProvider` contracts defined; `LearnerState` carries an `owner` slot documented as always local in v1 |
+| II | Works fully offline with local storage as the working copy; no screen blocks on sync; no component touches storage directly; content reached only via a provider; learner state shaped as ownable by an identity; no remote store or accounts implemented in this release | PASS | PASS — `LearnerStore` and `ContentProvider` contracts defined; all reads synchronous from local storage, so no screen has a sync-dependent state to block on; `LearnerState` carries an `owner` slot held at `"local"` |
 | III | App is a read-only consumer of `data/`; corrections happen in data, not code; schema validated before a build consumes it | PASS | PASS — `build-content` validates and generates; no write path exists in the app |
 | IV | Question content stored and shown in source language; UI strings separate from content; no translated text in question data | PASS | PASS — UI strings isolated in `src/i18n`; question records have no translation fields |
 | V | Minimal dependencies, each justified; static build, no server runtime; nothing built speculatively | PASS | PASS — two runtime dependencies added, each justified against work it removes (router: correct mobile back-navigation; PWA plugin: precache manifest over Vite's hashed filenames); two rejections recorded in research.md |
@@ -76,14 +77,21 @@ shape, with no stub implementations, dead code, or hidden UI:
 - *Exam mode*: `QuestionSet` selection and `Session` progression are separate from feedback
   policy, and `Session` already records per-answer outcomes. A timed, scored session becomes a
   different session policy over the same stored shapes.
-- *Accounts*: `LearnerStore` is the only persistence path; `LearnerState` is a single document
-  that a remote implementation can store per user.
+- *Cross-device sync and accounts*: `LearnerStore` is the only persistence path; `LearnerState`
+  is a single document that a remote implementation can store per identity. The direction is
+  decided — Supabase behind an opaque pairing code, local storage remaining the working copy
+  (research §12) — and is a later feature, so nothing here implements or stubs it.
 - *Administrator editing*: `ContentProvider` is the only content path; questions carry stable
   ids and provenance so an edit can be attributed and traced.
 - *Translation*: question records contain no translated text; a future translation artifact is
   keyed by question id and word, and its absence must leave the app fully working.
 
 **Violations requiring justification**: none. Complexity Tracking below is empty.
+
+**Amendment note**: the constitution moved to v2.0.0 after this plan was written, redefining
+Principle II to permit a remote store for cross-device synchronisation. Gate II above is
+restated against the new principle. Nothing in this release changes: it still ships local-only,
+and the boundary that makes sync additive was already required.
 
 **Review history**: an independent review of these artifacts found that the constitution's
 technology constraint named Next.js while this plan selects Vite, which made the gate table's

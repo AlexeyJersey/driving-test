@@ -1,7 +1,7 @@
 # Phase 0 Research: Offline Driving-Ticket Trainer
 
-Every decision below is judged against Constitution v1.1.0, where Principle V requires each
-runtime dependency to be justified by work it removes.
+Every decision below is judged against the Constitution (currently v2.0.0), where Principle V
+requires each runtime dependency to be justified by work it removes.
 
 ## 1. State management
 
@@ -195,3 +195,58 @@ back. Deep links to a specific mode or screen come along for free.
 **Alternatives considered**: state-driven screen switching with no router — simpler, and wrong
 on the exact interaction the app is used with most. Hand-rolled History API handling — the same
 job, done less completely, for the size of one small dependency.
+
+## 12. Cross-device synchronisation (decided, deferred to a later feature)
+
+**Decision**: Progress will eventually synchronise between the learner's own devices through
+Supabase, identified by an opaque device-pairing code rather than an account. Local storage
+remains the working copy; sync is background reconciliation. Not implemented in this release.
+
+**Rationale**: The goal is to study on a phone and at a computer with progress following along.
+That requires a remote store and some notion of identity, which is why the constitution moved to
+v2.0.0 — the previous flat prohibition on a server had to go.
+
+Supabase supplies a database, row-level access rules, and a client library without us operating
+a server, which keeps the application a static bundle. A pairing code — generated on the first
+device, entered on the second — buys cross-device continuity without an email address, a
+password, a recovery flow, or any personal data to safeguard. Real accounts remain the right
+answer later, when an administrator needs to edit the question bank, because that role genuinely
+needs authentication rather than a shared secret.
+
+**Security note**: a pairing code is a bearer credential. It must be long enough that guessing is
+infeasible, and access rules must key on it exclusively, since possession of the code is the only
+thing that will distinguish one learner's data from another's.
+
+**Conflict handling**: two devices studying offline in the same period will diverge. The plan is
+to merge per question, letting the record with the later answer win, and to accept that attempt
+counters may drift by a unit or two. The practical cost of drift is one extra repetition in the
+mistakes drill, which is not worth engineering away.
+
+**Tension with §8, stated plainly**: §8 chose per-question aggregates over an append-only answer
+log, and that was right for a single device — the log would grow without bound to answer
+questions nobody asked. With sync, the log becomes the technically superior choice, because
+merging two logs is a set union: commutative, idempotent, lossless. Aggregates cannot be merged
+losslessly, and no amount of care changes that. The decision is to keep aggregates and accept
+bounded drift, because the loss is a rounding error in a counter while the log is unbounded
+growth on a device the learner does not manage. This is a trade accepted with open eyes, not an
+oversight — if attempt counts ever need to be exact across devices, the log is the answer and
+switching to it is a data-shape change, not an architectural one.
+
+**Alternatives considered**: manual export and import of a progress file — no infrastructure at
+all, and it fails for the human reason that syncing you have to remember is syncing you skip.
+Email-and-password accounts — familiar, and the right shape eventually, but it imports personal
+data handling and a recovery flow to solve a problem two of your own devices do not have.
+Cloudflare Workers with D1 — cheaper and colocated with static hosting, but the auth and
+endpoints would be ours to write, which is the work Supabase removes.
+
+## 13. Desktop support
+
+**Decision**: Build mobile-first and add breakpoints for larger screens as a later adaptation.
+Desktop is not a first-release target.
+
+**Rationale**: The interface shows one question at a time, so a desktop layout is the mobile
+layout with a sensible maximum width, not a different information architecture. Tailwind's
+breakpoint model layers larger screens on top of a mobile base, which is the direction this
+retrofit runs in. The concern that motivates designing both at once — a desktop view needing
+multiple panes, tables, or a different navigation model — does not apply to a single-question
+screen, so paying for it now would buy little.

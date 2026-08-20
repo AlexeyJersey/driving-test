@@ -1,24 +1,26 @@
 <!--
 Sync Impact Report
-Version change: 1.1.0 → 1.2.0
-Rationale: Three corrections found by review of the planning artifacts. (a) The technology
-constraint named a specific web framework, which the implementation plan then contradicted;
-restated framework-agnostically so the constraint expresses the requirement (no server runtime)
-rather than a product choice. (b) The `review` field was overloaded: Principle IV directed
-source typo corrections into the same field whose mere presence Principle I uses to warn the
-learner that an answer key is disputed, which would have raised false warnings on questions
-whose keys are not in doubt. Editorial notes now have their own field. (c) Added an explicit
-identifier-stability obligation on the pipeline, since re-extraction could otherwise silently
-reassign a positional id to different content and reattach a learner's history to the wrong
-question.
+Version change: 1.2.0 → 2.0.0
+Rationale: MAJOR. Principle II previously stated as non-negotiable that there would be no
+server, no authentication, and no remote data store. The maintainer intends to study on both a
+phone and a computer with progress carried between them, which requires all three. That is a
+redefinition of the principle, not a clarification of it, so the constitution is amended rather
+than reinterpreted — leaving it as written would make any plan that adds sync formally
+non-compliant while claiming to pass.
+
+What survives is the part that was actually load-bearing: the application works fully offline,
+and local storage is always the working copy. Synchronisation is reconciliation in the
+background, never a precondition for studying. What is removed is the prohibition on a remote
+store existing at all.
+
 Modified principles:
-  - I. Answer Correctness Is Non-Negotiable (identifier stability added)
-  - III. Generated Data, Read-Only Consumption (regeneration must preserve identifiers)
-  - IV. Source-Language Content, Translation as an Additive Layer (typo notes move to `note`)
+  - II. Offline-First and Local by Default, Extensible to Accounts
+    → II. Offline-First, Local Working Copy, Synchronised in the Background
 Added sections: none
 Removed sections: none
-Templates requiring review: none (templates read this file at runtime)
-Deferred TODOs: none
+Scope note: the first release still ships local-only. Cross-device sync is planned as a separate
+feature, and the seams for it — one storage abstraction, an identity-ownable state shape — are
+already required below.
 -->
 
 # Montenegro Driving Test Trainer Constitution
@@ -48,30 +50,39 @@ Rules:
 
 Rationale: the entire value of the app collapses if the user memorises wrong answers.
 
-### II. Offline-First and Local by Default, Extensible to Accounts
+### II. Offline-First, Local Working Copy, Synchronised in the Background
 
-The application MUST function fully with no network connection after first load. The first
-release MUST ship with no server, no authentication, and no remote data store. Accounts are a
-known future direction and MUST remain addable without reshaping the application.
+The application MUST function fully with no network connection after first load, and local
+device storage MUST always be the working copy that the interface reads and writes. Progress
+MAY additionally be synchronised to a remote store so that the same learner can study on more
+than one device, but synchronisation MUST NEVER be a precondition for using the application.
 
 Rules:
 - All question data MUST be bundled into the build, never fetched at runtime.
-- All user state (progress, mistakes, bookmarks, statistics) MUST live in browser storage on
-  the device, and MUST survive reload.
-- Loss of device storage is acceptable data loss; no sync or backup obligation exists in v1.
+- All learner state (progress, mistakes, bookmarks, statistics) MUST be written to device
+  storage first and MUST survive reload without any network access.
+- No screen may block, spin, or degrade while waiting for synchronisation. A sync failure is a
+  background condition to report, never an interruption to studying.
 - No telemetry, analytics, tracking, ads, or third-party beacons of any kind.
 - Persistence MUST be reached only through a single storage abstraction. No component may call
-  browser storage APIs directly, so that a remote-backed implementation can replace it.
-- Question content MUST be reached only through a single content-provider abstraction whose v1
-  implementation reads the bundled JSON, so that an admin-managed remote source can replace it.
-- User state MUST be shaped as data ownable by an identity, even while no identity exists, so
-  that attaching a user id later is additive rather than a migration of meaning.
-- Two future roles are anticipated and MUST NOT be designed against: a learner who owns their
-  own progress, and an administrator who uploads and edits question sets. Neither role, nor any
-  authentication, MUST be implemented in the first release.
+  browser storage APIs or a remote client directly.
+- Question content MUST be reached only through a single content-provider abstraction whose
+  current implementation reads the bundled JSON, so that an admin-managed remote source can
+  replace it.
+- Learner state MUST be shaped as data ownable by an identity, so that attaching an identity is
+  additive rather than a migration of meaning.
+- Identification for synchronisation MUST NOT require personal data. A learner pairing their own
+  devices is entitled to do so without an email address, a password, or a recovery flow.
+- The first release MUST ship local-only. Synchronisation is a separate, later feature, and
+  until it exists loss of device storage remains acceptable data loss.
+- An administrator role — someone who edits the question bank through an interface — remains
+  anticipated and MUST NOT be implemented before it is specified.
 
-Rationale: the user studies on a phone, often without connectivity, and the data is personal;
-but a shared, maintainable question bank eventually needs someone able to edit it.
+Rationale: studying happens in dead time and dead zones, so an app that needs a connection to
+show a question it already has is a worse PDF. But studying also happens on whichever device is
+to hand, and progress that does not follow the learner between them is progress they stop
+trusting. Offline-first with background reconciliation is the only shape that serves both;
+server-first would trade the first for the second.
 
 ### III. Generated Data, Read-Only Consumption
 
@@ -143,11 +154,13 @@ Rationale: this is a personal-scale tool with a short build window and a single 
 - `tools/` holds the pipeline: slide rendering (`01_render.py`) and the human review page
   (`02_review.py`). Pipeline scripts run under a local Python virtualenv and MUST NOT be a
   build-time dependency of the web application.
-- Web application: a statically built single-page application in TypeScript with no server
-  runtime, deployable to any static host. The specific framework and build tooling are an
-  implementation decision recorded in the feature plan, not a constitutional constraint; what is
-  constitutional is the absence of a server and the ability to ship as static files.
-- Persistence: browser local storage, behind the storage abstraction required by Principle II.
+- Web application: a statically built single-page application in TypeScript, deployable to any
+  static host. The specific framework and build tooling are an implementation decision recorded
+  in the feature plan, not a constitutional constraint; what is constitutional is that the
+  application ships as static files and that we operate no server runtime of our own. A managed
+  remote data store used for synchronisation is not a server runtime in this sense.
+- Persistence: browser local storage as the working copy, behind the storage abstraction
+  required by Principle II, with an optional remote store behind that same abstraction.
   Storage keys MUST be versioned so a schema change can migrate or reset cleanly rather than
   corrupt existing progress.
 - Translation artifacts, when generated, live in `data/` alongside the question JSON as
@@ -160,9 +173,12 @@ Rationale: this is a personal-scale tool with a short build window and a single 
 - Deferred features are out of scope for the first release but MUST have their seams preserved:
   - Exam mode: question selection, scoring, and session state MUST be modelled so that a timed,
     scored session can be added without reshaping the data layer.
-  - Accounts (learner and administrator): see Principle II for the required abstractions.
-  - Remote question management: content editing and upload by an administrator.
+  - Cross-device synchronisation: carrying one learner's progress between their own devices,
+    identified without personal data. See Principle II for the required abstractions.
+  - Administrator accounts and remote question management: content editing and upload.
   - Inline translation: word- and phrase-level lookup over unchanged source text.
+  - Desktop adaptation: the interface is built mobile-first; larger screens are served by
+    adding breakpoints over that layout, not by a separate design.
 - A deferred feature MUST NOT be partially implemented to "prepare" for it. Preserving a seam
   means an abstraction boundary and a data shape, not unused code paths or dead UI.
 - Volume coverage is incremental. The app MUST work correctly with a subset of volumes present
@@ -184,4 +200,4 @@ implementation artifacts produced by Spec Kit MUST be checked against it.
   or the plan MUST be revised.
 - Complexity that cannot be justified MUST be removed rather than documented.
 
-**Version**: 1.2.0 | **Ratified**: 2026-08-19 | **Last Amended**: 2026-08-19
+**Version**: 2.0.0 | **Ratified**: 2026-08-19 | **Last Amended**: 2026-08-20
