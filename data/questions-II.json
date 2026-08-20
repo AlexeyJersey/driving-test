@@ -2,8 +2,208 @@
   "volume": "II",
   "source": "II str. ispitnih testova.pdf",
   "title": "Situacije u saobraćaju",
-  "note": "Proof-of-concept: only slide 5 is transcribed so far.",
   "questions": [
+    {
+      "id": "II-1-1",
+      "page": 1,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "zaustaviću se ispred raskrsnice",
+        "propustiću vozilo koje skreće lijevo i nastaviti kretanje",
+        "nastaviću kretanje pravo"
+      ],
+      "correct": 0,
+      "image": "II-1-a.webp"
+    },
+    {
+      "id": "II-1-2",
+      "page": 1,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici dužni ste da postupate:",
+      "options": [
+        "po uključenom svijetlu na semaforu",
+        "po vertikalnoj saobraćajnoj signalizaciji",
+        "po znaku koji daje ovlašćeni policijski službenik"
+      ],
+      "correct": 2,
+      "image": "II-1-a.webp"
+    },
+    {
+      "id": "II-1-3",
+      "page": 1,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "nastaviću kretanje pravo ne propuštajući vozilo 1",
+        "propustiću vozilo 1 i nastaviti kretanje",
+        "ubrzaću kretanje i prije vozila 1 proći kroz raskrsnicu"
+      ],
+      "correct": 1,
+      "image": "II-1-b.webp"
+    },
+    {
+      "id": "II-1-4",
+      "page": 1,
+      "category": "situations",
+      "text": "Znak izričite naredbe u situaciji kao na slici ima značenje:",
+      "options": [
+        "ukrštanje sa putem sa prvenstvom prolaza",
+        "prvenstvo u odnosu na vozila iz suprotnog smjera",
+        "obavezno zaustavljanje"
+      ],
+      "correct": 0,
+      "image": "II-1-b.webp"
+    },
+    {
+      "id": "II-2-1",
+      "page": 2,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici, ako sa vozilom 2 zadržavate pravac kretanja:",
+      "options": [
+        "nastaviću kretanje bez propuštanja vozila",
+        "nastaviću kretanje uz propuštanje samo vozila 1",
+        "nastaviću kretanje uz propuštanje vozila 3 i 4"
+      ],
+      "correct": 2,
+      "image": "II-2-a.webp"
+    },
+    {
+      "id": "II-2-2",
+      "page": 2,
+      "category": "situations",
+      "kind": "order",
+      "text": "U situaciji prikazanoj na slici redoslijed prolaska vozila je:",
+      "answer": "3 4 2 1",
+      "image": "II-2-a.webp"
+    },
+    {
+      "id": "II-2-3",
+      "page": 2,
+      "category": "situations",
+      "text": "Ako je biciklista ušao u raskrsnicu na crveno svijetlo na semaforu u smjeru svog kretanja, kao na slici:",
+      "options": [
+        "propisno vrši radnju prolaska kroz raskrsnicu",
+        "nepropisno jer treba da gura biciklo pored sebe",
+        "nepropisno vrši radnju prolaska kroz raskrsnicu"
+      ],
+      "correct": 2,
+      "image": "II-2-b.webp"
+    },
+    {
+      "id": "II-2-4",
+      "page": 2,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici biciklista prelazi kolovoz na:",
+      "options": [
+        "obilježenoj biciklističkoj stazi",
+        "obilježenoj biciklističkoj traci",
+        "obilježenoj razdjelnoj liniji pješačkog prelaza"
+      ],
+      "correct": 0,
+      "image": "II-2-b.webp"
+    },
+    {
+      "id": "II-3-1",
+      "page": 3,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "propustiću putničko vozilo 3 i nastaviti kretanje",
+        "propustiću tramvaj 2 i nastaviti kretanje",
+        "propustiću tramvaj 2 i putničko vozilo 3, pa nastaviti kretanje"
+      ],
+      "correct": 0,
+      "image": "II-3-a.webp"
+    },
+    {
+      "id": "II-3-2",
+      "page": 3,
+      "category": "situations",
+      "kind": "order",
+      "text": "Redoslijed prolaska vozila kroz raskrsnicu je:",
+      "answer": "3 1 2",
+      "image": "II-3-a.webp"
+    },
+    {
+      "id": "II-3-3",
+      "page": 3,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "nastaviću kretanje pravo",
+        "nastaviću kretanje pravo uz propuštanje vozila 4 i 5",
+        "zaustaviću vozilo"
+      ],
+      "correct": 2,
+      "image": "II-3-b.webp"
+    },
+    {
+      "id": "II-3-4",
+      "page": 3,
+      "category": "situations",
+      "text": "U prikazanoj situaciji vozilo 2 će:",
+      "options": [
+        "se zaustaviti i propustiti vozilo -",
+        "nastaviti kretanje ulijevo bez propuštanja vozila 1",
+        "se zaustaviti zbog znaka koji daje ovlašćeno lice"
+      ],
+      "correct": 1,
+      "image": "II-3-b.webp",
+      "note": "В первом варианте на слайде вместо номера машины стоит прочерк — дефект источника, оставлено как есть."
+    },
+    {
+      "id": "II-4-1",
+      "page": 4,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici prvenstvo prolaza ima:",
+      "options": [
+        "vozilo 1 u odnosu na vozilo 2",
+        "vozilo 2 u odnosu na vozilo 1",
+        "vozilo 1 zbog pravila desne strane"
+      ],
+      "correct": 1,
+      "image": "II-4-a.webp"
+    },
+    {
+      "id": "II-4-2",
+      "page": 4,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici redoslijed prolaska vozila regulisan je:",
+      "options": [
+        "pravilom propuštanja vozila sa desne strane",
+        "pravilom propuštanja vozila sa lijeve strane",
+        "vertikalnim saobraćajnim znakom"
+      ],
+      "correct": 2,
+      "image": "II-4-a.webp"
+    },
+    {
+      "id": "II-4-3",
+      "page": 4,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "propustiću vozilo koje skreće ulijevo",
+        "nastaviću kretanje pravo jer imam prvenstvo prolaza",
+        "zaustaviću se ispred raskrsnice zbog znaka STOP"
+      ],
+      "correct": 1,
+      "image": "II-4-b.webp"
+    },
+    {
+      "id": "II-4-4",
+      "page": 4,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici postupićete po:",
+      "options": [
+        "saobraćajnom znaku STOP",
+        "značenju svjetlosnih znakova na semaforu",
+        "saobraćajnom pravilu ulaska u neregulisanu raskrsnicu"
+      ],
+      "correct": 1,
+      "image": "II-4-b.webp"
+    },
     {
       "id": "II-5-1",
       "page": 5,
@@ -52,6 +252,417 @@
       ],
       "correct": 2,
       "image": "II-5-b.webp"
+    },
+    {
+      "id": "II-6-1",
+      "page": 6,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "nastaviću kretanje pravo bez propuštanja tramvaja",
+        "nastaviću kretanje pravo nakon propuštanja tramvaja",
+        "uz povećanu opreznost nastaviću kretanje pravo"
+      ],
+      "correct": 1,
+      "image": "II-6-a.webp"
+    },
+    {
+      "id": "II-6-2",
+      "page": 6,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici redoslijed prolaska kroz raskrsnicu je regulisan:",
+      "options": [
+        "vertikalnom signalizacijom",
+        "primjenom pravila desne strane",
+        "primjenom pravila prvenstva prolaza"
+      ],
+      "correct": 2,
+      "image": "II-6-a.webp"
+    },
+    {
+      "id": "II-6-3",
+      "page": 6,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "zaustaviću se ispred raskrsnice i propustiti vozilo -",
+        "nastaviću kretanje pravo uz povećanu pažnju",
+        "nastaviću kretanje pravo bez propuštanja vozila 2"
+      ],
+      "correct": 0,
+      "image": "II-6-b.webp",
+      "note": "В первом варианте на слайде вместо номера машины стоит прочерк — дефект источника."
+    },
+    {
+      "id": "II-6-4",
+      "page": 6,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici dopunska tabla označava:",
+      "options": [
+        "nailazak na obilaznicu",
+        "da se krećem po putu sa prvenstvom prolaza",
+        "spajanje sa putem sa prvenstvom prolaza"
+      ],
+      "correct": 2,
+      "image": "II-6-b.webp"
+    },
+    {
+      "id": "II-7-1",
+      "page": 7,
+      "category": "situations",
+      "text": "U situaciji kao na slici, kada prolazite pored vozila 2 koje se kreće iz suprotnog smjera je radnja:",
+      "options": [
+        "obilaženja",
+        "mimoilaženja",
+        "preticanja"
+      ],
+      "correct": 1,
+      "image": "II-7-a.webp"
+    },
+    {
+      "id": "II-7-2",
+      "page": 7,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici:",
+      "options": [
+        "nastaviću kretanje pravo ne propuštajući pješaka",
+        "ubrzaću kretanje vozila i proći ispred pješaka",
+        "zaustaviću se i propustiti pješaka"
+      ],
+      "correct": 2,
+      "image": "II-7-a.webp"
+    },
+    {
+      "id": "II-7-3",
+      "page": 7,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici:",
+      "options": [
+        "smijem preticati",
+        "ne smijem preticati",
+        "smijem preticati zbog oznaka na kolovozu"
+      ],
+      "correct": 1,
+      "image": "II-7-b.webp"
+    },
+    {
+      "id": "II-7-4",
+      "page": 7,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici neisprekidana uzdužna linija uz desnu ivicu kolovoza označava:",
+      "options": [
+        "ivicu kolovoza",
+        "ivičnu liniju",
+        "razdjelnu liniju"
+      ],
+      "correct": 1,
+      "image": "II-7-b.webp"
+    },
+    {
+      "id": "II-8-1",
+      "page": 8,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "zaustaviću se ispred raskrsnice",
+        "propustiću vozila iz suprotnog smjera pa nastaviti kretanje",
+        "nastaviću kretanje ne propuštajući vozila iz suprotnog smjera"
+      ],
+      "correct": 1,
+      "image": "II-8-a.webp",
+      "note": "Отметка на слайде красная — похоже на исправление преподавателя. Отмеченный вариант однозначен."
+    },
+    {
+      "id": "II-8-2",
+      "page": 8,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici biciklisti se kreću:",
+      "options": [
+        "nepropisno, jer su napravili kolonu",
+        "nepropisno, jer ne nose prsluk sa reflektujućim osobinama",
+        "propisno"
+      ],
+      "correct": 2,
+      "image": "II-8-a.webp",
+      "note": "Отметка на слайде красная — похоже на исправление преподавателя. Отмеченный вариант однозначен."
+    },
+    {
+      "id": "II-8-3",
+      "page": 8,
+      "category": "situations",
+      "text": "U situaciji kao na slici:",
+      "options": [
+        "nastaviću kretanje desno",
+        "zaustaviću se ispred raskrsnice",
+        "nastaviću kretanje pravo"
+      ],
+      "correct": 1,
+      "image": "II-8-b.webp"
+    },
+    {
+      "id": "II-8-4",
+      "page": 8,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici postupićete po:",
+      "options": [
+        "svjetlosnom saobraćajnom znaku",
+        "vertikalnom saobraćajnom znaku",
+        "horizontalnim oznakama"
+      ],
+      "correct": 0,
+      "image": "II-8-b.webp"
+    },
+    {
+      "id": "II-9-1",
+      "page": 9,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "nastaviću kretanje pravo",
+        "zaustaviću vozilo",
+        "nastaviću kretanje lijevo nakon prouštanja vozila 2 i 3"
+      ],
+      "correct": 1,
+      "image": "II-9-a.webp",
+      "note": "На слайде напечатано «prouštanja» вместо «propuštanja» — оставлено как в источнике."
+    },
+    {
+      "id": "II-9-2",
+      "page": 9,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici policijsko vozilo:",
+      "options": [
+        "može da nastavi kretanje pravo",
+        "mora da se zaustavi",
+        "može da nastavi kretanje u bilo kojem pravcu"
+      ],
+      "correct": 1,
+      "image": "II-9-a.webp"
+    },
+    {
+      "id": "II-9-3",
+      "page": 9,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vozač:",
+      "options": [
+        "vozilo 1 treba da propusti vozilo 2",
+        "vozilo 2 treba da ubrza kretanje i prođe ispred vozila 1",
+        "vozilo 2 treba da propusti vozilo 1"
+      ],
+      "correct": 2,
+      "image": "II-9-b.webp"
+    },
+    {
+      "id": "II-9-4",
+      "page": 9,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici vozilo 1:",
+      "options": [
+        "ne smije da se zaustavi ili parkira",
+        "smije da se zaustavi",
+        "smije da se zaustavi ili parkira"
+      ],
+      "correct": 0,
+      "image": "II-9-b.webp"
+    },
+    {
+      "id": "II-10-1",
+      "page": 10,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici:",
+      "options": [
+        "putničko vozilo 1 ima dozvoljen prolaz",
+        "vozila 2, 3 i 4 imaju dozvoljen prolaz",
+        "samo policijsko vozilo 4 ima dozvoljen prolaz"
+      ],
+      "correct": 0,
+      "image": "II-10-a.webp"
+    },
+    {
+      "id": "II-10-2",
+      "page": 10,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici policijsko vozilo 4:",
+      "options": [
+        "može da nastavi kretanje pravo",
+        "mora da se zaustavi",
+        "može da nastavi kretanje pravo nakon prolaska vozila 1"
+      ],
+      "correct": 1,
+      "image": "II-10-a.webp"
+    },
+    {
+      "id": "II-10-3",
+      "page": 10,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici, ako upravljate vozilom 1:",
+      "options": [
+        "nakon propuštanja vozila 2 moram skrenuti udesno",
+        "imam prvenstvo prolaza u odnosu na vozilo 2",
+        "zaustaviću se ispred raskrsnice i propustiti sva vozila"
+      ],
+      "correct": 1,
+      "image": "II-10-b.webp"
+    },
+    {
+      "id": "II-10-4",
+      "page": 10,
+      "category": "situations",
+      "text": "Obavezan smjer u desno, u situaciji na slici, odnosi se:",
+      "options": [
+        "na teretna i priključna vozila",
+        "na sva vozila osim teretna",
+        "na teretna vozila"
+      ],
+      "correct": 2,
+      "image": "II-10-b.webp"
+    },
+    {
+      "id": "II-11-1",
+      "page": 11,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "nastaviću kretanje pravo kroz raskrsnicu",
+        "zaustaviću se ispred raskrnice i propustiti vozilo 2",
+        "zaustaviću se ispred raskrsnice i propustiti vozilo -"
+      ],
+      "correct": 0,
+      "image": "II-11-a.webp",
+      "note": "На слайде «raskrnice» вместо «raskrsnice», и в третьем варианте вместо номера машины прочерк — дефекты источника."
+    },
+    {
+      "id": "II-11-2",
+      "page": 11,
+      "category": "situations",
+      "kind": "order",
+      "text": "U situaciji prikazanoj na slici redoslijed prolaska vozila kroz raskrsnicu je:",
+      "answer": "1 2 3",
+      "image": "II-11-a.webp"
+    },
+    {
+      "id": "II-11-3",
+      "page": 11,
+      "category": "situations",
+      "text": "Kako ćete postupiti u sitaciji prikazanoj na slici, ako vozila zadržavaju pravac kretanja, a upravljate sa vozilom 2:",
+      "options": [
+        "nastaviću kretanje bez propuštanja vozila",
+        "nastaviću kretanje nakon propuštanja samo vozila 3 i 4",
+        "nastaviću kretanje uz propuštanje vozila 1"
+      ],
+      "correct": 0,
+      "image": "II-11-b.webp",
+      "note": "На слайде «sitaciji» вместо «situaciji» — оставлено как в источнике."
+    },
+    {
+      "id": "II-11-4",
+      "page": 11,
+      "category": "situations",
+      "kind": "order",
+      "text": "U situaciji na slici kada vozila zadržavaju pravac kretanja redoslijed prolaska vozila je:",
+      "answer": "2 1 3 4",
+      "image": "II-11-b.webp"
+    },
+    {
+      "id": "II-12-1",
+      "page": 12,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "nastaviću kretanje ulijevo bez zaustavljanja kroz raskrsnicu",
+        "zaustaviću se ispred raskrsnice",
+        "nastaviću kretanje pravo kroz raskrsnicu"
+      ],
+      "correct": 1,
+      "image": "II-12-a.webp"
+    },
+    {
+      "id": "II-12-2",
+      "page": 12,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici upaljeno žuto svijetlo na semaforu znači:",
+      "options": [
+        "zabranu prolaza samo pravo",
+        "slobodan prolaz samo pravo",
+        "zabranu prolaza kroz raskrsnicu"
+      ],
+      "correct": 2,
+      "image": "II-12-a.webp"
+    },
+    {
+      "id": "II-12-3",
+      "page": 12,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici, kada policijski službenik bočno ispruženih ruku i tijelom okrenutim prema vozilima 2 i 3 reguliše saobraćaj:",
+      "options": [
+        "propustiću samo vozila 2 i 3",
+        "propustiću samo vozilo 4 i nastvaiti kretanja",
+        "nastaviću kretanje bez propuštanja vozila 2, 3 i 4"
+      ],
+      "correct": 2,
+      "image": "II-12-b.webp",
+      "note": "Во втором варианте на слайде «nastvaiti kretanja» — опечатка источника, оставлена как есть."
+    },
+    {
+      "id": "II-12-4",
+      "page": 12,
+      "category": "situations",
+      "kind": "order",
+      "text": "U situaciji prikazanoj na slici redoslijed prolaska vozila kojima je dozvoljen prolazak je:",
+      "answer": "1 4",
+      "image": "II-12-b.webp"
+    },
+    {
+      "id": "II-13-1",
+      "page": 13,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "nastaviću kretanje bez propuštanja vozila",
+        "neću propustiti vozilo 3",
+        "propustiću vozila 2 i 3"
+      ],
+      "correct": 2,
+      "image": "II-13-a.webp"
+    },
+    {
+      "id": "II-13-2",
+      "page": 13,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici sa vozilom 4 se:",
+      "options": [
+        "mimoilazim sa desne strane",
+        "mimoilazim sa lijeve strane",
+        "obilazim sa desne strane"
+      ],
+      "correct": 0,
+      "image": "II-13-a.webp"
+    },
+    {
+      "id": "II-13-3",
+      "page": 13,
+      "category": "situations",
+      "text": "Kako ćete postupiti u situaciji prikazanoj na slici:",
+      "options": [
+        "zaustaviću se ispred raskrsnice zbog znaka STOP",
+        "nastaviću kretanje, jer zadržavam pravac",
+        "zaustaviću se ispred raskrsnice zbog svijetla na semaforu"
+      ],
+      "correct": 2,
+      "image": "II-13-b.webp"
+    },
+    {
+      "id": "II-13-4",
+      "page": 13,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici prolazak kroz raskrsnicu regulisan je:",
+      "options": [
+        "svjetlosnim saobraćajnim znakom",
+        "pravilom desne strane",
+        "saobraćajnim znakom"
+      ],
+      "correct": 0,
+      "image": "II-13-b.webp"
     }
   ]
 }
