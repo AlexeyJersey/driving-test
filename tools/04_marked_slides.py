@@ -21,6 +21,8 @@ from pathlib import Path
 
 from PIL import Image, ImageDraw
 
+from slidelib import banner_bottom
+
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "source"
 RENDERS = ROOT / "build" / "pages"
@@ -33,23 +35,6 @@ VOLUMES = ("I", "II", "III", "IV")
 OVERLAP = 30
 # Below this many missing rows the render already shows everything worth reading.
 MIN_MISSING = 8
-
-
-def banner_bottom(img: Image.Image) -> int:
-    """Last row of the solid title bar — where the question raster begins."""
-    px = img.convert("RGB").load()
-    step = max(1, img.width // 200)
-    last = 0
-    for y in range(img.height):
-        blue = sum(
-            1
-            for x in range(0, img.width, step)
-            for r, g, b in (px[x, y],)
-            if b > 100 and b > r + 40 and b > g + 30
-        )
-        if blue > (img.width / step) * 0.6:
-            last = y
-    return last
 
 
 def content_raster(pdf: Path, page: int, dest: Path) -> Image.Image | None:

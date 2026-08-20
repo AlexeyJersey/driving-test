@@ -11,7 +11,7 @@
       "kind": "order",
       "text": "U situaciji prikazanoj na slici redoslijed prolaska vozila je:",
       "answer": "1 3 2",
-      "image": "II-5-a.png"
+      "image": "II-5-a.webp"
     },
     {
       "id": "II-5-2",
@@ -24,7 +24,7 @@
         "horizontalnim oznakama"
       ],
       "correct": 0,
-      "image": "II-5-a.png"
+      "image": "II-5-a.webp"
     },
     {
       "id": "II-5-3",
@@ -37,7 +37,7 @@
         "propustim vozila 2, 3 i 4"
       ],
       "correct": 2,
-      "image": "II-5-b.png",
+      "image": "II-5-b.webp",
       "note": "В третьем варианте цифра «4» на слайде дописана синим от руки поверх пропуска. Ключ не оспаривается."
     },
     {
@@ -51,7 +51,7 @@
         "obavezan smjer kretanja"
       ],
       "correct": 2,
-      "image": "II-5-b.png"
+      "image": "II-5-b.webp"
     }
   ]
 }
