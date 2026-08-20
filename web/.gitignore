@@ -28,3 +28,5 @@ src/generated/
 
 # Illustrations copied out of data/images by scripts/build-content.mjs
 public/images/
+
+.playwright-mcp/

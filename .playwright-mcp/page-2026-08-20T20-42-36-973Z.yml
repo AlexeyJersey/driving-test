@@ -1,9 +1,0 @@
-- generic [ref=f18e3]:
-  - group "Jezik" [ref=f18e5]:
-    - button "CG" [pressed] [ref=f18e6]
-    - button "EN" [ref=f18e7]
-    - button "RU" [ref=f18e8]
-  - generic [ref=f18e9]:
-    - paragraph [ref=f18e10]: Unesite lozinku
-    - textbox "Lozinka" [active] [ref=f18e11]
-    - button "Uđi" [ref=f18e12]

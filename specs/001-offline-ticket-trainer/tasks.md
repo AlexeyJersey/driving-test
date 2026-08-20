@@ -148,6 +148,22 @@ the home-screen icon, and confirm every question and all stored progress is avai
 the server and reloading: the shell, the questions and the photographs all came
 from cache.
 
+## Phase 13: Ship It
+
+**Requested to get the app in front of a phone rather than only localhost.**
+Public deploy on GitHub Pages, with a build-time passcode as a stopgap facade —
+tracked to be replaced by a private repo behind Cloudflare Access.
+
+- [X] T088 Add PasscodeGate: a build-time passcode baked in from a repo secret, skipped entirely when unset (local dev), with the unlocked flag traveling LearnerStore like any other preference
+- [X] T089 Write .github/workflows/deploy.yml: build with APP_BASE and the passcode secret, deploy via actions/deploy-pages
+- [X] T090 Make the repository public and enable Pages (build_type=workflow) — required by the current GitHub plan; tracked as a stopgap, not the final access-control plan
+- [X] T091 Fix createBrowserRouter to pass basename: import.meta.env.BASE_URL — without it every route 404'd on the Pages subpath, found by loading the live deploy rather than by inspecting the build
+- [X] T092 Fix build-content.mjs to prefix image URLs with the same APP_BASE the Vite build uses — hardcoded "/images/..." 404'd off the domain root on a subpath deploy, found the same way, on a deep link the router fix had just made reachable
+
+**Checkpoint**: live at https://alexeyjersey.github.io/driving-test/ — passcode
+gate, deep links, and illustrations all verified against the deployed site, not
+just the local build.
+
 ---
 
 ## Phase 6: User Story 4 - See how ready I am (Priority: P4)
