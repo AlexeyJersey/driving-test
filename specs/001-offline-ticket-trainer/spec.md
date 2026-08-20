@@ -250,6 +250,17 @@ confirm exactly those two appear and that removing a bookmark takes it out of th
   it came from. A published identifier MUST always denote the same question, including across
   re-extraction of its volume.
 
+**Interface language**
+
+- **FR-033**: Users MUST be able to choose the interface language among Montenegrin, English, and
+  Russian, with Montenegrin as the default because it is the language of the exam and of every
+  question in the bank.
+- **FR-034**: Changing the interface language MUST NOT alter question text, options, or any other
+  content — only the chrome around them. Content stays in the source language always.
+- **FR-035**: The chosen language MUST persist across launches, and MUST be reached through the
+  same storage boundary as the rest of learner state rather than written directly to browser
+  storage.
+
 **Session continuity and data hygiene**
 
 - **FR-031**: System MUST persist an in-progress study session — its question set, position, and
@@ -344,9 +355,12 @@ confirm exactly those two appear and that removing a bookmark takes it out of th
   by an opaque device-pairing code (Constitution v2.0.0, research §12). This release ships
   local-only; the `LearnerStore` boundary is what makes adding it later a replacement rather
   than a rewrite.
-- **All content is Montenegrin**, matching the real exam. Interface text may later be
-  translated, and question content may later gain a separate lookup layer, but neither is in
-  this release.
+- **All content is Montenegrin**, matching the real exam, and stays that way in every interface
+  language. Question content may later gain a separate lookup layer for unfamiliar words; that
+  is still out of scope.
+- **The interface ships in three languages** — Montenegrin by default, with English and Russian
+  available. Montenegrin is the default because every question is in it, so a learner reading
+  Montenegrin chrome is already reading the language they are being examined in.
 - **Illustrations exist for two of the four volumes** (situational photographs and sign
   diagrams) and will need to be extracted alongside their questions when those volumes are
   transcribed.

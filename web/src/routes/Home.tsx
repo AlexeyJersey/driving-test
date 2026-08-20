@@ -1,9 +1,10 @@
 import { useMemo, useState } from 'react'
 import { useNavigate } from 'react-router'
 import { content } from '@/content/bundled'
-import { isAttempted } from '@/domain/progress'
+import { isAttempted, mistakeIds } from '@/domain/progress'
 import { matchesFilter } from '@/domain/selection'
-import { categoryLabel, ui } from '@/i18n/strings'
+import { categoryLabel } from '@/i18n/strings'
+import { useStrings } from '@/i18n/useStrings'
 import { useLearnerState, useLearnerStore } from '@/storage/useLearnerStore'
 
 const ALL = '__all__'
@@ -12,6 +13,7 @@ export function Home() {
   const navigate = useNavigate()
   const store = useLearnerStore()
   const state = useLearnerState()
+  const t = useStrings()
 
   const [category, setCategory] = useState<string>(ALL)
   const [shuffle, setShuffle] = useState(false)
@@ -32,40 +34,48 @@ export function Home() {
     [questions, category],
   )
 
-  // Coverage over the questions that actually exist, so an orphaned progress
-  // record from a removed question can never push the count past the total.
+  // Both counts run over the questions that actually exist, so an orphaned
+  // record from a removed question can never push a total past the bank size.
   const attempted = useMemo(
     () => questions.filter((q) => isAttempted(state.progress[q.id])).length,
     [questions, state.progress],
   )
+  const mistakes = useMemo(() => mistakeIds(questions, state.progress), [questions, state.progress])
 
   const active = state.activeSession
   const isEmpty = matching.length === 0
+
+  const seed = () => String(Date.now() % 2147483647)
 
   const start = () => {
     const params = new URLSearchParams()
     if (category !== ALL) params.set('cat', category)
     if (shuffle) params.set('shuffle', '1')
-    params.set('seed', String(Date.now() % 2147483647))
+    params.set('seed', seed())
+    navigate(`/study?${params.toString()}`)
+  }
+
+  const startMistakes = () => {
+    const params = new URLSearchParams({ mode: 'mistakes', seed: seed() })
     navigate(`/study?${params.toString()}`)
   }
 
   return (
     <div className="flex flex-col gap-8">
       <header className="flex flex-col gap-1">
-        <h1 className="text-2xl font-semibold">{ui.appName}</h1>
-        <p className="text-sm text-slate-600 dark:text-slate-300">{ui.appTagline}</p>
+        <h1 className="text-2xl font-semibold">{t.appName}</h1>
+        <p className="text-sm text-slate-600 dark:text-slate-300">{t.appTagline}</p>
       </header>
 
       <p className="text-sm text-slate-600 dark:text-slate-300">
-        {ui.home.progressSummary(attempted, questions.length)}
+        {t.home.progressSummary(attempted, questions.length)}
       </p>
 
       {active !== null && (
         <section className="rounded-lg border border-slate-300 p-4 dark:border-slate-600">
-          <h2 className="font-semibold">{ui.home.resumeTitle}</h2>
+          <h2 className="font-semibold">{t.home.resumeTitle}</h2>
           <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
-            {ui.home.resumeBody(active.position, active.questionIds.length)}
+            {t.home.resumeBody(active.position, active.questionIds.length)}
           </p>
           <div className="mt-3 flex gap-2">
             <button
@@ -73,21 +83,41 @@ export function Home() {
               onClick={() => navigate('/study?resume=1')}
               className="grow rounded-lg bg-slate-900 px-4 py-2 font-medium text-white dark:bg-slate-100 dark:text-slate-900"
             >
-              {ui.home.resume}
+              {t.home.resume}
             </button>
             <button
               type="button"
               onClick={() => store.clearActiveSession()}
               className="rounded-lg border border-slate-300 px-4 py-2 dark:border-slate-600"
             >
-              {ui.home.discard}
+              {t.home.discard}
             </button>
           </div>
         </section>
       )}
 
+      <section className="rounded-lg border border-slate-300 p-4 dark:border-slate-600">
+        <h2 className="font-semibold">{t.home.mistakesTitle}</h2>
+        {mistakes.length === 0 ? (
+          <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">{t.home.mistakesEmpty}</p>
+        ) : (
+          <>
+            <p className="mt-1 text-sm text-slate-600 dark:text-slate-300">
+              {t.home.mistakesCount(mistakes.length)}
+            </p>
+            <button
+              type="button"
+              onClick={startMistakes}
+              className="mt-3 w-full rounded-lg bg-bad px-4 py-2 font-medium text-white"
+            >
+              {t.home.mistakesStart}
+            </button>
+          </>
+        )}
+      </section>
+
       <section className="flex flex-col gap-3">
-        <h2 className="font-semibold">{ui.home.pickTopic}</h2>
+        <h2 className="font-semibold">{t.home.pickTopic}</h2>
         <div className="flex flex-wrap gap-2">
           {[ALL, ...categories].map((key) => {
             const count =
@@ -106,7 +136,7 @@ export function Home() {
                     : 'border-slate-300 dark:border-slate-600',
                 ].join(' ')}
               >
-                {key === ALL ? ui.home.allTopics : categoryLabel(key)} · {count}
+                {key === ALL ? t.home.allTopics : categoryLabel(t, key)} · {count}
               </button>
             )
           })}
@@ -119,13 +149,13 @@ export function Home() {
             onChange={(e) => setShuffle(e.target.checked)}
             className="size-4"
           />
-          Перемешать вопросы
+          {t.home.shuffle}
         </label>
       </section>
 
       {isEmpty ? (
         <p className="rounded-lg border border-slate-300 px-3 py-4 text-sm dark:border-slate-600">
-          {ui.home.emptySelection}
+          {t.home.emptySelection}
         </p>
       ) : (
         <button
@@ -133,7 +163,7 @@ export function Home() {
           onClick={start}
           className="rounded-lg bg-slate-900 px-4 py-4 text-lg font-medium text-white dark:bg-slate-100 dark:text-slate-900"
         >
-          {ui.home.startStudy} · {ui.home.questionsAvailable(matching.length)}
+          {t.home.startStudy} · {t.home.questionsAvailable(matching.length)}
         </button>
       )}
     </div>

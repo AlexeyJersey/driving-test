@@ -116,13 +116,13 @@ appear, answer one correctly twice, and confirm it leaves while the others remai
 
 ### Tests for User Story 2
 
-- [ ] T037 [P] [US2] Unit tests for mistake-set membership in web/src/domain/progress.test.ts, covering entry on a wrong answer, staying after one correct, leaving on the second consecutive correct, and re-entering when a later wrong answer resets the streak
+- [X] T037 [P] [US2] Unit tests for mistake-set membership in web/src/domain/progress.test.ts, covering entry on a wrong answer, staying after one correct, leaving on the second consecutive correct, and re-entering when a later wrong answer resets the streak
 
 ### Implementation for User Story 2
 
-- [ ] T038 [US2] Implement mistake-set derivation in web/src/domain/progress.ts as attempts > correct AND streak < MASTERY_STREAK, computed rather than stored
-- [ ] T039 [US2] Add the mistakes mode to selection in web/src/domain/selection.ts
-- [ ] T040 [US2] Add the mistakes entry point to web/src/routes/Home.tsx, with an explanatory state when nothing is due rather than an empty screen
+- [X] T038 [US2] Implement mistake-set derivation in web/src/domain/progress.ts as attempts > correct AND streak < MASTERY_STREAK, computed rather than stored
+- [X] T039 [US2] Add the mistakes mode to selection in web/src/domain/selection.ts
+- [X] T040 [US2] Add the mistakes entry point to web/src/routes/Home.tsx, with an explanatory state when nothing is due rather than an empty screen
 
 **Checkpoint**: US1 and US2 both work independently.
 
@@ -190,6 +190,27 @@ confirm exactly those appear, and confirm removing one does not touch answer his
 - [ ] T057 Confirm no outbound requests for content or learner data occur after first load, against the manual table in specs/001-offline-ticket-trainer/quickstart.md (SC-009)
 - [ ] T058 Run the full quickstart.md validation pass and record any deviation
 - [ ] T059 [P] Write web/README.md covering how to run, how to correct a question, and how to add a transcribed volume
+
+---
+
+## Phase 9: Interface Language
+
+**Added after planning, at the maintainer's request.** Cross-cutting rather than a user story:
+it touches the string table, the storage boundary, and the shell, and changes no study rule.
+
+**Goal**: The interface reads in Montenegrin by default, and can be switched to English or
+Russian without touching a single word of question content.
+
+**Independent Test**: Switch language on the home screen and confirm every label changes while
+question text, options, and answer keys stay identical; reload and confirm the choice held.
+
+- [X] T060 Restructure web/src/i18n/strings.ts into one shape with three dictionaries — Montenegrin, English, Russian — including per-language plural rules, since Montenegrin and Russian both need three forms and English needs two
+- [X] T061 Add the language preference to learner state in web/src/storage/types.ts and web/src/storage/local.ts, defaulting to Montenegrin when absent so an existing stored document keeps working without a version bump (FR-035)
+- [X] T062 [P] Add a language switcher to the shell in web/src/ui/LanguageSwitcher.tsx and wire it into web/src/routes/Root.tsx
+- [X] T063 Read strings through the active language everywhere in web/src/routes and web/src/ui, replacing the direct `ui` import (FR-033, FR-034)
+
+**Checkpoint**: The app reads in the exam's language, and the chrome is translatable without
+touching content.
 
 ---
 

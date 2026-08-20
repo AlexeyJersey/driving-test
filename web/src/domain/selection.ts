@@ -60,8 +60,14 @@ export function matchesFilter(question: Question, filter: SelectionFilter): bool
 export function selectQuestionIds(
   questions: readonly Question[],
   filter: SelectionFilter,
+  /**
+   * Extra restriction on top of the filter — this is how the mistakes drill and
+   * the bookmarks set are expressed without selection needing to know what
+   * progress or a bookmark is.
+   */
+  include: (question: Question) => boolean = () => true,
 ): readonly QuestionId[] {
-  const matching = questions.filter((q) => matchesFilter(q, filter))
+  const matching = questions.filter((q) => matchesFilter(q, filter) && include(q))
   const ordered = filter.shuffle ? shuffled(matching, filter.seed) : matching
   return ordered.map((q) => q.id)
 }

@@ -75,6 +75,22 @@ describe('selectQuestionIds', () => {
   })
 })
 
+describe('selectQuestionIds with an extra restriction', () => {
+  it('applies the predicate on top of the filter', () => {
+    const ids = selectQuestionIds(
+      bank,
+      { volumes: ['IV'], categories: null, shuffle: false, seed: 1 },
+      (q) => q.category === 'vehicle',
+    )
+    expect(ids).toEqual(['IV-1-1', 'IV-2-1'])
+  })
+
+  it('returns nothing when the predicate excludes everything', () => {
+    const ids = selectQuestionIds(bank, allQuestionsFilter(1), () => false)
+    expect(ids).toEqual([])
+  })
+})
+
 describe('matchesFilter', () => {
   it('treats null as "everything" rather than "nothing"', () => {
     const only = bank[0] as Question

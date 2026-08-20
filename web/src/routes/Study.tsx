@@ -1,13 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router'
 import { content } from '@/content/bundled'
-import { answeredCorrectly } from '@/domain/progress'
+import { answeredCorrectly, isMistake } from '@/domain/progress'
 import type { Question } from '@/domain/question'
 import { selectQuestionIds } from '@/domain/selection'
 import type { SelectionFilter } from '@/domain/selection'
 import { answerCurrent, currentQuestionId, isFinished, startSession, tally, toRecord } from '@/domain/session'
-import { ui } from '@/i18n/strings'
-import type { ActiveSession } from '@/storage/types'
+import { useStrings } from '@/i18n/useStrings'
+import type { ActiveSession, SessionMode } from '@/storage/types'
 import { useLearnerState, useLearnerStore } from '@/storage/useLearnerStore'
 import { QuestionCard } from '@/ui/QuestionCard'
 import { SetSummary } from '@/ui/SetSummary'
@@ -33,7 +33,10 @@ export function Study() {
   const store = useLearnerStore()
   const state = useLearnerState()
 
+  const t = useStrings()
+
   const resuming = params.get('resume') === '1'
+  const mode: SessionMode = params.get('mode') === 'mistakes' ? 'mistakes' : 'study'
 
   /**
    * Built once, from the URL or from the stored session. Resuming reuses the
@@ -44,9 +47,16 @@ export function Study() {
   const [session, setSession] = useState<ActiveSession | null>(() => {
     if (resuming) return state.activeSession
     const filter = filterFromParams(params)
-    const ids = selectQuestionIds(content.getAllQuestions(), filter)
+    // The mistakes set is resolved once, here. It shrinks as the learner answers
+    // it, so re-deriving it mid-session would hand back a shorter run than the
+    // one they started — which is why the resolved ids go into the session.
+    const include =
+      mode === 'mistakes'
+        ? (q: Question) => isMistake(state.progress[q.id])
+        : undefined
+    const ids = selectQuestionIds(content.getAllQuestions(), filter, include)
     if (ids.length === 0) return null
-    return startSession(newId(), 'study', filter, ids, new Date().toISOString())
+    return startSession(newId(), mode, filter, ids, new Date().toISOString())
   })
 
   const [selected, setSelected] = useState<number | null>(null)
@@ -61,17 +71,15 @@ export function Study() {
 
   const finished = session !== null && isFinished(session)
 
-  /** Runs the same filter again — what "once more" has to mean to be honest. */
+  /** Runs the same set again — what "once more" has to mean to be honest. */
   const restart = (from: ActiveSession) => {
-    const ids = selectQuestionIds(content.getAllQuestions(), from.filter)
+    // Deliberately the same questions, not a freshly derived mistakes set: the
+    // learner asked to repeat this run, and half of it has just left the set.
+    const ids = from.questionIds
     recorded.current = false
     setSelected(null)
     setAnsweredChoice(null)
-    setSession(
-      ids.length === 0
-        ? null
-        : startSession(newId(), from.mode, from.filter, ids, new Date().toISOString()),
-    )
+    setSession(startSession(newId(), from.mode, from.filter, ids, new Date().toISOString()))
   }
 
   // Write the completed run exactly once, whichever way this screen unmounts.
@@ -84,13 +92,13 @@ export function Study() {
   if (session === null) {
     return (
       <div className="flex flex-col gap-4 py-10">
-        <p>{ui.home.emptySelection}</p>
+        <p>{t.home.emptySelection}</p>
         <button
           type="button"
           onClick={() => navigate('/')}
           className="rounded-lg border border-slate-300 px-4 py-3 dark:border-slate-600"
         >
-          {ui.summary.home}
+          {t.summary.home}
         </button>
       </div>
     )
@@ -110,7 +118,7 @@ export function Study() {
     // The stored session points at a question this build no longer contains.
     return (
       <div className="flex flex-col gap-4 py-10">
-        <p>{ui.storage.discarded}</p>
+        <p>{t.storage.discarded}</p>
         <button
           type="button"
           onClick={() => {
@@ -119,7 +127,7 @@ export function Study() {
           }}
           className="rounded-lg border border-slate-300 px-4 py-3 dark:border-slate-600"
         >
-          {ui.summary.home}
+          {t.summary.home}
         </button>
       </div>
     )
@@ -149,10 +157,10 @@ export function Study() {
     <div className="flex flex-col gap-5 pb-24">
       <div className="flex items-center justify-between text-sm text-slate-500 dark:text-slate-400">
         <span className="tabular-nums">
-          {ui.study.position(session.position + 1, session.questionIds.length)}
+          {t.study.position(session.position + 1, session.questionIds.length)}
         </span>
         <button type="button" onClick={() => navigate('/')} className="underline">
-          {ui.study.leave}
+          {t.study.leave}
         </button>
       </div>
 
@@ -171,7 +179,7 @@ export function Study() {
             onClick={answered ? advance : submit}
             className="w-full rounded-lg bg-slate-900 px-4 py-4 text-lg font-medium text-white disabled:opacity-40 dark:bg-slate-100 dark:text-slate-900"
           >
-            {answered ? (isLast ? ui.study.finish : ui.study.next) : ui.study.submit}
+            {answered ? (isLast ? t.study.finish : t.study.next) : t.study.submit}
           </button>
         </div>
       </div>

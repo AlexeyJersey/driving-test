@@ -1,4 +1,6 @@
 import type { CategoryKey, QuestionId, VolumeKey } from '@/domain/question'
+import { DEFAULT_UI_LANGUAGE } from '@/i18n/strings'
+import type { UiLanguage } from '@/i18n/strings'
 
 /**
  * Bumped only when the stored shape changes in a way an older document cannot
@@ -67,6 +69,14 @@ export interface SessionRecord {
   readonly answers: readonly AnswerOutcome[]
 }
 
+/**
+ * Preferences, kept in the same document as progress so they travel the same
+ * path — and, once synchronisation exists, follow the learner between devices.
+ */
+export interface LearnerSettings {
+  readonly uiLanguage: UiLanguage
+}
+
 export interface LearnerState {
   readonly version: number
   /**
@@ -80,6 +90,7 @@ export interface LearnerState {
   /** Completed sessions, newest first, capped at MAX_SESSION_HISTORY. */
   readonly sessions: readonly SessionRecord[]
   readonly activeSession: ActiveSession | null
+  readonly settings: LearnerSettings
   readonly updatedAt: string
 }
 
@@ -91,6 +102,7 @@ export function emptyLearnerState(now: string): LearnerState {
     bookmarks: [],
     sessions: [],
     activeSession: null,
+    settings: { uiLanguage: DEFAULT_UI_LANGUAGE },
     updatedAt: now,
   }
 }

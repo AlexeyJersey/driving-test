@@ -1,4 +1,5 @@
 import type { QuestionId } from '@/domain/question'
+import type { UiLanguage } from '@/i18n/strings'
 import type { ActiveSession, LearnerState, SessionRecord } from './types'
 
 /**
@@ -24,6 +25,8 @@ export interface LearnerStore {
   clearActiveSession(): void
   /** Completed; trims history to MAX_SESSION_HISTORY. */
   saveSession(record: SessionRecord): void
+
+  setUiLanguage(language: UiLanguage): void
 
   /** Destroys everything. The caller must confirm first — the store will not. */
   reset(): void

@@ -1,6 +1,9 @@
+import { DEFAULT_UI_LANGUAGE, UI_LANGUAGES } from '@/i18n/strings'
+import type { UiLanguage } from '@/i18n/strings'
 import type {
   ActiveSession,
   AnswerOutcome,
+  LearnerSettings,
   LearnerState,
   QuestionProgress,
   SessionFilter,
@@ -97,6 +100,20 @@ function readActiveSession(v: unknown): ActiveSession | null {
   }
 }
 
+/**
+ * Absent settings are not an error: a document written before the language
+ * switcher existed is still perfectly readable, and defaulting is the whole
+ * migration this change needs — no version bump, no discarded progress.
+ */
+function readSettings(v: unknown): LearnerSettings {
+  const fallback: LearnerSettings = { uiLanguage: DEFAULT_UI_LANGUAGE }
+  if (!isObject(v)) return fallback
+  const candidate = v.uiLanguage
+  return UI_LANGUAGES.includes(candidate as UiLanguage)
+    ? { uiLanguage: candidate as UiLanguage }
+    : fallback
+}
+
 function readSessions(v: unknown): readonly SessionRecord[] {
   if (!Array.isArray(v)) return []
   const out: SessionRecord[] = []
@@ -171,6 +188,7 @@ export function readStoredState(raw: string | null, now: string): StoredStateOut
       bookmarks,
       sessions: readSessions(parsed.sessions),
       activeSession: readActiveSession(parsed.activeSession),
+      settings: readSettings(parsed.settings),
       updatedAt: isIsoish(parsed.updatedAt) ? parsed.updatedAt : now,
     },
   }

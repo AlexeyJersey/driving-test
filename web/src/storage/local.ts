@@ -1,6 +1,7 @@
 import { MAX_SESSION_HISTORY } from '@/domain/constants'
 import { applyAnswer } from '@/domain/progress'
 import type { QuestionId } from '@/domain/question'
+import type { UiLanguage } from '@/i18n/strings'
 import { readStoredState } from './migrate'
 import type { LearnerStore } from './store'
 import type { ActiveSession, LearnerState, SessionRecord } from './types'
@@ -76,6 +77,11 @@ abstract class BaseLearnerStore implements LearnerStore {
       sessions: [record, ...this.state.sessions].slice(0, MAX_SESSION_HISTORY),
       activeSession: null,
     })
+  }
+
+  setUiLanguage(language: UiLanguage): void {
+    if (this.state.settings.uiLanguage === language) return
+    this.commit({ ...this.state, settings: { ...this.state.settings, uiLanguage: language } })
   }
 
   reset(): void {

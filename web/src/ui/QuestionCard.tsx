@@ -1,6 +1,6 @@
 import type { Question } from '@/domain/question'
 import { isDisputed } from '@/domain/question'
-import { ui } from '@/i18n/strings'
+import { useStrings } from '@/i18n/useStrings'
 
 interface QuestionCardProps {
   readonly question: Question
@@ -47,6 +47,7 @@ const MARK: Record<OptionTone, string> = {
 }
 
 export function QuestionCard({ question, selected, answeredChoice, onSelect }: QuestionCardProps) {
+  const t = useStrings()
   const answered = answeredChoice !== null
 
   return (
@@ -56,8 +57,8 @@ export function QuestionCard({ question, selected, answeredChoice, onSelect }: Q
           role="note"
           className="rounded-lg border border-warn bg-warn-soft px-3 py-2 text-sm dark:bg-warn/15"
         >
-          <strong className="block font-semibold">⚠ {ui.study.disputedTitle}</strong>
-          <span className="text-slate-700 dark:text-slate-200">{ui.study.disputedBody}</span>
+          <strong className="block font-semibold">⚠ {t.study.disputedTitle}</strong>
+          <span className="text-slate-700 dark:text-slate-200">{t.study.disputedBody}</span>
         </div>
       )}
 
@@ -100,9 +101,9 @@ export function QuestionCard({ question, selected, answeredChoice, onSelect }: Q
       {answered && (
         <p className="text-sm font-medium">
           {answeredChoice === question.correct ? (
-            <span className="text-ok">{ui.study.correct}</span>
+            <span className="text-ok">{t.study.correct}</span>
           ) : (
-            <span className="text-bad">{ui.study.wrong}</span>
+            <span className="text-bad">{t.study.wrong}</span>
           )}
         </p>
       )}
