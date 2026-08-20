@@ -3,58 +3,550 @@
   "source": "IV str. ispitnih testova.pdf",
   "title": "Poznavanje vozila i pružanje prve pomoći",
   "questions": [
-    { "id": "IV-1-1", "page": 1, "category": "vehicle", "text": "Radno kočenje ne mora da ima:", "options": ["poluprikolica sa tri osovine", "putničko vozilo do 750 kg sopstvene mase", "laka prikolica"], "correct": 2 },
-    { "id": "IV-1-2", "page": 1, "category": "vehicle", "text": "Svijetlo za maglu na zadnjoj strani vozila je:", "options": ["crvene boje", "žute boje", "bijele boje"], "correct": 0 },
-    { "id": "IV-1-3", "page": 1, "category": "vehicle", "text": "Blatobrani na motornom vozilu moraju da budu postavljeni tako da pokrivaju širinu:", "options": ["samo zadnjih točkova", "samo prednjih točkova", "svih točkova"], "correct": 2 },
-    { "id": "IV-1-4", "page": 1, "category": "firstaid", "text": "Učesnika u saobraćajnoj nezgodi koji je zadobio povrede grudnog koša postavljamo:", "options": ["u ležeći položaj", "na bočnu stranu", "u polusjedeći položaj"], "correct": 2 },
-    { "id": "IV-1-5", "page": 1, "category": "firstaid", "text": "Pod opekotinom podrazumijevamo povredu nastalu od:", "options": ["upale kože", "djelovanja toplote", "uboda čvrstog predmeta"], "correct": 1, "note": "На слайде напечатано «črvstog» — исправлено на «čvrstog». Ключ ответа не оспаривается." },
-
-    { "id": "IV-2-1", "page": 2, "category": "vehicle", "text": "Pod uređajem na vozilu koji omogućava normalnu vidljivost smatra se:", "options": ["svijetlo za maglu", "poziciono svijetlo", "vjetrobran"], "correct": 2 },
-    { "id": "IV-2-2", "page": 2, "category": "vehicle", "text": "Svjetlost pokazivača pravca mora da bude:", "options": ["žute boje", "bijele boje", "crvene boje"], "correct": 0 },
-    { "id": "IV-2-3", "page": 2, "category": "vehicle", "text": "Protiv blokirajući sistem (ABS) je dio sistema za:", "options": ["osvjetljavanje kolovoza", "prenos snage", "za kočenje"], "correct": 2 },
-    { "id": "IV-2-4", "page": 2, "category": "firstaid", "text": "Pod imobilizacijom podrazumijevamo:", "options": ["stavljanje sterilne gaze na povrijeđeni dio tijela", "stavljanje povrijeđenog dijela tijela u stanje mirovanja", "vraćanje povrijeđenog u stanje svijesti"], "correct": 1 },
-    { "id": "IV-2-5", "page": 2, "category": "firstaid", "text": "Koliki je broj otkucaja srca kod normalne zdrave osobe:", "options": ["do 60 otkucaja u jednoj sekundi", "60 do 80 otkucaja u jednom minutu", "preko 100 otkucaja u jednom minutu"], "correct": 1 },
-
-    { "id": "IV-3-1", "page": 3, "category": "vehicle", "text": "Slobodan hod točka upravljača na vozilu na motorni pogon ne smije biti veći od:", "options": ["20 stepeni", "30 stepeni", "40 stepeni"], "correct": 1 },
-    { "id": "IV-3-2", "page": 3, "category": "vehicle", "text": "Na motornom vozilu se serijski ugrađuju:", "options": ["radna, pomoćna i parkirna kočnica", "radna i pomoćna kočnica i trajni usporivač", "radna i parkirna kočnica i trajni usporivač"], "correct": 0 },
-    { "id": "IV-3-3", "page": 3, "category": "vehicle", "text": "Najveća dozvoljena dužina motornog vozila osim autobusa je:", "options": ["8 metara", "10 metara", "12 metara"], "correct": 2 },
-    { "id": "IV-3-4", "page": 3, "category": "firstaid", "text": "Kada dodje do umora tokom vožnje potrebno je:", "options": ["usporenim kretanjem nastaviti vožnju", "konzumirati energetske napitke i nastaviti vožnju", "napraviti pauzu za odmor"], "correct": 2 },
-    { "id": "IV-3-5", "page": 3, "category": "firstaid", "text": "Krvarenje kod povrijeđenog je:", "options": ["isticanje krvi iz krvnih sudova", "zatvoreni prelom podkoljenice", "zgrušavanje krvi u krvnom sudu"], "correct": 0 },
-
-    { "id": "IV-4-1", "page": 4, "category": "vehicle", "text": "Od određene opreme u autobusu mora da postoje:", "options": ["tri kutije prve pomoći", "dvije kutije prve pomoći", "jedna kutija prve pomoći"], "correct": 2 },
-    { "id": "IV-4-2", "page": 4, "category": "vehicle", "text": "Pod uređajima za davanje svjetlosnih znakova ne smatraju se:", "options": ["stop-svijetla", "pokazivači pravca", "katadiopteri"], "correct": 2 },
-    { "id": "IV-4-3", "page": 4, "category": "vehicle", "text": "Parkirnu kočnicu kod vozila vozač koristi:", "options": ["da zaustavi vozilo kada naiđe na iznenadnu prepreku", "da spriječi pokretanje zaustavljenog vozila", "da spriječi pokretanje vozila samo dok je parkirano u garaži"], "correct": 1 },
-    { "id": "IV-4-4", "page": 4, "category": "firstaid", "text": "Arterijsko krvarenje kod povrijeđenog prepoznaje se po:", "options": ["laganom isticanju krvi i zgrušavanju na povrijeđenom dijela tijela", "krvi u mlazevima", "otoku i modrim podlivima povrijeđenog dijela tijela"], "correct": 1 },
-    { "id": "IV-4-5", "page": 4, "category": "firstaid", "text": "Ako je licu u saobraćajnoj nezgodi povrijeđena glava i vrat:", "options": ["povrijeđenog što manje pomjerati", "postaviti ga u sjedeći položaj", "postaviti ga na bok u ležeći položaj"], "correct": 1, "review": "Крестик стоит на варианте 2, но по логике первой помощи ожидается вариант 1 («как можно меньше двигать»). Сверить со слайдом." },
-
-    { "id": "IV-5-1", "page": 5, "category": "vehicle", "text": "Sastavni dio motora sa unutrašnjim sagorijevanjem je:", "options": ["koljenasto vratilo", "kardansko vratilo", "poluvratilo"], "correct": 0 },
-    { "id": "IV-5-2", "page": 5, "category": "vehicle", "text": "Servo uređaj za upravljanje:", "options": ["smanjuje ugao zakretanja upravljačkih točkova", "smanjuje ukupnu silu djelovanja vozača kod zakretanja točka upravljača i obezbjeđuje lakoću upravljanja", "smanjuje prečnik putanje pri skretanja vozila"], "correct": 1 },
-    { "id": "IV-5-3", "page": 5, "category": "vehicle", "text": "Svijetla glavnih svjetala treba da budu:", "options": ["bijele boje", "žute boje", "crvene boje"], "correct": 0 },
-    { "id": "IV-5-4", "page": 5, "category": "firstaid", "text": "Neposredno nakon saobraćaje nezgode, lice koje je učestvovalo u saobraćajnoj nezgodi:", "options": ["smije da konzumira alkoholno piće", "smije da konzumira sedative za smirenje", "ne smije da konzumira alkoholno piće"], "correct": 2 },
-    { "id": "IV-5-5", "page": 5, "category": "firstaid", "text": "Ako je lice koje je povrijeđeno u saobraćajnoj nezgodi bez svijesti treba ga:", "options": ["postaviti u ležeći položaj na leđa", "postaviti u ležeći položaj na stomak", "postaviti u bočni položaj"], "correct": 2 },
-
-    { "id": "IV-6-1", "page": 6, "category": "vehicle", "text": "Pod opremom motornih i priključnih vozila ne smatra se:", "options": ["bočni retrovizor", "rezervni točak", "rezervne sijalice"], "correct": 0 },
-    { "id": "IV-6-2", "page": 6, "category": "vehicle", "text": "Svjetlost dnevnog svijetla treba da bude:", "options": ["žute boje", "plave boje", "bijele boje"], "correct": 2 },
-    { "id": "IV-6-3", "page": 6, "category": "vehicle", "text": "Minimalna dubina šare na gazećoj površini pneumatika za zimsku upotrebu treba da bude:", "options": ["2 mm", "4 mm", "1,6 mm"], "correct": 1 },
-    { "id": "IV-6-4", "page": 6, "category": "firstaid", "text": "Broj policije je:", "options": ["124", "112", "122"], "correct": 2 },
-    { "id": "IV-6-5", "page": 6, "category": "firstaid", "text": "Kod povrijeđenog lica na ranu se prvo stavlja:", "options": ["alkohol", "voda", "sterilna gaza"], "correct": 2 },
-
-    { "id": "IV-7-1", "page": 7, "category": "vehicle", "text": "Vozila koja imaju ugrađene brisače vjetrobrana moraju imati i:", "options": ["sunđer za pranje stakala", "perače vjetrobrana", "uređaj za zagrijavanje vjetrobrana"], "correct": 1 },
-    { "id": "IV-7-2", "page": 7, "category": "vehicle", "text": "Svjetlosni snop oborenog svijetla treba da bude:", "options": ["izveden kao lijevi asimetrični", "simetričan", "izveden kao desni asimetrični"], "correct": 2, "review": "На слайде крестик красный — похоже на исправление преподавателя. Стоит подтвердить." },
-    { "id": "IV-7-3", "page": 7, "category": "vehicle", "text": "Uređaji za odvođenje i ispuštanje izduvnih gasova ne smiju da prelaze dimenzije vozila:", "options": ["po dužini ili širini", "po visini", "više od 0,1 metar po dužini"], "correct": 0 },
-    { "id": "IV-7-4", "page": 7, "category": "firstaid", "text": "Mrtvačke pjege i hladno tijelo su:", "options": ["stanja povrijeđnog usled gubljenja svijesti zbog hladnoće", "sigurni znak smrti", "sigurni znak umora"], "correct": 1, "note": "На слайде напечатано «povrijeđnog»; оставлено как в источнике. Ключ ответа не оспаривается." },
-    { "id": "IV-7-5", "page": 7, "category": "firstaid", "text": "Broj telefona vatrogasne službe je:", "options": ["123", "122", "124"], "correct": 0 },
-
-    { "id": "IV-8-1", "page": 8, "category": "vehicle", "text": "Svijetla za vožnju unazad kod motornih vozila moraju biti:", "options": ["bijele boje", "crvene boje", "žute boje"], "correct": 0 },
-    { "id": "IV-8-2", "page": 8, "category": "vehicle", "text": "Radna kočnica motornih vozila treba da djeluje:", "options": ["na sve točkove", "samo na prednje točkove", "samo na zadnje točkove"], "correct": 0 },
-    { "id": "IV-8-3", "page": 8, "category": "vehicle", "text": "Motorno vozilo koje pored sjedišta za vozača ima još najviše osam sjedišta je:", "options": ["autobus", "teretno vozilo", "putničko vozilo"], "correct": 2 },
-    { "id": "IV-8-4", "page": 8, "category": "firstaid", "text": "U pružanju prve pomoći u saobraćajnoj nezgodi ranu kod povrijeđenog:", "options": ["treba isprati vodom", "treba isprati alkoholom", "ne treba ispirati tečnošću"], "correct": 2 },
-    { "id": "IV-8-5", "page": 8, "category": "firstaid", "text": "Pod dejstvom alkohola je vozač:", "options": ["ako se u organizmu utvrdi sadržaj alkohola veći od 0,3 g/kg", "ako se u organizmu utvrdi sadržaj alkohola do 0,3 g/kg", "ako se u organizmu utvrdi sadržaj alkohola do 0,2 g/kg"], "correct": 0 },
-
-    { "id": "IV-9-1", "page": 9, "category": "vehicle", "text": "Sastavni dio uređaja za upravljanje je:", "options": ["pneumatik", "točak upravljača", "amortizer"], "correct": 1 },
-    { "id": "IV-9-2", "page": 9, "category": "vehicle", "text": "Sastavni dio uređaja za osvjetljavanje puta na motornim vozilima je:", "options": ["stop svijetlo", "gabaritno svijetlo", "svijetlo za vožnju unazad"], "correct": 2 },
-    { "id": "IV-9-3", "page": 9, "category": "vehicle", "text": "Sastavni dio prenosnika snage kod motornog vozila je:", "options": ["mjenjač", "točak upravljača", "ručica parkirne kočnice"], "correct": 0 },
-    { "id": "IV-9-4", "page": 9, "category": "firstaid", "text": "Prilikom imobilizacije povrijeđenog lica osnovno pravilo je:", "options": ["imobilisati cijelo tijelo povrijeđenog", "imobilisati dva susjedna zgloba", "imobilisati samo zglob koji je najbliži povrijeđenom mjestu"], "correct": 1 },
-    { "id": "IV-9-5", "page": 9, "category": "firstaid", "text": "Povrijeđeno lice koje izgubi dosta krvi ima:", "options": ["dosta povišen krvni pritisak", "dosta usporen puls", "ubrzano i nepravilno disanje"], "correct": 1, "review": "Крестик на «dosta usporen puls», хотя при кровопотере ожидается учащённый пульс/дыхание. Сверить со слайдом." }
+    {
+      "id": "IV-1-1",
+      "page": 1,
+      "category": "vehicle",
+      "text": "Radno kočenje ne mora da ima:",
+      "options": [
+        "poluprikolica sa tri osovine",
+        "putničko vozilo do 750 kg sopstvene mase",
+        "laka prikolica"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "IV-1-2",
+      "page": 1,
+      "category": "vehicle",
+      "text": "Svijetlo za maglu na zadnjoj strani vozila je:",
+      "options": [
+        "crvene boje",
+        "žute boje",
+        "bijele boje"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "IV-1-3",
+      "page": 1,
+      "category": "vehicle",
+      "text": "Blatobrani na motornom vozilu moraju da budu postavljeni tako da pokrivaju širinu:",
+      "options": [
+        "samo zadnjih točkova",
+        "samo prednjih točkova",
+        "svih točkova"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "IV-1-4",
+      "page": 1,
+      "category": "firstaid",
+      "text": "Učesnika u saobraćajnoj nezgodi koji je zadobio povrede grudnog koša postavljamo:",
+      "options": [
+        "u ležeći položaj",
+        "na bočnu stranu",
+        "u polusjedeći položaj"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "IV-1-5",
+      "page": 1,
+      "category": "firstaid",
+      "text": "Pod opekotinom podrazumijevamo povredu nastalu od:",
+      "options": [
+        "upale kože",
+        "djelovanja toplote",
+        "uboda čvrstog predmeta"
+      ],
+      "correct": 1,
+      "note": "На слайде напечатано «črvstog» — исправлено на «čvrstog». Ключ ответа не оспаривается."
+    },
+    {
+      "id": "IV-2-1",
+      "page": 2,
+      "category": "vehicle",
+      "text": "Pod uređajem na vozilu koji omogućava normalnu vidljivost smatra se:",
+      "options": [
+        "svijetlo za maglu",
+        "poziciono svijetlo",
+        "vjetrobran"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "IV-2-2",
+      "page": 2,
+      "category": "vehicle",
+      "text": "Svjetlost pokazivača pravca mora da bude:",
+      "options": [
+        "žute boje",
+        "bijele boje",
+        "crvene boje"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "IV-2-3",
+      "page": 2,
+      "category": "vehicle",
+      "text": "Protiv blokirajući sistem (ABS) je dio sistema za:",
+      "options": [
+        "osvjetljavanje kolovoza",
+        "prenos snage",
+        "za kočenje"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "IV-2-4",
+      "page": 2,
+      "category": "firstaid",
+      "text": "Pod imobilizacijom podrazumijevamo:",
+      "options": [
+        "stavljanje sterilne gaze na povrijeđeni dio tijela",
+        "stavljanje povrijeđenog dijela tijela u stanje mirovanja",
+        "vraćanje povrijeđenog u stanje svijesti"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "IV-2-5",
+      "page": 2,
+      "category": "firstaid",
+      "text": "Koliki je broj otkucaja srca kod normalne zdrave osobe:",
+      "options": [
+        "do 60 otkucaja u jednoj sekundi",
+        "60 do 80 otkucaja u jednom minutu",
+        "preko 100 otkucaja u jednom minutu"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "IV-3-1",
+      "page": 3,
+      "category": "vehicle",
+      "text": "Slobodan hod točka upravljača na vozilu na motorni pogon ne smije biti veći od:",
+      "options": [
+        "20 stepeni",
+        "30 stepeni",
+        "40 stepeni"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "IV-3-2",
+      "page": 3,
+      "category": "vehicle",
+      "text": "Na motornom vozilu se serijski ugrađuju:",
+      "options": [
+        "radna, pomoćna i parkirna kočnica",
+        "radna i pomoćna kočnica i trajni usporivač",
+        "radna i parkirna kočnica i trajni usporivač"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "IV-3-3",
+      "page": 3,
+      "category": "vehicle",
+      "text": "Najveća dozvoljena dužina motornog vozila osim autobusa je:",
+      "options": [
+        "8 metara",
+        "10 metara",
+        "12 metara"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "IV-3-4",
+      "page": 3,
+      "category": "firstaid",
+      "text": "Kada dodje do umora tokom vožnje potrebno je:",
+      "options": [
+        "usporenim kretanjem nastaviti vožnju",
+        "konzumirati energetske napitke i nastaviti vožnju",
+        "napraviti pauzu za odmor"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "IV-3-5",
+      "page": 3,
+      "category": "firstaid",
+      "text": "Krvarenje kod povrijeđenog je:",
+      "options": [
+        "isticanje krvi iz krvnih sudova",
+        "zatvoreni prelom podkoljenice",
+        "zgrušavanje krvi u krvnom sudu"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "IV-4-1",
+      "page": 4,
+      "category": "vehicle",
+      "text": "Od određene opreme u autobusu mora da postoje:",
+      "options": [
+        "tri kutije prve pomoći",
+        "dvije kutije prve pomoći",
+        "jedna kutija prve pomoći"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "IV-4-2",
+      "page": 4,
+      "category": "vehicle",
+      "text": "Pod uređajima za davanje svjetlosnih znakova ne smatraju se:",
+      "options": [
+        "stop-svijetla",
+        "pokazivači pravca",
+        "katadiopteri"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "IV-4-3",
+      "page": 4,
+      "category": "vehicle",
+      "text": "Parkirnu kočnicu kod vozila vozač koristi:",
+      "options": [
+        "da zaustavi vozilo kada naiđe na iznenadnu prepreku",
+        "da spriječi pokretanje zaustavljenog vozila",
+        "da spriječi pokretanje vozila samo dok je parkirano u garaži"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "IV-4-4",
+      "page": 4,
+      "category": "firstaid",
+      "text": "Arterijsko krvarenje kod povrijeđenog prepoznaje se po:",
+      "options": [
+        "laganom isticanju krvi i zgrušavanju na povrijeđenom dijela tijela",
+        "krvi u mlazevima",
+        "otoku i modrim podlivima povrijeđenog dijela tijela"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "IV-4-5",
+      "page": 4,
+      "category": "firstaid",
+      "text": "Ako je licu u saobraćajnoj nezgodi povrijeđena glava i vrat:",
+      "options": [
+        "povrijeđenog što manje pomjerati",
+        "postaviti ga u sjedeći položaj",
+        "postaviti ga na bok u ležeći položaj"
+      ],
+      "correct": 1,
+      "review": "Крестик стоит на варианте 2, но по логике первой помощи ожидается вариант 1 («как можно меньше двигать»). Сверить со слайдом."
+    },
+    {
+      "id": "IV-5-1",
+      "page": 5,
+      "category": "vehicle",
+      "text": "Sastavni dio motora sa unutrašnjim sagorijevanjem je:",
+      "options": [
+        "koljenasto vratilo",
+        "kardansko vratilo",
+        "poluvratilo"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "IV-5-2",
+      "page": 5,
+      "category": "vehicle",
+      "text": "Servo uređaj za upravljanje:",
+      "options": [
+        "smanjuje ugao zakretanja upravljačkih točkova",
+        "smanjuje ukupnu silu djelovanja vozača kod zakretanja točka upravljača i obezbjeđuje lakoću upravljanja",
+        "smanjuje prečnik putanje pri skretanja vozila"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "IV-5-3",
+      "page": 5,
+      "category": "vehicle",
+      "text": "Svijetla glavnih svjetala treba da budu:",
+      "options": [
+        "bijele boje",
+        "žute boje",
+        "crvene boje"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "IV-5-4",
+      "page": 5,
+      "category": "firstaid",
+      "text": "Neposredno nakon saobraćaje nezgode, lice koje je učestvovalo u saobraćajnoj nezgodi:",
+      "options": [
+        "smije da konzumira alkoholno piće",
+        "smije da konzumira sedative za smirenje",
+        "ne smije da konzumira alkoholno piće"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "IV-5-5",
+      "page": 5,
+      "category": "firstaid",
+      "text": "Ako je lice koje je povrijeđeno u saobraćajnoj nezgodi bez svijesti treba ga:",
+      "options": [
+        "postaviti u ležeći položaj na leđa",
+        "postaviti u ležeći položaj na stomak",
+        "postaviti u bočni položaj"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "IV-6-1",
+      "page": 6,
+      "category": "vehicle",
+      "text": "Pod opremom motornih i priključnih vozila ne smatra se:",
+      "options": [
+        "bočni retrovizor",
+        "rezervni točak",
+        "rezervne sijalice"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "IV-6-2",
+      "page": 6,
+      "category": "vehicle",
+      "text": "Svjetlost dnevnog svijetla treba da bude:",
+      "options": [
+        "žute boje",
+        "plave boje",
+        "bijele boje"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "IV-6-3",
+      "page": 6,
+      "category": "vehicle",
+      "text": "Minimalna dubina šare na gazećoj površini pneumatika za zimsku upotrebu treba da bude:",
+      "options": [
+        "2 mm",
+        "4 mm",
+        "1,6 mm"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "IV-6-4",
+      "page": 6,
+      "category": "firstaid",
+      "text": "Broj policije je:",
+      "options": [
+        "124",
+        "112",
+        "122"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "IV-6-5",
+      "page": 6,
+      "category": "firstaid",
+      "text": "Kod povrijeđenog lica na ranu se prvo stavlja:",
+      "options": [
+        "alkohol",
+        "voda",
+        "sterilna gaza"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "IV-7-1",
+      "page": 7,
+      "category": "vehicle",
+      "text": "Vozila koja imaju ugrađene brisače vjetrobrana moraju imati i:",
+      "options": [
+        "sunđer za pranje stakala",
+        "perače vjetrobrana",
+        "uređaj za zagrijavanje vjetrobrana"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "IV-7-2",
+      "page": 7,
+      "category": "vehicle",
+      "text": "Svjetlosni snop oborenog svijetla treba da bude:",
+      "options": [
+        "izveden kao lijevi asimetrični",
+        "simetričan",
+        "izveden kao desni asimetrični"
+      ],
+      "correct": 2,
+      "note": "Отметка на слайде красная — похоже на исправление преподавателя. Отмеченный вариант однозначен."
+    },
+    {
+      "id": "IV-7-3",
+      "page": 7,
+      "category": "vehicle",
+      "text": "Uređaji za odvođenje i ispuštanje izduvnih gasova ne smiju da prelaze dimenzije vozila:",
+      "options": [
+        "po dužini ili širini",
+        "po visini",
+        "više od 0,1 metar po dužini"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "IV-7-4",
+      "page": 7,
+      "category": "firstaid",
+      "text": "Mrtvačke pjege i hladno tijelo su:",
+      "options": [
+        "stanja povrijeđnog usled gubljenja svijesti zbog hladnoće",
+        "sigurni znak smrti",
+        "sigurni znak umora"
+      ],
+      "correct": 1,
+      "note": "На слайде напечатано «povrijeđnog»; оставлено как в источнике. Ключ ответа не оспаривается."
+    },
+    {
+      "id": "IV-7-5",
+      "page": 7,
+      "category": "firstaid",
+      "text": "Broj telefona vatrogasne službe je:",
+      "options": [
+        "123",
+        "122",
+        "124"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "IV-8-1",
+      "page": 8,
+      "category": "vehicle",
+      "text": "Svijetla za vožnju unazad kod motornih vozila moraju biti:",
+      "options": [
+        "bijele boje",
+        "crvene boje",
+        "žute boje"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "IV-8-2",
+      "page": 8,
+      "category": "vehicle",
+      "text": "Radna kočnica motornih vozila treba da djeluje:",
+      "options": [
+        "na sve točkove",
+        "samo na prednje točkove",
+        "samo na zadnje točkove"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "IV-8-3",
+      "page": 8,
+      "category": "vehicle",
+      "text": "Motorno vozilo koje pored sjedišta za vozača ima još najviše osam sjedišta je:",
+      "options": [
+        "autobus",
+        "teretno vozilo",
+        "putničko vozilo"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "IV-8-4",
+      "page": 8,
+      "category": "firstaid",
+      "text": "U pružanju prve pomoći u saobraćajnoj nezgodi ranu kod povrijeđenog:",
+      "options": [
+        "treba isprati vodom",
+        "treba isprati alkoholom",
+        "ne treba ispirati tečnošću"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "IV-8-5",
+      "page": 8,
+      "category": "firstaid",
+      "text": "Pod dejstvom alkohola je vozač:",
+      "options": [
+        "ako se u organizmu utvrdi sadržaj alkohola veći od 0,3 g/kg",
+        "ako se u organizmu utvrdi sadržaj alkohola do 0,3 g/kg",
+        "ako se u organizmu utvrdi sadržaj alkohola do 0,2 g/kg"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "IV-9-1",
+      "page": 9,
+      "category": "vehicle",
+      "text": "Sastavni dio uređaja za upravljanje je:",
+      "options": [
+        "pneumatik",
+        "točak upravljača",
+        "amortizer"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "IV-9-2",
+      "page": 9,
+      "category": "vehicle",
+      "text": "Sastavni dio uređaja za osvjetljavanje puta na motornim vozilima je:",
+      "options": [
+        "stop svijetlo",
+        "gabaritno svijetlo",
+        "svijetlo za vožnju unazad"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "IV-9-3",
+      "page": 9,
+      "category": "vehicle",
+      "text": "Sastavni dio prenosnika snage kod motornog vozila je:",
+      "options": [
+        "mjenjač",
+        "točak upravljača",
+        "ručica parkirne kočnice"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "IV-9-4",
+      "page": 9,
+      "category": "firstaid",
+      "text": "Prilikom imobilizacije povrijeđenog lica osnovno pravilo je:",
+      "options": [
+        "imobilisati cijelo tijelo povrijeđenog",
+        "imobilisati dva susjedna zgloba",
+        "imobilisati samo zglob koji je najbliži povrijeđenom mjestu"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "IV-9-5",
+      "page": 9,
+      "category": "firstaid",
+      "text": "Povrijeđeno lice koje izgubi dosta krvi ima:",
+      "options": [
+        "dosta povišen krvni pritisak",
+        "dosta usporen puls",
+        "ubrzano i nepravilno disanje"
+      ],
+      "correct": 1,
+      "review": "Крестик на «dosta usporen puls», хотя при кровопотере ожидается учащённый пульс/дыхание. Сверить со слайдом."
+    }
   ]
 }

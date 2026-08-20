@@ -6,6 +6,10 @@ from html import escape
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
+# Prefer the composited slides from 04_marked_slides.py: the plain renders lose
+# the last text row, and verifying a parse against a truncated slide is worse
+# than not verifying it.
+MARKED = ROOT / "build" / "marked"
 PAGES = ROOT / "build" / "pages"
 OUT = ROOT / "build" / "review.html"
 
@@ -61,7 +65,12 @@ def build(volume: str) -> Path:
 
     for page in sorted(by_page):
         img = next(
-            (c for w in (1, 2, 3) if (c := PAGES / f"{volume}-{page:0{w}d}.png").exists()),
+            (
+                c
+                for base in (MARKED, PAGES)
+                for w in (1, 2, 3)
+                if (c := base / f"{volume}-{page:0{w}d}.png").exists()
+            ),
             None,
         )
         if img is None:

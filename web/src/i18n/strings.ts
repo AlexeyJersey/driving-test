@@ -137,6 +137,7 @@ const me: Strings = {
     vehicle: 'Poznavanje vozila',
     firstaid: 'Prva pomoć',
     situations: 'Situacije u saobraćaju',
+    rules: 'Pravila saobraćaja',
   },
   volumes: {
     I: 'Pravila saobraćaja',
@@ -195,6 +196,7 @@ const en: Strings = {
     vehicle: 'Vehicle knowledge',
     firstaid: 'First aid',
     situations: 'Traffic situations',
+    rules: 'Traffic rules',
   },
   volumes: {
     I: 'Traffic rules',
@@ -253,6 +255,7 @@ const ru: Strings = {
     vehicle: 'Устройство автомобиля',
     firstaid: 'Первая помощь',
     situations: 'Ситуации на дороге',
+    rules: 'Правила движения',
   },
   volumes: {
     I: 'Правила движения',

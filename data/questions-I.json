@@ -1,0 +1,1079 @@
+{
+  "volume": "I",
+  "source": "I str. ispitnih testova.pdf",
+  "title": "Pravila saobraćaja",
+  "questions": [
+    {
+      "id": "I-1-1",
+      "page": 1,
+      "category": "rules",
+      "text": "Kretanje vozilom unazad dozvoljeno je:",
+      "options": [
+        "na kratkom dijelu puta u nepreglednoj krivini",
+        "na kratkom dijelu puta u tunelu",
+        "na kratkom dijelu puta"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-1-2",
+      "page": 1,
+      "category": "rules",
+      "text": "Na magistralnom putu van naselja, gdje nema znaka ograničenja brzine, vozač ne smije vozilom da se kreće brzinom većom od:",
+      "options": [
+        "60 km/h",
+        "70 km/h",
+        "80 km/h"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-1-3",
+      "page": 1,
+      "category": "rules",
+      "text": "Pješačko ostrvo koje se nalazi na sredini kolovoza, gdje se saobraćaj odvija u oba smjera, obilazi se vozilom:",
+      "options": [
+        "uvijek sa desne strane",
+        "uvijek sa lijeve strane",
+        "sa bilo koje strane"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-1-4",
+      "page": 1,
+      "category": "rules",
+      "text": "Na putu sa prvenstvom prolaza neposredno ispred raskrnice koja nije regulisana semaforom ili saobraćajnim znacima vozač:",
+      "options": [
+        "može da pretiče bicikl, moped ili motocikl",
+        "može da pretiče sva vozila koja zadržavaju pravac kretanja",
+        "može da pretiče putnička vozila koja zadržavaju pravac kretanja"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-1-5",
+      "page": 1,
+      "category": "rules",
+      "text": "Prolaženje vozilom pored drugog vozila koje dolazi iz suprotnog smjera je radnja:",
+      "options": [
+        "preticanja",
+        "obilaženja",
+        "mimoilaženja"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-2-1",
+      "page": 2,
+      "category": "rules",
+      "text": "Vozač je dužan da bez odlaganja ukloni sa kolovoza:",
+      "options": [
+        "sve predmete koji su na kolovozu",
+        "predmete i materije koji potiču sa vozila kojim upravlja",
+        "sve predmete koji se nalaze na saobraćajnoj traci kojom se kreće"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-2-2",
+      "page": 2,
+      "category": "rules",
+      "text": "Dva prsluka sa svjetlosno reflektujućim osobinama mora imati:",
+      "options": [
+        "putničko motorno vozilo",
+        "četvorocikl",
+        "teretno motorno vozilo"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-2-3",
+      "page": 2,
+      "category": "rules",
+      "text": "Vozač na putu za saobraćaj vozila u oba smjera na kojem postoje najmanje četiri saobraćajne trake:",
+      "options": [
+        "mora da koristi desnu kolovoznu traku",
+        "mora da koristi samo desnu saobraćajnu traku",
+        "mora da koristi samo lijevu saobraćajnu traku"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-2-4",
+      "page": 2,
+      "category": "rules",
+      "text": "Brzina kretanja motornih vozila na putu, pod normalnim uslovima saobraćaja, ne smije da se ograniči saobraćajnim znakom ispod:",
+      "options": [
+        "40 km/h",
+        "50 km/h",
+        "60 km/h"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-2-5",
+      "page": 2,
+      "category": "rules",
+      "text": "Na putu na kojem postoje dvije saobraćajne trake namijenjene za saobraćaj vozila u istom smjeru, brže kretanje vozila u jednoj traci od kretanja vozila u drugoj traci:",
+      "options": [
+        "smatra se preticanjem",
+        "ne smatra se preticanjem",
+        "smatra se obilaženjem"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-3-1",
+      "page": 3,
+      "category": "rules",
+      "text": "Vozilo na motorni pogon koje na putu vuče neispravno vozilo ne smije se kretati brzinom većom od:",
+      "options": [
+        "40 km/h",
+        "50 km/h",
+        "60 km/h"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-3-2",
+      "page": 3,
+      "category": "rules",
+      "text": "Saobraćajnu traku namijenjenu za kretanje vozila za javni prevoz putnika, mogu koristiti:",
+      "options": [
+        "vozila pod pratnjom",
+        "vozila komunalne službe",
+        "putnička vozila"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-3-3",
+      "page": 3,
+      "category": "rules",
+      "text": "Vozač je dužan da zvučni znak upozorenja daje:",
+      "options": [
+        "više puta u naizmjeničnim intervalima",
+        "bez prekida u trajanju od 5 sekundi",
+        "u mjeri koja je dovoljna da se drugi učesnici u saobraćaju upozore"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-3-4",
+      "page": 3,
+      "category": "rules",
+      "text": "Zvučni znak upozorenja vozač je dužan da upotrijebi na javnom putu:",
+      "options": [
+        "pri sustizanju vozila koja se sporo kreću niz nagib",
+        "kada se obilazi vozilo parkirano sa desne strane kolovoza",
+        "kada se pored kolovoza nalaze djeca koja ne obraćaju pažnju na kretanje vozača"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-3-5",
+      "page": 3,
+      "category": "rules",
+      "text": "Uzdužni dio kolovoza namijenjen za saobraćaj vozila u jednom smjeru, sa jednom ili više saobraćajnih traka zove se:",
+      "options": [
+        "saobraćajna traka",
+        "kolovozna traka",
+        "kolovoz"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-4-1",
+      "page": 4,
+      "category": "rules",
+      "text": "Kada ovlašćeni policijski službenik daje naredbe koje odstupaju od pravila saobraćaja, učesnik u saobraćaju:",
+      "options": [
+        "dužan je da postupi po naredbama ovlašćenog policijskog službenika",
+        "dužan je da postupi po pravilima saobraćaja",
+        "nije dužan da postupi po naredbama ovlašćenog policijskog službenika"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-4-2",
+      "page": 4,
+      "category": "rules",
+      "text": "Ukoliko se ne prevozi u bezbjednosnom sjedištu, u motornom vozilu na prednjem sjedištu, ne smije da se prevozi dijete:",
+      "options": [
+        "mlađe od 10 godina",
+        "mlađe od 12 godina",
+        "mlađe od 14 godina"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-4-3",
+      "page": 4,
+      "category": "rules",
+      "text": "Kretanje vozila unazad u uslovima smanjene vidljivosti:",
+      "options": [
+        "dozvoljeno je u naselju",
+        "dozvoljeno je na kratkom dijelu puta",
+        "nije dozvoljeno"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-4-4",
+      "page": 4,
+      "category": "rules",
+      "text": "U naselju se saobraćajnim znakom motornim vozilima može dozvoliti brzina kretanja najviše do:",
+      "options": [
+        "80 km/h",
+        "50 km/h",
+        "60 km/h"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-4-5",
+      "page": 4,
+      "category": "rules",
+      "text": "Kada vozač naiđe na organizovanu kolonu pješaka koja prelazi kolovoz:",
+      "options": [
+        "ne smije vozilom da presijeca organizovanu kolonu pješaka",
+        "smije vozilom da presijeca organizovanu kolonu pješaka uz upotrebu zvučnog znaka upozorenja",
+        "smije vozilom da presijeca organizovanu kolonu pješaka, ako kolonu ne čine djeca"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-5-1",
+      "page": 5,
+      "category": "rules",
+      "text": "Vučenim motornim vozilom, osim vozača koji njime upravlja:",
+      "options": [
+        "dozvoljen je prevoz putnika u skladu sa brojem putničkih mjesta",
+        "dozvoljen je prevoz samo jednog putnika",
+        "zabranjen je prevoz putnika"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-5-2",
+      "page": 5,
+      "category": "rules",
+      "text": "Prelaženje vozilom iz jedne u drugu saobraćajnu traku namijenjenu za saobraćaj u istom smjeru je:",
+      "options": [
+        "prestrojavanje",
+        "preticanje",
+        "obilaženje"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-5-3",
+      "page": 5,
+      "category": "rules",
+      "text": "Mladi vozač i vozač početnik ne smije upravljati vozilom na autoputu brzinom većom od:",
+      "options": [
+        "70 km/h",
+        "100 km/h",
+        "110 km/h"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-5-4",
+      "page": 5,
+      "category": "rules",
+      "text": "Da li je učesnik u saobraćaju dužan da postupa u skladu sa saobraćajnom signalizacijom i kad time odstupa od pravila saobraćaja:",
+      "options": [
+        "nije dužan",
+        "dužan je",
+        "dužan je samo u naselju"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-5-5",
+      "page": 5,
+      "category": "rules",
+      "text": "Naglo mijenjanje brzine vozila po putu je dozvoljeno:",
+      "options": [
+        "u slučaju uključivanja sa zemljanog puta na javni put",
+        "u slučaju izbjegavanja neposredne opasnosti",
+        "u slučaju bržeg isključivanja iz saobraćaja"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-6-1",
+      "page": 6,
+      "category": "rules",
+      "text": "Osim traktora, ostala vozila na motorni pogon:",
+      "options": [
+        "ne smiju da vuku priključno vozilo za traktor",
+        "smiju da vuku priključno vozilo za traktor",
+        "ne smiju da vuku priključno vozilo za traktor, ako masa skupa vozila prelazi -500 kg"
+      ],
+      "correct": 0,
+      "note": "На слайде напечатано «-500 kg» — минус явно артефакт вёрстки, оставлено как в источнике. Ключ не оспаривается."
+    },
+    {
+      "id": "I-6-2",
+      "page": 6,
+      "category": "rules",
+      "text": "Vozač je dužan da upotrijebi zvučni znak upozorenja:",
+      "options": [
+        "prije ulaska u tunel koji nema osvjetljenje",
+        "na putu u naselja prije ulaska u raskrsnicu",
+        "na putu van naselja prije nailaska u nepreglednu i uzanu krivinu"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-6-3",
+      "page": 6,
+      "category": "rules",
+      "text": "Vozilo na motorni pogon ne smije da vuče:",
+      "options": [
+        "motocikl, moped, kao ni laki ni teški tricikl",
+        "teretno vozilo",
+        "putničko vozilo"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-6-4",
+      "page": 6,
+      "category": "rules",
+      "text": "Pješak na javnom putu van naselja:",
+      "options": [
+        "ne smije se kretati desnom stranom kolovoza",
+        "ne smije se kretati u koloni",
+        "ne smije se kretati po kolovozu autoputa"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-6-5",
+      "page": 6,
+      "category": "rules",
+      "text": "Vozilo koje se kreće po šinama postavljenim na sredini kolovoza:",
+      "options": [
+        "smije da se pretiče sa lijeve strane",
+        "smije da se pretiče sa bilo koje strane",
+        "smije da se pretiče sa desne strane"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-6-6",
+      "page": 6,
+      "category": "rules",
+      "text": "Da li na brzoj saobraćajnici vozač smije da vrši polukružno okretanje:",
+      "options": [
+        "da, ako ne ugrožava druge učesnike u saobraćaju",
+        "da, ako ima uključene sve pokazivače pravca",
+        "ne smije"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-7-1",
+      "page": 7,
+      "category": "rules",
+      "text": "Crveno i plavo trepćuće svijetlo koja se naizmjenično pale na vozilu su svjetlosni znaci koje daju:",
+      "options": [
+        "vozila sa prvenstvom prolaza",
+        "vozila pod pratnjom",
+        "specijalna vozila"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-7-2",
+      "page": 7,
+      "category": "rules",
+      "text": "Vozač vozila dok ga drugo vozilo pretiče:",
+      "options": [
+        "ne smije da povećava brzinu kretanja",
+        "smije da poveća brzinu kretanja",
+        "ne smije da smanji brzinu kretanja"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-7-3",
+      "page": 7,
+      "category": "rules",
+      "text": "Okretanje vozila za 180° iz dotadašnjeg smjera kretanja radi uključivanja u suprotni saobraćajni tok je:",
+      "options": [
+        "kružno okretanje",
+        "lijevo skretanje",
+        "polukružno okretanje"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-7-4",
+      "page": 7,
+      "category": "rules",
+      "text": "Mladi vozač na magistralnom putu ne smije upravljati vozilom brzinom većom od:",
+      "options": [
+        "50 km/h",
+        "60 km/h",
+        "70 km/h"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-7-5",
+      "page": 7,
+      "category": "rules",
+      "text": "Noću vozač može upotrijebiti svjetlosni znak upozorenja na putu u naselju, prilikom:",
+      "options": [
+        "mimoilaženja sa drugim vozilom",
+        "mimoilaženja sa pješakom",
+        "preticanja drugog vozila"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-8-1",
+      "page": 8,
+      "category": "rules",
+      "text": "Na raskrsnici postoji horizontalna i svjetlosna signalizacija, vozač će postupiti prema:",
+      "options": [
+        "pravilu propuštanja vozila sa desne strane",
+        "značenju svjetlosne signalizacije",
+        "oznakama na kolovozu"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-8-2",
+      "page": 8,
+      "category": "rules",
+      "text": "Mladi vozač ne smije upravljati vozilom, osim na autoputu, brzinom većom od:",
+      "options": [
+        "100 km/h",
+        "80 km/h",
+        "70 km/h"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-8-3",
+      "page": 8,
+      "category": "rules",
+      "text": "Vozač koji se približava obilježenom pješačkom prelazu, mora:",
+      "options": [
+        "smanjiti brzinu kretanja vozila do 30 km/h",
+        "smanjiti brzinu i nastaviti kretanje sa vozilom bez obzira na saobraćajnu situaciju",
+        "prilagoditi brzinu kretanja vozila tako da se u svakoj situaciji može bezbjedno zaustaviti"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-8-4",
+      "page": 8,
+      "category": "rules",
+      "text": "Brzina kretanja teretnog motornog vozila čija je najveća dozvoljena masa do -500 kg ograničena je na:",
+      "options": [
+        "80 km/h",
+        "70 km/h",
+        "60 km/h"
+      ],
+      "correct": 0,
+      "note": "На слайде напечатано «do -500 kg» — минус артефакт вёрстки, оставлено как в источнике. Ключ не оспаривается."
+    },
+    {
+      "id": "I-8-5",
+      "page": 8,
+      "category": "rules",
+      "text": "Prekid kretanja vozila u trajanju dužem od pet minuta, osim prekida koji se vrši da bi se postupilo po znaku ili pravilu kojim se reguliše saobraćaj je:",
+      "options": [
+        "zaustavljanje vozila",
+        "parkiranje vozila",
+        "isključenje vozila"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-8-6",
+      "page": 8,
+      "category": "rules",
+      "text": "Brzina kretanja autobusa u javnom gradskom prevozu putnika ograničena je do:",
+      "options": [
+        "50 km/h",
+        "60 km/h",
+        "70 km/h"
+      ],
+      "correct": 0,
+      "note": "Отметка на слайде красная — похоже на исправление преподавателя. Отмеченный вариант однозначен."
+    },
+    {
+      "id": "I-9-1",
+      "page": 9,
+      "category": "rules",
+      "text": "Vozač umjesto zvučnog znaka upozorenja noću može da upotrijebi:",
+      "options": [
+        "dnevna svijetla",
+        "svjetlosni znak upozorenja",
+        "svijetla za maglu"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-9-2",
+      "page": 9,
+      "category": "rules",
+      "text": "Površina koja nije namjenjena za saobraćaj vozila, koja se nalazi na sredini kolovoza sa jednosmjernim saobraćajem, ako saobraćajnim znakom nije drugačije određeno:",
+      "options": [
+        "može se obilaziti sa lijeve ili desne strane",
+        "može da se obilazi samo sa desne strane",
+        "može da se obilazi samo sa lijeve strane"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-9-3",
+      "page": 9,
+      "category": "rules",
+      "text": "Na putu za saobraćaj vozila u oba smjera na kojem postoje tri saobraćajne trake vozač:",
+      "options": [
+        "smije da koristi bilo koju saobraćajnu traku",
+        "ne smije da koristi saobraćajnu traku uz desnu ivicu kolovoza",
+        "ne smije da koristi saobraćajnu traku uz lijevu ivicu kolovoza"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-9-4",
+      "page": 9,
+      "category": "rules",
+      "text": "Na raskrsnici vozač je dužan:",
+      "options": [
+        "da propusti vozilo koje nailazi sa njegove lijeve strane",
+        "da propusti vozilo koje nailazi sa njegove desne strane",
+        "da propusti sva vozila"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-9-5",
+      "page": 9,
+      "category": "rules",
+      "text": "Odstojanje između vučnog i vučenog putničkog vozila, ako se vuče pomoću užeta iznosi:",
+      "options": [
+        "od 1 do 2 metara",
+        "od 3 do 5 metara",
+        "preko 5 metara"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-10-1",
+      "page": 10,
+      "category": "rules",
+      "text": "U vozilu u kojem su ugrađeni sigurnosni pojasevi u toku vožnje sigurnosni pojas mora da koristi:",
+      "options": [
+        "samo vozač",
+        "vozač i putnici",
+        "samo vozač i suvozač"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-10-2",
+      "page": 10,
+      "category": "rules",
+      "text": "Kad se vozilo za organizovani prevoz djece zaustavi na kolovozu radi ulaska, odnosno izlaska djece, vozač:",
+      "options": [
+        "mora uključiti lijevi pokazivač pravca",
+        "mora uključiti desni pokazivač pravca",
+        "mora uključiti sve pokazivače pravca"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-10-3",
+      "page": 10,
+      "category": "rules",
+      "text": "U naselju se saobraćajnim znakom motornim vozilima može ograničiti brzina kretanja najviše do:",
+      "options": [
+        "80 km/h",
+        "50 km/h",
+        "60 km/h"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-10-4",
+      "page": 10,
+      "category": "rules",
+      "text": "Vozač vozila za organizovani prevoz djece kad zaustavi vozilo na kolovozu radi ulaska-izlaska djece mora:",
+      "options": [
+        "uključiti lijevi pokazivač pravca",
+        "uključiti sve pokazivače pravca",
+        "uključiti desni pokazivač pravca"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-10-5",
+      "page": 10,
+      "category": "rules",
+      "text": "Kada vozila na raskrsnicu dolaze iz suprotnih smjerova i skreću ulijevo mimoilaze se:",
+      "options": [
+        "sa desne strane",
+        "sa lijeve strane",
+        "po dogovoru"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-10-6",
+      "page": 10,
+      "category": "rules",
+      "text": "Prilikom uključivanja u saobraćaj vozač je dužan:",
+      "options": [
+        "da upotrijebi zvučni znak upozorenja i da uključi odgovarajući pokazivač pravca",
+        "da uključi sve pokazivače pravca",
+        "da se uvjeri da to može učiniti na bezbjedan način i da uključi odgovarajući pokazivač pravca"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-11-1",
+      "page": 11,
+      "category": "rules",
+      "text": "Vozilo koje se kreće po šinama postavljenim na sredini kolovoza:",
+      "options": [
+        "smije da se pretiče sa desne strane",
+        "smije da se pretiče sa lijeve strane",
+        "ne smije da se pretiče"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-11-2",
+      "page": 11,
+      "category": "rules",
+      "text": "Prilikom mimoilaženja sa pješakom, vozač je dužan da:",
+      "options": [
+        "drži bezbjedno rastojanje između svog vozila i pješaka",
+        "sirenom upozori pješaka kako bi pješak napustio kolovoz",
+        "ubrza vozilo da se što prije mimoiđe sa pješakom"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-11-3",
+      "page": 11,
+      "category": "rules",
+      "text": "Odstojanje između vučnog i vučenog motornog vozila, ako se vuče pomoću krute veze inosi:",
+      "options": [
+        "od 3 do 5 metara",
+        "preko 5 metra",
+        "do 3 m"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-11-4",
+      "page": 11,
+      "category": "rules",
+      "text": "Prolaženje vozilom pored drugog vozila koje se ne pomjera je radnja:",
+      "options": [
+        "preticanja",
+        "obilaženja",
+        "prestrojavanja"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-11-5",
+      "page": 11,
+      "category": "rules",
+      "text": "Brzina kretanja teretnog vozila sa priključnim vozilom ograničena je na:",
+      "options": [
+        "60 km/h",
+        "70 km/h",
+        "80 km/h"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-12-1",
+      "page": 12,
+      "category": "rules",
+      "text": "Vozač kome je dat znak za preticanje:",
+      "options": [
+        "dužan je da pomjeri svoje vozilo ka desnoj ivici kolovoza",
+        "dužan je da pomjeri svoje vozilo ka razdjelnoj liniji",
+        "dužan je da pomjeri vozilo ka lijevoj ivici kolovoza"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-12-2",
+      "page": 12,
+      "category": "rules",
+      "text": "Da li vozila pod pratnjom smiju presijecati kolonu pješaka:",
+      "options": [
+        "ne, ako je kolona duža od 30 metara",
+        "ne, bez obzira na dužinu kolone",
+        "da, bez obzira na dužinu kolone"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-12-3",
+      "page": 12,
+      "category": "rules",
+      "text": "U priključnom vozilu za stanovanje – kamp-prikolici:",
+      "options": [
+        "smiju se prevoziti lica",
+        "ne smiju se prevoziti lica",
+        "ne smije se prevoziti više od pet lica"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-12-4",
+      "page": 12,
+      "category": "rules",
+      "text": "Teret na motornom vozilu može da pređe najudaljeniju tačku na prednjoj strani vozila:",
+      "options": [
+        "do 1,5 metara",
+        "do 1 metar",
+        "nije ograničeno, ali se mora označiti propisanom tablom"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-12-5",
+      "page": 12,
+      "category": "rules",
+      "text": "Mladi vozač je vozač:",
+      "options": [
+        "koji ima manje od 12 mjeseci vozačkog iskustva",
+        "do 24 godine života",
+        "do 21 godinu života"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-12-6",
+      "page": 12,
+      "category": "rules",
+      "text": "Ako u kretanju vozilom na putu naiđete na saobraćajni znak ”djeca na putu” postupićete tako što ćete:",
+      "options": [
+        "sa naročitom opreznošću nastaviti kretanje kako bi mogli blagovremeno zaustaviti vozilo",
+        "prilagoditi brzinu prema opštem ograničenju za datu dionicu puta",
+        "prilagoditi brzinu vremenskim uslovima"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-13-1",
+      "page": 13,
+      "category": "rules",
+      "text": "Kada se vozilom krećeš pored autobusa zaustavljenog na stajalištu postupićeš tako:",
+      "options": [
+        "što ćeš zaustaviti vozilo i sačekati ulaz putnika u autobus, a zatim nastaviti kretanje",
+        "što ćeš uključiti sirenu i nastaviti kretanje bez dodatne pažnje na lica koja ulaze u autobus, odnosno izlaze",
+        "što ću se kretati smanjenom brzinom da ne ugrožavam lica koja u autobus ulaze, odnosno izlaze"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-13-2",
+      "page": 13,
+      "category": "rules",
+      "text": "Vozač dok upravlja putničkim motornim vozilom u saobraćaju mora u vozilu:",
+      "options": [
+        "imati najmanje dva prsluka sa reflektujućim osobinama",
+        "imati prsluka sa reflektujućim osobinama koliko ima i mjesta za sjedenje",
+        "imati jedan prsluk sa reflektujućim osobinama"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-13-3",
+      "page": 13,
+      "category": "rules",
+      "text": "Na putu u naselju na kojem brzina nije ograničena saobraćajnim znakom, vozač ne smije da se kreće brže od:",
+      "options": [
+        "50 km/h",
+        "60 km/h",
+        "70 km/h"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-13-4",
+      "page": 13,
+      "category": "rules",
+      "text": "Kada se vozač uključuje vozilom sa zemljanog puta na put sa asfaltnim zastorom, potrebno je:",
+      "options": [
+        "da zaustavi vozilo i ukloni blato sa točkova nakon uključenja",
+        "da naizmjenično ubrza i smanji brzinu vozila nakon uključenja, kako bi blato spalo sa točkova",
+        "da zaustavi vozilo i ukloni blato sa točkova prije uključenja"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-13-5",
+      "page": 13,
+      "category": "rules",
+      "text": "Prilikom kretanja vozilom po kolovozu vozač je dužan da vozilo drži:",
+      "options": [
+        "što bliže desnoj ivici kolovoza",
+        "sredinom kolovozne trake",
+        "bliže razdjelnoj liniji"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-14-1",
+      "page": 14,
+      "category": "rules",
+      "text": "Saobraćajnu traku namijenjenu za kretanje vozila za gradski prevoz putnika mogu koristiti:",
+      "options": [
+        "vozila za odvoz smeća",
+        "vozila sa prevenstvom prolaza",
+        "putnička vozila pri preticanju"
+      ],
+      "correct": 1,
+      "note": "На слайде напечатано «prevenstvom» вместо «prvenstvom» — оставлено как в источнике."
+    },
+    {
+      "id": "I-14-2",
+      "page": 14,
+      "category": "rules",
+      "text": "Kada se iza vozila zbog spore vožnje formira kolona vozila, vozač je dužan da:",
+      "options": [
+        "nastavi kretanje bez obaveze prema drugim učesnicima u saobraćaju",
+        "na odgovarajućem mjestu na putu omogući vozilima da ga bezbjedno preteknu, obiđu ili prođu",
+        "nastavi kretanje do prve raskrsnice sa lokalnim putem i isključi se iz saobraćaja"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-14-3",
+      "page": 14,
+      "category": "rules",
+      "text": "Vozač smije da zaustavi ili parkira svoje vozilo na trotoaru:",
+      "options": [
+        "ako trotoar ima širinu veću od 1,6 metara",
+        "ako je saobraćajnim znakom dozvoljeno, bez obzira na širinu trotoara i prolaza za pješake",
+        "ako je dozvoljeno saobraćajnom signalizacijom, i ako ostane prolaz za pješake najmanje širine 1,6 metara, koji ne smije biti uz ivicu kolovoza"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-14-4",
+      "page": 14,
+      "category": "rules",
+      "text": "Vozilo koje se kreće po šinama postavljenim uz desnu ivicu kolovoza pretiče se:",
+      "options": [
+        "sa bilo koje strane",
+        "sa lijeve strane",
+        "sa desne strane"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-14-5",
+      "page": 14,
+      "category": "rules",
+      "text": "Za vrijeme kretanja vozila unazad:",
+      "options": [
+        "moraju biti uključeni svi pokazivači pravca",
+        "ne moraju biti uključeni svi pokazivači pravca",
+        "mora biti uključen samo desni pokazivač pravca"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-14-6",
+      "page": 14,
+      "category": "rules",
+      "text": "Vozačka dozvola za kategoriju B može se izdati licu koje je navršilo:",
+      "options": [
+        "17 godina",
+        "17 godina i 6 mjeseci",
+        "18 godina"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-15-1",
+      "page": 15,
+      "category": "rules",
+      "text": "Vozač koji na kolovozu bez ulične rasvjete zaustavi ili parkira vozilo, noću ili u uslovima smanjene vidljivosti, mora na vozilu uključiti:",
+      "options": [
+        "oborena svijetla",
+        "parkirna, odnosno poziciona svijetla",
+        "svijetla za maglu"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-15-2",
+      "page": 15,
+      "category": "rules",
+      "text": "Odstojanje na kojem učesnik u saobraćaju može jasno vidjeti kolovoz je:",
+      "options": [
+        "preglednost",
+        "vidno polje",
+        "vidljivost"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-15-3",
+      "page": 15,
+      "category": "rules",
+      "text": "Za vožnju bicikla, gdje ne postoji posebna staza, odnosno traka, može da se koristi kolovoz:",
+      "options": [
+        "u širini do 1 metra od desne ivice kolovoza",
+        "u širini do 1,5 metara od desne ivice kolovoza",
+        "u širini do 1,2 metra od desne ivice kolovoza"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-15-4",
+      "page": 15,
+      "category": "rules",
+      "text": "Brzina kretanja vozila na javnom putu kada prevozi opasne materije van naselja ograničena je:",
+      "options": [
+        "na 60 km/h",
+        "na 70 km/h",
+        "na 80 km/h"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-15-5",
+      "page": 15,
+      "category": "rules",
+      "text": "Vozač može da se uključi vozilom u saobraćaj kada:",
+      "options": [
+        "uključi zvučni signal i sve pokazivače pravca",
+        "uključi samo pokazivač pravca",
+        "se uvjeri da ne ometa i na propisan način obavijesti ostale učesnike"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-16-1",
+      "page": 16,
+      "category": "rules",
+      "text": "Kada se vozilom vrši prevoz djeteta u bezbjednosnom sjedištu:",
+      "options": [
+        "dijete ne mora biti vezano sigurnosnim pojasom",
+        "dijete ne mora biti vezano, ako je sjedište pričvršćeno sigurnosnim pojasom",
+        "dijete mora biti vezano sigurnosnim pojasom"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-16-2",
+      "page": 16,
+      "category": "rules",
+      "text": "Na javnom putu gdje su kolovozne trake fizički odvojene, vozač smije vozilom da se kreće:",
+      "options": [
+        "kolovoznom trakom namijenjenom za saobraćaj vozila iz suprotnog smjera",
+        "desnom kolovoznom trakom",
+        "lijevom i desnom kolovoznom trakom"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-16-3",
+      "page": 16,
+      "category": "rules",
+      "text": "Lice koje se prevozi vozilom ne smije:",
+      "options": [
+        "da piše poruke na telefonskom uređaju",
+        "da ometa vozača u upravljanju",
+        "da koristi slušalice"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-16-4",
+      "page": 16,
+      "category": "rules",
+      "text": "Kad se vozilom kreće unazad vozač je:",
+      "options": [
+        "dužan da propusti vozilo koje dolazi iza njegovog vozila",
+        "dužan da uključi lijevi pokazivač pravca",
+        "nije dužan da propusti vozilo koje dolazi iza njegovog vozila"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-16-5",
+      "page": 16,
+      "category": "rules",
+      "text": "Sredstvo kojim se ometa rad uređaja za mjerenje brzine kretanja vozila:",
+      "options": [
+        "ne smije se koristiti na dijelu puta gdje postoji dopunska tabla radarska kontrola",
+        "smije se koristiti na dijelu puta gdje ne postoji dopunska tabla radarska kontrola",
+        "ne smije se koristiti i nalaziti u vozilu"
+      ],
+      "correct": 2
+    },
+    {
+      "id": "I-16-6",
+      "page": 16,
+      "category": "rules",
+      "text": "Ako se vozač nalazi na kolovozu van svog vozila:",
+      "options": [
+        "dužan je da nosi prsluk sa svjetlosno reflektujućim osobinama",
+        "nije dužan da nosi prsluk sa svjetlosno reflektujućim osobinama",
+        "dužan je da položajem ruku upozori ostale učesnike o svom prisustvu"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-17-1",
+      "page": 17,
+      "category": "rules",
+      "text": "Kada na raskrsnici vozila dolaze iz suprotnih smjerova i skreću ulijevo mimoilaze se sa:",
+      "options": [
+        "desne strane",
+        "lijeve strane",
+        "lijeve i desne strane"
+      ],
+      "correct": 0
+    },
+    {
+      "id": "I-17-2",
+      "page": 17,
+      "category": "rules",
+      "text": "U toku kretanja za vrijeme magle na vozilu moraju da budu uključena:",
+      "options": [
+        "velika svijetla",
+        "oborena svijetla",
+        "pokazivači pravca"
+      ],
+      "correct": 1
+    },
+    {
+      "id": "I-17-3",
+      "page": 17,
+      "category": "rules",
+      "text": "Vozač koji se približava raskrsnici dužan je da:",
+      "options": [
+        "poveća brzinu kretanja da što brže prođe kroz raskrsnicu",
+        "prilagodi vožnju uslovima saobraćaja na raskrsnici",
+        "vozi brzinom koja je propisana opštim ograničenjem"
+      ],
+      "correct": 1
+    }
+  ]
+}

@@ -233,6 +233,24 @@ inline probe.
 
 ---
 
+## Phase 11: Volume I — Traffic Rules
+
+**Transcribed after the volume II proof, because it needs no new machinery.** It
+did, however, expose a defect in the render step that had been silently losing
+data since the beginning.
+
+- [X] T070 Diagnose why every slide loses its last text row: the question raster is truncated where PowerPoint places it, and neither expanding the page box nor stripping clipping paths recovers it — while the answer marks, being text objects over that raster, are not truncated at all
+- [X] T071 Establish that the same truncation was hiding answer marks from the text layer: reading marks from the un-expanded PDF dropped every mark positioned past the page edge, which is what made the text layer look unreliable
+- [X] T072 Build tools/04_marked_slides.py: render as the base for sharpness and marks, with the raster's missing rows appended beneath and an overlap so a row can be paired with its mark
+- [X] T073 Point tools/02_review.py at the composited slides, since verifying a parse against a truncated slide is worse than not verifying it
+- [X] T074 Transcribe volume I into data/questions-I.json — 89 questions across 17 slides, each slide's count cross-checked against its mark count from the text layer
+- [X] T075 Reconcile the flag convention: a lone red mark is an instructor's correction, not an ambiguity, so it belongs in `note`; IV-7-2 moved from `review` to match
+
+**Checkpoint**: 138 questions across three volumes, and the render step no longer
+loses the bottom of every slide.
+
+---
+
 ## Dependencies & Execution Order
 
 ### Phase Dependencies
