@@ -135,13 +135,18 @@ appear, answer one correctly twice, and confirm it leaves while the others remai
 **Independent Test**: Load once against a production build, disable networking, relaunch from
 the home-screen icon, and confirm every question and all stored progress is available.
 
-- [ ] T041 [US3] Configure vite-plugin-pwa in web/vite.config.ts with the web manifest and a precache covering the app shell, the generated content bundle, and the copied question illustrations (FR-018, SC-002)
-- [ ] T042 [P] [US3] Add application icons in web/public/icons/ and reference them from the manifest
-- [ ] T043 [US3] Request navigator.storage.persist() on first use in web/src/storage/local.ts to reduce eviction risk (research §3)
-- [ ] T044 [P] [US3] Add offline-ready and update-available notices in web/src/ui/ServiceWorkerNotices.tsx
-- [ ] T045 [US3] Verify offline behaviour and installation against `npm run preview`, never the dev server, per quickstart.md
+- [X] T041 [US3] Configure vite-plugin-pwa in web/vite.config.ts with the web manifest and a precache covering the app shell, the generated content bundle, and the copied question illustrations (FR-018, SC-002)
+- [X] T042 [P] [US3] Add application icons in web/public/icons/ and reference them from the manifest
+- [X] T043 [US3] Request navigator.storage.persist() on first use in web/src/storage/local.ts to reduce eviction risk (research §3)
+- [X] T044 [P] [US3] Add offline-ready and update-available notices in web/src/ui/ServiceWorkerNotices.tsx
+- [X] T045 [US3] Verify offline behaviour and installation against `npm run preview`, never the dev server, per quickstart.md
 
-**Checkpoint**: The app is a real installable offline trainer.
+- [X] T086 Make the base path a deploy-time variable in web/vite.config.ts, so the same build serves a GitHub Pages subpath or a root-served host without a code change
+- [X] T087 Write the app to dist/404.html as well, so a direct hit on /study on a static host reaches the router instead of a 404
+
+**Checkpoint**: The app is a real installable offline trainer. Verified by killing
+the server and reloading: the shell, the questions and the photographs all came
+from cache.
 
 ---
 

@@ -85,6 +85,12 @@ export interface Strings {
     readonly unavailable: string
     readonly discarded: string
   }
+  readonly pwa: {
+    readonly offlineReady: string
+    readonly updateReady: string
+    readonly reload: string
+    readonly dismiss: string
+  }
   readonly categories: Readonly<Record<string, string>>
   readonly volumes: Readonly<Record<string, string>>
 }
@@ -134,6 +140,12 @@ const me: Strings = {
   storage: {
     unavailable: 'Napredak se ne čuva: pregledač ne dozvoljava pristup skladištu.',
     discarded: 'Sačuvani napredak nije bilo moguće pročitati i poništen je.',
+  },
+  pwa: {
+    offlineReady: 'Spremno za rad bez interneta.',
+    updateReady: 'Nova verzija je spremna.',
+    reload: 'Osvježi',
+    dismiss: 'Sakrij',
   },
   categories: {
     vehicle: 'Poznavanje vozila',
@@ -195,6 +207,12 @@ const en: Strings = {
     unavailable: 'Progress is not being saved: the browser is blocking storage.',
     discarded: 'Saved progress could not be read and has been cleared.',
   },
+  pwa: {
+    offlineReady: 'Ready to work offline.',
+    updateReady: 'A new version is ready.',
+    reload: 'Reload',
+    dismiss: 'Dismiss',
+  },
   categories: {
     vehicle: 'Vehicle knowledge',
     firstaid: 'First aid',
@@ -254,6 +272,12 @@ const ru: Strings = {
   storage: {
     unavailable: 'Прогресс не сохраняется: браузер не даёт доступ к хранилищу.',
     discarded: 'Сохранённый прогресс не удалось прочитать, он был сброшен.',
+  },
+  pwa: {
+    offlineReady: 'Готово к работе офлайн.',
+    updateReady: 'Готова новая версия.',
+    reload: 'Обновить',
+    dismiss: 'Скрыть',
   },
   categories: {
     vehicle: 'Устройство автомобиля',

@@ -2,6 +2,7 @@ import { Outlet } from 'react-router'
 import { useStrings } from '@/i18n/useStrings'
 import { useLearnerStore } from '@/storage/useLearnerStore'
 import { LanguageSwitcher } from '@/ui/LanguageSwitcher'
+import { ServiceWorkerNotices } from '@/ui/ServiceWorkerNotices'
 
 interface RootProps {
   /** Set when unreadable stored progress had to be thrown away on startup. */
@@ -31,6 +32,8 @@ export function Root({ discardedReason }: RootProps) {
           {t.storage.unavailable}
         </p>
       )}
+
+      <ServiceWorkerNotices />
 
       <main className="grow">
         <Outlet />

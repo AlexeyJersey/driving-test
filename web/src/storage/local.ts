@@ -133,12 +133,27 @@ export interface CreatedStore {
   readonly discardedReason: string | null
 }
 
+/**
+ * Asks the browser to treat this origin's storage as persistent.
+ *
+ * Safari evicts local storage for sites that have not been used for a while, and
+ * this is the only lever a page has against it. The browser may refuse, and
+ * installing to the home screen matters more than the request does, so the
+ * result is not worth reacting to — but not asking would be leaving progress
+ * more exposed than it needs to be.
+ */
+function requestPersistence(): void {
+  void navigator.storage?.persist?.().catch(() => undefined)
+}
+
 export function createLearnerStore(): CreatedStore {
   const timestamp = now()
 
   if (!storageWorks()) {
     return { store: new MemoryLearnerStore(emptyLearnerState(timestamp)), discardedReason: null }
   }
+
+  requestPersistence()
 
   const outcome = readStoredState(window.localStorage.getItem(STORAGE_KEY), timestamp)
   const state = outcome.kind === 'current' ? outcome.state : emptyLearnerState(timestamp)
