@@ -164,6 +164,7 @@ const me: Strings = {
     firstaid: 'Prva pomoć',
     situations: 'Situacije u saobraćaju',
     rules: 'Pravila saobraćaja',
+    signs: 'Znakovi, semafori i gestovi',
   },
   volumes: {
     I: 'Pravila saobraćaja',
@@ -236,6 +237,7 @@ const en: Strings = {
     firstaid: 'First aid',
     situations: 'Traffic situations',
     rules: 'Traffic rules',
+    signs: 'Signs, signals and gestures',
   },
   volumes: {
     I: 'Traffic rules',
@@ -308,6 +310,7 @@ const ru: Strings = {
     firstaid: 'Первая помощь',
     situations: 'Ситуации на дороге',
     rules: 'Правила движения',
+    signs: 'Знаки, светофоры, жесты',
   },
   volumes: {
     I: 'Правила движения',

@@ -1,0 +1,1589 @@
+{
+  "volume": "III",
+  "source": "III str. ispitnih testova.pdf",
+  "title": "Znakovi, semafori i gestovi",
+  "questions": [
+    {
+      "id": "III-1-1",
+      "page": 1,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "biciklistički prelaz",
+        "staza za bicikliste",
+        "biciklisti na putu"
+      ],
+      "correct": 2,
+      "image": "III-1-1.webp"
+    },
+    {
+      "id": "III-1-2",
+      "page": 1,
+      "category": "signs",
+      "text": "Na slici su prikazani saobraćajni znaci koji označavaju:",
+      "options": [
+        "zabrana zaustavljanja",
+        "zabrana zaustavljanja i parkiranja",
+        "zabrana parkiranja"
+      ],
+      "correct": 1,
+      "image": "III-1-2.webp"
+    },
+    {
+      "id": "III-1-3",
+      "page": 1,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "obavezan smjer",
+        "put sa jednosmjernim saobraćajem",
+        "dozvoljeni smjer"
+      ],
+      "correct": 1,
+      "image": "III-1-3.webp"
+    },
+    {
+      "id": "III-1-4",
+      "page": 1,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "zabrana saobraćaja za vozila čija ukupna masa ne prelazi određenu masu na znaku",
+        "zabrana soabraćaja za vozila čija nosivost prelazi određenu masu na znaku",
+        "zabrana saobraćaja za vozila čija ukupna masa prelazi određenu masu na znaku"
+      ],
+      "correct": 2,
+      "image": "III-1-4.webp",
+      "note": "На слайде «soabraćaja» вместо «saobraćaja» — оставлено как в источнике."
+    },
+    {
+      "id": "III-2-1",
+      "page": 2,
+      "category": "signs",
+      "text": "Na slici su prikazani saobraćajni znaci koji označavaju:",
+      "options": [
+        "obavezan smjer u naznačenom vremenu",
+        "obavezno skretanje ulijevo u naznačenom vremenu",
+        "obavezno skretanje ulijevo u periodu od 8 časova pa do 18 časova"
+      ],
+      "correct": 0,
+      "image": "III-2-1.webp"
+    },
+    {
+      "id": "III-2-2",
+      "page": 2,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "biciklistička traka",
+        "biciklistička staza",
+        "traka za kretanje biciklista"
+      ],
+      "correct": 1,
+      "image": "III-2-2.webp"
+    },
+    {
+      "id": "III-2-3",
+      "page": 2,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "zabrana zaustavljanja vozila",
+        "zaustavljena vozila na putu",
+        "kolona zaustavljenih vozila"
+      ],
+      "correct": 2,
+      "image": "III-2-3.webp"
+    },
+    {
+      "id": "III-2-4",
+      "page": 2,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "Andrejin krst sa jednim i po kolosjekom",
+        "Andrejin krst sa dva ili više kolosjeka",
+        "Andrejin kolosjek sa jednim ili više kolosjeka"
+      ],
+      "correct": 1,
+      "image": "III-2-4.webp"
+    },
+    {
+      "id": "III-3-1",
+      "page": 3,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "opasna dionica puta",
+        "opasnost na putu",
+        "opasnost od odrona u dužini od 300 m"
+      ],
+      "correct": 0,
+      "image": "III-3-1.webp"
+    },
+    {
+      "id": "III-3-2",
+      "page": 3,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "prvenstvo prolaza u odnosu na vozila iz suprotnog smjera",
+        "vozila iz suprotnog smjera imaju prvenstvo prolaza",
+        "prvenstvo prolaza vozila koja se kreću niz nagib"
+      ],
+      "correct": 0,
+      "image": "III-3-2.webp"
+    },
+    {
+      "id": "III-3-3",
+      "page": 3,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "nailazak na most na autoputu",
+        "autoput",
+        "međunarodni put"
+      ],
+      "correct": 1,
+      "image": "III-3-3.webp"
+    },
+    {
+      "id": "III-3-4",
+      "page": 3,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "avionska pista",
+        "blizina avionske piste",
+        "blizina aerodroma"
+      ],
+      "correct": 1,
+      "image": "III-3-4.webp"
+    },
+    {
+      "id": "III-4-1",
+      "page": 4,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "predputokaz",
+        "prestrojavanje vozila sa nazivima naseljenih mjesta",
+        "tabla za usmjeravanje"
+      ],
+      "correct": 1,
+      "image": "III-4-1.webp"
+    },
+    {
+      "id": "III-4-2",
+      "page": 4,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "zabrana saobraćaja u oba smjera",
+        "zabrana saobraćaja u jednom smjeru",
+        "dozvoljen saobraćaj u oba smjera"
+      ],
+      "correct": 1,
+      "image": "III-4-2.webp"
+    },
+    {
+      "id": "III-4-3",
+      "page": 4,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "zabrana saobraćaja za bicikle",
+        "biciklistička staza",
+        "biciklisti na putu"
+      ],
+      "correct": 1,
+      "image": "III-4-3.webp"
+    },
+    {
+      "id": "III-4-4",
+      "page": 4,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "pokretni most",
+        "oštećenje na kolovozu",
+        "opasan uspon"
+      ],
+      "correct": 0,
+      "image": "III-4-4.webp"
+    },
+    {
+      "id": "III-4-5",
+      "page": 4,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "prelaz puta preko željezničke pruge sa branicima ili polubranicima",
+        "prelaz puta preko željezničke pruge bez branika ili polubranika",
+        "približavanje tramvajskoj pruzi"
+      ],
+      "correct": 1,
+      "image": "III-4-5.webp"
+    },
+    {
+      "id": "III-5-1",
+      "page": 5,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "najveća dozvoljena brzina",
+        "obavezna brzina",
+        "brzina koja se preporučuje"
+      ],
+      "correct": 2,
+      "image": "III-5-1.webp"
+    },
+    {
+      "id": "III-5-2",
+      "page": 5,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "obavezno zaustavljanje",
+        "ukrštanje sa putem sa prvenstvom prolaza",
+        "ukrštanje sa sporednim putem"
+      ],
+      "correct": 1,
+      "image": "III-5-2.webp"
+    },
+    {
+      "id": "III-5-3",
+      "page": 5,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "nailaženje na semafor",
+        "nailaženje na željezničku prugu",
+        "nailaženje na radove na putu"
+      ],
+      "correct": 0,
+      "image": "III-5-3.webp"
+    },
+    {
+      "id": "III-5-4",
+      "page": 5,
+      "category": "signs",
+      "text": "Na slici, strelice na kolovozu služe za:",
+      "options": [
+        "usmjeravanje vozila",
+        "obilježavanje obaveznog smjera kretanja vozila",
+        "obilježavanje namjene saobraćajnih traka"
+      ],
+      "correct": 1,
+      "image": "III-5-4.webp"
+    },
+    {
+      "id": "III-6-1",
+      "page": 6,
+      "category": "signs",
+      "text": "Udvojena puna linija označava:",
+      "options": [
+        "ivicu kolovoza",
+        "biciklističku stazu",
+        "zabranu prelaska preko te linije ili kretanja po njima"
+      ],
+      "correct": 2,
+      "image": "III-6-1.webp",
+      "note": "Текстовый слой слайда содержит 5 отметок X, но визуально виден только один вопрос про линию с одной отметкой; вероятно посторонняя/сдвоенная метка, как на слайде I-3. Транскрибирован только реально видимый вопрос."
+    },
+    {
+      "id": "III-6-2",
+      "page": 6,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "zabrana preticanja svih motornih vozila osim motocikla bez prikolice i mopeda",
+        "zabrana preticanja svih motornih vozila",
+        "zabrana preticanja svih motornih vozila, osim mopeda"
+      ],
+      "correct": 0,
+      "image": "III-6-2.webp"
+    },
+    {
+      "id": "III-6-3",
+      "page": 6,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "prelaz puta preko željezničke pruge bez branika",
+        "prelaz puta preko željezničke pruge sa branicima ili polubranicima",
+        "prelaz puta preko željezničke pruge bez branika ili polubranika"
+      ],
+      "correct": 1,
+      "image": "III-6-3.webp"
+    },
+    {
+      "id": "III-6-4",
+      "page": 6,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "prelaz za životinje na putu",
+        "životinje na putu",
+        "divljač na putu"
+      ],
+      "correct": 1,
+      "image": "III-6-4.webp"
+    },
+    {
+      "id": "III-7-1",
+      "page": 7,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "zabrana saobraćaja za vozila koja ne prekoračuju određeno osovinsko opterećenje",
+        "zabrana saobraćaja za vozila koja prekoračuju određeno osovinsko opterećenje",
+        "zabrana saobraćaja za vozila koja ne prekoračuju nosivost označenu na znaku"
+      ],
+      "correct": 1,
+      "image": "III-7-1.webp"
+    },
+    {
+      "id": "III-7-2",
+      "page": 7,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "put sa jednosmjernim saobraćajem za teretna i priključna vozila",
+        "obavezan smjer za vrste vozila koje nijesu date na znaku",
+        "obilaznica za određene vrste vozila"
+      ],
+      "correct": 1,
+      "image": "III-7-2.webp"
+    },
+    {
+      "id": "III-7-3",
+      "page": 7,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "kružni tok saobraćaja",
+        "raskrsnica sa kružnim tokom saobraćaja",
+        "kružna raskrsnica"
+      ],
+      "correct": 2,
+      "image": "III-7-3.webp"
+    },
+    {
+      "id": "III-7-4",
+      "page": 7,
+      "category": "signs",
+      "text": "Na slici su prikazani saobraćajni znaci koji označavaju:",
+      "options": [
+        "blizinu dionice puta na kojem je snijeg",
+        "blizinu dionice puta na kome se snijeg čisti mašinski",
+        "blizinu dionice puta na kojem je poledica i led"
+      ],
+      "correct": 1,
+      "image": "III-7-4.webp"
+    },
+    {
+      "id": "III-8-1",
+      "page": 8,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "prvenstvo prolaza u odnosu na vozila iz suprotnog smjera",
+        "prvenstvo prolaza za vozila iz suprotnog smjera",
+        "saobraćaj u oba smjera"
+      ],
+      "correct": 1,
+      "image": "III-8-1.webp"
+    },
+    {
+      "id": "III-8-2",
+      "page": 8,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "prestanak najmanje dozvoljene brzine",
+        "prestanak ograničenja brzine",
+        "prestanak brzine koja se preporučuje"
+      ],
+      "correct": 1,
+      "image": "III-8-2.webp"
+    },
+    {
+      "id": "III-8-3",
+      "page": 8,
+      "category": "signs",
+      "text": "Na slici su prikazani saobraćajni znaci koji označavaju:",
+      "options": [
+        "zabrana saobraćaja za motorna vozila čija širina prelazi širinu označenu na znaku",
+        "zabrana saobraćaja za teretna vozila čija dužina prelazi dužinu označenu na znaku",
+        "zabrana saobraćaja za teretna vozila čija širina prelazi širinu označenu na znaku"
+      ],
+      "correct": 2,
+      "image": "III-8-3.webp"
+    },
+    {
+      "id": "III-8-4",
+      "page": 8,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "zabrana kretanja za pješake po kolovozu",
+        "zabrana saobraćaja za pješake",
+        "zabrana kretanja za pješake po kolovozu van naselja"
+      ],
+      "correct": 1,
+      "image": "III-8-4.webp"
+    },
+    {
+      "id": "III-9-1",
+      "page": 9,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "tabla za usmjeravanje",
+        "predznak za obilazak",
+        "putokaz za obilazak"
+      ],
+      "correct": 2,
+      "image": "III-9-1.webp"
+    },
+    {
+      "id": "III-9-2",
+      "page": 9,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "putokaz za izlazak sa auto-puta",
+        "naziv naseljenog mjesta",
+        "naziv petlje"
+      ],
+      "correct": 2,
+      "image": "III-9-2.webp"
+    },
+    {
+      "id": "III-9-3",
+      "page": 9,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "putokaz za naseljeno mjesto",
+        "strelasti putokaz",
+        "usmjeravajuća tabla za naseljeno mjesto"
+      ],
+      "correct": 1,
+      "image": "III-9-3.webp"
+    },
+    {
+      "id": "III-9-4",
+      "page": 9,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "prelazak sa dvije saobraćajne trake na jednu u istom smjeru kretanja",
+        "površina na kolovozu na kojoj se dvije saobraćajne trake spajaju u jednu",
+        "naizmjenično propuštanje vozila"
+      ],
+      "correct": 2,
+      "image": "III-9-4.webp"
+    },
+    {
+      "id": "III-10-1",
+      "page": 10,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "približavanje prelazu puta preko željezničke pruge sa branicima ili polubranicima",
+        "približavanje prelazu puta preko željezničke pruge",
+        "približavanje prelazu preko željezničke pruge bez branika ili polubranika"
+      ],
+      "correct": 2,
+      "image": "III-10-1.webp"
+    },
+    {
+      "id": "III-10-2",
+      "page": 10,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "prevrtanje ili iskliznuće vozila",
+        "klizav kolovoz",
+        "led i poledica na putu"
+      ],
+      "correct": 0,
+      "image": "III-10-2.webp"
+    },
+    {
+      "id": "III-10-3",
+      "page": 10,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "ograničenje brzine kretanja",
+        "brzina koja se preporučuje",
+        "najmanja dozvoljena brzina"
+      ],
+      "correct": 0,
+      "image": "III-10-3.webp"
+    },
+    {
+      "id": "III-10-4",
+      "page": 10,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "odronjavanje kamena",
+        "prštanje kamena na putu",
+        "klizište na putu"
+      ],
+      "correct": 0,
+      "image": "III-10-4.webp",
+      "note": "На слайде «prštanje» — вероятно опечатка вместо «prskanje»; оставлено как в источнике."
+    },
+    {
+      "id": "III-11-1",
+      "page": 11,
+      "category": "signs",
+      "text": "Na slici su prikazani saobraćajni znaci koji označavaju:",
+      "options": [
+        "pokretne stepenice na udaljenosti 10 metara",
+        "podzemni ili nadzemni pješački prelaz na udaljenosti 10 metara",
+        "ulazak u garažu na udaljenosti do 10 metara"
+      ],
+      "correct": 1,
+      "image": "III-11-1.webp"
+    },
+    {
+      "id": "III-11-2",
+      "page": 11,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "obavezna upotreba lanaca za snijeg",
+        "opasnost od snijega",
+        "opasnost od poledice"
+      ],
+      "correct": 2,
+      "image": "III-11-2.webp"
+    },
+    {
+      "id": "III-11-3",
+      "page": 11,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "zabrana saobraćaja za sva motorna vozila osim za motocikle",
+        "zabrana saobraćaja za motocikle",
+        "zabrana saobraćaja za bicikle sa motorom"
+      ],
+      "correct": 1,
+      "image": "III-11-3.webp"
+    },
+    {
+      "id": "III-11-4",
+      "page": 11,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "najmanje odstojanje između parkiranih vozila",
+        "najmanje odstojanje između vozila",
+        "potrebno rastojanje da bi se vozila mimoišla"
+      ],
+      "correct": 1,
+      "image": "III-11-4.webp"
+    },
+    {
+      "id": "III-12-1",
+      "page": 12,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "predznak za obilazak sa desne strane",
+        "pretputokaz za izlaz do određenog mjesta",
+        "putokaz za prestrojavanje za kretanje do određenog mjesta"
+      ],
+      "correct": 2,
+      "image": "III-12-1.webp"
+    },
+    {
+      "id": "III-12-2",
+      "page": 12,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "predznak za neposredno regulisanje saobraćaja na mjestu na kome se izvode radovi",
+        "regulisanje saobraćaja u raskrsnici pomoću zastavice",
+        "završetak puta zbog izvođenja radova"
+      ],
+      "correct": 0,
+      "image": "III-12-2.webp"
+    },
+    {
+      "id": "III-12-3",
+      "page": 12,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "zabrana zaustavljanja",
+        "zabrana saobraćaja u jednom smjeru",
+        "zabrana parkiranja"
+      ],
+      "correct": 2,
+      "image": "III-12-3.webp"
+    },
+    {
+      "id": "III-12-4",
+      "page": 12,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "dvostruka opasna krivina ili više uzastopnih krivina od kojih je prva na desno",
+        "dvostruka krivina ili više uzastopnih krivina od kojih je prva na desno",
+        "dvostruka opasna krivina ili više uzastopnih krivina od kojih je prva na lijevo"
+      ],
+      "correct": 1,
+      "image": "III-12-4.webp"
+    },
+    {
+      "id": "III-12-5",
+      "page": 12,
+      "category": "signs",
+      "text": "Na slici su prikazani saobraćajni znaci koji označavaju:",
+      "options": [
+        "najmanje dozvoljenu brzina u dužini puta od 2000 metara",
+        "brzinu koja se preporučuje u dužini puta od 2000 metara",
+        "najmanje dozvoljenu brzinu nakon pređenih 2000 metara"
+      ],
+      "correct": 0,
+      "image": "III-12-5.webp",
+      "note": "В первом варианте на слайде «brzina» вместо «brzinu» — оставлено как в источнике."
+    },
+    {
+      "id": "III-13-1",
+      "page": 13,
+      "category": "signs",
+      "text": "Na slici su prikazani saobraćajni znaci koji označavaju zabranu saobraćaja za motorna vozila koja vuku:",
+      "options": [
+        "laku prikolicu u naznačenom vremenu",
+        "poluprikolicu u naznačenom vremenu",
+        "priključno vozilo u naznačenom vremenu"
+      ],
+      "correct": 0,
+      "image": "III-13-1.webp"
+    },
+    {
+      "id": "III-13-2",
+      "page": 13,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "obavezan izlaz u slučaju opasnosti",
+        "udaljenost izlaza u slučaju opasnosti",
+        "putokaz za pješake"
+      ],
+      "correct": 1,
+      "image": "III-13-2.webp"
+    },
+    {
+      "id": "III-13-3",
+      "page": 13,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "početak saobraćajne trake za spora vozila",
+        "završetak saobraćajne trake za spora vozila",
+        "završetak saobraćajne trake za prinudno zaustavljanje"
+      ],
+      "correct": 1,
+      "image": "III-13-3.webp"
+    },
+    {
+      "id": "III-13-4",
+      "page": 13,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "zabrana saobraćaja za vozila sa ceradom",
+        "nailazak na neravan kolovoz",
+        "zabrana saobraćaja za cistijerne"
+      ],
+      "correct": 2,
+      "image": "III-13-4.webp"
+    },
+    {
+      "id": "III-14-1",
+      "page": 14,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "najmanja dozvoljena brzina",
+        "ograničenje brzine",
+        "brzina koja se preporučuje"
+      ],
+      "correct": 1,
+      "image": "III-14-1.webp"
+    },
+    {
+      "id": "III-14-2",
+      "page": 14,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "djeca na putu",
+        "zona škole",
+        "staza za pješake"
+      ],
+      "correct": 0,
+      "image": "III-14-2.webp"
+    },
+    {
+      "id": "III-14-3",
+      "page": 14,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "kamenje pršti",
+        "neučvršćena bankina",
+        "oštećen kolovoz"
+      ],
+      "correct": 1,
+      "image": "III-14-3.webp"
+    },
+    {
+      "id": "III-14-4",
+      "page": 14,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "zabrana saobraćaja za vozila označena simbolom",
+        "zabrana saobraćaja za teretna vozila",
+        "dozvoljen saobraćaj za vozila označena simbolom"
+      ],
+      "correct": 0,
+      "image": "III-14-4.webp"
+    },
+    {
+      "id": "III-15-1",
+      "page": 15,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "ukrštanje puteva sa prvenstvom prolaza",
+        "nailazak na put sa prvenstvom prolaza",
+        "pružanje puta sa prvenstvom prolaza"
+      ],
+      "correct": 2,
+      "image": "III-15-1.webp"
+    },
+    {
+      "id": "III-15-2",
+      "page": 15,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "raskrsnica sa kružnim tokom saobraćaja",
+        "kružni tok saobraćaja",
+        "obavezno polukružno okretanje"
+      ],
+      "correct": 0,
+      "image": "III-15-2.webp"
+    },
+    {
+      "id": "III-15-3",
+      "page": 15,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "ukrštanje puteva iste važnosti",
+        "obavezno zaustavljanje",
+        "ukrštanje sa putem sa prvenstvom prolaza"
+      ],
+      "correct": 2,
+      "image": "III-15-3.webp"
+    },
+    {
+      "id": "III-15-4",
+      "page": 15,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "zona usporenog saobraćaja",
+        "djeca na putu",
+        "dječje igralište"
+      ],
+      "correct": 0,
+      "image": "III-15-4.webp"
+    },
+    {
+      "id": "III-16-1",
+      "page": 16,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "kružna raskrsnica",
+        "raskrsnica sa kružnim tokom saobraćaja",
+        "kružni tok saobraćaja"
+      ],
+      "correct": 2,
+      "image": "III-16-1.webp"
+    },
+    {
+      "id": "III-16-2",
+      "page": 16,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "radovi na putu",
+        "otklanjanje odrona na putu",
+        "radovi na uklanjanju kamena na putu"
+      ],
+      "correct": 0,
+      "image": "III-16-2.webp"
+    },
+    {
+      "id": "III-16-3",
+      "page": 16,
+      "category": "signs",
+      "text": "Na slici su prikazani saobraćajni znaci koji označavaju:",
+      "options": [
+        "parkiranje na trotoaru poprečno osi kolovoza",
+        "parkiranje na trotoaru upravno na podužnu osu kolovoza",
+        "parkiranje na trotoaru paralelno sa podužnom osom kolovoza"
+      ],
+      "correct": 2,
+      "image": "III-16-3.webp"
+    },
+    {
+      "id": "III-16-4",
+      "page": 16,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "broj međunarodnog puta",
+        "broj regionalnog puta",
+        "broj magistralnog puta"
+      ],
+      "correct": 0,
+      "image": "III-16-3b.webp"
+    },
+    {
+      "id": "III-16-5",
+      "page": 16,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "putokaz za naseljena mjesta",
+        "pretputokaz za izlaz",
+        "tabla za usmjeravanje"
+      ],
+      "correct": 0,
+      "image": "III-16-4.webp"
+    },
+    {
+      "id": "III-17-1",
+      "page": 17,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "zajednička staza za bicikliste i pješake",
+        "razdvojene staze za bicikliste i pješake",
+        "zabrana saobraćaja za bicikliste i pješake"
+      ],
+      "correct": 1,
+      "image": "III-17-1.webp"
+    },
+    {
+      "id": "III-17-2",
+      "page": 17,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "zabrana prolaza bez zaustavljanja",
+        "zabrana prolaza bez zaustavljanja na carinskom prelazu",
+        "zabrana prolaza zbog naplate putarine"
+      ],
+      "correct": 0,
+      "image": "III-17-2.webp"
+    },
+    {
+      "id": "III-17-3",
+      "page": 17,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "ukrštanje sa putem sa prvenstvom prolaza",
+        "ukrštanje sa sporednim putem",
+        "obavezno zaustavljanje"
+      ],
+      "correct": 2,
+      "image": "III-17-3.webp"
+    },
+    {
+      "id": "III-17-4",
+      "page": 17,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "prelaz puta preko željezničke pruge sa branicima ili polubranicima",
+        "prelaz puta preko željezničke pruge bez branika ili polubranika",
+        "približavanje prelazu puta preko željezničke pruge"
+      ],
+      "correct": 1,
+      "image": "III-17-4.webp"
+    },
+    {
+      "id": "III-18-1",
+      "page": 18,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "predputokazna tabla za lijevo skretanje",
+        "tabla za usmjeravanje",
+        "putokazna tabla"
+      ],
+      "correct": 1,
+      "image": "III-18-1.webp"
+    },
+    {
+      "id": "III-18-2",
+      "page": 18,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "zabrana preticanja za teretna vozila",
+        "zabrana preticanja za sva motorna vozila",
+        "zabrana preticanja teretnih vozila"
+      ],
+      "correct": 2,
+      "image": "III-18-2.webp"
+    },
+    {
+      "id": "III-18-3",
+      "page": 18,
+      "category": "signs",
+      "text": "Na slici su prikazani saobraćajni znaci koji označavaju:",
+      "options": [
+        "dozvoljeno skretanje ulijevo u naznačenom vremenu",
+        "zabrana polukružnog okretanja u naznačenom vremenu",
+        "zabrana skretanja ulijevo u naznačenom vremenu"
+      ],
+      "correct": 2,
+      "image": "III-18-3.webp"
+    },
+    {
+      "id": "III-18-4",
+      "page": 18,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "obavezan smjer prvo udesno, pa ulijevo i izlazak iz raskrsnice",
+        "put sa jednosmjernim saobraćajem uz obavezno skretanje udesno pa ulijevo",
+        "smjer kretanja vozila koje namjerava da skrene ulijevo na raskrsnici na kojoj je skretanje ulijevo zabranjeno"
+      ],
+      "correct": 2,
+      "image": "III-18-4.webp"
+    },
+    {
+      "id": "III-18-5",
+      "page": 18,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "put sa prvenstvom prolaza",
+        "završetak puta sa prvenstvom prolaza",
+        "pružanje puta sa prvenstvom prolaza"
+      ],
+      "correct": 1,
+      "image": "III-18-5.webp"
+    },
+    {
+      "id": "III-19-1",
+      "page": 19,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "trolejbuska pruga",
+        "tramvajska pruga",
+        "šinsko vozilo na putu"
+      ],
+      "correct": 1,
+      "image": "III-19-1.webp"
+    },
+    {
+      "id": "III-19-2",
+      "page": 19,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "suženje puta sa desne strane",
+        "suženje puta sa lijeve strane",
+        "desna kolovozna traka nije u pravcu"
+      ],
+      "correct": 0,
+      "image": "III-19-2.webp"
+    },
+    {
+      "id": "III-19-3",
+      "page": 19,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "zabrana saobraćaja za vozila koja ne prekoračuju određenu dužinu",
+        "zabrana saobraćaja za vozila koja prekoračuju određenu dužinu",
+        "zabrana saobraćaja za teretna motorna vozila čija je dužina do 10 metara"
+      ],
+      "correct": 1,
+      "image": "III-19-3.webp"
+    },
+    {
+      "id": "III-19-4",
+      "page": 19,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "gradsko područje",
+        "industrijska zona",
+        "naseljeno mjesto"
+      ],
+      "correct": 2,
+      "image": "III-19-4.webp"
+    },
+    {
+      "id": "III-19-5",
+      "page": 19,
+      "category": "signs",
+      "text": "Na slici je prikazan saobraćajni znak:",
+      "options": [
+        "traka za kretanje teretnih vozila",
+        "način korišćenja saobraćajne trake",
+        "obavezno kretanje teretnih vozila"
+      ],
+      "correct": 1,
+      "image": "III-19-5.webp"
+    },
+    {
+      "id": "III-20-1",
+      "page": 20,
+      "category": "signs",
+      "text": "Svijetla na semaforu kao na slici imaju značenje:",
+      "options": [
+        "skori prestanak dozvoljenog kretanja vozila u pravcu strelica",
+        "skori prestanak zabrane kretanja vozaču i priprema za slobodno kretanje vozilom u pravcu strelica",
+        "dozvoljeno kretanje vozaču u pravcu strelica"
+      ],
+      "correct": 1,
+      "image": "III-20-1.webp"
+    },
+    {
+      "id": "III-20-2",
+      "page": 20,
+      "category": "signs",
+      "text": "Strelice koje označavaju dozvoljeni smjer kretanja su:",
+      "options": [
+        "crne na zelenoj podlozi",
+        "zelene boje na crnoj podlozi",
+        "crvene boje na zelenoj podlozi"
+      ],
+      "correct": 1,
+      "image": "III-20-1.webp"
+    },
+    {
+      "id": "III-20-3",
+      "page": 20,
+      "category": "signs",
+      "text": "Horizontalno predručena ruka, kao na slici obavezuje:",
+      "options": [
+        "vozača u čijem se smjeru daje znak da zaustavi vozilo",
+        "sve učesnike u saobraćaju da ubrzaju kretanje",
+        "vozača u čijem smjeru se daje ovaj znak da ubrza kretanje vozila"
+      ],
+      "correct": 2,
+      "image": "III-20-2.webp"
+    },
+    {
+      "id": "III-20-4",
+      "page": 20,
+      "category": "signs",
+      "text": "Znak koji daje policijski službenik na slici:",
+      "options": [
+        "može se davati samo na raskrsnici",
+        "može se davati na raskrsnici i na otvorenom putu",
+        "može se davati samo na otvorenom putu"
+      ],
+      "correct": 1,
+      "image": "III-20-2.webp"
+    },
+    {
+      "id": "III-20-5",
+      "page": 20,
+      "category": "signs",
+      "text": "Na slici je prikazan graničnik koji označava dio kolovoza na kojem je:",
+      "options": [
+        "zabranjen saobraćaj zbog prepreke na putu",
+        "zabranjen saobraćaj zbog ulivanja sa prilaznog puta",
+        "zabranjen saobraćaj zbog završetka saobraćajne trake"
+      ],
+      "correct": 1,
+      "image": "III-20-3.webp"
+    },
+    {
+      "id": "III-20-6",
+      "page": 20,
+      "category": "signs",
+      "text": "Na slici je prikazan:",
+      "options": [
+        "semafor za regulisanje obilaženja sa desne strane",
+        "semafor za regulisanje prolaska šinskih vozila",
+        "semafor za regulisanje promjene saobraćajne trake"
+      ],
+      "correct": 2,
+      "image": "III-20-4.webp"
+    },
+    {
+      "id": "III-20-7",
+      "page": 20,
+      "category": "signs",
+      "text": "Ako policijski službenik kao na slici lagano maše rukom, to znači da vozač u čijem se smjeru daje taj znak:",
+      "options": [
+        "treba da smanji brzinu kretanja",
+        "treba da se zaustavi",
+        "treba da ubrza kretanje"
+      ],
+      "correct": 0,
+      "image": "III-20-5.webp"
+    },
+    {
+      "id": "III-20-8",
+      "page": 20,
+      "category": "signs",
+      "text": "Znak koji daje policijski službenik na slici je obavezujući:",
+      "options": [
+        "samo van naselja vozaču u čijem smjeru se daje taj znak",
+        "za vozača u čijem smjeru se daje taj znak",
+        "samo u naselju vozaču u čijem smjeru se daje taj znak"
+      ],
+      "correct": 1,
+      "image": "III-20-5.webp"
+    },
+    {
+      "id": "III-21-1",
+      "page": 21,
+      "category": "signs",
+      "text": "Svjetlosna strelica zelene boje označava:",
+      "options": [
+        "da vozač treba da obrati pažnju na visinu vozila",
+        "da vozač zaustavi vozilo",
+        "da je vozaču dozvoljeno kretanje"
+      ],
+      "correct": 2,
+      "image": "III-21-1.webp"
+    },
+    {
+      "id": "III-21-2",
+      "page": 21,
+      "category": "signs",
+      "text": "Svjetlosni znaci kao na slici se koriste za regulisanje:",
+      "options": [
+        "saobraćaja na naplatnim rampama",
+        "saobraćaja na trakama sa promjenljivim smjerom kretanja",
+        "prolaska kroz tunel"
+      ],
+      "correct": 1,
+      "image": "III-21-1.webp"
+    },
+    {
+      "id": "III-21-3",
+      "page": 21,
+      "category": "signs",
+      "text": "Verikalno podignuta ruka sa položajem šake policijskog službenika kao na slici znači:",
+      "options": [
+        "slobodan prolaz za sva vozila",
+        "slobodan prolaz za vozila koja dolaze sa boka",
+        "obavezno zaustvljanje za sve učesnike"
+      ],
+      "correct": 2,
+      "image": "III-21-2.webp",
+      "note": "На слайде «Verikalno» вместо «Vertikalno» и «zaustvljanje» вместо «zaustavljanje» — оставлено как в источнике."
+    },
+    {
+      "id": "III-21-4",
+      "page": 21,
+      "category": "signs",
+      "text": "Znak koji daje policijski službenik na slici:",
+      "options": [
+        "može se davati iz vozila",
+        "može se davati iz vozila, ali samo sa tablicom STOP",
+        "ne može se davati iz vozila"
+      ],
+      "correct": 2,
+      "image": "III-21-2.webp"
+    },
+    {
+      "id": "III-21-5",
+      "page": 21,
+      "category": "signs",
+      "text": "Svjetlosni saobraćajni znak koji je dat na slici, kada se naizmjenično uključuju dva okrugla crvena svijetla znači:",
+      "options": [
+        "zabranu kretanja vozaču na mjestu prelaza puta preko pruge",
+        "zabranu kretanju šinskog vozila",
+        "zabranu kretanja svih učesnika u saobraćaju"
+      ],
+      "correct": 0,
+      "image": "III-21-3.webp"
+    },
+    {
+      "id": "III-22-1",
+      "page": 22,
+      "category": "signs",
+      "text": "Na slici je prikazan semafor za regulisanje kretanja:",
+      "options": [
+        "bicikala samo po biciklističkim trakama",
+        "bicikala i mopeda samo po biciklističkim stazama",
+        "bicikala i mopeda po biciklističkim trakama"
+      ],
+      "correct": 2,
+      "image": "III-22-1.webp"
+    },
+    {
+      "id": "III-22-2",
+      "page": 22,
+      "category": "signs",
+      "text": "Znak koji daje policijski službenik, kao na slici može se davati:",
+      "options": [
+        "na raskrsnici, ali samo sa stop tablicom",
+        "na raskrsnici i na otvorenom putu",
+        "na otvorenom putu, ali samo sa stop tablicom"
+      ],
+      "correct": 1,
+      "image": "III-22-2.webp",
+      "note": "На слайде «rasksnici» вместо «raskrsnici» — оставлено как в источнике."
+    },
+    {
+      "id": "III-22-3",
+      "page": 22,
+      "category": "signs",
+      "text": "Znak koji daje policijski službenik na slici znači da vozači vozila:",
+      "options": [
+        "koja dolaze sa njegovih bočnih strana imaju pravo prvenstva",
+        "kojima su okrenuta leđa imaju pravo prvenstva",
+        "nastave kretanje u skladu sa značenjem svijetala na semaforu"
+      ],
+      "correct": 0,
+      "image": "III-22-2.webp"
+    },
+    {
+      "id": "III-22-4",
+      "page": 22,
+      "category": "signs",
+      "text": "Na slici je prikazan kosnik koji:",
+      "options": [
+        "označava traku za spora vozila",
+        "označava mjesto otvaranja trake",
+        "označava mjesto zatvaranja trake"
+      ],
+      "correct": 2,
+      "image": "III-22-3.webp"
+    },
+    {
+      "id": "III-23-1",
+      "page": 23,
+      "category": "signs",
+      "text": "Na slici je prikazan:",
+      "options": [
+        "uređaj za regulisanje kretanja tramvaja",
+        "uređaj za regulisanje kretanja pješaka",
+        "uređaj za označavanje usmjerenosti kolosijeka"
+      ],
+      "correct": 0,
+      "image": "III-23-1.webp"
+    },
+    {
+      "id": "III-23-2",
+      "page": 23,
+      "category": "signs",
+      "text": "Hrizontalno odručena ruka policijskog službenika, kao na slici znači da:",
+      "options": [
+        "vozač tog vozila smanji brzinu kretanja",
+        "vozač tog vozila uspori vozilo i nastavi kretanje ulijevo",
+        "je vozač tog vozila obavezan da zaustavi vozilo"
+      ],
+      "correct": 2,
+      "image": "III-23-2.webp",
+      "note": "На слайде «Hrizontalno odručena» вместо «Horizontalno predručena» — оставлено как в источнике."
+    },
+    {
+      "id": "III-23-3",
+      "page": 23,
+      "category": "signs",
+      "text": "Znak koji daje policijski službenik na slici:",
+      "options": [
+        "može se davati i na raskrsnici i na otvorenom putu",
+        "može se davati samo u naseljenom mjestu",
+        "može se davati samo na otvorenom putu"
+      ],
+      "correct": 0,
+      "image": "III-23-2.webp"
+    },
+    {
+      "id": "III-23-4",
+      "page": 23,
+      "category": "signs",
+      "text": "Privremena saobraćajna signalizacija data na slici označava:",
+      "options": [
+        "zapreku na putu",
+        "vertikalnu zapreku",
+        "usmjeravajući branik"
+      ],
+      "correct": 2,
+      "image": "III-23-3.webp"
+    },
+    {
+      "id": "III-23-5",
+      "page": 23,
+      "category": "signs",
+      "text": "Prikazana svjetlosna signalizacija treba da je uključena:",
+      "options": [
+        "noću i u uslovima smanjene vidljivosti",
+        "ako je veliki protok saobraćaja",
+        "samo na lokalnim putevima"
+      ],
+      "correct": 0,
+      "image": "III-23-3.webp"
+    },
+    {
+      "id": "III-24-1",
+      "page": 24,
+      "category": "signs",
+      "text": "Položaj tijela policijskog službenika sa rukama horizontalno odručenim, znači da vozila:",
+      "options": [
+        "kojima su okrenuta leđa imaju pravo prolaska",
+        "koja dolaze sa njegove bočne strana imaju pravo prolaska",
+        "da su svi vozači obavezni da zaustave vozilo"
+      ],
+      "correct": 1,
+      "image": "III-24-1.webp",
+      "note": "В втором варианте на слайде «bočne strana» — неверная форма, оставлено как в источнике."
+    },
+    {
+      "id": "III-24-2",
+      "page": 24,
+      "category": "signs",
+      "text": "Znak koji daje policijski službenik na slici:",
+      "options": [
+        "može se davati samo na raskrsnici",
+        "može se davati i na raskrsnici i na otvorenom putu",
+        "može se davati samo na otvorenom putu"
+      ],
+      "correct": 1,
+      "image": "III-24-1.webp"
+    },
+    {
+      "id": "III-24-3",
+      "page": 24,
+      "category": "signs",
+      "text": "Poprečne oznake na kolovozu predstavljaju:",
+      "options": [
+        "poprečnu ivicu kolovoza",
+        "graničnu liniju kolovoza",
+        "liniju zaustavljanja"
+      ],
+      "correct": 2,
+      "image": "III-24-2.webp"
+    },
+    {
+      "id": "III-24-4",
+      "page": 24,
+      "category": "signs",
+      "text": "Ako vozila javnog gradskog prevoza koriste istu saobraćajnu traku kojom se kreću i šinska vozila, uređaj koji je prikazan na slici koristi se za regulisanje kretanja:",
+      "options": [
+        "tramvaja i autobusa",
+        "samo autobusa",
+        "samo tramvaja"
+      ],
+      "correct": 2,
+      "image": "III-24-3.webp"
+    },
+    {
+      "id": "III-25-1",
+      "page": 25,
+      "category": "signs",
+      "text": "Kombinovani znak podizanje ruke i upotreba pištaljke, kao na slici, predstavlja:",
+      "options": [
+        "zabranu prolaza za sve vozače",
+        "slobodan prolaz za vozila koja dolaze samo sa bočne strane",
+        "zabranu prolaza za vozila koja dolaze samo sa bočne strane"
+      ],
+      "correct": 0,
+      "image": "III-25-1.webp"
+    },
+    {
+      "id": "III-25-2",
+      "page": 25,
+      "category": "signs",
+      "text": "Znak koji daje policijski službenik na slici:",
+      "options": [
+        "ne može se davati sa pištaljkom u raskrsnici",
+        "može se davati sa pištaljkom u raskrsnici",
+        "ne može se davati sa STOP tablicom"
+      ],
+      "correct": 1,
+      "image": "III-25-1.webp"
+    },
+    {
+      "id": "III-25-3",
+      "page": 25,
+      "category": "signs",
+      "text": "Na slici su prikazana svjetla na semaforu, a redoslijed uključenja svjetala je:",
+      "options": [
+        "1-2-3-4",
+        "1-4-3-2",
+        "1-3-2-4"
+      ],
+      "correct": 2,
+      "image": "III-25-2.webp"
+    },
+    {
+      "id": "III-25-4",
+      "page": 25,
+      "category": "signs",
+      "text": "Na semaforima sa trobojnim svijetlima:",
+      "options": [
+        "zeleno svijetlo može biti trepćuće",
+        "zeleno svijetlo ne može biti trepćuće",
+        "zeleno svijetlo može biti uključeno sa crvenim svijetlom"
+      ],
+      "correct": 0,
+      "image": "III-25-2.webp"
+    },
+    {
+      "id": "III-25-5",
+      "page": 25,
+      "category": "signs",
+      "text": "Položaj tijela policijskog službenika kao na slici, znači da vozila:",
+      "options": [
+        "koja dolaze sa njegove bočne strane nemaju pravo prolaska",
+        "da su svi vozači obavezni da zaustave vozilo",
+        "koja dolaze sa njegove bočne strane imaju pravo prolaska"
+      ],
+      "correct": 2,
+      "image": "III-25-3.webp"
+    },
+    {
+      "id": "III-25-6",
+      "page": 25,
+      "category": "signs",
+      "text": "Znak koji daje policijski službenik na slici:",
+      "options": [
+        "može se davati samo na raskrsnici",
+        "može se davati samo na otvorenom putu",
+        "može se davati i na raskrsnici i na otvorenom putu"
+      ],
+      "correct": 2,
+      "image": "III-25-3.webp"
+    },
+    {
+      "id": "III-26-1",
+      "page": 26,
+      "category": "signs",
+      "text": "Na slici je prikazan:",
+      "options": [
+        "usmjeravajući branik",
+        "čeoni branik",
+        "zapreka na putu"
+      ],
+      "correct": 0,
+      "image": "III-26-1.webp"
+    },
+    {
+      "id": "III-26-2",
+      "page": 26,
+      "category": "signs",
+      "text": "Na slici je prikazan:",
+      "options": [
+        "semafor za regulisanje kretanja svih učesnika",
+        "semafor za regulisanje kretanja biciklista",
+        "semafor za regulisanje kretanja pješaka"
+      ],
+      "correct": 2,
+      "image": "III-26-2.webp"
+    },
+    {
+      "id": "III-26-3",
+      "page": 26,
+      "category": "signs",
+      "text": "Vetikalno podignuta ruka, kao na slici znači:",
+      "options": [
+        "prestanak važenja naredbi koje daje policijski službenik",
+        "zabranu prolaza za sve vozače u saobraćaju",
+        "da vozila koja dolaze sa boka imaju slobodan prolaz"
+      ],
+      "correct": 1,
+      "image": "III-26-3.webp",
+      "note": "На слайде «Vetikalno» вместо «Vertikalno» — оставлено как в источнике."
+    },
+    {
+      "id": "III-26-4",
+      "page": 26,
+      "category": "signs",
+      "text": "Znak koji daje policijski službenik na slici:",
+      "options": [
+        "može se davati samo na raskrsnici",
+        "može se davati samo na otvorenom putu",
+        "ne može se davati na raskrsnici"
+      ],
+      "correct": 0,
+      "image": "III-26-3.webp"
+    },
+    {
+      "id": "III-27-1",
+      "page": 27,
+      "category": "signs",
+      "text": "Na obilježenom stajalištu, kao na slici, smije da se zaustavi vozač:",
+      "options": [
+        "putničkog vozila radi ulaska ili izlaska putnika",
+        "teretnog vozila samo radi utovara ili istovara",
+        "vozila za javni prevoz putnika"
+      ],
+      "correct": 2,
+      "image": "III-27-1.webp"
+    },
+    {
+      "id": "III-27-2",
+      "page": 27,
+      "category": "signs",
+      "text": "Uključena svijetla na semaforu, kao na slici, znače:",
+      "options": [
+        "da vozač može da se kreće u pravcu strelice pri čemu ne ometa druge učesnike u saobraćaju",
+        "da vozač može da se kreće u pravcu strelice ne obraćajući pažnju na druge učesnike u saobraćaju",
+        "zabranjeno kretanje u smjeru označenom dopunskom zelenom strelicom"
+      ],
+      "correct": 0,
+      "image": "III-27-2.webp"
+    },
+    {
+      "id": "III-27-3",
+      "page": 27,
+      "category": "signs",
+      "text": "Policijski službenik daje znak iz vozila, kao na slici:",
+      "options": [
+        "u skladu sa propisima",
+        "suprotno propisima",
+        "u skladu sa propisima samo u naseljenom mjestu"
+      ],
+      "correct": 0,
+      "image": "III-27-3.webp"
+    },
+    {
+      "id": "III-27-4",
+      "page": 27,
+      "category": "signs",
+      "text": "U situaciji prikazanoj na slici, znak koji daje policijski službenik vozaču znači:",
+      "options": [
+        "da ubrza kretanje vozila",
+        "da izvrši preticanje sa desne strane",
+        "da zaustavi vozilo"
+      ],
+      "correct": 2,
+      "image": "III-27-3.webp"
+    }
+  ]
+}

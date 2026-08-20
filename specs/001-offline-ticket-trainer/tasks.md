@@ -292,6 +292,25 @@ only design broke down.** Also fixes a crop defect found the same way.
 
 ---
 
+## Phase 14: Volume III — Signs, Signals, Gestures
+
+**The last untranscribed volume.** 121 questions across 27 slides, cross-checked
+against the X-mark count per slide the same way as volumes I and II — every
+slide agrees except slide 6, where a stray duplicate mark (the same class of
+defect as volume I's stray "Џ" glyph) is documented rather than invented into a
+5th question.
+
+- [X] T093 Extend tools/06_crop_signs.py's cross-check to report band count against mark count per slide, surfacing two known shapes rather than a detector bug: several slides (21-27) share one illustration across two questions, the same pattern as volume II's photographs; slide 16 has two icons sitting close enough to merge into one crop
+- [X] T094 Transcribe all 27 slides into data/questions-III.json — 121 questions, reading every slide directly against its mark count
+- [X] T095 Independently cross-check the transcription against a second pass produced by another model over the same slides — 7 of 121 questions differed, all cosmetic (a truncated word repeated three times, one misspelling, one punctuation placement), zero disagreements on any correct-answer index; resolved by reading the disputed source lines directly rather than trusting either transcription by default
+- [X] T096 Split the merged crop on slide 16 into its two real illustrations and fix the image references for its last two questions, which a first attempt at the split briefly mis-assigned by overwriting a neighbouring question's file — caught by validating every image reference against the files on disk before moving on
+- [X] T097 Add the missing "signs" category label to web/src/i18n/strings.ts in all three languages, caught by loading the live build rather than trusting the data alone
+
+**Checkpoint**: 415 questions across all four volumes. The full bank is
+transcribed.
+
+---
+
 ## Dependencies & Execution Order
 
 ### Phase Dependencies

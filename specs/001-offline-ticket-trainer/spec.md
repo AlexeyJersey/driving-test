@@ -386,6 +386,9 @@ confirm exactly those two appear and that removing a bookmark takes it out of th
 - **Not every question is multiple choice.** Volume II includes "order of passing" questions
   whose answer is a sequence of vehicle numbers with no options at all. Volume IV, transcribed
   first, contained none, so the data contract initially assumed choice was the only kind.
-- **Illustrations exist for two of the four volumes** (situational photographs and sign
-  diagrams) and will need to be extracted alongside their questions when those volumes are
-  transcribed.
+- **All four volumes are now transcribed.** 415 questions total: 89 rules, 160 traffic
+  situations, 121 signs/signals/gestures, 45 vehicle and first aid.
+- **Two features are requested but deliberately not built yet**: swipe navigation between
+  questions in the study screen, and translation of question content. Recorded here so they are
+  not lost; translation in particular must go through the build-time, additive-layer design in
+  Constitution Principle IV rather than a live translation call.
