@@ -2,7 +2,8 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router'
 import { content } from '@/content/bundled'
 import { answeredCorrectly, isMistake } from '@/domain/progress'
-import type { Question } from '@/domain/question'
+import type { AnswerValue, Question } from '@/domain/question'
+import { orderTokens } from '@/domain/question'
 import { selectQuestionIds } from '@/domain/selection'
 import type { SelectionFilter } from '@/domain/selection'
 import { answerCurrent, currentQuestionId, isFinished, startSession, tally, toRecord } from '@/domain/session'
@@ -59,8 +60,8 @@ export function Study() {
     return startSession(newId(), mode, filter, ids, new Date().toISOString())
   })
 
-  const [selected, setSelected] = useState<number | null>(null)
-  const [answeredChoice, setAnsweredChoice] = useState<number | null>(null)
+  const [selected, setSelected] = useState<AnswerValue | null>(null)
+  const [answeredValue, setAnsweredValue] = useState<AnswerValue | null>(null)
   const recorded = useRef(false)
 
   const question: Question | undefined = useMemo(() => {
@@ -78,7 +79,7 @@ export function Study() {
     const ids = from.questionIds
     recorded.current = false
     setSelected(null)
-    setAnsweredChoice(null)
+    setAnsweredValue(null)
     setSession(startSession(newId(), from.mode, from.filter, ids, new Date().toISOString()))
   }
 
@@ -134,9 +135,9 @@ export function Study() {
   }
 
   const submit = () => {
-    if (selected === null) return
+    if (selected === null || !isComplete) return
     const wasCorrect = answeredCorrectly(question, selected)
-    setAnsweredChoice(selected)
+    setAnsweredValue(selected)
     // Progress and position are both written now, so closing the app while the
     // feedback is on screen loses neither the answer nor the place.
     store.recordAnswer(question.id, selected, wasCorrect)
@@ -144,13 +145,21 @@ export function Study() {
   }
 
   const advance = () => {
-    if (answeredChoice === null) return
-    setSession(answerCurrent(session, answeredChoice, answeredCorrectly(question, answeredChoice)))
+    if (answeredValue === null) return
+    setSession(answerCurrent(session, answeredValue, answeredCorrectly(question, answeredValue)))
     setSelected(null)
-    setAnsweredChoice(null)
+    setAnsweredValue(null)
   }
 
-  const answered = answeredChoice !== null
+  const answered = answeredValue !== null
+  /**
+   * An order question is only answerable once every vehicle has been placed;
+   * a choice question is answerable as soon as an option is picked.
+   */
+  const isComplete =
+    question.kind === 'order'
+      ? typeof selected === 'string' && selected.length === orderTokens(question).length
+      : selected !== null
   const isLast = session.position === session.questionIds.length - 1
 
   return (
@@ -167,7 +176,7 @@ export function Study() {
       <QuestionCard
         question={question}
         selected={selected}
-        answeredChoice={answeredChoice}
+        answeredValue={answeredValue}
         onSelect={setSelected}
       />
 
@@ -175,7 +184,7 @@ export function Study() {
         <div className="mx-auto max-w-2xl pb-[env(safe-area-inset-bottom)]">
           <button
             type="button"
-            disabled={!answered && selected === null}
+            disabled={!answered && !isComplete}
             onClick={answered ? advance : submit}
             className="w-full rounded-lg bg-slate-900 px-4 py-4 text-lg font-medium text-white disabled:opacity-40 dark:bg-slate-100 dark:text-slate-900"
           >

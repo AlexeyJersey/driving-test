@@ -29,6 +29,9 @@ const isCount = (v: unknown): v is number => typeof v === 'number' && Number.isI
 
 const isIsoish = (v: unknown): v is string => typeof v === 'string' && v.length > 0
 
+const isAnswerValue = (v: unknown): v is number | string =>
+  (typeof v === 'number' && Number.isInteger(v)) || typeof v === 'string'
+
 function readProgress(v: unknown): QuestionProgress | null {
   if (!isObject(v)) return null
   const { attempts, correct, streak, lastChoice, lastAnsweredAt } = v
@@ -52,7 +55,7 @@ function readAnswers(v: unknown): readonly AnswerOutcome[] | null {
   for (const a of v) {
     if (!isObject(a)) return null
     const { questionId, choice, correct } = a
-    if (typeof questionId !== 'string' || typeof choice !== 'number' || typeof correct !== 'boolean') {
+    if (typeof questionId !== 'string' || !isAnswerValue(choice) || typeof correct !== 'boolean') {
       return null
     }
     out.push({ questionId, choice, correct })

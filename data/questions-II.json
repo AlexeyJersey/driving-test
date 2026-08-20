@@ -1,0 +1,57 @@
+{
+  "volume": "II",
+  "source": "II str. ispitnih testova.pdf",
+  "title": "Situacije u saobraćaju",
+  "note": "Proof-of-concept: only slide 5 is transcribed so far.",
+  "questions": [
+    {
+      "id": "II-5-1",
+      "page": 5,
+      "category": "situations",
+      "kind": "order",
+      "text": "U situaciji prikazanoj na slici redoslijed prolaska vozila je:",
+      "answer": "1 3 2",
+      "image": "II-5-a.png"
+    },
+    {
+      "id": "II-5-2",
+      "page": 5,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici redoslijed prolaska kroz raskrsnicu je regulisan:",
+      "options": [
+        "saobraćajnim znakom",
+        "pravilom propuštanja vozila sa desne strane",
+        "horizontalnim oznakama"
+      ],
+      "correct": 0,
+      "image": "II-5-a.png"
+    },
+    {
+      "id": "II-5-3",
+      "page": 5,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici prilikom skretanja ulijevo treba da:",
+      "options": [
+        "nastavim kretanje bez propuštanja vozila 2, 3 i 4",
+        "propustim vozila 3 i 4",
+        "propustim vozila 2, 3 i 4"
+      ],
+      "correct": 2,
+      "image": "II-5-b.png",
+      "note": "В третьем варианте цифра «4» на слайде дописана синим от руки поверх пропуска. Ключ не оспаривается."
+    },
+    {
+      "id": "II-5-4",
+      "page": 5,
+      "category": "situations",
+      "text": "U situaciji prikazanoj na slici strelice na kolovozu (bijele boje) obilježavaju:",
+      "options": [
+        "liniju usmjeravanja",
+        "obavezan smjer samo za putnička vozila",
+        "obavezan smjer kretanja"
+      ],
+      "correct": 2,
+      "image": "II-5-b.png"
+    }
+  ]
+}

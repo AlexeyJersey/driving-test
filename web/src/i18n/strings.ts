@@ -133,7 +133,11 @@ const me: Strings = {
     unavailable: 'Napredak se ne čuva: pregledač ne dozvoljava pristup skladištu.',
     discarded: 'Sačuvani napredak nije bilo moguće pročitati i poništen je.',
   },
-  categories: { vehicle: 'Poznavanje vozila', firstaid: 'Prva pomoć' },
+  categories: {
+    vehicle: 'Poznavanje vozila',
+    firstaid: 'Prva pomoć',
+    situations: 'Situacije u saobraćaju',
+  },
   volumes: {
     I: 'Pravila saobraćaja',
     II: 'Situacije u saobraćaju',
@@ -187,7 +191,11 @@ const en: Strings = {
     unavailable: 'Progress is not being saved: the browser is blocking storage.',
     discarded: 'Saved progress could not be read and has been cleared.',
   },
-  categories: { vehicle: 'Vehicle knowledge', firstaid: 'First aid' },
+  categories: {
+    vehicle: 'Vehicle knowledge',
+    firstaid: 'First aid',
+    situations: 'Traffic situations',
+  },
   volumes: {
     I: 'Traffic rules',
     II: 'Traffic situations',
@@ -241,7 +249,11 @@ const ru: Strings = {
     unavailable: 'Прогресс не сохраняется: браузер не даёт доступ к хранилищу.',
     discarded: 'Сохранённый прогресс не удалось прочитать, он был сброшен.',
   },
-  categories: { vehicle: 'Устройство автомобиля', firstaid: 'Первая помощь' },
+  categories: {
+    vehicle: 'Устройство автомобиля',
+    firstaid: 'Первая помощь',
+    situations: 'Ситуации на дороге',
+  },
   volumes: {
     I: 'Правила движения',
     II: 'Ситуации на дороге',

@@ -1,6 +1,6 @@
 import { MAX_SESSION_HISTORY } from '@/domain/constants'
 import { applyAnswer } from '@/domain/progress'
-import type { QuestionId } from '@/domain/question'
+import type { AnswerValue, QuestionId } from '@/domain/question'
 import type { UiLanguage } from '@/i18n/strings'
 import { readStoredState } from './migrate'
 import type { LearnerStore } from './store'
@@ -41,7 +41,7 @@ abstract class BaseLearnerStore implements LearnerStore {
     for (const listener of this.listeners) listener()
   }
 
-  recordAnswer(questionId: QuestionId, choice: number, wasCorrect: boolean): void {
+  recordAnswer(questionId: QuestionId, choice: AnswerValue, wasCorrect: boolean): void {
     this.commit({
       ...this.state,
       progress: {

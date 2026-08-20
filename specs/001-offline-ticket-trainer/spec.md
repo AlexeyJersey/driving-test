@@ -190,6 +190,10 @@ confirm exactly those two appear and that removing a bookmark takes it out of th
   build time, and MUST behave correctly when only some volumes are present.
 - **FR-007**: System MUST support questions that carry an accompanying illustration, displaying
   the image with the question, for volumes where questions reference a picture.
+- **FR-036**: System MUST support questions whose answer is a sequence rather than a choice —
+  "the order in which these vehicles pass" — presenting the vehicle numbers to be ordered and
+  accepting the learner's ordering. Such questions MUST NOT be reshaped into multiple choice by
+  inventing distractors the source does not contain.
 
 **Progress and drilling**
 
@@ -361,6 +365,9 @@ confirm exactly those two appear and that removing a bookmark takes it out of th
 - **The interface ships in three languages** — Montenegrin by default, with English and Russian
   available. Montenegrin is the default because every question is in it, so a learner reading
   Montenegrin chrome is already reading the language they are being examined in.
+- **Not every question is multiple choice.** Volume II includes "order of passing" questions
+  whose answer is a sequence of vehicle numbers with no options at all. Volume IV, transcribed
+  first, contained none, so the data contract initially assumed choice was the only kind.
 - **Illustrations exist for two of the four volumes** (situational photographs and sign
   diagrams) and will need to be extracted alongside their questions when those volumes are
   transcribed.

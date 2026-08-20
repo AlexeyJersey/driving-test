@@ -56,6 +56,22 @@ regeneration to each other.
 
 `volume` on the file is authoritative; a question inherits it and does not repeat it.
 
+## Question kinds
+
+Volume IV was entirely multiple choice, so the first version of this contract assumed that was
+all there was. Volume II proved otherwise on its fifth slide.
+
+- **`choice`** (default, and what `kind` means when absent): a question with `options` and a
+  `correct` index. Everything in volume IV.
+- **`order`**: "in the situation shown, the order of passing is ___". The source has no options
+  at all — the answer is a sequence of the vehicle numbers marked on the photograph, written
+  into boxes. Represented as `answer`, a string of digits such as `"1 3 2"`, with no `options`
+  and no `correct`.
+
+An `order` question is not a `choice` question with the options left out, and it must not be
+turned into one by inventing plausible distractors: the source contains no distractors, and
+fabricating them would put words in the examiner's mouth.
+
 ## Rules the validator enforces
 
 Failure aborts the build and names the offending question id. Nothing partially valid is ever
@@ -63,6 +79,9 @@ generated.
 
 | Rule | Why it exists |
 |------|---------------|
+| `kind`, when present, is `choice` or `order`; absent means `choice` | Keeps volume IV's files valid unchanged |
+| A `choice` question has `options` and a valid `correct`, and no `answer` | |
+| An `order` question has a non-empty `answer` of digits separated by single spaces, and neither `options` nor `correct` | A sequence answer has no index to point at |
 | `id` unique across **all** files, not just within one | Learner progress is keyed by id; a collision silently merges two questions' histories |
 | `correct` is an integer in `[0, options.length)` | The single most damaging possible defect (Principle I) |
 | `options` has at least two entries, none empty | A question with one option teaches nothing |

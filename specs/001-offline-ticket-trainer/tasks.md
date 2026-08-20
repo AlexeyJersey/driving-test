@@ -214,6 +214,25 @@ touching content.
 
 ---
 
+## Phase 10: Illustrated Volumes — Proof on One Slide
+
+**Done ahead of the rest of volume II, to find out what transcribing an
+illustrated volume actually costs before committing to forty slides.** It found
+one thing worth finding: the source has a question kind volume IV did not.
+
+- [X] T064 Establish that illustrations cannot be extracted as files: each slide is a single flattened raster containing text, options and pictures together, so illustrations must be cropped by pixel coordinates from the render
+- [X] T065 Crop the two photographs of slide II-5 into data/images/II/ by detecting dense ink columns in the left region of the render
+- [X] T066 Extend the question contract with a `kind` of `choice` or `order`, and the validator in web/scripts/build-content.mjs to enforce each kind's fields (FR-036)
+- [X] T067 Model the sequence answer through the domain and storage layers in web/src/domain/question.ts and web/src/storage/types.ts, widening an answer from an option index to an index or a sequence
+- [X] T068 Build the sequence input in web/src/ui/QuestionCard.tsx: tap the vehicle numbers in order, submit disabled until every vehicle is placed
+- [X] T069 Transcribe slide II-5 into data/questions-II.json — four questions, two photographs, one photograph serving two questions
+
+**Checkpoint**: an illustrated slide works end to end. The remaining 39 slides of
+volume II need the cropping step turned into a committed tool rather than an
+inline probe.
+
+---
+
 ## Dependencies & Execution Order
 
 ### Phase Dependencies

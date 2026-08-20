@@ -1,4 +1,4 @@
-import type { CategoryKey, QuestionId, VolumeKey } from '@/domain/question'
+import type { AnswerValue, CategoryKey, QuestionId, VolumeKey } from '@/domain/question'
 import { DEFAULT_UI_LANGUAGE } from '@/i18n/strings'
 import type { UiLanguage } from '@/i18n/strings'
 
@@ -23,7 +23,8 @@ export interface SessionFilter {
 
 export interface AnswerOutcome {
   readonly questionId: QuestionId
-  readonly choice: number
+  /** An option index, or a sequence string for an order question. */
+  readonly choice: AnswerValue
   readonly correct: boolean
 }
 
@@ -36,7 +37,7 @@ export interface QuestionProgress {
   readonly correct: number
   /** Consecutive correct answers ending now. Zero after any wrong answer. */
   readonly streak: number
-  readonly lastChoice: number
+  readonly lastChoice: AnswerValue
   readonly lastAnsweredAt: string
 }
 

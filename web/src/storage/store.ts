@@ -1,4 +1,4 @@
-import type { QuestionId } from '@/domain/question'
+import type { AnswerValue, QuestionId } from '@/domain/question'
 import type { UiLanguage } from '@/i18n/strings'
 import type { ActiveSession, LearnerState, SessionRecord } from './types'
 
@@ -17,7 +17,7 @@ export interface LearnerStore {
    * what the correct answer is. Correctness is decided in `domain/`; the store's
    * job is to remember, not to judge.
    */
-  recordAnswer(questionId: QuestionId, choice: number, wasCorrect: boolean): void
+  recordAnswer(questionId: QuestionId, choice: AnswerValue, wasCorrect: boolean): void
   toggleBookmark(questionId: QuestionId): void
 
   /** In flight; written on every answer, not on navigation. */

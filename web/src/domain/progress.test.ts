@@ -87,6 +87,7 @@ describe('isAttempted and isMastered', () => {
 describe('mistakeIds', () => {
   const question = (id: string): Question => ({
     id,
+    kind: 'choice',
     volume: 'IV',
     page: 1,
     category: 'vehicle',
@@ -111,6 +112,7 @@ describe('answeredCorrectly', () => {
   it('compares the choice against the recorded key', () => {
     const q: Question = {
       id: 'x',
+      kind: 'choice',
       volume: 'IV',
       page: 1,
       category: 'vehicle',

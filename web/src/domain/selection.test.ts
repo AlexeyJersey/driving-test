@@ -4,6 +4,7 @@ import { allQuestionsFilter, matchesFilter, restrictToIds, selectQuestionIds } f
 
 const q = (id: string, volume: string, category: string): Question => ({
   id,
+  kind: 'choice',
   volume,
   page: 1,
   category,

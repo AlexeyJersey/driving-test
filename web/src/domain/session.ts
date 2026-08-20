@@ -1,4 +1,4 @@
-import type { QuestionId } from './question'
+import type { AnswerValue, QuestionId } from './question'
 import type { SelectionFilter } from './selection'
 import type { ActiveSession, AnswerOutcome, SessionMode, SessionRecord } from '@/storage/types'
 
@@ -42,7 +42,7 @@ export function isFinished(session: ActiveSession): boolean {
  */
 export function answerCurrent(
   session: ActiveSession,
-  choice: number,
+  choice: AnswerValue,
   wasCorrect: boolean,
 ): ActiveSession {
   const questionId = currentQuestionId(session)

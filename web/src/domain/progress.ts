@@ -1,5 +1,6 @@
 import { MASTERY_STREAK } from './constants'
-import type { Question, QuestionId } from './question'
+import type { AnswerValue, Question, QuestionId } from './question'
+import { normaliseOrder } from './question'
 import type { QuestionProgress } from '@/storage/types'
 
 /**
@@ -10,7 +11,7 @@ import type { QuestionProgress } from '@/storage/types'
  */
 export function applyAnswer(
   previous: QuestionProgress | undefined,
-  choice: number,
+  choice: AnswerValue,
   wasCorrect: boolean,
   at: string,
 ): QuestionProgress {
@@ -43,8 +44,11 @@ export function isMastered(progress: QuestionProgress | undefined): boolean {
   return (progress?.streak ?? 0) >= MASTERY_STREAK
 }
 
-export function answeredCorrectly(question: Question, choice: number): boolean {
-  return choice === question.correct
+export function answeredCorrectly(question: Question, value: AnswerValue): boolean {
+  if (question.kind === 'order') {
+    return typeof value === 'string' && normaliseOrder(value) === normaliseOrder(question.answer)
+  }
+  return value === question.correct
 }
 
 /** Ids currently in the mistakes set, restricted to questions that still exist. */

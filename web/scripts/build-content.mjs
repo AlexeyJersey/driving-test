@@ -51,14 +51,34 @@ function validateQuestion(q, volume, index, seenIds, imageFiles) {
   }
   if (!isNonEmptyString(q.category)) fail(where, 'category is empty')
 
-  if (!Array.isArray(q.options) || q.options.length < 2) {
-    fail(where, `needs at least two options, got ${Array.isArray(q.options) ? q.options.length : 'none'}`)
+  const kind = q.kind === undefined ? 'choice' : q.kind
+  if (kind !== 'choice' && kind !== 'order') {
+    fail(where, `kind must be "choice" or "order", got ${JSON.stringify(q.kind)}`)
+    return null
+  }
+
+  if (kind === 'order') {
+    // A sequence answer has no index to point at, so options and correct must be
+    // absent rather than empty — an empty options array would read as a choice
+    // question someone forgot to fill in.
+    if (!isNonEmptyString(q.answer) || !/^[1-9](?: [1-9])*$/.test(q.answer)) {
+      fail(where, `order question needs answer as digits separated by single spaces, got ${JSON.stringify(q.answer)}`)
+    } else if (new Set(q.answer.split(' ')).size !== q.answer.split(' ').length) {
+      fail(where, `order answer ${JSON.stringify(q.answer)} repeats a vehicle number`)
+    }
+    if ('options' in q) fail(where, 'order question must not carry options')
+    if ('correct' in q) fail(where, 'order question must not carry correct')
   } else {
-    q.options.forEach((opt, i) => {
-      if (!isNonEmptyString(opt)) fail(where, `option ${i} is empty`)
-    })
-    if (!Number.isInteger(q.correct) || q.correct < 0 || q.correct >= q.options.length) {
-      fail(where, `correct must be an integer in [0, ${q.options.length}), got ${JSON.stringify(q.correct)}`)
+    if ('answer' in q) fail(where, 'choice question must not carry answer')
+    if (!Array.isArray(q.options) || q.options.length < 2) {
+      fail(where, `needs at least two options, got ${Array.isArray(q.options) ? q.options.length : 'none'}`)
+    } else {
+      q.options.forEach((opt, i) => {
+        if (!isNonEmptyString(opt)) fail(where, `option ${i} is empty`)
+      })
+      if (!Number.isInteger(q.correct) || q.correct < 0 || q.correct >= q.options.length) {
+        fail(where, `correct must be an integer in [0, ${q.options.length}), got ${JSON.stringify(q.correct)}`)
+      }
     }
   }
 
@@ -78,12 +98,12 @@ function validateQuestion(q, volume, index, seenIds, imageFiles) {
 
   return {
     id: q.id,
+    kind,
     volume,
     page: q.page,
     category: q.category,
     text: q.text,
-    options: q.options,
-    correct: q.correct,
+    ...(kind === 'order' ? { answer: q.answer } : { options: q.options, correct: q.correct }),
     ...(imageUrl ? { imageUrl } : {}),
     ...(isNonEmptyString(q.review) ? { review: q.review } : {}),
     ...(isNonEmptyString(q.note) ? { note: q.note } : {}),

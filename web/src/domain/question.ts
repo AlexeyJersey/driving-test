@@ -4,7 +4,9 @@ export type QuestionId = string
 export type VolumeKey = string
 export type CategoryKey = string
 
-export interface Question {
+export type QuestionKind = 'choice' | 'order'
+
+interface QuestionBase {
   readonly id: QuestionId
   /** Source deck, e.g. "IV". With `page`, locates the slide for verification. */
   readonly volume: VolumeKey
@@ -13,9 +15,6 @@ export interface Question {
   readonly category: CategoryKey
   /** Montenegrin, verbatim from the source. Never translated or paraphrased. */
   readonly text: string
-  /** Ordered; `correct` indexes into this, so the order is meaningful. */
-  readonly options: readonly string[]
-  readonly correct: number
   /**
    * Runtime URL of the illustration, when the question has one. The data file
    * holds a bare filename; build-content resolves it to a URL so nothing in the
@@ -31,6 +30,31 @@ export interface Question {
   readonly note?: string
 }
 
+/** Pick one of the printed options. Everything in volume IV. */
+export interface ChoiceQuestion extends QuestionBase {
+  readonly kind: 'choice'
+  /** Ordered; `correct` indexes into this, so the order is meaningful. */
+  readonly options: readonly string[]
+  readonly correct: number
+}
+
+/**
+ * "In the situation shown, the order of passing is ___". The source prints no
+ * options at all — the answer is the sequence of vehicle numbers marked on the
+ * photograph. Modelling this as a choice question would mean inventing
+ * distractors the examiner never wrote.
+ */
+export interface OrderQuestion extends QuestionBase {
+  readonly kind: 'order'
+  /** Digits separated by single spaces, e.g. "1 3 2". */
+  readonly answer: string
+}
+
+export type Question = ChoiceQuestion | OrderQuestion
+
+/** An index for a choice question, a sequence string for an order question. */
+export type AnswerValue = number | string
+
 export interface VolumeMeta {
   readonly volume: VolumeKey
   readonly title: string
@@ -44,7 +68,17 @@ export function isDisputed(question: Question): boolean {
   return question.review !== undefined
 }
 
-/** Reads an option by index without pretending the index is always in range. */
-export function optionAt(question: Question, index: number): string | undefined {
-  return question.options[index]
+/** Spacing in a sequence is presentation, not meaning: "1 3 2" equals "132". */
+export function normaliseOrder(value: string): string {
+  return value.replace(/\s+/g, '')
+}
+
+/**
+ * The vehicle numbers a learner has to arrange. Derived from the answer's
+ * length, which reveals only how many vehicles are in the photograph — something
+ * they can already see.
+ */
+export function orderTokens(question: OrderQuestion): readonly string[] {
+  const count = normaliseOrder(question.answer).length
+  return Array.from({ length: count }, (_, i) => String(i + 1))
 }
