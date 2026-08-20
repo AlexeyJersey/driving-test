@@ -25,3 +25,6 @@ dist-ssr
 
 # Build output of scripts/build-content.mjs — never hand-edit, never commit
 src/generated/
+
+# Illustrations copied out of data/images by scripts/build-content.mjs
+public/images/

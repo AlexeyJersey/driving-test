@@ -16,6 +16,14 @@
     "noEmit": true,
     "jsx": "react-jsx",
 
+    /* Type safety */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+
+    /* Paths — no baseUrl: deprecated in TS 6, and paths resolve relative to
+       this file without it. */
+    "paths": { "@/*": ["./src/*"] },
+
     /* Linting */
     "noUnusedLocals": true,
     "noUnusedParameters": true,

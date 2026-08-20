@@ -37,11 +37,11 @@ exists yet.
 
 **Purpose**: Turn the bare scaffold into the project described in plan.md
 
-- [ ] T001 Configure React, Tailwind, and the `@/` path alias in web/vite.config.ts and web/tsconfig.app.json
-- [ ] T002 Wire `dev`, `build`, `preview`, and `test` scripts in web/package.json so that content generation runs before both `dev` and `build`
-- [ ] T003 [P] Replace the starter stylesheet with the Tailwind entry and base styles in web/src/index.css
-- [ ] T004 [P] Add Vitest configuration in web/vitest.config.ts
-- [ ] T005 [P] Delete Vite starter boilerplate (demo component, logos, unused assets) from web/src and web/public
+- [X] T001 Configure React, Tailwind, and the `@/` path alias in web/vite.config.ts and web/tsconfig.app.json
+- [X] T002 Wire `dev`, `build`, `preview`, and `test` scripts in web/package.json so that content generation runs before both `dev` and `build`
+- [X] T003 [P] Replace the starter stylesheet with the Tailwind entry and base styles in web/src/index.css
+- [X] T004 [P] Add Vitest configuration in web/vitest.config.ts
+- [X] T005 [P] Delete Vite starter boilerplate (demo component, logos, unused assets) from web/src and web/public
 
 ---
 
@@ -51,23 +51,23 @@ exists yet.
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T006 Implement the question-data validator in web/scripts/build-content.mjs enforcing every rule in contracts/question-data.md: ids unique across all files, `correct` within `options` range, at least two non-empty options, non-empty `text`, positive integer `page`, non-empty `review` and `note` when present, and `image` resolving to data/images/<VOLUME>/
-- [ ] T007 Extend web/scripts/build-content.mjs to emit a typed content bundle to web/src/generated/content.ts, failing the run and naming the offending question id when validation fails
-- [ ] T008 Extend web/scripts/build-content.mjs to copy data/images/<VOLUME>/ into the build output, treating a volume with no image directory as normal rather than an error — every volume transcribed so far is text-only, so failing on an absent directory would break the build on day one (FR-007)
-- [ ] T009 [P] Add the identifier-stability diff gate in tools/03_check_ids.py: compare freshly extracted output against the current data/ and refuse to write when an existing id would come to denote different content (Constitution Principle III)
-- [ ] T010 [P] Add web/src/generated/ to web/.gitignore, since it is build output that must never be hand-edited
-- [ ] T011 [P] Define the Question type and its invariants in web/src/domain/question.ts
-- [ ] T012 [P] Define policy constants MASTERY_STREAK = 2 and MAX_SESSION_HISTORY = 50 in web/src/domain/constants.ts
-- [ ] T013 [P] Define LearnerState, QuestionProgress, ActiveSession, and SessionRecord types in web/src/storage/types.ts per data-model.md
-- [ ] T014 Define the ContentProvider interface in web/src/content/provider.ts exactly as specified in contracts/content-provider.md, with no mutation methods
-- [ ] T015 Implement BundledContentProvider over the generated bundle in web/src/content/bundled.ts, returning undefined for unknown ids and preserving caller order in getQuestions
-- [ ] T016 Define the LearnerStore interface in web/src/storage/store.ts per contracts/learner-store.md, including saveActiveSession and clearActiveSession
-- [ ] T017 Implement version handling in web/src/storage/migrate.ts: matching version used as is, older migrated, unparseable or unmigratable discarded cleanly
-- [ ] T018 [P] Unit tests for migration and clean-discard behaviour in web/src/storage/migrate.test.ts
-- [ ] T019 Implement LocalLearnerStore in web/src/storage/local.ts writing one versioned key, trimming sessions to MAX_SESSION_HISTORY, and falling back to an in-memory store with isPersistent false when storage throws
-- [ ] T020 [P] Expose the store to React through useSyncExternalStore in web/src/storage/useLearnerStore.ts
-- [ ] T021 [P] Create the interface string table in web/src/i18n/strings.ts, kept apart from question content
-- [ ] T022 Set up the router and application shell in web/src/main.tsx and web/src/routes/Root.tsx so browser history is the navigation model
+- [X] T006 Implement the question-data validator in web/scripts/build-content.mjs enforcing every rule in contracts/question-data.md: ids unique across all files, `correct` within `options` range, at least two non-empty options, non-empty `text`, positive integer `page`, non-empty `review` and `note` when present, and `image` resolving to data/images/<VOLUME>/
+- [X] T007 Extend web/scripts/build-content.mjs to emit a typed content bundle to web/src/generated/content.ts, failing the run and naming the offending question id when validation fails
+- [X] T008 Extend web/scripts/build-content.mjs to copy data/images/<VOLUME>/ into the build output, treating a volume with no image directory as normal rather than an error — every volume transcribed so far is text-only, so failing on an absent directory would break the build on day one (FR-007)
+- [X] T009 [P] Add the identifier-stability diff gate in tools/03_check_ids.py: compare freshly extracted output against the current data/ and refuse to write when an existing id would come to denote different content (Constitution Principle III)
+- [X] T010 [P] Add web/src/generated/ to web/.gitignore, since it is build output that must never be hand-edited
+- [X] T011 [P] Define the Question type and its invariants in web/src/domain/question.ts
+- [X] T012 [P] Define policy constants MASTERY_STREAK = 2 and MAX_SESSION_HISTORY = 50 in web/src/domain/constants.ts
+- [X] T013 [P] Define LearnerState, QuestionProgress, ActiveSession, and SessionRecord types in web/src/storage/types.ts per data-model.md
+- [X] T014 Define the ContentProvider interface in web/src/content/provider.ts exactly as specified in contracts/content-provider.md, with no mutation methods
+- [X] T015 Implement BundledContentProvider over the generated bundle in web/src/content/bundled.ts, returning undefined for unknown ids and preserving caller order in getQuestions
+- [X] T016 Define the LearnerStore interface in web/src/storage/store.ts per contracts/learner-store.md, including saveActiveSession and clearActiveSession
+- [X] T017 Implement version handling in web/src/storage/migrate.ts: matching version used as is, older migrated, unparseable or unmigratable discarded cleanly
+- [X] T018 [P] Unit tests for migration and clean-discard behaviour in web/src/storage/migrate.test.ts
+- [X] T019 Implement LocalLearnerStore in web/src/storage/local.ts writing one versioned key, trimming sessions to MAX_SESSION_HISTORY, and falling back to an in-memory store with isPersistent false when storage throws
+- [X] T020 [P] Expose the store to React through useSyncExternalStore in web/src/storage/useLearnerStore.ts
+- [X] T021 [P] Create the interface string table in web/src/i18n/strings.ts, kept apart from question content
+- [X] T022 Set up the router and application shell in web/src/main.tsx and web/src/routes/Root.tsx so browser history is the navigation model
 
 **Checkpoint**: Content loads through one boundary, state persists through another, and both are
 typed. User stories can begin.
@@ -85,23 +85,23 @@ before submission.
 
 ### Tests for User Story 1
 
-- [ ] T023 [P] [US1] Unit tests for question selection, including seeded-shuffle determinism, in web/src/domain/selection.test.ts
-- [ ] T024 [P] [US1] Unit tests for answer recording and streak behaviour in web/src/domain/progress.test.ts
-- [ ] T025 [P] [US1] Unit tests for session progression and tally in web/src/domain/session.test.ts
+- [X] T023 [P] [US1] Unit tests for question selection, including seeded-shuffle determinism, in web/src/domain/selection.test.ts
+- [X] T024 [P] [US1] Unit tests for answer recording and streak behaviour in web/src/domain/progress.test.ts
+- [X] T025 [P] [US1] Unit tests for session progression and tally in web/src/domain/session.test.ts
 
 ### Implementation for User Story 1
 
-- [ ] T026 [P] [US1] Implement selection from filters to an ordered QuestionSet in web/src/domain/selection.ts, defaulting to source order with seeded shuffle as an option
-- [ ] T027 [P] [US1] Implement answer recording and per-question derivation in web/src/domain/progress.ts
-- [ ] T028 [US1] Implement session progression, position, and tally in web/src/domain/session.ts (depends on T026)
-- [ ] T029 [P] [US1] Build the question card in web/src/ui/QuestionCard.tsx: options unmarked until submission, then both the learner's choice and the correct option marked
-- [ ] T030 [US1] Render the question's illustration above its options in web/src/ui/QuestionCard.tsx when `image` is present, and nothing when it is absent (FR-007) — currently exercised by zero questions, so verify with a temporary local data edit and revert
-- [ ] T031 [US1] Surface the disputed-key warning in web/src/ui/QuestionCard.tsx for questions carrying `review`, and deliberately not for those carrying only `note` (FR-004)
-- [ ] T032 [US1] Build the home screen with topic selection and the start action in web/src/routes/Home.tsx, including an explanatory state when the chosen volume and topic filters intersect to zero questions
-- [ ] T033 [US1] Build the study screen wiring selection, session, content provider, and store in web/src/routes/Study.tsx
-- [ ] T034 [US1] Persist the active session on every answer, storing its resolved questionIds rather than its filter, in web/src/routes/Study.tsx (FR-031)
-- [ ] T035 [US1] Offer to resume an unfinished session on launch in web/src/routes/Home.tsx
-- [ ] T036 [US1] Build the end-of-set summary with right and wrong tallies in web/src/ui/SetSummary.tsx
+- [X] T026 [P] [US1] Implement selection from filters to an ordered QuestionSet in web/src/domain/selection.ts, defaulting to source order with seeded shuffle as an option
+- [X] T027 [P] [US1] Implement answer recording and per-question derivation in web/src/domain/progress.ts
+- [X] T028 [US1] Implement session progression, position, and tally in web/src/domain/session.ts (depends on T026)
+- [X] T029 [P] [US1] Build the question card in web/src/ui/QuestionCard.tsx: options unmarked until submission, then both the learner's choice and the correct option marked
+- [X] T030 [US1] Render the question's illustration above its options in web/src/ui/QuestionCard.tsx when `image` is present, and nothing when it is absent (FR-007) — currently exercised by zero questions, so verify with a temporary local data edit and revert
+- [X] T031 [US1] Surface the disputed-key warning in web/src/ui/QuestionCard.tsx for questions carrying `review`, and deliberately not for those carrying only `note` (FR-004)
+- [X] T032 [US1] Build the home screen with topic selection and the start action in web/src/routes/Home.tsx, including an explanatory state when the chosen volume and topic filters intersect to zero questions
+- [X] T033 [US1] Build the study screen wiring selection, session, content provider, and store in web/src/routes/Study.tsx
+- [X] T034 [US1] Persist the active session on every answer, storing its resolved questionIds rather than its filter, in web/src/routes/Study.tsx (FR-031)
+- [X] T035 [US1] Offer to resume an unfinished session on launch in web/src/routes/Home.tsx
+- [X] T036 [US1] Build the end-of-set summary with right and wrong tallies in web/src/ui/SetSummary.tsx
 
 **Checkpoint**: The app is usable for study on its own. This is the MVP.
 
