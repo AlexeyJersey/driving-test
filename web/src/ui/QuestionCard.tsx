@@ -165,10 +165,16 @@ export function QuestionCard(props: QuestionCardProps) {
       )}
 
       {question.imageUrl !== undefined && (
+        // Capped by height, not forced to the card's full width: a handful of
+        // these crops (a traffic-light pole, a standing officer) are narrow
+        // and tall, and stretching them to card width blows them up into a
+        // blurry, screen-filling mess. Capping height and letting width
+        // follow the aspect ratio leaves normal wide photos untouched, since
+        // max-w-full binds first for those.
         <img
           src={question.imageUrl}
           alt=""
-          className="w-full rounded-lg border border-slate-200 dark:border-slate-700"
+          className="mx-auto block max-h-[50vh] max-w-full rounded-lg border border-slate-200 dark:border-slate-700"
         />
       )}
 
