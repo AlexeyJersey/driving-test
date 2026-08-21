@@ -78,6 +78,8 @@ export interface Strings {
     readonly disputedBody: string
     readonly back: string
     readonly jump: string
+    readonly prevQuestion: string
+    readonly nextQuestion: string
   }
   readonly summary: {
     readonly title: string
@@ -140,6 +142,8 @@ const me: Strings = {
       'Oznaka na originalnom slajdu izgleda sumnjivo. Ne učite ovo pitanje napamet dok ne bude provjereno.',
     back: 'Nazad',
     jump: 'Idi na pitanje',
+    prevQuestion: 'Prethodno pitanje',
+    nextQuestion: 'Sljedeće pitanje',
   },
   summary: {
     title: 'Vježbanje završeno',
@@ -213,6 +217,8 @@ const en: Strings = {
       'The mark on the source slide looks doubtful. Do not memorise this one until it has been verified.',
     back: 'Back',
     jump: 'Go to question',
+    prevQuestion: 'Previous question',
+    nextQuestion: 'Next question',
   },
   summary: {
     title: 'Session finished',
@@ -286,6 +292,8 @@ const ru: Strings = {
       'Отметка на исходном слайде вызывает сомнения. Не заучивайте этот вопрос, пока он не проверен.',
     back: 'Назад',
     jump: 'Перейти к вопросу',
+    prevQuestion: 'Предыдущий вопрос',
+    nextQuestion: 'Следующий вопрос',
   },
   summary: {
     title: 'Занятие завершено',

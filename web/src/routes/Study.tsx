@@ -1,4 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
+import type { PanInfo } from 'motion/react'
+import { AnimatePresence, motion } from 'motion/react'
 import { useNavigate, useSearchParams } from 'react-router'
 import { content } from '@/content/bundled'
 import { localizeQuestion } from '@/content/localize'
@@ -29,13 +31,23 @@ const newId = () =>
     ? crypto.randomUUID()
     : `s-${String(Date.now())}`
 
-/** Below this, a drag reads as a tap and the card just springs back. */
+/** Below this offset (and this velocity), a drag reads as a tap and springs back. */
 const SWIPE_THRESHOLD_PX = 64
-/** Movement past this, in either axis, rules out an accidental tap. */
-const TAP_TOLERANCE_PX = 8
+const SWIPE_VELOCITY_THRESHOLD = 500
 /** Far enough to clear the card at any viewport width up to its max-w-2xl cap. */
 const SWIPE_OFFSCREEN_PX = 640
-const SWIPE_ANIMATION_MS = 200
+
+/**
+ * `dir` is +1 moving to the next question, -1 moving to the previous one. The
+ * outgoing card and the incoming card always exit/enter from opposite sides,
+ * matching the direction of travel: going next, the old card leaves left and
+ * the new one arrives from the right.
+ */
+const cardVariants = {
+  enter: (dir: number) => ({ x: dir > 0 ? SWIPE_OFFSCREEN_PX : -SWIPE_OFFSCREEN_PX }),
+  center: { x: 0 },
+  exit: (dir: number) => ({ x: dir > 0 ? -SWIPE_OFFSCREEN_PX : SWIPE_OFFSCREEN_PX }),
+}
 
 /**
  * Whether a stored session is the same run the URL is asking for.
@@ -106,11 +118,8 @@ export function Study() {
   const [jumping, setJumping] = useState(false)
   const recorded = useRef(false)
 
-  const [swipeOffset, setSwipeOffset] = useState(0)
-  const [swipeAnimated, setSwipeAnimated] = useState(false)
-  const [isDragging, setIsDragging] = useState(false)
-  const dragRef = useRef<{ id: number; x: number; y: number; dx: number } | null>(null)
-  const suppressClickRef = useRef(false)
+  /** +1 while moving to the next question, -1 moving to the previous one. */
+  const [direction, setDirection] = useState(0)
 
   const question: Question | undefined = useMemo(() => {
     if (!session) return undefined
@@ -140,8 +149,15 @@ export function Study() {
     store.saveSession(toRecord(session, new Date().toISOString()))
   }, [finished, session, store])
 
+  /**
+   * The state work (position, selection reset, persistence) the jump panel,
+   * the nav arrows, and a swipe all share. Direction is derived here, from
+   * old vs. new position, so every caller gets the right slide animation for
+   * free rather than having to compute and pass it themselves.
+   */
   const jump = (index: number) => {
     if (!session) return
+    setDirection(index > session.position ? 1 : -1)
     const moved = jumpTo(session, index)
     setSession(moved)
     // The position is part of the session, so a jump is worth remembering: come
@@ -149,111 +165,6 @@ export function Study() {
     store.saveActiveSession(moved)
     setSelected(null)
     setAnsweredValue(null)
-  }
-
-  /**
-   * Drag-to-navigate between questions, layered on top of `jump` — the state
-   * work (position, selection reset, persistence) is exactly what the jump
-   * panel already does, so a swipe is just another way to call it.
-   *
-   * Hoisted above the early returns below so the hook always runs, per the
-   * rules of hooks; it simply has nothing to track until a drag starts.
-   *
-   * Deliberately not pointer-capture-based: capturing the pointer on the
-   * wrapper redirects the eventual click to the wrapper too, so an option
-   * button under the finger never sees it. Tracking the gesture via window
-   * listeners instead leaves ordinary taps on the card completely alone.
-   */
-  const onPointerDown = (e: React.PointerEvent<HTMLDivElement>) => {
-    if (e.pointerType === 'mouse' && e.button !== 0) return
-    dragRef.current = { id: e.pointerId, x: e.clientX, y: e.clientY, dx: 0 }
-    setSwipeAnimated(false)
-    setIsDragging(true)
-  }
-
-  useEffect(() => {
-    if (!isDragging || !session) return
-
-    const onMove = (e: PointerEvent) => {
-      const drag = dragRef.current
-      if (!drag || drag.id !== e.pointerId) return
-      const dx = e.clientX - drag.x
-      const dy = e.clientY - drag.y
-      if (Math.abs(dy) > Math.abs(dx) + 6 && Math.abs(dy) > TAP_TOLERANCE_PX) {
-        // Vertical intent — this was a scroll, not a swipe. Let go cleanly.
-        dragRef.current = null
-        setIsDragging(false)
-        setSwipeAnimated(true)
-        setSwipeOffset(0)
-        return
-      }
-      drag.dx = dx
-      if (Math.abs(dx) > TAP_TOLERANCE_PX) suppressClickRef.current = true
-      setSwipeOffset(dx)
-    }
-
-    const onUp = (e: PointerEvent) => {
-      const drag = dragRef.current
-      if (!drag || drag.id !== e.pointerId) return
-      dragRef.current = null
-      setIsDragging(false)
-      if (suppressClickRef.current) {
-        window.setTimeout(() => {
-          suppressClickRef.current = false
-        }, 0)
-      }
-      const dx = drag.dx
-      const direction = dx < 0 ? 1 : -1
-      const blocked =
-        direction === 1
-          ? session.position === session.questionIds.length - 1
-          : session.position === 0
-      if (Math.abs(dx) < SWIPE_THRESHOLD_PX || blocked) {
-        setSwipeAnimated(true)
-        setSwipeOffset(0)
-        return
-      }
-      const targetIndex = session.position + direction
-      setSwipeAnimated(true)
-      setSwipeOffset(direction * SWIPE_OFFSCREEN_PX)
-      window.setTimeout(() => {
-        jump(targetIndex)
-        setSwipeAnimated(false)
-        setSwipeOffset(-direction * SWIPE_OFFSCREEN_PX)
-        requestAnimationFrame(() => {
-          requestAnimationFrame(() => {
-            setSwipeAnimated(true)
-            setSwipeOffset(0)
-          })
-        })
-      }, SWIPE_ANIMATION_MS)
-    }
-
-    const onCancel = (e: PointerEvent) => {
-      const drag = dragRef.current
-      if (!drag || drag.id !== e.pointerId) return
-      dragRef.current = null
-      setIsDragging(false)
-      setSwipeAnimated(true)
-      setSwipeOffset(0)
-    }
-
-    window.addEventListener('pointermove', onMove)
-    window.addEventListener('pointerup', onUp)
-    window.addEventListener('pointercancel', onCancel)
-    return () => {
-      window.removeEventListener('pointermove', onMove)
-      window.removeEventListener('pointerup', onUp)
-      window.removeEventListener('pointercancel', onCancel)
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [isDragging, session])
-
-  const onClickCapture = (e: React.MouseEvent) => {
-    if (suppressClickRef.current) {
-      e.preventDefault()
-      e.stopPropagation()
-    }
   }
 
   if (session === null) {
@@ -335,6 +246,17 @@ export function Study() {
       : selected !== null
   const isLast = session.position === session.questionIds.length - 1
 
+  const onDragEnd = (_event: unknown, info: PanInfo) => {
+    const dx = info.offset.x
+    const strongSwipe =
+      Math.abs(dx) > SWIPE_THRESHOLD_PX || Math.abs(info.velocity.x) > SWIPE_VELOCITY_THRESHOLD
+    if (!strongSwipe) return
+    const dir = dx < 0 ? 1 : -1
+    const blocked = dir > 0 ? isLast : session.position === 0
+    if (blocked) return
+    jump(session.position + dir)
+  }
+
   return (
     <div className="flex flex-col gap-5 pb-24">
       <div className="flex justify-center">
@@ -348,29 +270,58 @@ export function Study() {
         </button>
       </div>
 
-      <div className="overflow-hidden" onPointerDown={onPointerDown} onClickCapture={onClickCapture}>
-        <div
-          style={{
-            touchAction: 'pan-y',
-            transform: `translateX(${swipeOffset}px)`,
-            transition: swipeAnimated ? `transform ${SWIPE_ANIMATION_MS}ms ease-out` : 'none',
-          }}
-        >
-          <QuestionCard
-            question={question}
-            selected={selected}
-            answeredValue={shownAnswer}
-            onSelect={setSelected}
-          />
-        </div>
+      <div className="relative overflow-hidden">
+        <AnimatePresence initial={false} custom={direction} mode="popLayout">
+          <motion.div
+            key={question.id}
+            custom={direction}
+            variants={cardVariants}
+            initial="enter"
+            animate="center"
+            exit="exit"
+            transition={{ type: 'spring', stiffness: 380, damping: 32 }}
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={0.7}
+            onDragEnd={onDragEnd}
+            style={{ touchAction: 'pan-y' }}
+          >
+            <QuestionCard
+              question={question}
+              selected={selected}
+              answeredValue={shownAnswer}
+              onSelect={setSelected}
+            />
+          </motion.div>
+        </AnimatePresence>
       </div>
 
-      <div className="sm:flex sm:justify-center">
-        <LanguagePicker
-          value={state.settings.contentLanguage}
-          onChange={(language) => store.setContentLanguage(language)}
-          ariaLabel={t.language.label}
-        />
+      <div className="flex items-center justify-center gap-3">
+        <button
+          type="button"
+          onClick={() => jump(session.position - 1)}
+          disabled={session.position === 0}
+          aria-label={t.study.prevQuestion}
+          className="shrink-0 rounded-lg border border-slate-200 px-3 py-3 text-xl leading-none disabled:opacity-30 dark:border-slate-700"
+        >
+          ‹
+        </button>
+        <div className="flex-1 sm:flex-none sm:flex sm:justify-center">
+          <LanguagePicker
+            value={state.settings.contentLanguage}
+            onChange={(language) => store.setContentLanguage(language)}
+            ariaLabel={t.language.label}
+          />
+        </div>
+        <button
+          type="button"
+          onClick={() => jump(session.position + 1)}
+          disabled={isLast}
+          aria-label={t.study.nextQuestion}
+          className="shrink-0 rounded-lg border border-slate-200 px-3 py-3 text-xl leading-none disabled:opacity-30 dark:border-slate-700"
+        >
+          ›
+        </button>
       </div>
 
       {jumping && (
