@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router'
+import { Outlet, useLocation, useNavigate } from 'react-router'
 import { useStrings } from '@/i18n/useStrings'
 import { useLearnerStore } from '@/storage/useLearnerStore'
 import { PasscodeGate } from '@/ui/PasscodeGate'
@@ -12,9 +12,24 @@ interface RootProps {
 export function Root({ discardedReason }: RootProps) {
   const store = useLearnerStore()
   const t = useStrings()
+  const location = useLocation()
+  const navigate = useNavigate()
+
+  // The layout's own header, above the content and its pagination — not
+  // Study's concern to place. Only the study screen has anywhere to go back
+  // from; Home is already home.
+  const showBack = location.pathname.startsWith('/study')
 
   return (
     <div className="mx-auto flex min-h-dvh max-w-2xl flex-col px-4 py-6">
+      {showBack && (
+        <header className="mb-4">
+          <button type="button" onClick={() => navigate('/')} className="text-sm underline">
+            {t.study.back}
+          </button>
+        </header>
+      )}
+
       {/* A discard is never silent: statistics derived from unreadable state
           must not be shown, so the learner is told the slate was wiped. */}
       {discardedReason !== null && (

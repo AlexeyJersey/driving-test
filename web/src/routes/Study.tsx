@@ -337,23 +337,15 @@ export function Study() {
 
   return (
     <div className="flex flex-col gap-5 pb-24">
-      <div className="grid grid-cols-3 items-center text-sm text-slate-500 dark:text-slate-400">
-        <button
-          type="button"
-          onClick={() => navigate('/')}
-          className="justify-self-start underline"
-        >
-          {t.study.back}
-        </button>
+      <div className="flex justify-center">
         <button
           type="button"
           onClick={() => setJumping(true)}
           title={t.study.jump}
-          className="justify-self-center text-lg font-semibold tabular-nums underline decoration-dotted"
+          className="text-lg font-semibold tabular-nums text-slate-500 underline decoration-dotted dark:text-slate-400"
         >
           {t.study.position(session.position + 1, session.questionIds.length)}
         </button>
-        <div />
       </div>
 
       <div className="overflow-hidden" onPointerDown={onPointerDown} onClickCapture={onClickCapture}>
