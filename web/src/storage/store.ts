@@ -27,6 +27,8 @@ export interface LearnerStore {
   saveSession(record: SessionRecord): void
 
   setUiLanguage(language: UiLanguage): void
+  /** The language question text and options are shown in — see LearnerSettings.contentLanguage. */
+  setContentLanguage(language: UiLanguage): void
   /** Records that the passcode gate was satisfied on this device. */
   unlock(): void
 

@@ -1,27 +1,24 @@
 <!--
 Sync Impact Report
-Version change: 1.2.0 → 2.0.0
-Rationale: MAJOR. Principle II previously stated as non-negotiable that there would be no
-server, no authentication, and no remote data store. The maintainer intends to study on both a
-phone and a computer with progress carried between them, which requires all three. That is a
-redefinition of the principle, not a clarification of it, so the constitution is amended rather
-than reinterpreted — leaving it as written would make any plan that adds sync formally
-non-compliant while claiming to pass.
+Version change: 2.0.0 → 3.0.0
+Rationale: MAJOR. Principle IV previously made it a MUST that question text and options are
+always displayed in Montenegrin, with translation confined to an on-demand, word-at-a-time
+lookup layered over unchanged source text. Direct use of the app showed that shape was more
+machinery than the study habit called for: a full-question translation, switchable independently
+of the interface language, covers the actual need — understand an unfamiliar question quickly,
+then switch back to Montenegrin to drill the real exam wording — without word-tap UI, popover
+positioning, or a glossary. The on-demand lookup design is superseded, not merely extended, so
+this is a redefinition of the MUST, not a clarification of it.
 
-What survives is the part that was actually load-bearing: the application works fully offline,
-and local storage is always the working copy. Synchronisation is reconciliation in the
-background, never a precondition for studying. What is removed is the prohibition on a remote
-store existing at all.
+What survives unchanged: Montenegrin remains the stored source of truth and the default shown
+language; translation remains a separate, build-time-generated artifact keyed to question ids,
+never a live network call, never an edit of the source text, removable without breaking the app.
+What changes: translation now covers the whole question and its options rather than individual
+words, and it is switchable through its own setting — independent of the interface-chrome
+language a learner reads buttons and labels in — rather than surfaced as an inline lookup.
 
-Modified principles:
-  - II. Offline-First and Local by Default, Extensible to Accounts
-    → II. Offline-First, Local Working Copy, Synchronised in the Background
-Added sections: none
-Removed sections: none
-Scope note: the first release still ships local-only. Cross-device sync is planned as a separate
-feature, and the seams for it — one storage abstraction, an identity-ownable state shape — are
-already required below.
--->
+The previous text of this principle is preserved below as a record, per the maintainer's
+request, rather than only in git history.-->
 
 # Montenegro Driving Test Trainer Constitution
 
@@ -106,19 +103,45 @@ Rules:
 Rationale: the questions will be re-extracted as more volumes are processed and as errors are
 found; divergence between pipeline output and shipped content must be impossible.
 
-### IV. Source-Language Content, Translation as an Additive Layer
+### IV. Source-Language Content, Translation as an Independent, Additive Layer
 
-Question text, options, and any explanation MUST be stored and displayed in Montenegrin exactly
-as written in the source material, because that is the language of the real exam.
+Question text and options are stored once, in Montenegrin, as written in the source material,
+because that is the language of the real exam. Montenegrin MUST remain the default shown
+language and MUST remain fully usable with every translation artifact removed.
+
+Rules:
+- Question content MUST NOT be machine-translated in place or paraphrased. The Montenegrin
+  field is the only source of truth; a translation is always a separate, additional value keyed
+  to the same question id, never a rewrite of it.
+- Obvious typographic defects in the source MAY be corrected, and such corrections MUST be
+  recorded in the question's `note` field. They MUST NOT be recorded in `review`, which is
+  reserved for doubted answer keys and raises a warning to the learner. Maintainer remarks in
+  `note` and `review` are working notes, not exam content, and are never translated.
+- Interface chrome (navigation, buttons, statistics labels) MUST be kept separate from question
+  data, and the language a learner reads chrome in MUST be an independent setting from the
+  language a question's text and options are shown in. Switching one MUST NOT switch the other.
+- Translation MUST be produced at build time by the pipeline and bundled, never requested from a
+  network service at runtime, so switching a question's language stays instant and available
+  offline. A question with no translation for the selected language MUST fall back to
+  Montenegrin, never to a blank or broken display.
+- The correct-answer index is never translated and never changes with the content language;
+  only the displayed text and options do.
+
+Rationale: training on the exact exam wording is the point, which is why Montenegrin stays the
+default and stays one tap away regardless of how the interface is set. But an unfamiliar
+language makes unfamiliar questions a bottleneck to studying at all, and switching a question's
+whole text to a language the learner already reads comfortably removes that bottleneck directly,
+without requiring a separate lookup mechanism to get there.
+
+<details>
+<summary>Superseded text (v2.0.0, on-demand word lookup) — kept for reference, not in force</summary>
+
+Question text and options are stored once, in Montenegrin, as written in the source material,
+because that is the language of the real exam.
 
 Rules:
 - Question content MUST NOT be machine-translated in place or paraphrased. The Montenegrin text
   is always what the learner reads by default.
-- Obvious typographic defects in the source MAY be corrected, and such corrections MUST be
-  recorded in the question's `note` field. They MUST NOT be recorded in `review`, which is
-  reserved for doubted answer keys and raises a warning to the learner.
-- Interface chrome (navigation, buttons, statistics labels) MUST be kept separate from question
-  data so that a second interface language can be added without touching content.
 - Translation, when added, MUST be a separate artifact keyed to question ids and to source
   words, never an edit of the source text, and removing it MUST leave the app fully working.
 - Translation MUST be produced at build time by the pipeline and bundled, never requested from
@@ -127,8 +150,10 @@ Rules:
 - On-demand lookup (selecting a word or phrase to see its meaning) is a reading aid layered on
   top of unchanged source text; it MUST NOT alter, replace, or pre-empt what is displayed.
 
-Rationale: training on the exact exam wording is the point, but an unfamiliar language makes
-unknown words the bottleneck; a lookup aid removes that without diluting the training.
+Rationale (v2.0.0): training on the exact exam wording is the point, but an unfamiliar language
+makes unknown words the bottleneck; a lookup aid removes that without diluting the training.
+
+</details>
 
 ### V. Simplicity and Minimal Dependencies
 
@@ -200,4 +225,4 @@ implementation artifacts produced by Spec Kit MUST be checked against it.
   or the plan MUST be revised.
 - Complexity that cannot be justified MUST be removed rather than documented.
 
-**Version**: 2.0.0 | **Ratified**: 2026-08-19 | **Last Amended**: 2026-08-20
+**Version**: 3.0.0 | **Ratified**: 2026-08-19 | **Last Amended**: 2026-08-21

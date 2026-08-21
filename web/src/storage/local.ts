@@ -18,6 +18,19 @@ abstract class BaseLearnerStore implements LearnerStore {
 
   constructor(initial: LearnerState) {
     this.state = initial
+    // Bound once here so any of these can be passed as a bare callback (an
+    // event handler prop, for instance) without the caller having to remember
+    // to wrap it in an arrow function to keep `this` attached — the mistake
+    // that briefly broke the content-language switcher.
+    this.recordAnswer = this.recordAnswer.bind(this)
+    this.toggleBookmark = this.toggleBookmark.bind(this)
+    this.setUiLanguage = this.setUiLanguage.bind(this)
+    this.setContentLanguage = this.setContentLanguage.bind(this)
+    this.unlock = this.unlock.bind(this)
+    this.saveActiveSession = this.saveActiveSession.bind(this)
+    this.clearActiveSession = this.clearActiveSession.bind(this)
+    this.saveSession = this.saveSession.bind(this)
+    this.reset = this.reset.bind(this)
   }
 
   abstract readonly isPersistent: boolean
@@ -82,6 +95,11 @@ abstract class BaseLearnerStore implements LearnerStore {
   setUiLanguage(language: UiLanguage): void {
     if (this.state.settings.uiLanguage === language) return
     this.commit({ ...this.state, settings: { ...this.state.settings, uiLanguage: language } })
+  }
+
+  setContentLanguage(language: UiLanguage): void {
+    if (this.state.settings.contentLanguage === language) return
+    this.commit({ ...this.state, settings: { ...this.state.settings, contentLanguage: language } })
   }
 
   unlock(): void {

@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useNavigate, useSearchParams } from 'react-router'
 import { content } from '@/content/bundled'
+import { localizeQuestion } from '@/content/localize'
 import { answeredCorrectly, isMistake, lastOutcome } from '@/domain/progress'
 import type { AnswerValue, Question } from '@/domain/question'
 import { orderTokens } from '@/domain/question'
@@ -19,6 +20,7 @@ import { useStrings } from '@/i18n/useStrings'
 import type { ActiveSession, SessionMode } from '@/storage/types'
 import { useLearnerState, useLearnerStore } from '@/storage/useLearnerStore'
 import { JumpPanel } from '@/ui/JumpPanel'
+import { LanguagePicker } from '@/ui/LanguageSwitcher'
 import { QuestionCard } from '@/ui/QuestionCard'
 import { SetSummary } from '@/ui/SetSummary'
 
@@ -99,8 +101,10 @@ export function Study() {
   const question: Question | undefined = useMemo(() => {
     if (!session) return undefined
     const id = currentQuestionId(session)
-    return id === undefined ? undefined : content.getQuestion(id)
-  }, [session])
+    if (id === undefined) return undefined
+    const source = content.getQuestion(id)
+    return source && localizeQuestion(source, state.settings.contentLanguage)
+  }, [session, state.settings.contentLanguage])
 
   const finished = session !== null && isFinished(session)
 
@@ -225,6 +229,14 @@ export function Study() {
         <button type="button" onClick={() => navigate('/')} className="underline">
           {t.study.leave}
         </button>
+      </div>
+
+      <div className="flex justify-end">
+        <LanguagePicker
+          value={state.settings.contentLanguage}
+          onChange={(language) => store.setContentLanguage(language)}
+          ariaLabel={t.language.label}
+        />
       </div>
 
       <QuestionCard

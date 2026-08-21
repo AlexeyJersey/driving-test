@@ -1,32 +1,36 @@
 import { LANGUAGE_LABELS, LANGUAGE_NAMES, UI_LANGUAGES } from '@/i18n/strings'
-import { useStrings } from '@/i18n/useStrings'
-import { useLearnerState, useLearnerStore } from '@/storage/useLearnerStore'
+import type { UiLanguage } from '@/i18n/strings'
+
+interface LanguagePickerProps {
+  readonly value: UiLanguage
+  readonly onChange: (language: UiLanguage) => void
+  readonly ariaLabel: string
+}
 
 /**
- * Switches the chrome only. Question text, options, and answer keys are the same
- * in every language, because they are what the exam is written in.
+ * The flag-button row itself, with no opinion on which setting it drives. Two
+ * independent things in this app happen to need the exact same three-way
+ * choice — the interface chrome and, separately, a question's content — and
+ * showing up identical in both places is what makes the second one need no
+ * explanatory label: a learner who has already used one instance of this
+ * understands the other on sight.
  */
-export function LanguageSwitcher() {
-  const store = useLearnerStore()
-  const current = useLearnerState().settings.uiLanguage
-  const strings = useStrings()
-
+function LanguagePicker({ value, onChange, ariaLabel }: LanguagePickerProps) {
   return (
-    <div className="flex items-center gap-1" role="group" aria-label={strings.language.label}>
+    <div className="flex items-center gap-1" role="group" aria-label={ariaLabel}>
       {UI_LANGUAGES.map((language) => {
-        const active = language === current
+        const active = language === value
         return (
           <button
             key={language}
             type="button"
             aria-pressed={active}
+            aria-label={LANGUAGE_NAMES[language]}
             title={LANGUAGE_NAMES[language]}
-            onClick={() => store.setUiLanguage(language)}
+            onClick={() => onChange(language)}
             className={[
-              'rounded-md px-2 py-1 text-xs font-semibold',
-              active
-                ? 'bg-slate-900 text-white dark:bg-slate-100 dark:text-slate-900'
-                : 'text-slate-500 hover:text-slate-900 dark:text-slate-400 dark:hover:text-slate-100',
+              'rounded-md px-2 py-1 text-base leading-none',
+              active ? 'opacity-100' : 'opacity-45 hover:opacity-75',
             ].join(' ')}
           >
             {LANGUAGE_LABELS[language]}
@@ -36,3 +40,5 @@ export function LanguageSwitcher() {
     </div>
   )
 }
+
+export { LanguagePicker }

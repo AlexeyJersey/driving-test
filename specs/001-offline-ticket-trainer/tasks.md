@@ -311,6 +311,27 @@ transcribed.
 
 ---
 
+## Phase 15: Content Language
+
+**MVP shape decided after using the app**: whole-question translation, switchable
+independently of the interface language, superseding the earlier on-demand
+word-lookup design (Constitution v2.0.0 → v3.0.0, Principle IV). The actual
+translated strings are produced outside this session; everything else ships now
+and works correctly with zero translations present.
+
+- [X] T098 Add `contentLanguage` to LearnerSettings, independent of `uiLanguage`, defaulting to Montenegrin and tolerated as absent on older stored documents (Constitution Principle IV, FR-033a/d)
+- [X] T099 Extend web/scripts/build-content.mjs to load, validate, and bundle data/translations-{en,ru}.json: unknown ids, option-count mismatches, and options on an order-question translation all fail the build by id; a missing file or a missing per-question entry is not an error (FR-025)
+- [X] T100 Add web/src/content/localize.ts: `localizeQuestion` returns the source question unchanged for Montenegrin or when no translation exists, otherwise swaps `text`/`options` — never `correct` — kept outside ContentProvider so its no-mutation guarantee stays literally true (FR-033b)
+- [X] T101 Generalise the language switcher into a value/onChange `LanguagePicker` in web/src/ui/LanguageSwitcher.tsx, replace CG/EN/RU text codes with flag emoji, and mount a second instance — with no caption, per the maintainer's call that the control is self-explanatory once one instance exists — above the question card in web/src/routes/Study.tsx, bound to `contentLanguage` (FR-033a/c)
+- [X] T102 Fix a `this`-binding bug the above surfaced: passing a class method as a bare callback prop dropped its receiver. Bound every mutating LearnerStore method once in the constructor rather than relying on every call site remembering to wrap it
+- [X] T103 Prepare the exact prompt and JSON schema for producing data/translations-en.json and data/translations-ru.json via another model, mirroring the volume III transcription handoff
+
+**Checkpoint**: switching a question's language works end to end against a real
+translation entry, verified in a production build; falls back to Montenegrin
+cleanly with none present, which is the state this ships in.
+
+---
+
 ## Dependencies & Execution Order
 
 ### Phase Dependencies

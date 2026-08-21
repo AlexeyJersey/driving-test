@@ -77,6 +77,13 @@ export interface SessionRecord {
 export interface LearnerSettings {
   readonly uiLanguage: UiLanguage
   /**
+   * The language a question's text and options are shown in. Independent of
+   * uiLanguage on purpose (Constitution Principle IV): a learner may read the
+   * interface in Russian for comfort while still drilling questions in
+   * Montenegrin, switching a question's language only when actually stuck.
+   */
+  readonly contentLanguage: UiLanguage
+  /**
    * Whether the passcode gate has been satisfied on this device. Only a flag is
    * kept, never the passcode itself — pointless anyway, since the build already
    * contains it.
@@ -109,7 +116,7 @@ export function emptyLearnerState(now: string): LearnerState {
     bookmarks: [],
     sessions: [],
     activeSession: null,
-    settings: { uiLanguage: DEFAULT_UI_LANGUAGE, unlocked: false },
+    settings: { uiLanguage: DEFAULT_UI_LANGUAGE, contentLanguage: DEFAULT_UI_LANGUAGE, unlocked: false },
     updatedAt: now,
   }
 }

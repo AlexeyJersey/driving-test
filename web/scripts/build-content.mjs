@@ -26,6 +26,8 @@ const IMAGES_OUT = path.join(WEB, 'public', 'images')
  */
 const APP_BASE = (process.env.APP_BASE ?? '/').replace(/\/+$/, '') || ''
 const IMAGE_URL_BASE = `${APP_BASE}/images`
+/** Content languages a translation file may exist for, besides the source (me). */
+const TRANSLATION_LANGUAGES = ['en', 'ru']
 
 /** Volume order for display: the decks are numbered with Roman numerals. */
 const ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X']
@@ -125,6 +127,76 @@ async function imageFilesFor(volume) {
   return new Set(entries.filter((e) => e.isFile()).map((e) => e.name))
 }
 
+
+/**
+ * Reads and validates data/translations-<lang>.json, if present.
+ *
+ * A missing file is not an error — translation coverage may be partial or not
+ * started, and the app falls back to Montenegrin per question. A *malformed*
+ * present entry is an error: the same "fail loudly, not silently" rule as the
+ * question data itself, because a broken translation must not reach a build.
+ */
+async function loadTranslations(language, questionsById) {
+  const file = path.join(DATA, `translations-${language}.json`)
+  if (!existsSync(file)) return { language, entries: {}, count: 0 }
+
+  const where = `data/translations-${language}.json`
+  let doc
+  try {
+    doc = JSON.parse(await readFile(file, 'utf8'))
+  } catch (err) {
+    fail(where, `not valid JSON — ${err.message}`)
+    return { language, entries: {}, count: 0 }
+  }
+  if (!Array.isArray(doc.translations)) {
+    fail(where, 'missing "translations" array')
+    return { language, entries: {}, count: 0 }
+  }
+
+  const entries = {}
+  const seen = new Set()
+  for (const [i, raw] of doc.translations.entries()) {
+    const tag = `${where}[${i}]${isNonEmptyString(raw?.id) ? ` id=${raw.id}` : ''}`
+    if (!raw || typeof raw !== 'object' || !isNonEmptyString(raw.id)) {
+      fail(tag, 'missing id')
+      continue
+    }
+    if (seen.has(raw.id)) {
+      fail(tag, `duplicate translation for the same id within ${where}`)
+      continue
+    }
+    seen.add(raw.id)
+    const source = questionsById.get(raw.id)
+    if (!source) {
+      fail(tag, `id does not match any question in data/questions-*.json`)
+      continue
+    }
+    if (!isNonEmptyString(raw.text)) {
+      fail(tag, 'text is empty')
+      continue
+    }
+    if (source.kind === 'order') {
+      if ('options' in raw) fail(tag, 'order question translation must not carry options')
+      entries[raw.id] = { text: raw.text }
+      continue
+    }
+    if (!Array.isArray(raw.options) || raw.options.length !== source.options.length) {
+      fail(
+        tag,
+        `needs exactly ${source.options.length} option(s) to match the source, got ` +
+          `${Array.isArray(raw.options) ? raw.options.length : 'none'}`,
+      )
+      continue
+    }
+    if (raw.options.some((o) => !isNonEmptyString(o))) {
+      fail(tag, 'one or more translated options are empty')
+      continue
+    }
+    entries[raw.id] = { text: raw.text, options: raw.options }
+  }
+  return { language, entries, count: Object.keys(entries).length }
+}
+
 async function main() {
   if (!existsSync(DATA)) {
     console.error(`build-content: no data directory at ${DATA}`)
@@ -184,6 +256,12 @@ async function main() {
     })
   }
 
+  const questionsById = new Map(questions.map((q) => [q.id, q]))
+  const translationResults = []
+  for (const lang of TRANSLATION_LANGUAGES) {
+    translationResults.push(await loadTranslations(lang, questionsById))
+  }
+
   if (errors.length > 0) {
     console.error(`\nbuild-content: ${errors.length} problem(s) in the question data:\n`)
     for (const e of errors) console.error(`  • ${e}`)
@@ -219,13 +297,28 @@ async function main() {
     'utf8',
   )
 
+  const translations = Object.fromEntries(
+    translationResults.map(({ language, entries }) => [language, entries]),
+  )
+  await writeFile(
+    path.join(GENERATED, 'translations.ts'),
+    banner +
+      "import type { QuestionId } from '@/domain/question'\n\n" +
+      'export interface Translation {\n  readonly text: string\n  readonly options?: readonly string[]\n}\n\n' +
+      `export const translations: Readonly<Record<string, Readonly<Record<QuestionId, Translation>>>> = ${JSON.stringify(translations, null, 2)}\n`,
+    'utf8',
+  )
+
   const flagged = questions.filter((q) => q.review).length
   const noted = questions.filter((q) => q.note).length
+  const translationSummary = translationResults
+    .map((r) => `${r.language}=${r.count}/${questions.length}`)
+    .join(', ')
   console.log(
     `build-content: ${questions.length} questions from ${volumes.length} volume(s) ` +
       `(${volumes.map((v) => v.volume).join(', ')}); ` +
       `${flagged} with a disputed key, ${noted} with an editorial note; ` +
-      `${copied} illustration(s) copied`,
+      `${copied} illustration(s) copied; translations: ${translationSummary}`,
   )
 }
 

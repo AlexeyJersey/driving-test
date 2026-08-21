@@ -108,13 +108,24 @@ function readActiveSession(v: unknown): ActiveSession | null {
  * switcher existed is still perfectly readable, and defaulting is the whole
  * migration this change needs — no version bump, no discarded progress.
  */
+function readLanguage(v: unknown, fallback: UiLanguage): UiLanguage {
+  return UI_LANGUAGES.includes(v as UiLanguage) ? (v as UiLanguage) : fallback
+}
+
 function readSettings(v: unknown): LearnerSettings {
-  const fallback: LearnerSettings = { uiLanguage: DEFAULT_UI_LANGUAGE, unlocked: false }
+  const fallback: LearnerSettings = {
+    uiLanguage: DEFAULT_UI_LANGUAGE,
+    contentLanguage: DEFAULT_UI_LANGUAGE,
+    unlocked: false,
+  }
   if (!isObject(v)) return fallback
-  const language = UI_LANGUAGES.includes(v.uiLanguage as UiLanguage)
-    ? (v.uiLanguage as UiLanguage)
-    : fallback.uiLanguage
-  return { uiLanguage: language, unlocked: v.unlocked === true }
+  return {
+    uiLanguage: readLanguage(v.uiLanguage, fallback.uiLanguage),
+    // Absent on a document written before this setting existed — defaults to
+    // Montenegrin, the same as a fresh install, not to whatever uiLanguage is.
+    contentLanguage: readLanguage(v.contentLanguage, fallback.contentLanguage),
+    unlocked: v.unlocked === true,
+  }
 }
 
 function readSessions(v: unknown): readonly SessionRecord[] {

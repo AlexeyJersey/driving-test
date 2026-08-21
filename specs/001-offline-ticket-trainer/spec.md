@@ -236,8 +236,11 @@ confirm exactly those two appear and that removing a bookmark takes it out of th
   content management in this release, while reaching all persistence and all question content
   through single abstraction points that a future remote implementation can replace. Cross-device
   synchronisation is a decided direction for a later feature, not a possibility being hedged.
-- **FR-025**: System MUST NOT implement translation of question content in this release, while
-  keeping question data free of any embedded translated text.
+- **FR-025**: System MUST support showing a question's text and options in a language other than
+  Montenegrin, via a build-time translation artifact keyed to question id. A question with no
+  translation for the selected content language MUST fall back to Montenegrin, never a blank or
+  broken display. This applies to the two non-Montenegrin interface languages already
+  supported (English, Russian) — see FR-033a.
 - **FR-026**: System MUST NOT provide any in-app authoring, editing, or deletion of question
   content in this release. The application is a read-only consumer of the question data.
 - **FR-027**: Correcting a question MUST require only editing the question data outside the
@@ -264,6 +267,20 @@ confirm exactly those two appear and that removing a bookmark takes it out of th
 - **FR-035**: The chosen language MUST persist across launches, and MUST be reached through the
   same storage boundary as the rest of learner state rather than written directly to browser
   storage.
+
+**Content language (question text and options)**
+
+- **FR-033a**: Users MUST be able to choose the language a question's text and options are shown
+  in — Montenegrin, English, or Russian — as a setting independent of the interface language:
+  changing one MUST NOT change the other. Montenegrin is the default, because it is the language
+  of the exam.
+- **FR-033b**: The correct-answer index MUST NOT change with the content language. Only the
+  displayed text and options change; the answer key is language-independent.
+- **FR-033c**: The content-language control MUST require no explanatory label to be usable — it
+  presents the same three choices, in the same form, as the interface-language control, so a
+  learner who has used one already understands the other.
+- **FR-033d**: The chosen content language MUST persist across launches through the same storage
+  boundary as the rest of learner state, the same as the interface language (FR-035).
 
 **Navigating a long set**
 
@@ -377,9 +394,11 @@ confirm exactly those two appear and that removing a bookmark takes it out of th
   by an opaque device-pairing code (Constitution v2.0.0, research §12). This release ships
   local-only; the `LearnerStore` boundary is what makes adding it later a replacement rather
   than a rewrite.
-- **All content is Montenegrin**, matching the real exam, and stays that way in every interface
-  language. Question content may later gain a separate lookup layer for unfamiliar words; that
-  is still out of scope.
+- **All content is authored in Montenegrin**, matching the real exam, and Montenegrin remains
+  the default and the stored source of truth regardless of content language chosen. English and
+  Russian translations are a build-time artifact layered on top, per Constitution v3.0.0
+  Principle IV — full question-and-options translation, switchable independently of the
+  interface language, superseding the earlier idea of a word-level on-demand lookup.
 - **The interface ships in three languages** — Montenegrin by default, with English and Russian
   available. Montenegrin is the default because every question is in it, so a learner reading
   Montenegrin chrome is already reading the language they are being examined in.
@@ -388,7 +407,12 @@ confirm exactly those two appear and that removing a bookmark takes it out of th
   first, contained none, so the data contract initially assumed choice was the only kind.
 - **All four volumes are now transcribed.** 415 questions total: 89 rules, 160 traffic
   situations, 121 signs/signals/gestures, 45 vehicle and first aid.
-- **Two features are requested but deliberately not built yet**: swipe navigation between
-  questions in the study screen, and translation of question content. Recorded here so they are
-  not lost; translation in particular must go through the build-time, additive-layer design in
-  Constitution Principle IV rather than a live translation call.
+- **Swipe navigation between questions is requested but deliberately not built yet.** Recorded
+  here so it is not lost. It can reuse `jumpTo` in `web/src/domain/session.ts`, which already
+  models moving to an arbitrary position; the remaining work is a touch-gesture layer in the UI,
+  not new domain logic.
+- **Translation is now in scope, MVP-shaped rather than word-level.** Whole question text and
+  options translate, not individual words; no inline lookup UI, no glossary. The actual
+  translated strings are produced outside this session (handed off to another model, the same
+  pattern used to cross-check volume III's transcription) and validated on arrival the way every
+  other question-data change is validated.

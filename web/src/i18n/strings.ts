@@ -12,11 +12,17 @@ export type UiLanguage = 'me' | 'en' | 'ru'
 export const UI_LANGUAGES: readonly UiLanguage[] = ['me', 'en', 'ru']
 export const DEFAULT_UI_LANGUAGE: UiLanguage = 'me'
 
-/** Short labels for the switcher; each written in its own language. */
+/**
+ * Flag emoji for the switcher. A flag is not a language, strictly — English
+ * belongs to more than one country — but a recognisable glyph reads faster
+ * than a two-letter code at a glance, which is the only job this does; the
+ * real language name is still carried in LANGUAGE_NAMES for the accessible
+ * label and the tooltip.
+ */
 export const LANGUAGE_LABELS: Record<UiLanguage, string> = {
-  me: 'CG',
-  en: 'EN',
-  ru: 'RU',
+  me: '🇲🇪',
+  en: '🇬🇧',
+  ru: '🇷🇺',
 }
 
 export const LANGUAGE_NAMES: Record<UiLanguage, string> = {
