@@ -10,3 +10,6 @@ node_modules/
 
 # Playwright test-run artifacts
 .playwright-mcp/
+
+# Session checkpoint — contains the deploy passcode, local only
+HANDOFF.md
