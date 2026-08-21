@@ -407,10 +407,11 @@ confirm exactly those two appear and that removing a bookmark takes it out of th
   first, contained none, so the data contract initially assumed choice was the only kind.
 - **All four volumes are now transcribed.** 415 questions total: 89 rules, 160 traffic
   situations, 121 signs/signals/gestures, 45 vehicle and first aid.
-- **Swipe navigation between questions is requested but deliberately not built yet.** Recorded
-  here so it is not lost. It can reuse `jumpTo` in `web/src/domain/session.ts`, which already
-  models moving to an arbitrary position; the remaining work is a touch-gesture layer in the UI,
-  not new domain logic.
+- **Swipe navigation between questions is built.** A drag on the question card calls the same
+  `jumpTo` in `web/src/domain/session.ts` the jump panel uses — no new domain logic, just a
+  touch-gesture layer in `web/src/routes/Study.tsx` that tracks the gesture via window-level
+  pointer listeners (not pointer capture, which would redirect option-button clicks to the
+  wrapper) and clamps at the first and last question of the set.
 - **Translation is now in scope, MVP-shaped rather than word-level.** Whole question text and
   options translate, not individual words; no inline lookup UI, no glossary. The actual
   translated strings are produced outside this session (handed off to another model, the same
