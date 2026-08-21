@@ -258,7 +258,7 @@ export function Study() {
   }
 
   return (
-    <div className="flex flex-col gap-5 pb-24">
+    <div className="flex flex-col gap-5 pb-48">
       <div className="flex justify-center">
         <button
           type="button"
@@ -296,34 +296,6 @@ export function Study() {
         </AnimatePresence>
       </div>
 
-      <div className="flex items-center justify-center gap-3">
-        <button
-          type="button"
-          onClick={() => jump(session.position - 1)}
-          disabled={session.position === 0}
-          aria-label={t.study.prevQuestion}
-          className="shrink-0 rounded-lg border border-slate-200 px-3 py-3 text-xl leading-none disabled:opacity-30 dark:border-slate-700"
-        >
-          ‹
-        </button>
-        <div className="flex-1 sm:flex-none sm:flex sm:justify-center">
-          <LanguagePicker
-            value={state.settings.contentLanguage}
-            onChange={(language) => store.setContentLanguage(language)}
-            ariaLabel={t.language.label}
-          />
-        </div>
-        <button
-          type="button"
-          onClick={() => jump(session.position + 1)}
-          disabled={isLast}
-          aria-label={t.study.nextQuestion}
-          className="shrink-0 rounded-lg border border-slate-200 px-3 py-3 text-xl leading-none disabled:opacity-30 dark:border-slate-700"
-        >
-          ›
-        </button>
-      </div>
-
       {jumping && (
         <JumpPanel
           total={session.questionIds.length}
@@ -335,7 +307,35 @@ export function Study() {
       )}
 
       <div className="fixed inset-x-0 bottom-0 border-t border-slate-200 bg-white/95 p-4 backdrop-blur dark:border-slate-700 dark:bg-slate-950/95">
-        <div className="mx-auto max-w-2xl pb-[env(safe-area-inset-bottom)]">
+        <div className="mx-auto flex max-w-2xl flex-col gap-3 pb-[env(safe-area-inset-bottom)]">
+          <div className="flex items-center justify-center gap-3">
+            <button
+              type="button"
+              onClick={() => jump(session.position - 1)}
+              disabled={session.position === 0}
+              aria-label={t.study.prevQuestion}
+              className="shrink-0 rounded-lg border border-slate-200 px-3 py-3 text-xl leading-none disabled:opacity-30 dark:border-slate-700"
+            >
+              ‹
+            </button>
+            <div className="flex-1 sm:flex-none sm:flex sm:justify-center">
+              <LanguagePicker
+                value={state.settings.contentLanguage}
+                onChange={(language) => store.setContentLanguage(language)}
+                ariaLabel={t.language.label}
+              />
+            </div>
+            <button
+              type="button"
+              onClick={() => jump(session.position + 1)}
+              disabled={isLast}
+              aria-label={t.study.nextQuestion}
+              className="shrink-0 rounded-lg border border-slate-200 px-3 py-3 text-xl leading-none disabled:opacity-30 dark:border-slate-700"
+            >
+              ›
+            </button>
+          </div>
+
           <button
             type="button"
             disabled={!answered && !isComplete}
