@@ -1,7 +1,6 @@
 import { Outlet } from 'react-router'
 import { useStrings } from '@/i18n/useStrings'
-import { useLearnerState, useLearnerStore } from '@/storage/useLearnerStore'
-import { LanguagePicker } from '@/ui/LanguageSwitcher'
+import { useLearnerStore } from '@/storage/useLearnerStore'
 import { PasscodeGate } from '@/ui/PasscodeGate'
 import { ServiceWorkerNotices } from '@/ui/ServiceWorkerNotices'
 
@@ -12,19 +11,10 @@ interface RootProps {
 
 export function Root({ discardedReason }: RootProps) {
   const store = useLearnerStore()
-  const state = useLearnerState()
   const t = useStrings()
 
   return (
     <div className="mx-auto flex min-h-dvh max-w-2xl flex-col px-4 py-6">
-      <div className="mb-4 flex justify-end">
-        <LanguagePicker
-          value={state.settings.uiLanguage}
-          onChange={(language) => store.setUiLanguage(language)}
-          ariaLabel={t.language.label}
-        />
-      </div>
-
       {/* A discard is never silent: statistics derived from unreadable state
           must not be shown, so the learner is told the slate was wiped. */}
       {discardedReason !== null && (

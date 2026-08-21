@@ -69,7 +69,7 @@ export function JumpPanel({ total, current, outcomes, onJump, onClose }: JumpPan
             onClick={onClose}
             className="ml-auto rounded-lg border border-slate-300 px-3 py-2 dark:border-slate-600"
           >
-            {t.study.leave}
+            {t.study.back}
           </button>
         </form>
 

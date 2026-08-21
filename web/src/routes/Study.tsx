@@ -337,26 +337,23 @@ export function Study() {
 
   return (
     <div className="flex flex-col gap-5 pb-24">
-      <div className="flex items-center justify-between text-sm text-slate-500 dark:text-slate-400">
+      <div className="grid grid-cols-3 items-center text-sm text-slate-500 dark:text-slate-400">
+        <button
+          type="button"
+          onClick={() => navigate('/')}
+          className="justify-self-start underline"
+        >
+          {t.study.back}
+        </button>
         <button
           type="button"
           onClick={() => setJumping(true)}
           title={t.study.jump}
-          className="tabular-nums underline decoration-dotted"
+          className="justify-self-center text-lg font-semibold tabular-nums underline decoration-dotted"
         >
           {t.study.position(session.position + 1, session.questionIds.length)}
         </button>
-        <button type="button" onClick={() => navigate('/')} className="underline">
-          {t.study.leave}
-        </button>
-      </div>
-
-      <div className="flex justify-end">
-        <LanguagePicker
-          value={state.settings.contentLanguage}
-          onChange={(language) => store.setContentLanguage(language)}
-          ariaLabel={t.language.label}
-        />
+        <div />
       </div>
 
       <div className="overflow-hidden" onPointerDown={onPointerDown} onClickCapture={onClickCapture}>
@@ -374,6 +371,14 @@ export function Study() {
             onSelect={setSelected}
           />
         </div>
+      </div>
+
+      <div className="sm:flex sm:justify-center">
+        <LanguagePicker
+          value={state.settings.contentLanguage}
+          onChange={(language) => store.setContentLanguage(language)}
+          ariaLabel={t.language.label}
+        />
       </div>
 
       {jumping && (

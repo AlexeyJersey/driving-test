@@ -6,6 +6,7 @@ import { matchesFilter } from '@/domain/selection'
 import { categoryLabel } from '@/i18n/strings'
 import { useStrings } from '@/i18n/useStrings'
 import { useLearnerState, useLearnerStore } from '@/storage/useLearnerStore'
+import { LanguageSelect } from '@/ui/LanguageSwitcher'
 
 const ALL = '__all__'
 
@@ -62,10 +63,17 @@ export function Home() {
 
   return (
     <div className="flex flex-col gap-8">
-      <header className="flex flex-col gap-1">
-        <h1 className="text-2xl font-semibold">{t.appName}</h1>
-        <p className="text-sm text-slate-600 dark:text-slate-300">{t.appTagline}</p>
-      </header>
+      <div className="flex items-start justify-between gap-4">
+        <header className="flex flex-col gap-1">
+          <h1 className="text-2xl font-semibold">{t.appName}</h1>
+          <p className="text-sm text-slate-600 dark:text-slate-300">{t.appTagline}</p>
+        </header>
+        <LanguageSelect
+          value={state.settings.uiLanguage}
+          onChange={(language) => store.setUiLanguage(language)}
+          ariaLabel={t.language.label}
+        />
+      </div>
 
       <p className="text-sm text-slate-600 dark:text-slate-300">
         {t.home.progressSummary(attempted, questions.length)}
