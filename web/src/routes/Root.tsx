@@ -23,7 +23,7 @@ export function Root({ discardedReason }: RootProps) {
   return (
     <div className="mx-auto flex min-h-dvh max-w-2xl flex-col px-4 py-6">
       {showBack && (
-        <header className="mb-4">
+        <header className="mb-4 flex justify-end">
           <button type="button" onClick={() => navigate('/')} className="text-sm underline">
             {t.study.back}
           </button>
