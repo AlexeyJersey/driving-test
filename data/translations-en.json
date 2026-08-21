@@ -1,0 +1,3689 @@
+{
+  "translations": [
+    {
+      "id": "I-1-1",
+      "text": "Reversing is permitted:",
+      "options": [
+        "on a short section of road at a blind bend",
+        "On a short section of road in a tunnel",
+        "On a short section of road"
+      ]
+    },
+    {
+      "id": "I-1-2",
+      "text": "On the main road outside a built-up area, where there is no speed limit sign, the driver may not drive the vehicle at a speed greater than:",
+      "options": [
+        "60 km/h",
+        "70 km/h",
+        "80 km/h"
+      ]
+    },
+    {
+      "id": "I-1-3",
+      "text": "A pedestrian refuge in the centre of a two-way carriageway must be passed:",
+      "options": [
+        "Always on the right",
+        "Always on the left",
+        "On either side"
+      ]
+    },
+    {
+      "id": "I-1-4",
+      "text": "On a road with right-of-way directly in front of an intersection that is not regulated by traffic lights or traffic signs, the driver:",
+      "options": [
+        "Can overtake a bicycle, moped or motorcycle",
+        "May overtake any vehicle continuing straight ahead",
+        "May overtake passenger vehicles continuing straight ahead"
+      ]
+    },
+    {
+      "id": "I-1-5",
+      "text": "Passing a vehicle travelling in the opposite direction is:",
+      "options": [
+        "Overtaking",
+        "passing an obstruction",
+        "meeting oncoming traffic"
+      ]
+    },
+    {
+      "id": "I-2-1",
+      "text": "The driver must immediately remove from the carriageway:",
+      "options": [
+        "All objects on the carriageway",
+        "Objects and substances that have fallen from the vehicle being driven",
+        "All objects in the lane in which the vehicle is travelling"
+      ]
+    },
+    {
+      "id": "I-2-2",
+      "text": "Two high-visibility vests must be carried in a:",
+      "options": [
+        "Passenger motor vehicle",
+        "Quadricycle",
+        "goods vehicle"
+      ]
+    },
+    {
+      "id": "I-2-3",
+      "text": "A driver on a road for vehicle traffic in both directions where there are at least four traffic lanes:",
+      "options": [
+        "Must use the right lane",
+        "Must use only the right-hand lane",
+        "Must use only the left-hand lane"
+      ]
+    },
+    {
+      "id": "I-2-4",
+      "text": "The speed of motor vehicles on the road, under normal traffic conditions, must not be limited by the traffic sign below:",
+      "options": [
+        "40 km/h",
+        "50 km/h",
+        "60 km/h"
+      ]
+    },
+    {
+      "id": "I-2-5",
+      "text": "On a road where there are two traffic lanes intended for vehicle traffic in the same direction, faster vehicle movement in one lane than vehicle movement in the other lane:",
+      "options": [
+        "Is considered overtaking",
+        "It is not considered overtaking",
+        "Is considered passing an obstruction"
+      ]
+    },
+    {
+      "id": "I-3-1",
+      "text": "A motor-driven vehicle towing a defective vehicle on the road must not move at a speed greater than:",
+      "options": [
+        "40 km/h",
+        "50 km/h",
+        "60 km/h"
+      ]
+    },
+    {
+      "id": "I-3-2",
+      "text": "A lane reserved for public passenger transport vehicles may also be used by:",
+      "options": [
+        "Escorted vehicles",
+        "Utility vehicles",
+        "Passenger vehicles"
+      ]
+    },
+    {
+      "id": "I-3-3",
+      "text": "The driver must sound the audible warning signal:",
+      "options": [
+        "Repeatedly at alternating intervals",
+        "Without interruption for 5 seconds",
+        "To an extent that is sufficient to warn other road users"
+      ]
+    },
+    {
+      "id": "I-3-4",
+      "text": "The driver must use the audible warning signal on a public road:",
+      "options": [
+        "When overtaking vehicles moving slowly down a slope",
+        "When passing a vehicle parked on the right-hand side of the carriageway",
+        "When children beside the carriageway are not paying attention to approaching traffic"
+      ]
+    },
+    {
+      "id": "I-3-5",
+      "text": "The longitudinal part of a carriageway intended for traffic in one direction and comprising one or more lanes is called:",
+      "options": [
+        "Traffic lane",
+        "carriageway",
+        "carriageway"
+      ]
+    },
+    {
+      "id": "I-4-1",
+      "text": "When an authorized police officer gives orders that deviate from traffic rules, the road user:",
+      "options": [
+        "Must comply with the authorised police officer’s directions",
+        "Must comply with the traffic rules",
+        "Is not required to comply with the authorised police officer’s directions"
+      ]
+    },
+    {
+      "id": "I-4-2",
+      "text": "If not transported in a child restraint, in a motor vehicle on the front seat, a child may not be transported:",
+      "options": [
+        "Younger than 10 years",
+        "Under 12 years old",
+        "Under 14 years of age"
+      ]
+    },
+    {
+      "id": "I-4-3",
+      "text": "Reversing the vehicle in conditions of reduced visibility:",
+      "options": [
+        "It is allowed in a built-up area",
+        "It is allowed on a short part of the road",
+        "It is not allowed"
+      ]
+    },
+    {
+      "id": "I-4-4",
+      "text": "In a built-up area, a traffic sign allows motor vehicles to travel at a maximum speed of up to:",
+      "options": [
+        "80 km/h",
+        "50 km/h",
+        "60 km/h"
+      ]
+    },
+    {
+      "id": "I-4-5",
+      "text": "When a driver encounters an organized column of pedestrians crossing the carriageway:",
+      "options": [
+        "May not cut through an organized column of pedestrians with a vehicle",
+        "Is allowed to cut through an organized column of pedestrians with the use of an audible warning signal",
+        "Is allowed to cut through an organized column of pedestrians with a vehicle, if the column is not made up of children"
+      ]
+    },
+    {
+      "id": "I-5-1",
+      "text": "With a towed motor vehicle, except for the driver driving it:",
+      "options": [
+        "Transportation of passengers is permitted in accordance with the number of passenger seats",
+        "Only one passenger is allowed",
+        "Carriage of passengers is prohibited"
+      ]
+    },
+    {
+      "id": "I-5-2",
+      "text": "Moving from one lane to another lane for traffic travelling in the same direction is:",
+      "options": [
+        "changing lanes",
+        "Overtaking",
+        "Passing an obstruction"
+      ]
+    },
+    {
+      "id": "I-5-3",
+      "text": "A young driver and a novice driver must not drive a vehicle on the motorway at a speed greater than:",
+      "options": [
+        "70 km/h",
+        "100 km/h",
+        "110 km/h"
+      ]
+    },
+    {
+      "id": "I-5-4",
+      "text": "Is the road user obliged to act in accordance with the traffic signals and when he thereby deviates from the traffic rules:",
+      "options": [
+        "He is not obliged",
+        "He is obliged",
+        "He is liable only in a built-up area"
+      ]
+    },
+    {
+      "id": "I-5-5",
+      "text": "Sudden changes in vehicle speed on the road are allowed:",
+      "options": [
+        "When entering a public road from an unpaved road",
+        "In case of avoiding immediate danger",
+        "When leaving traffic more quickly"
+      ]
+    },
+    {
+      "id": "I-6-1",
+      "text": "Apart from tractors, other motor-driven vehicles:",
+      "options": [
+        "They may not tow a tractor trailer",
+        "They are allowed to tow a tractor trailer",
+        "They may not tow a trailer for a tractor, if the total weight of the vehicle exceeds -500 kg"
+      ]
+    },
+    {
+      "id": "I-6-2",
+      "text": "The driver is obliged to use an audible warning signal:",
+      "options": [
+        "Before entering a tunnel that has no lighting",
+        "On the way to the settlements before entering the intersection",
+        "On a road outside a built-up area before a blind, narrow bend"
+      ]
+    },
+    {
+      "id": "I-6-3",
+      "text": "A motor vehicle must not tow:",
+      "options": [
+        "A motorcycle, moped, light tricycle or heavy tricycle",
+        "goods vehicle",
+        "Passenger car"
+      ]
+    },
+    {
+      "id": "I-6-4",
+      "text": "Pedestrian on a public road outside a built-up area:",
+      "options": [
+        "May not move on the right side of the carriageway",
+        "Must not move in a column",
+        "Must not move on the motorway"
+      ]
+    },
+    {
+      "id": "I-6-5",
+      "text": "A vehicle moving on rails placed in the middle of the carriageway:",
+      "options": [
+        "May be overtaken on the left",
+        "May overtake on either side",
+        "May be overtaken on the right"
+      ]
+    },
+    {
+      "id": "I-6-6",
+      "text": "Is the driver allowed to make a U-turn on the expressway:",
+      "options": [
+        "Yes, if it does not endanger other road users",
+        "Yes, if it has all turn signals on",
+        "Must not"
+      ]
+    },
+    {
+      "id": "I-7-1",
+      "text": "Red and blue flashing lights that turn on alternately on the vehicle are light signals that give:",
+      "options": [
+        "Priority vehicles",
+        "Escorted vehicles",
+        "Special vehicles"
+      ]
+    },
+    {
+      "id": "I-7-2",
+      "text": "The driver of a vehicle while another vehicle is overtaking him:",
+      "options": [
+        "Must not increase the speed",
+        "May increase speed",
+        "Must not reduce the speed"
+      ]
+    },
+    {
+      "id": "I-7-3",
+      "text": "Turning the vehicle 180° from the previous direction of movement in order to join the opposite traffic flow is:",
+      "options": [
+        "Circular rotation",
+        "Left turn",
+        "U-turn"
+      ]
+    },
+    {
+      "id": "I-7-4",
+      "text": "A young driver must not drive a vehicle at a speed greater than:",
+      "options": [
+        "50 km/h",
+        "60 km/h",
+        "70 km/h"
+      ]
+    },
+    {
+      "id": "I-7-5",
+      "text": "At night, the driver may use a headlamp-flash warning signal on the road in a built-up area, when:",
+      "options": [
+        "Passing another vehicle",
+        "Passing a pedestrian",
+        "Overtaking another vehicle"
+      ]
+    },
+    {
+      "id": "I-8-1",
+      "text": "Where a junction has both road markings and traffic signals, the driver must comply with:",
+      "options": [
+        "To the priority-to-the-right rule",
+        "The traffic signals",
+        "Markings on the road"
+      ]
+    },
+    {
+      "id": "I-8-2",
+      "text": "A young driver must not drive a vehicle, except on the motorway, at a speed greater than:",
+      "options": [
+        "100 km/h",
+        "80 km/h",
+        "70 km/h"
+      ]
+    },
+    {
+      "id": "I-8-3",
+      "text": "A driver approaching a marked pedestrian crossing must:",
+      "options": [
+        "Reduce the speed of the vehicle to 30 km/h",
+        "Reduce speed and proceed with the vehicle regardless of the traffic situation",
+        "Adjust the speed of the vehicle so that it can stop safely in any situation"
+      ]
+    },
+    {
+      "id": "I-8-4",
+      "text": "The speed of a goods vehicle with a maximum permissible mass of up to -500 kg is limited to:",
+      "options": [
+        "80 km/h",
+        "70 km/h",
+        "60 km/h"
+      ]
+    },
+    {
+      "id": "I-8-5",
+      "text": "A break in a vehicle’s movement lasting more than five minutes, other than one required to comply with a traffic sign or traffic rule, is:",
+      "options": [
+        "Stopping the vehicle",
+        "Vehicle parking",
+        "Vehicle shutdown"
+      ]
+    },
+    {
+      "id": "I-8-6",
+      "text": "The speed of buses in public urban passenger transport is limited to:",
+      "options": [
+        "50 km/h",
+        "60 km/h",
+        "70 km/h"
+      ]
+    },
+    {
+      "id": "I-9-1",
+      "text": "Instead of an audible warning signal at night, the driver may use:",
+      "options": [
+        "Daytime running lights",
+        "headlamp-flash warning signal",
+        "Fog lights"
+      ]
+    },
+    {
+      "id": "I-9-2",
+      "text": "A surface that is not intended for vehicle traffic, located in the middle of a one-way road, unless otherwise specified by a traffic sign:",
+      "options": [
+        "It may be passed on either the left or the right",
+        "It may be passed only on the right",
+        "It may be passed only on the left"
+      ]
+    },
+    {
+      "id": "I-9-3",
+      "text": "On a road for vehicle traffic in both directions where there are three traffic lanes, the driver:",
+      "options": [
+        "May use any traffic lane",
+        "May not use the traffic lane along the right edge of the carriageway",
+        "May not use the traffic lane along the left edge of the carriageway"
+      ]
+    },
+    {
+      "id": "I-9-4",
+      "text": "At a junction, the driver must:",
+      "options": [
+        "Give way to a vehicle approaching from the left",
+        "Give way to a vehicle approaching from the right",
+        "Give way to all vehicles"
+      ]
+    },
+    {
+      "id": "I-9-5",
+      "text": "The distance between the towing and the towed passenger vehicle, if it is towed with a rope, is:",
+      "options": [
+        "From 1 to 2 metres",
+        "From 3 to 5 metres",
+        "Over 5 metres"
+      ]
+    },
+    {
+      "id": "I-10-1",
+      "text": "In a vehicle in which seat belts are installed while driving, the seat belt must be used:",
+      "options": [
+        "Only the driver",
+        "Driver and passengers",
+        "Only driver and passenger"
+      ]
+    },
+    {
+      "id": "I-10-2",
+      "text": "When a vehicle for the organized transport of children stops on the carriageway for the purpose of children boarding or alighting, the driver:",
+      "options": [
+        "Must turn on the left turn signal",
+        "Must turn on the right turn signal",
+        "Must switch on the hazard warning lights"
+      ]
+    },
+    {
+      "id": "I-10-3",
+      "text": "In a built-up area, the speed of motor vehicles can be limited by a traffic sign to a maximum of:",
+      "options": [
+        "80 km/h",
+        "50 km/h",
+        "60 km/h"
+      ]
+    },
+    {
+      "id": "I-10-4",
+      "text": "When the driver of a vehicle for the organized transport of children stops the vehicle on the road for the purpose of entering and exiting children, he must:",
+      "options": [
+        "Turn on the left turn signal",
+        "Switch on the hazard warning lights",
+        "Turn on the right turn signal"
+      ]
+    },
+    {
+      "id": "I-10-5",
+      "text": "When vehicles come to the intersection from opposite directions and turn left, they pass each other:",
+      "options": [
+        "On the right side",
+        "On the left side",
+        "By agreement"
+      ]
+    },
+    {
+      "id": "I-10-6",
+      "text": "Before joining traffic, the driver must:",
+      "options": [
+        "To use an audible warning signal and to turn on the appropriate turn signal",
+        "To turn on all turn signals",
+        "To ensure that he can do so in a safe manner and to turn on the appropriate turn signal"
+      ]
+    },
+    {
+      "id": "I-11-1",
+      "text": "A vehicle moving on rails placed in the middle of the carriageway:",
+      "options": [
+        "May be overtaken on the right",
+        "May be overtaken on the left",
+        "Must not be overtaken"
+      ]
+    },
+    {
+      "id": "I-11-2",
+      "text": "When passing a pedestrian, the driver is obliged to:",
+      "options": [
+        "Keep a safe distance between your vehicle and pedestrians",
+        "Warn the pedestrian with the horn so that the pedestrian leaves the carriageway",
+        "Accelerate the vehicle to pass the pedestrian as soon as possible"
+      ]
+    },
+    {
+      "id": "I-11-3",
+      "text": "The distance between the towing and the towed motor vehicle, if it is towed by means of a rigid connection, is:",
+      "options": [
+        "From 3 to 5 metres",
+        "Over 5 metres",
+        "Up to 3 m"
+      ]
+    },
+    {
+      "id": "I-11-4",
+      "text": "Passing a vehicle past another vehicle that is not moving is an action:",
+      "options": [
+        "Overtaking",
+        "passing an obstruction",
+        "changing lanes"
+      ]
+    },
+    {
+      "id": "I-11-5",
+      "text": "The speed of a goods vehicle with a trailer is limited to:",
+      "options": [
+        "60 km/h",
+        "70 km/h",
+        "80 km/h"
+      ]
+    },
+    {
+      "id": "I-12-1",
+      "text": "A driver signaled for overtaking:",
+      "options": [
+        "He is obliged to move his vehicle to the right edge of the carriageway",
+        "He is obliged to move his vehicle towards the dividing line",
+        "He is obliged to move the vehicle to the left edge of the carriageway"
+      ]
+    },
+    {
+      "id": "I-12-2",
+      "text": "Are escorted vehicles allowed to cut through the column of pedestrians:",
+      "options": [
+        "No, if the column is longer than 30 metres",
+        "No, regardless of column length",
+        "Yes, regardless of column length"
+      ]
+    },
+    {
+      "id": "I-12-3",
+      "text": "In the attached vehicle for housing - caravan:",
+      "options": [
+        "Persons may be transported",
+        "Persons may not be transported",
+        "No more than five persons may be transported"
+      ]
+    },
+    {
+      "id": "I-12-4",
+      "text": "The load on a motor vehicle may exceed the farthest point on the front of the vehicle:",
+      "options": [
+        "Up to 1.5 metres",
+        "Up to 1 meter",
+        "It is not limited, but it must be marked with a prescribed board"
+      ]
+    },
+    {
+      "id": "I-12-5",
+      "text": "A young driver is a driver:",
+      "options": [
+        "Who has less than 12 months of driving experience",
+        "Up to 24 years of age",
+        "Up to 21 years of age"
+      ]
+    },
+    {
+      "id": "I-12-6",
+      "text": "If you come across a \"children on the road\" traffic sign while driving on the road, you will proceed by:",
+      "options": [
+        "Proceed with particular caution so that they can stop the vehicle in time",
+        "Adjust the speed according to the general limit for the given road section",
+        "Adjust speed to weather conditions"
+      ]
+    },
+    {
+      "id": "I-13-1",
+      "text": "When you drive your vehicle past a bus stopped at the bus stop, you will proceed as follows:",
+      "options": [
+        "That you will stop the vehicle and wait for passengers to enter the bus, and then proceed",
+        "Sound the horn and proceed without paying particular attention to people boarding or alighting from the bus",
+        "That I will move at a reduced speed so as not to endanger people boarding or alighting from the bus"
+      ]
+    },
+    {
+      "id": "I-13-2",
+      "text": "While driving a passenger motor vehicle in traffic, the driver must:",
+      "options": [
+        "Have at least two high-visibility vest",
+        "Have a high-visibility vest as much as there is room to sit",
+        "Have one high-visibility vest"
+      ]
+    },
+    {
+      "id": "I-13-3",
+      "text": "On a road in a built-up area where the speed is not limited by a traffic sign, the driver must not move faster than:",
+      "options": [
+        "50 km/h",
+        "60 km/h",
+        "70 km/h"
+      ]
+    },
+    {
+      "id": "I-13-4",
+      "text": "When the driver switches the vehicle from a dirt road to a road with an asphalt surface, it is necessary:",
+      "options": [
+        "To stop the vehicle and remove mud from the wheels after starting",
+        "After entering the road, repeatedly accelerate and decelerate so that the mud falls from the wheels",
+        "To stop the vehicle and remove mud from the wheels before starting"
+      ]
+    },
+    {
+      "id": "I-13-5",
+      "text": "When moving the vehicle on the road, the driver is obliged to keep the vehicle:",
+      "options": [
+        "As close as possible to the right edge of the carriageway",
+        "In the middle of the carriageway",
+        "Closer to the dividing line"
+      ]
+    },
+    {
+      "id": "I-14-1",
+      "text": "The traffic lane intended for the movement of vehicles for urban passenger transport can be used by:",
+      "options": [
+        "Garbage collection vehicles",
+        "Priority vehicles",
+        "Passenger vehicles when overtaking"
+      ]
+    },
+    {
+      "id": "I-14-2",
+      "text": "When a column of vehicles forms behind the vehicle due to slow driving, the driver is obliged to:",
+      "options": [
+        "Proceed without obligation to other road users",
+        "At the appropriate place on the road, allow vehicles to safely overtake, go around or pass it",
+        "Proceed until the first intersection with the local road and turn off the traffic"
+      ]
+    },
+    {
+      "id": "I-14-3",
+      "text": "The driver may stop or park his vehicle on the footway:",
+      "options": [
+        "If the footway has a width greater than 1.6 metres",
+        "If the traffic sign allows, regardless of the width of the footway and pedestrian crossing",
+        "If it is allowed by traffic signals, and if there remains a passage for pedestrians with a width of at least 1.6 metres, which must not be along the edge of the carriageway"
+      ]
+    },
+    {
+      "id": "I-14-4",
+      "text": "A rail vehicle running along the right-hand edge of the carriageway must be overtaken:",
+      "options": [
+        "On either side",
+        "On the left side",
+        "On the right side"
+      ]
+    },
+    {
+      "id": "I-14-5",
+      "text": "While reversing:",
+      "options": [
+        "The hazard warning lights must be switched on",
+        "The hazard warning lights need not be switched on",
+        "Only the right turn signal must be on"
+      ]
+    },
+    {
+      "id": "I-14-6",
+      "text": "A driver's license for category B can be issued to a person who has completed:",
+      "options": [
+        "17 years",
+        "17 years and 6 months",
+        "18 years old"
+      ]
+    },
+    {
+      "id": "I-15-1",
+      "text": "A driver who stops or parks a vehicle on a carriageway without street lighting, at night or in conditions of reduced visibility, must include on the vehicle:",
+      "options": [
+        "dipped-beam headlamps",
+        "Parking or position lights",
+        "Fog lights"
+      ]
+    },
+    {
+      "id": "I-15-2",
+      "text": "The distance over which a road user can clearly see the carriageway is called:",
+      "options": [
+        "sight distance",
+        "Field of vision",
+        "Visibility"
+      ]
+    },
+    {
+      "id": "I-15-3",
+      "text": "For cycling, where there is no special path or lane, the road can be used:",
+      "options": [
+        "In a width of up to 1 meter from the right edge of the carriageway",
+        "In a width of up to 1.5 metres from the right edge of the carriageway",
+        "In a width of up to 1.2 metres from the right edge of the carriageway"
+      ]
+    },
+    {
+      "id": "I-15-4",
+      "text": "The speed of vehicles on public roads when transporting hazardous materials outside a built-up area is limited:",
+      "options": [
+        "To 60 km/h",
+        "To 70 km/h",
+        "To 80 km/h"
+      ]
+    },
+    {
+      "id": "I-15-5",
+      "text": "The driver may join the traffic with the vehicle when:",
+      "options": [
+        "Turn on the horn and all turn signals",
+        "Only turn on the turn signal",
+        "Make sure that it does not interfere and inform the other participants in the prescribed manner"
+      ]
+    },
+    {
+      "id": "I-16-1",
+      "text": "When transporting a child in a child restraint:",
+      "options": [
+        "The child does not have to wear a seat belt",
+        "The child does not have to be strapped in if the seat is fastened with a safety belt",
+        "The child must be fastened with a seat belt"
+      ]
+    },
+    {
+      "id": "I-16-2",
+      "text": "On a public road with physically separated carriageways, a driver may use:",
+      "options": [
+        "Carriageway intended for vehicle traffic from the opposite direction",
+        "Right lane",
+        "Left and right lane"
+      ]
+    },
+    {
+      "id": "I-16-3",
+      "text": "A person transported by vehicle must not:",
+      "options": [
+        "To write messages on the mobile phone",
+        "To interfere with the driver’s control of the vehicle",
+        "To use headphones"
+      ]
+    },
+    {
+      "id": "I-16-4",
+      "text": "When reversing, the driver is:",
+      "options": [
+        "Obliged to let the vehicle coming behind his vehicle pass",
+        "Obliged to turn on the left turn signal",
+        "He is not obliged to let the vehicle coming behind his vehicle pass"
+      ]
+    },
+    {
+      "id": "I-16-5",
+      "text": "Means that interfere with the operation of the device for measuring the speed of the vehicle:",
+      "options": [
+        "Must not be used on the part of the road where there is an supplementary “radar enforcement” plate",
+        "It may be used on the part of the road where there is no supplementary “radar enforcement” plate",
+        "Must not be used and found in the vehicle"
+      ]
+    },
+    {
+      "id": "I-16-6",
+      "text": "If the driver is outside his vehicle on the carriageway:",
+      "options": [
+        "He is obliged to wear a vest with high-visibility properties",
+        "He is not required to wear a vest with high-visibility properties",
+        "He is obliged to use his hand position to warn the other participants of his presence"
+      ]
+    },
+    {
+      "id": "I-17-1",
+      "text": "When vehicles come from opposite directions and turn left at the intersection, they pass each other with:",
+      "options": [
+        "Right side",
+        "Left side",
+        "Left and right sides"
+      ]
+    },
+    {
+      "id": "I-17-2",
+      "text": "When driving during fog, the following must be on the vehicle:",
+      "options": [
+        "main-beam headlamps",
+        "dipped-beam headlamps",
+        "Turn signals"
+      ]
+    },
+    {
+      "id": "I-17-3",
+      "text": "A driver approaching the intersection is obliged to:",
+      "options": [
+        "Increase your speed to get through the intersection as quickly as possible",
+        "Adjust your driving to the traffic conditions at the intersection",
+        "Drives at the speed prescribed by the general limit"
+      ]
+    },
+    {
+      "id": "II-1-1",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will stop in front of the intersection",
+        "I will pass a vehicle turning left and proceed",
+        "I will proceed straight"
+      ]
+    },
+    {
+      "id": "II-1-2",
+      "text": "In the situation shown in the illustration, you are obliged to act:",
+      "options": [
+        "After the light on the traffic light is on",
+        "According to traffic signs",
+        "By a sign given by an authorized police officer"
+      ]
+    },
+    {
+      "id": "II-1-3",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will proceed straight without passing vehicle 1",
+        "I will give way to vehicle 1 and proceed",
+        "I will speed up and go through the intersection before vehicle 1"
+      ]
+    },
+    {
+      "id": "II-1-4",
+      "text": "The regulatory sign shown means:",
+      "options": [
+        "Junction with a priority road",
+        "Priority over vehicles coming from the opposite direction",
+        "STOP"
+      ]
+    },
+    {
+      "id": "II-2-1",
+      "text": "How should you proceed in the situation shown if you are driving vehicle 2 and continuing straight ahead:",
+      "options": [
+        "I will proceed without giving way to a vehicle",
+        "I will proceed while passing only vehicle 1",
+        "I will proceed while passing vehicles 3 and 4"
+      ]
+    },
+    {
+      "id": "II-2-2",
+      "text": "In the situation shown in the illustration, the order in which the vehicles should proceed is:"
+    },
+    {
+      "id": "II-2-3",
+      "text": "If the cyclist entered the intersection at a red light on the traffic light in the direction of his movement, as in the illustration:",
+      "options": [
+        "Lawfully performs the action of passing through the intersection",
+        "Unlawfully because must push the bike next to him",
+        "Unlawfully performs the action of passing through the intersection"
+      ]
+    },
+    {
+      "id": "II-2-4",
+      "text": "In the situation shown in the illustration, the cyclist crosses the road on:",
+      "options": [
+        "Marked bicycle path",
+        "Marked bicycle lane",
+        "To the marked dividing line of the pedestrian crossing"
+      ]
+    },
+    {
+      "id": "II-3-1",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will give way to passenger vehicle 3 and proceed",
+        "I will give way to tram 2 and proceed",
+        "I will give way to tram 2 and passenger vehicle 3, then proceed"
+      ]
+    },
+    {
+      "id": "II-3-2",
+      "text": "The order in which the vehicles should proceed through the junction is:"
+    },
+    {
+      "id": "II-3-3",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will proceed straight",
+        "I will proceed straight, passing vehicles 4 and 5",
+        "I will stop the vehicle"
+      ]
+    },
+    {
+      "id": "II-3-4",
+      "text": "In the situation shown, vehicle 2 will:",
+      "options": [
+        "To stop and give way to the vehicle -",
+        "Proceed to the left without passing vehicle 1",
+        "Stop because of a signal given by an authorized person"
+      ]
+    },
+    {
+      "id": "II-4-1",
+      "text": "In the situation shown, priority is given to:",
+      "options": [
+        "Vehicle 1 versus vehicle 2",
+        "Vehicle 2 versus vehicle 1",
+        "Vehicle 1 due to the priority-to-the-right rule"
+      ]
+    },
+    {
+      "id": "II-4-2",
+      "text": "In the situation shown in the illustration, the order of passage of vehicles is regulated:",
+      "options": [
+        "By the priority-to-the-right rule",
+        "By the priority-to-the-left rule",
+        "Vertical traffic sign"
+      ]
+    },
+    {
+      "id": "II-4-3",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will give way to the vehicle turning left",
+        "I will proceed straight because I have priority",
+        "I will stop in front of the intersection because of the STOP sign"
+      ]
+    },
+    {
+      "id": "II-4-4",
+      "text": "In the situation shown in the illustration, you will proceed by:",
+      "options": [
+        "The STOP traffic sign",
+        "The meaning of traffic light signs",
+        "The traffic rule of entering an unregulated intersection"
+      ]
+    },
+    {
+      "id": "II-5-1",
+      "text": "In the situation shown in the illustration, the order in which the vehicles should proceed is:"
+    },
+    {
+      "id": "II-5-2",
+      "text": "In the situation shown in the illustration, the order of passing through the intersection is regulated:",
+      "options": [
+        "Traffic sign",
+        "By the priority-to-the-right rule",
+        "Road markings"
+      ]
+    },
+    {
+      "id": "II-5-3",
+      "text": "In the situation shown in the illustration when turning left you should:",
+      "options": [
+        "Proceed without giving way to vehicles 2, 3 and 4",
+        "I give way to vehicles 3 and 4",
+        "I give way to vehicles 2, 3 and 4"
+      ]
+    },
+    {
+      "id": "II-5-4",
+      "text": "In the situation shown in the illustration, the arrows on the road (white) mark:",
+      "options": [
+        "Routing line",
+        "Mandatory direction only for passenger vehicles",
+        "Compulsory direction"
+      ]
+    },
+    {
+      "id": "II-6-1",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will proceed straight without giving way to the tram",
+        "I will proceed straight after giving way to the tram",
+        "With increased caution I will proceed straight"
+      ]
+    },
+    {
+      "id": "II-6-2",
+      "text": "In the situation shown in the illustration, the order of passing through the intersection is regulated:",
+      "options": [
+        "Traffic signs",
+        "By applying the priority-to-the-right rule",
+        "By applying the right-of-way rule"
+      ]
+    },
+    {
+      "id": "II-6-3",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will stop in front of the intersection and let the vehicle pass -",
+        "I will proceed straight with increased attention",
+        "I will proceed straight without giving way to vehicle 2"
+      ]
+    },
+    {
+      "id": "II-6-4",
+      "text": "In the situation shown in the illustration, the supplementary board indicates:",
+      "options": [
+        "Encountering a bypass",
+        "To move on the priority road",
+        "Merging with the priority road"
+      ]
+    },
+    {
+      "id": "II-7-1",
+      "text": "In the situation as in the illustration, when you pass vehicle 2 moving from the opposite direction, the action is:",
+      "options": [
+        "passing an obstruction",
+        "meeting oncoming traffic",
+        "Overtaking"
+      ]
+    },
+    {
+      "id": "II-7-2",
+      "text": "In the situation shown in the illustration:",
+      "options": [
+        "I will proceed straight without passing the pedestrian",
+        "I will accelerate the movement of the vehicle and pass in front of the pedestrian",
+        "I will stop and give way to the pedestrian"
+      ]
+    },
+    {
+      "id": "II-7-3",
+      "text": "In the situation shown in the illustration:",
+      "options": [
+        "I may overtake",
+        "I must not overtake",
+        "I am allowed to overtake because of the road markings"
+      ]
+    },
+    {
+      "id": "II-7-4",
+      "text": "In the situation shown in the illustration, the continuous longitudinal line along the right edge of the road means:",
+      "options": [
+        "The edge of the road",
+        "Edge line",
+        "Dividing line"
+      ]
+    },
+    {
+      "id": "II-8-1",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will stop in front of the intersection",
+        "I will give way to vehicles from the opposite direction and proceed",
+        "I will proceed without passing vehicles from the opposite direction"
+      ]
+    },
+    {
+      "id": "II-8-2",
+      "text": "In the situation shown in the illustration, the cyclists are moving:",
+      "options": [
+        "Unlawfully, because they made a column",
+        "Unlawfully, because they are not wearing a high-visibility vest",
+        "Lawfully"
+      ]
+    },
+    {
+      "id": "II-8-3",
+      "text": "In the situation shown in the illustration:",
+      "options": [
+        "I will proceed to the right",
+        "I will stop in front of the intersection",
+        "I will proceed straight"
+      ]
+    },
+    {
+      "id": "II-8-4",
+      "text": "In the situation shown in the illustration, you will proceed by:",
+      "options": [
+        "Traffic signal",
+        "Vertical traffic sign",
+        "Road markings"
+      ]
+    },
+    {
+      "id": "II-9-1",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will proceed straight",
+        "I will stop the vehicle",
+        "I will proceed to the left after passing vehicles 2 and 3"
+      ]
+    },
+    {
+      "id": "II-9-2",
+      "text": "In the situation shown in the illustration, the police vehicle:",
+      "options": [
+        "Can proceed straight",
+        "Must stop",
+        "Can proceed in any direction"
+      ]
+    },
+    {
+      "id": "II-9-3",
+      "text": "In the situation shown in the illustration, the driver:",
+      "options": [
+        "Vehicle 1 should give way to vehicle 2",
+        "Vehicle 2 should accelerate and pass in front of vehicle 1",
+        "Vehicle 2 should give way to vehicle 1"
+      ]
+    },
+    {
+      "id": "II-9-4",
+      "text": "In the situation shown in the illustration vehicle 1:",
+      "options": [
+        "Must not stop or park",
+        "May stop",
+        "May stop or park"
+      ]
+    },
+    {
+      "id": "II-10-1",
+      "text": "In the situation shown in the illustration:",
+      "options": [
+        "Passenger vehicle 1 is allowed to pass",
+        "Vehicles 2, 3 and 4 are allowed to pass",
+        "Only police vehicle 4 is allowed to pass"
+      ]
+    },
+    {
+      "id": "II-10-2",
+      "text": "In the situation shown in the illustration police vehicle 4:",
+      "options": [
+        "Can proceed straight",
+        "Must stop",
+        "Can proceed straight after passing vehicle 1"
+      ]
+    },
+    {
+      "id": "II-10-3",
+      "text": "How should you proceed in the situation shown if you are driving vehicle 1:",
+      "options": [
+        "After passing vehicle 2 I have to turn right",
+        "I have priority over vehicle 2",
+        "I will stop in front of the intersection and let all the vehicles pass"
+      ]
+    },
+    {
+      "id": "II-10-4",
+      "text": "Mandatory direction to the right, in the situation in the illustration, refers to:",
+      "options": [
+        "On goods vehicles and trailers",
+        "On all vehicles except goods vehicles",
+        "On goods vehicles"
+      ]
+    },
+    {
+      "id": "II-11-1",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will proceed straight through the intersection",
+        "I will stop in front of the intersection and give way to vehicle 2",
+        "I will stop in front of the intersection and let the vehicle pass -"
+      ]
+    },
+    {
+      "id": "II-11-2",
+      "text": "In the situation shown in the illustration, the order in which the vehicles should proceed through the junction is:"
+    },
+    {
+      "id": "II-11-3",
+      "text": "How should you proceed in the situation shown if the vehicles continue straight ahead and you are driving vehicle 2:",
+      "options": [
+        "I will proceed without giving way to a vehicle",
+        "I will proceed after passing vehicles 3 and 4 only",
+        "I will proceed while passing vehicle 1"
+      ]
+    },
+    {
+      "id": "II-11-4",
+      "text": "In the situation in the illustration, when the vehicles continues straight ahead, the order of passage of the vehicles is:"
+    },
+    {
+      "id": "II-12-1",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will proceed to the left without stopping through the intersection",
+        "I will stop in front of the intersection",
+        "I will proceed straight through the intersection"
+      ]
+    },
+    {
+      "id": "II-12-2",
+      "text": "In the situation shown in the illustration, the yellow light on the traffic light means:",
+      "options": [
+        "Priority only",
+        "Permission to proceed only straight",
+        "Prohibition of passage through the intersection"
+      ]
+    },
+    {
+      "id": "II-12-3",
+      "text": "How should you proceed in the situation shown when the police officer is directing traffic with both arms extended sideways and facing vehicles 2 and 3:",
+      "options": [
+        "I will only give way to vehicles 2 and 3",
+        "I will only give way to vehicle 4 and proceed",
+        "I will proceed without giving way to vehicles 2, 3 and 4"
+      ]
+    },
+    {
+      "id": "II-12-4",
+      "text": "In the situation shown in the illustration, the order of the vehicles permitted to proceed is:"
+    },
+    {
+      "id": "II-13-1",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will proceed without giving way to a vehicle",
+        "I won't give way to the vehicle 3",
+        "I will give way to vehicles 2 and 3"
+      ]
+    },
+    {
+      "id": "II-13-2",
+      "text": "In the situation shown in the illustration with vehicle 4:",
+      "options": [
+        "I pass on the right",
+        "I'm passing on the left",
+        "I go around on the right side"
+      ]
+    },
+    {
+      "id": "II-13-3",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will stop in front of the intersection because of the STOP sign",
+        "I will proceed, because I am continuing straight ahead",
+        "I will stop in front of the intersection because of the traffic lights"
+      ]
+    },
+    {
+      "id": "II-13-4",
+      "text": "In the situation shown in the illustration, passing through the intersection is regulated by:",
+      "options": [
+        "Traffic signal",
+        "By the priority-to-the-right rule",
+        "Traffic sign"
+      ]
+    },
+    {
+      "id": "II-14-1",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will proceed straight because I continues straight ahead",
+        "I will proceed straight because the traffic lights are not working",
+        "I will stop in front of the intersection"
+      ]
+    },
+    {
+      "id": "II-14-2",
+      "text": "In the situation shown in the illustration, you are obliged to act:",
+      "options": [
+        "According to traffic signs",
+        "According to the traffic light",
+        "According to the priority-to-the-right rule"
+      ]
+    },
+    {
+      "id": "II-14-3",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will only give way to vehicles coming from the right",
+        "I will only give way to vehicles on the left",
+        "I will stop the vehicle"
+      ]
+    },
+    {
+      "id": "II-14-4",
+      "text": "In the situation shown in the illustration, the order of the vehicles permitted to proceed is:"
+    },
+    {
+      "id": "II-15-1",
+      "text": "In the situation shown in the illustration, the driver of vehicle 1 should:",
+      "options": [
+        "Proceed without giving way to a vehicle 2",
+        "Stops and proceeds after passing vehicle 2",
+        "Stop and realign into the right traffic lane"
+      ]
+    },
+    {
+      "id": "II-15-2",
+      "text": "In the situation shown in the illustration, the driver of vehicle 1 will act according to:",
+      "options": [
+        "The rule governing the meeting of vehicles of different categories",
+        "To the priority-to-the-right rule",
+        "Vertical and horizontal traffic signals"
+      ]
+    },
+    {
+      "id": "II-15-3",
+      "text": "In the situation shown in the illustration:",
+      "options": [
+        "I should proceed to the left",
+        "Can perform a lane change to the right lane",
+        "Without lane change I will proceed straight"
+      ]
+    },
+    {
+      "id": "II-15-4",
+      "text": "In the situation shown, the arrows on the carriageway indicate:",
+      "options": [
+        "Compulsory direction to the left",
+        "Purpose of traffic lanes",
+        "Compulsory direction to the right"
+      ]
+    },
+    {
+      "id": "II-16-1",
+      "text": "At the roundabout shown:",
+      "options": [
+        "I am not required to give way to vehicles already on the roundabout",
+        "I am only obliged to give way to vehicles coming from my right",
+        "I must give way to all vehicles already on the roundabout"
+      ]
+    },
+    {
+      "id": "II-16-2",
+      "text": "In the situation shown in the illustration, goods vehicle 2:",
+      "options": [
+        "Lawfully turns to the right along path a",
+        "Makes an unlawfully right turn",
+        "Lawfully turns right on path b"
+      ]
+    },
+    {
+      "id": "II-16-3",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will stop in front of the intersection and give way to vehicles 4 and 2",
+        "I will stop in front of the intersection and let all the vehicles pass",
+        "I will only give way to vehicle 3"
+      ]
+    },
+    {
+      "id": "II-16-4",
+      "text": "In the situation shown in the illustration, the order in which the vehicles should proceed through the junction is:"
+    },
+    {
+      "id": "II-17-1",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will give way to vehicle 2 and proceed to the left",
+        "I will proceed to the left without passing vehicle 2",
+        "I will accelerate the movement of the vehicle and pass in front of the vehicle -"
+      ]
+    },
+    {
+      "id": "II-17-2",
+      "text": "In the situation shown in the illustration, vehicle 2 is moving:",
+      "options": [
+        "Lawfully by path a",
+        "Lawfully by path b",
+        "Lawfully closer to the right edge of the carriageway"
+      ]
+    },
+    {
+      "id": "II-17-3",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will proceed straight through the intersection",
+        "I will stop in front of the intersection and proceed straight",
+        "I will proceed to the left through the intersection"
+      ]
+    },
+    {
+      "id": "II-17-4",
+      "text": "In the situation shown in the illustration, the arrows on the road indicate:",
+      "options": [
+        "Compulsory direction",
+        "Purpose of traffic lanes",
+        "Signpost"
+      ]
+    },
+    {
+      "id": "II-18-1",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will turn left after giving way to vehicle 3",
+        "I will proceed to the left without giving way to vehicles 2 and 3",
+        "I will stop and give way to vehicles 2 and 3"
+      ]
+    },
+    {
+      "id": "II-18-2",
+      "text": "In the situation shown in the illustration, the order in which the vehicles should proceed is:"
+    },
+    {
+      "id": "II-18-3",
+      "text": "In the situation shown in the illustration, the vehicle:",
+      "options": [
+        "vehicle 1 should proceed without giving way to vehicle 2",
+        "2 should let vehicle 1 pass and proceed",
+        "1 should let vehicle 2 pass and proceed"
+      ]
+    },
+    {
+      "id": "II-18-4",
+      "text": "In the situation shown in the illustration, the driver of vehicle 1 will act according to:",
+      "options": [
+        "To the priority-to-the-right rule",
+        "To the rule of passing through an unregulated intersection",
+        "Traffic sign"
+      ]
+    },
+    {
+      "id": "II-19-1",
+      "text": "How should you proceed in the following situation:",
+      "options": [
+        "I will proceed straight without giving way to the tram",
+        "I will proceed straight after giving way to the tram",
+        "I will stop and give way to the tram"
+      ]
+    },
+    {
+      "id": "II-19-2",
+      "text": "In the situation shown in the illustration, the passage of vehicles through the intersection is regulated:",
+      "options": [
+        "Traffic signs",
+        "Advantage of the passage of a rail vehicle",
+        "the priority-to-the-right rule"
+      ]
+    },
+    {
+      "id": "II-19-3",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will proceed straight because I have priority",
+        "I will proceed at reduced speed",
+        "I will stop in front of the intersection and let the oncoming vehicles pass"
+      ]
+    },
+    {
+      "id": "II-19-4",
+      "text": "In the situation shown in the illustration, you are obliged to act according to:",
+      "options": [
+        "Traffic signals",
+        "Traffic signs",
+        "To the priority-to-the-right rule"
+      ]
+    },
+    {
+      "id": "II-20-1",
+      "text": "In the situation shown in the illustration, the order in which the vehicles should proceed through the junction is:"
+    },
+    {
+      "id": "II-20-2",
+      "text": "In an intersection with a circular traffic flow, the movement of vehicles is carried out:",
+      "options": [
+        "In any direction",
+        "Clockwise",
+        "Counterclockwise"
+      ]
+    },
+    {
+      "id": "II-20-3",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will stop and give way to the vehicle -",
+        "I will proceed straight behind vehicle 2",
+        "I will slow down and give way to the vehicle -"
+      ]
+    },
+    {
+      "id": "II-20-4",
+      "text": "In the situation shown in the illustration, the towing vehicle 3 is a tractor, and the towed vehicle is:",
+      "options": [
+        "Trailer",
+        "Light trailer",
+        "Semi-trailer"
+      ]
+    },
+    {
+      "id": "II-21-1",
+      "text": "In the situation shown in the illustration, passenger vehicle 1 turns left, and tractor 2 continues straight ahead. The priority has:",
+      "options": [
+        "tractor 2 because its amber rotating beacon is switched on",
+        "Tractor 2 because it continues straight ahead",
+        "Passenger vehicle 1"
+      ]
+    },
+    {
+      "id": "II-21-2",
+      "text": "While a tractor is moving, it may carry:",
+      "options": [
+        "The driver and one passenger",
+        "Only the driver",
+        "The driver and two passengers"
+      ]
+    },
+    {
+      "id": "II-21-3",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will proceed straight through the intersection because the traffic light is green",
+        "I will not enter the intersection because of the traffic",
+        "I will proceed to the right through the intersection"
+      ]
+    },
+    {
+      "id": "II-21-4",
+      "text": "In the situation shown in the illustration:",
+      "options": [
+        "I may make a U-turn",
+        "I am allowed to stop at the intersection",
+        "I must not make a U-turn"
+      ]
+    },
+    {
+      "id": "II-22-1",
+      "text": "The driver of a passenger vehicle in a situation like the one in the illustration should:",
+      "options": [
+        "turn left without giving way to the goods vehicle",
+        "Proceed straight without giving way to the goods vehicle",
+        "Stop before the junction and give way to the goods vehicle"
+      ]
+    },
+    {
+      "id": "II-22-2",
+      "text": "In the situation shown in the illustration, the driver of the passenger vehicle will act according to:",
+      "options": [
+        "Traffic signs",
+        "To the priority-to-the-right rule",
+        "To the rule of passing vehicles of a larger category"
+      ]
+    },
+    {
+      "id": "II-22-3",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will stop the vehicle and let pedestrians pass",
+        "I will proceed without passing pedestrians",
+        "I will use the siren to warn pedestrians and proceed"
+      ]
+    },
+    {
+      "id": "II-22-4",
+      "text": "In the situation shown in the illustration, the cross markings on the road mean:",
+      "options": [
+        "Pedestrian crossing",
+        "Pedestrian island",
+        "Pedestrian path"
+      ]
+    },
+    {
+      "id": "II-23-1",
+      "text": "In the situation shown in the illustration you should:",
+      "options": [
+        "Proceed in the right traffic lane",
+        "Overtaking a police vehicle",
+        "I stop the vehicle"
+      ]
+    },
+    {
+      "id": "II-23-2",
+      "text": "The signal given by the authorised police officer:",
+      "options": [
+        "It is binding for all road users",
+        "Not binding when given from the vehicle",
+        "It is binding only for cyclists"
+      ]
+    },
+    {
+      "id": "II-23-3",
+      "text": "In the situation shown in the illustration, vehicle 1 overtakes the cyclist:",
+      "options": [
+        "Unlawfully, because it crosses into the opposite traffic lane",
+        "Unlawfully, because it endangers the cyclist",
+        "Lawfully"
+      ]
+    },
+    {
+      "id": "II-23-4",
+      "text": "The driver of vehicle 1 after overtaking is obliged to:",
+      "options": [
+        "To proceed in the traffic lane he was overtaking",
+        "To return to his lane and proceed",
+        "To proceed along the left edge of the carriageway"
+      ]
+    },
+    {
+      "id": "II-24-1",
+      "text": "In the situation shown in the illustration, the faster movement of the vehicle you are driving than vehicles 1 and 2:",
+      "options": [
+        "Is the act of overtaking a vehicle",
+        "Is the act of driving around",
+        "It is not considered an act of overtaking a vehicle"
+      ]
+    },
+    {
+      "id": "II-24-2",
+      "text": "In the situation shown in the illustration of vehicles 1 and 2, which are moving behind each other:",
+      "options": [
+        "They form a column of vehicles and may not overtake each other",
+        "They form a column of vehicles and are allowed to overtake",
+        "They do not form a column of vehicles"
+      ]
+    },
+    {
+      "id": "II-24-3",
+      "text": "In the position shown in the image of vehicles 1, 2, 3 and 4:",
+      "options": [
+        "They must not stop or park",
+        "They are allowed to stop, but not to park",
+        "They are allowed to stop and park"
+      ]
+    },
+    {
+      "id": "II-24-4",
+      "text": "Auto-taxi driver at the entrance or exit from the garage:",
+      "options": [
+        "Must not stop",
+        "May stop only for the passengers boarding or alighting",
+        "May park for a maximum of 15 minutes"
+      ]
+    },
+    {
+      "id": "II-25-1",
+      "text": "The manoeuvre shown, in which vehicles 1 and 2 travel in opposite directions, is:",
+      "options": [
+        "Crossing",
+        "Passing an obstruction",
+        "meeting oncoming traffic"
+      ]
+    },
+    {
+      "id": "II-25-2",
+      "text": "The load on vehicle 2 exceeds 1.5 m the most prominent point on the front of the vehicle, which is:",
+      "options": [
+        "Allowed",
+        "permitted, but it must be marked with a red panel",
+        "It is not allowed"
+      ]
+    },
+    {
+      "id": "II-25-3",
+      "text": "In the situation shown in the illustration:",
+      "options": [
+        "You will speed up your movement so as not to obstruct pedestrians",
+        "You won't give way to pedestrians because they're not in your lane",
+        "You will stop the vehicle and give way to the pedestrians"
+      ]
+    },
+    {
+      "id": "II-25-4",
+      "text": "In the situation shown in the illustration, the road markings mean that near the pedestrian crossing there is:",
+      "options": [
+        "School zone",
+        "Directions to the school",
+        "Part of the road intended for school bus parking"
+      ]
+    },
+    {
+      "id": "II-26-1",
+      "text": "In the situation shown in the illustration, on the part of the carriageway for two-way traffic, vehicle 2:",
+      "options": [
+        "May overtake",
+        "Is allowed to overtake, if it does not obstruct vehicles from the opposite direction",
+        "Must not overtake"
+      ]
+    },
+    {
+      "id": "II-26-2",
+      "text": "In the situation shown in the illustration, the dividing line indicates:",
+      "options": [
+        "Prohibition of crossing and stepping over this line",
+        "Part of the carriageway where straddling this line is allowed",
+        "Part of the carriageway where crossing over this line is allowed"
+      ]
+    },
+    {
+      "id": "II-26-3",
+      "text": "In the situation as in the illustration, vehicle 1 is:",
+      "options": [
+        "Lawfully parked",
+        "Lawfully stopped",
+        "Unlawfully stopped or parked"
+      ]
+    },
+    {
+      "id": "II-26-4",
+      "text": "At the entrance and exit from the yard, the driver:",
+      "options": [
+        "May stop the vehicle",
+        "The vehicle must not be stopped or parked",
+        "Is allowed to park the vehicle"
+      ]
+    },
+    {
+      "id": "II-27-1",
+      "text": "In the situation shown in the illustration, the cyclist is moving:",
+      "options": [
+        "Lawfully, because there is no bicycle lane",
+        "Unlawfully",
+        "Lawfully along the left edge of the carriageway"
+      ]
+    },
+    {
+      "id": "II-27-2",
+      "text": "In the situation shown in the illustration, vehicle 1 is:",
+      "options": [
+        "Lawfully stopped",
+        "Lawfully stopped or parked",
+        "Unlawfully stopped or parked"
+      ]
+    },
+    {
+      "id": "II-27-3",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will proceed straight without giving way to passenger vehicle 2",
+        "I will give way to passenger vehicle 2 because it is approaching from my right",
+        "I will move the vehicle to the left side of the road"
+      ]
+    },
+    {
+      "id": "II-27-4",
+      "text": "The driver of vehicle 2 when turning left in the situation as in the illustration will:",
+      "options": [
+        "Proceed without giving way to the vehicles moving on the road he encounters",
+        "Proceed because it has priority over vehicle 1",
+        "Stop the vehicle and give way to all the vehicles moving on the road it encounters"
+      ]
+    },
+    {
+      "id": "II-28-1",
+      "text": "In the situation shown in the illustration:",
+      "options": [
+        "I must not overtake because of the markings on the road",
+        "I may overtake",
+        "I am allowed to overtake if I do not cross into the lane for the opposite direction"
+      ]
+    },
+    {
+      "id": "II-28-2",
+      "text": "In the situation shown in the illustration, on the road outside a built-up area, the speed at which you can overtake:",
+      "options": [
+        "Is not limited",
+        "Is up to 80 km/h",
+        "Is up to 20 km/h more than the limit"
+      ]
+    },
+    {
+      "id": "II-28-3",
+      "text": "In the situation shown, passenger vehicle 3 may enter the carriageway from the parking area:",
+      "options": [
+        "After passing a passenger vehicle 2",
+        "without giving way to a passenger vehicle 2",
+        "Without obligation to other road users"
+      ]
+    },
+    {
+      "id": "II-28-4",
+      "text": "How should you proceed in the situation shown in the illustration:",
+      "options": [
+        "I will stop in front of the intersection and let the pedestrians pass",
+        "I will warn the pedestrians with an audible signal and proceed",
+        "I will speed up in order to pass before the pedestrians"
+      ]
+    },
+    {
+      "id": "II-29-1",
+      "text": "Vehicle 1 in the situation shown in the illustration is moving:",
+      "options": [
+        "Unlawfully",
+        "Lawfully in middle of the carriageway",
+        "Lawfully, because the left traffic lane is occupied by a vehicle -"
+      ]
+    },
+    {
+      "id": "II-29-2",
+      "text": "In the situation as in the illustration passenger vehicle 2:",
+      "options": [
+        "May stop or park",
+        "May stop",
+        "Must not stop or park"
+      ]
+    },
+    {
+      "id": "II-29-3",
+      "text": "In the situation shown in the illustration:",
+      "options": [
+        "I may overtake a passenger vehicle",
+        "I must not, because the road is in a left curve",
+        "I'm not allowed, because it's forbidden by the markings on the road"
+      ]
+    },
+    {
+      "id": "II-29-4",
+      "text": "In the situation shown in the figure, the dividing dotted line:",
+      "options": [
+        "Separates the carriageway and may not be crossed",
+        "Separates the carriageway and may be straddled and crossed over",
+        "Divides the carriageway and you must not cross it"
+      ]
+    },
+    {
+      "id": "II-30-1",
+      "text": "How should you proceed in the situation shown when passenger vehicle 2 is overtaking you:",
+      "options": [
+        "I will increase my speed",
+        "I will move the vehicle to the right side of the road",
+        "I will move the vehicle to the left side of the road"
+      ]
+    },
+    {
+      "id": "II-30-2",
+      "text": "The regulatory sign shown in the image applies:",
+      "options": [
+        "To the first intersection",
+        "Until the first sign of notification",
+        "To the first sign of danger"
+      ]
+    },
+    {
+      "id": "II-30-3",
+      "text": "In the situation shown in the illustration, the driver of goods vehicle 1 should:",
+      "options": [
+        "Accelerate the vehicle and proceed without passing pedestrians",
+        "Give way only to the pedestrian marked with a and proceed",
+        "Stop and let all pedestrians pass"
+      ]
+    },
+    {
+      "id": "II-30-4",
+      "text": "In the situation shown in the illustration, the driver of goods vehicle 1 immediately after passing the pedestrian crossing:",
+      "options": [
+        "May stop or park",
+        "May stop",
+        "Must not stop or park"
+      ]
+    },
+    {
+      "id": "II-31-1",
+      "text": "In the position shown in the illustration, passenger vehicle 1 is:",
+      "options": [
+        "Lawfully stopped",
+        "Lawfully stopped or parked",
+        "Unlawfully stopped or parked"
+      ]
+    },
+    {
+      "id": "II-31-2",
+      "text": "The information sign shown in the image is:",
+      "options": [
+        "Parking distance",
+        "Parking time limit",
+        "Parking only at certain times"
+      ]
+    },
+    {
+      "id": "II-31-3",
+      "text": "In the situation as in the illustration passenger vehicle 1:",
+      "options": [
+        "Is allowed to park",
+        "Must not stop or park",
+        "May stop"
+      ]
+    },
+    {
+      "id": "II-31-4",
+      "text": "At what distance from the marked pedestrian crossing is the driver allowed to stop or park:",
+      "options": [
+        "At least 10 metres",
+        "At least 5 metres",
+        "At least 7 metres"
+      ]
+    },
+    {
+      "id": "II-32-1",
+      "text": "In the situation shown in the illustration, vehicle 2 moves:",
+      "options": [
+        "Lawfully, if it does not obstruct vehicles from the opposite direction",
+        "Lawfully",
+        "Unlawfully"
+      ]
+    },
+    {
+      "id": "II-32-2",
+      "text": "In the situation shown in the illustration, the driver of vehicle 2 should:",
+      "options": [
+        "Moves as close as possible to the dividing line",
+        "Moves as close as possible to the right edge of the carriageway",
+        "Moves in the middle of the traffic lane"
+      ]
+    },
+    {
+      "id": "II-32-3",
+      "text": "In the situation shown in the illustration:",
+      "options": [
+        "I will proceed left through the intersection",
+        "I will proceed right through the intersection",
+        "I will proceed straight through the intersection"
+      ]
+    },
+    {
+      "id": "II-32-4",
+      "text": "Road markings mean:",
+      "options": [
+        "Purpose of traffic lanes",
+        "Compulsory direction",
+        "Routing lines"
+      ]
+    },
+    {
+      "id": "II-33-1",
+      "text": "In the situation shown in the illustration, you will pass through the intersection:",
+      "options": [
+        "Along route 1 without passing pedestrians",
+        "Along route 2 after passing a pedestrian",
+        "Along route 1 after passing a pedestrian"
+      ]
+    },
+    {
+      "id": "II-33-2",
+      "text": "In the situation as in the illustration vehicle 3:",
+      "options": [
+        "May stop",
+        "Must not stop or park",
+        "May stop or park"
+      ]
+    },
+    {
+      "id": "II-33-3",
+      "text": "Passenger vehicle 2 as in the illustration:",
+      "options": [
+        "Must not stop or park",
+        "May stop and park",
+        "May stop"
+      ]
+    },
+    {
+      "id": "II-33-4",
+      "text": "In the situation shown in the illustration:",
+      "options": [
+        "I must not stop or park",
+        "I may stop or park",
+        "I must not park"
+      ]
+    },
+    {
+      "id": "II-34-1",
+      "text": "In the situation shown in the illustration, vehicle 1 overtakes the cyclist:",
+      "options": [
+        "Lawfully, because the left turn signal is on",
+        "Lawfully, because there is no overtaking sign",
+        "Unlawfully due to crossing over the solid line"
+      ]
+    },
+    {
+      "id": "II-34-2",
+      "text": "The cyclist in the situation in the illustration in a built-up area is moving:",
+      "options": [
+        "Unlawfully, because he needs to move on the footway",
+        "Unlawfully, because he should wear a safety helmet",
+        "Lawfully along the right edge of the carriageway"
+      ]
+    },
+    {
+      "id": "II-34-3",
+      "text": "In the situation in the illustration, I am driving a goods vehicle with a trailer and I am passing goods vehicle 2, due to insufficient road width for safe passing:",
+      "options": [
+        "Goods vehicle 2 should stop and allow me to pass",
+        "I should stop and allow goods vehicle 2 to pass",
+        "We should stop and agree on the order of passage"
+      ]
+    },
+    {
+      "id": "II-34-4",
+      "text": "The traffic sign in the illustration means:",
+      "options": [
+        "That the pavement is downhill up to 6%",
+        "That the cross slope of the carriageway is up to 6%",
+        "That the carriageway has an uphill gradient of up to 6%"
+      ]
+    },
+    {
+      "id": "II-35-1",
+      "text": "How should you proceed in the situation shown when vehicle 2 is entering the carriageway from an unpaved road:",
+      "options": [
+        "I will move to the left lane, so as not to interfere with the driver of vehicle 2 to merge onto the carriageway",
+        "I will proceed straight without giving way to vehicle 2",
+        "I will stop and allow vehicle 2 to start as it is coming from my right"
+      ]
+    },
+    {
+      "id": "II-35-2",
+      "text": "In a situation like the one in the illustration, the traffic sign is valid until:",
+      "options": [
+        "Road bends",
+        "Of the next speed limit sign",
+        "The first intersection"
+      ]
+    },
+    {
+      "id": "II-35-3",
+      "text": "In the situation shown in the illustration, goods vehicle 2 is:",
+      "options": [
+        "Stopped lawfully",
+        "Parked or stopped unlawfully",
+        "Parked or stopped lawfully"
+      ]
+    },
+    {
+      "id": "II-35-4",
+      "text": "In the situation shown, passing vehicle 2 involves:",
+      "options": [
+        "meeting oncoming traffic",
+        "changing lanes",
+        "passing an obstruction"
+      ]
+    },
+    {
+      "id": "II-36-1",
+      "text": "In the situation shown in the illustration on the road for traffic in both directions, the driver of vehicle 1 may use:",
+      "options": [
+        "Both lanes",
+        "Right lane",
+        "Left lane"
+      ]
+    },
+    {
+      "id": "II-36-2",
+      "text": "In the situation shown in the illustration, the driver of vehicle 1 in the underpass:",
+      "options": [
+        "Is allowed to park",
+        "Must not stop or park",
+        "May stop along the right edge of the carriageway"
+      ]
+    },
+    {
+      "id": "II-36-3",
+      "text": "In the situation shown in the illustration vehicle 1:",
+      "options": [
+        "Is allowed to overtake",
+        "Must not overtake because of the markings on the road",
+        "Must not overtake on the left"
+      ]
+    },
+    {
+      "id": "II-36-4",
+      "text": "In the situation shown in the illustration, the road markings mean:",
+      "options": [
+        "Overtaking from the opposite direction is allowed",
+        "Allowed overtaking in the direction of movement",
+        "Allowed to overtake only freight vehicles"
+      ]
+    },
+    {
+      "id": "II-37-1",
+      "text": "In the situation shown in the illustration:",
+      "options": [
+        "I am not required to give way to a pedestrian",
+        "I have to turn on the siren and proceed",
+        "I am must give way to a pedestrian"
+      ]
+    },
+    {
+      "id": "II-37-2",
+      "text": "In order for a pedestrian to cross the road at a pedestrian crossing in a safe manner, as in the illustration:",
+      "options": [
+        "He is obliged to raise his hand and step on the crosswalk",
+        "He is not obliged to make sure that he disturbs the other participants",
+        "He is obliged to make sure that he does not disturb the other participants"
+      ]
+    },
+    {
+      "id": "II-37-3",
+      "text": "Vehicle 1 in the position shown in the illustration is:",
+      "options": [
+        "Parked lawfully",
+        "Unlawfully stopped or parked",
+        "Lawfully stopped or parked"
+      ]
+    },
+    {
+      "id": "II-37-4",
+      "text": "Vehicle 1 in the situation shown in the illustration is:",
+      "options": [
+        "On the traffic lane in the direction of travel",
+        "On the traffic lane for the opposite direction of movement",
+        "In a marked parking place"
+      ]
+    },
+    {
+      "id": "II-38-1",
+      "text": "In the situation shown in the illustration, the vehicles along the right side of the road are:",
+      "options": [
+        "Unlawfully stopped or parked",
+        "Lawfully stopped or parked",
+        "Stopped lawfully"
+      ]
+    },
+    {
+      "id": "II-38-2",
+      "text": "Longitudinal unbroken white line, in a situation like the illustration, means:",
+      "options": [
+        "The edge of the road",
+        "Dividing line",
+        "Edge line"
+      ]
+    },
+    {
+      "id": "II-38-3",
+      "text": "In the situation shown in the illustration passenger vehicle 2:",
+      "options": [
+        "Is making a lawful U-turn",
+        "Lawfully turns left",
+        "Is making an unlawful U-turn"
+      ]
+    },
+    {
+      "id": "II-38-4",
+      "text": "A longitudinal continuous line divides the carriageway:",
+      "options": [
+        "Into carriageways",
+        "Into traffic lanes",
+        "Into two carriageways"
+      ]
+    },
+    {
+      "id": "II-39-1",
+      "text": "In the situation shown in the illustration, the cyclist:",
+      "options": [
+        "He starts unlawfully because must push the bike next to him",
+        "Moves lawfully",
+        "Starts unlawfully at the pedestrian crossing"
+      ]
+    },
+    {
+      "id": "II-39-2",
+      "text": "In the situation shown in the illustration, the red wide longitudinal lines across the pedestrian crossing indicate:",
+      "options": [
+        "Bicycle paths",
+        "Bicycle lanes",
+        "Pedestrian jogging paths"
+      ]
+    },
+    {
+      "id": "II-39-3",
+      "text": "In the situation shown in the illustration:",
+      "options": [
+        "I will proceed without passing pedestrians",
+        "I will slow down the movement of vehicles and let pedestrians pass",
+        "I will accelerate the movement of the vehicle to pass in front of the pedestrian"
+      ]
+    },
+    {
+      "id": "II-39-4",
+      "text": "In the situation shown in the illustration, when pedestrians cross the road, they are obliged to:",
+      "options": [
+        "Cross the street by the shortest route",
+        "They cross the road where there are the least number of road users",
+        "Cross the road as slowly as possible"
+      ]
+    },
+    {
+      "id": "II-40-1",
+      "text": "In the situation shown in the illustration, police vehicle 2 is:",
+      "options": [
+        "Lawfully stopped or parked",
+        "Unlawfully parked",
+        "Unlawfully stopped or parked"
+      ]
+    },
+    {
+      "id": "II-40-2",
+      "text": "In the situation shown in the illustration:",
+      "options": [
+        "I must not stop or park behind the vehicle 2",
+        "I may stop or park behind the vehicle 2",
+        "I am allowed to park next to vehicle 2"
+      ]
+    },
+    {
+      "id": "II-40-3",
+      "text": "In a situation like the one in the illustration, the driver of vehicle 1:",
+      "options": [
+        "May stop or park",
+        "Must not stop or park",
+        "It is not allowed to park, but may stop"
+      ]
+    },
+    {
+      "id": "II-40-4",
+      "text": "At a distance of less than five metres in front of or behind a marked pedestrian crossing, a driver with a vehicle:",
+      "options": [
+        "May stop",
+        "May stop or park",
+        "Must not stop or park"
+      ]
+    },
+    {
+      "id": "III-1-1",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Bicycle crossing",
+        "Path for cyclists",
+        "Cyclists on the road"
+      ]
+    },
+    {
+      "id": "III-1-2",
+      "text": "The illustration shows traffic signs indicating:",
+      "options": [
+        "No stopping",
+        "Prohibition of stopping and parking",
+        "Parking ban"
+      ]
+    },
+    {
+      "id": "III-1-3",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Compulsory direction",
+        "Road with one-way traffic",
+        "Allowed direction"
+      ]
+    },
+    {
+      "id": "III-1-4",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Traffic ban for vehicles whose total weight does not exceed the specified weight on the sign",
+        "Traffic ban for vehicles whose load capacity exceeds a certain weight on the sign",
+        "Traffic ban for vehicles whose total mass exceeds the specified mass on the sign"
+      ]
+    },
+    {
+      "id": "III-2-1",
+      "text": "The illustration shows traffic signs indicating:",
+      "options": [
+        "Compulsory direction in the specified time",
+        "Mandatory left turn in the indicated time",
+        "Mandatory left turn in the period from 8 a.m. to 6 p.m"
+      ]
+    },
+    {
+      "id": "III-2-2",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Bicycle lane",
+        "Bicycle path",
+        "Lane for cyclists"
+      ]
+    },
+    {
+      "id": "III-2-3",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Ban on stopping the vehicle",
+        "Stopped vehicles on the road",
+        "Column of stopped vehicles"
+      ]
+    },
+    {
+      "id": "III-2-4",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "St Andrew’s cross with one and a half tracks",
+        "St Andrew’s cross with two or more tracks",
+        "St Andrew’s cross with one or more tracks"
+      ]
+    },
+    {
+      "id": "III-3-1",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Dangerous road section",
+        "Danger on the road",
+        "Danger of a landslide in a length of 300 m"
+      ]
+    },
+    {
+      "id": "III-3-2",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Priority in relation to vehicles from the opposite direction",
+        "Vehicles from the opposite direction have priority",
+        "The priority of passing vehicles moving down the slope"
+      ]
+    },
+    {
+      "id": "III-3-3",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Coming across a motorway bridge",
+        "Motorway",
+        "International road"
+      ]
+    },
+    {
+      "id": "III-3-4",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Airstrip",
+        "Close to the airstrip",
+        "Close to the airport"
+      ]
+    },
+    {
+      "id": "III-4-1",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Signpost",
+        "Rearranging vehicles with the names of populated areas",
+        "Direction board"
+      ]
+    },
+    {
+      "id": "III-4-2",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Ban on traffic in both directions",
+        "Traffic ban in one direction",
+        "Allowed traffic in both directions"
+      ]
+    },
+    {
+      "id": "III-4-3",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Traffic ban for bicycles",
+        "Bicycle path",
+        "Cyclists on the road"
+      ]
+    },
+    {
+      "id": "III-4-4",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Drawbridge",
+        "Road damage",
+        "Steep ascent"
+      ]
+    },
+    {
+      "id": "III-4-5",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "A road crossing over a railway line with barriers or half-barriers",
+        "A road crossing over a railway line without barriers or half-barriers",
+        "Approaching the tram line"
+      ]
+    },
+    {
+      "id": "III-5-1",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Maximum speed allowed",
+        "Mandatory speed",
+        "Recommended speed"
+      ]
+    },
+    {
+      "id": "III-5-2",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "STOP",
+        "Junction with a priority road",
+        "Junction with a side road"
+      ]
+    },
+    {
+      "id": "III-5-3",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Running into a traffic light",
+        "Level crossing ahead",
+        "Roadworks ahead"
+      ]
+    },
+    {
+      "id": "III-5-4",
+      "text": "In the illustration, the arrows on the pavement are for:",
+      "options": [
+        "Vehicle routing",
+        "Marking the compulsory direction of the vehicle",
+        "Marking the purpose of traffic lanes"
+      ]
+    },
+    {
+      "id": "III-6-1",
+      "text": "A double solid line indicates:",
+      "options": [
+        "The edge of the road",
+        "Bicycle path",
+        "Prohibition of crossing that line or moving on it"
+      ]
+    },
+    {
+      "id": "III-6-2",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Prohibition of overtaking of all motor vehicles except motorcycles without a trailer and mopeds",
+        "Prohibition of overtaking of all motor vehicles",
+        "Prohibition of overtaking all motor vehicles, except mopeds"
+      ]
+    },
+    {
+      "id": "III-6-3",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "A road crossing over a railway line without barriers",
+        "A road crossing over a railway line with barriers or half-barriers",
+        "A road crossing over a railway line without barriers or half-barriers"
+      ]
+    },
+    {
+      "id": "III-6-4",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Crossing for animals on the road",
+        "Animals on the road",
+        "Wild animals"
+      ]
+    },
+    {
+      "id": "III-7-1",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Traffic ban for vehicles that do not exceed a certain axle load",
+        "Traffic ban for vehicles that exceed a certain axle load",
+        "Traffic ban for vehicles that do not exceed the load capacity indicated on the sign"
+      ]
+    },
+    {
+      "id": "III-7-2",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Road with one-way traffic for goods vehicles and trailers",
+        "Mandatory direction for types of vehicles that are not given on the sign",
+        "Detour for certain types of vehicles"
+      ]
+    },
+    {
+      "id": "III-7-3",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Roundabout",
+        "Intersection with a roundabout",
+        "Roundabout"
+      ]
+    },
+    {
+      "id": "III-7-4",
+      "text": "The illustration shows traffic signs indicating:",
+      "options": [
+        "A section of road affected by snow",
+        "A section where snow is cleared mechanically",
+        "A section of road affected by ice"
+      ]
+    },
+    {
+      "id": "III-8-1",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Priority in relation to vehicles from the opposite direction",
+        "Priority for vehicles coming from the opposite direction",
+        "Traffic in both directions"
+      ]
+    },
+    {
+      "id": "III-8-2",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "The end of the minimum permitted speed",
+        "End of speed limit",
+        "End of recommended speed"
+      ]
+    },
+    {
+      "id": "III-8-3",
+      "text": "The illustration shows traffic signs indicating:",
+      "options": [
+        "Traffic ban for motor vehicles whose width exceeds the width marked on the sign",
+        "Traffic ban for goods vehicles whose length exceeds the length marked on the sign",
+        "Traffic ban for goods vehicles whose width exceeds the width marked on the sign"
+      ]
+    },
+    {
+      "id": "III-8-4",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Prohibition of movement for pedestrians on the road",
+        "Traffic ban for pedestrians",
+        "Prohibition of movement for pedestrians on the road outside a built-up area"
+      ]
+    },
+    {
+      "id": "III-9-1",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Direction board",
+        "Advance diversion sign",
+        "Diversion direction sign"
+      ]
+    },
+    {
+      "id": "III-9-2",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Sign for exiting the motorway",
+        "The name of the built-up area",
+        "Loop name"
+      ]
+    },
+    {
+      "id": "III-9-3",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Road sign for a built-up area",
+        "Arrow signpost",
+        "Direction board for a built-up area"
+      ]
+    },
+    {
+      "id": "III-9-4",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Transition from two traffic lanes to one in the same direction of movement",
+        "The area on the road where two traffic lanes merge into one",
+        "Alternating passing of vehicles"
+      ]
+    },
+    {
+      "id": "III-10-1",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Approaching a railroad crossing with barriers or half-barriers",
+        "Approaching the railroad crossing",
+        "Approaching a railroad crossing without barriers or half-barriers"
+      ]
+    },
+    {
+      "id": "III-10-2",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Overturning or skidding of the vehicle",
+        "Slippery road",
+        "Ice on the road"
+      ]
+    },
+    {
+      "id": "III-10-3",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Speed limit",
+        "Recommended speed",
+        "Minimum speed"
+      ]
+    },
+    {
+      "id": "III-10-4",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Rock fall",
+        "Loose chippings",
+        "Landslide on the road"
+      ]
+    },
+    {
+      "id": "III-11-1",
+      "text": "The illustration shows traffic signs indicating:",
+      "options": [
+        "Escalators at a distance of 10 metres",
+        "Underground or above-ground pedestrian crossing at a distance of 10 metres",
+        "Entry into the garage at a distance of up to 10 metres"
+      ]
+    },
+    {
+      "id": "III-11-2",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Mandatory use of snow chains",
+        "Danger of snow",
+        "Risk of ice"
+      ]
+    },
+    {
+      "id": "III-11-3",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Traffic ban for all motor vehicles except motorcycles",
+        "Motorcycle traffic ban",
+        "Traffic ban for motorized bicycles"
+      ]
+    },
+    {
+      "id": "III-11-4",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Minimum distance between parked vehicles",
+        "Minimum distance between vehicles",
+        "Required distance for vehicles to pass"
+      ]
+    },
+    {
+      "id": "III-12-1",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Detour sign on the right",
+        "Exit sign to a certain place",
+        "A lane change guide to move to a specific place"
+      ]
+    },
+    {
+      "id": "III-12-2",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "A sign for the immediate regulation of traffic at the place where the works are being carried out",
+        "Regulation of traffic at the intersection using a flag",
+        "Completion of the road due to construction works"
+      ]
+    },
+    {
+      "id": "III-12-3",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "No stopping",
+        "Traffic ban in one direction",
+        "Parking ban"
+      ]
+    },
+    {
+      "id": "III-12-4",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "A double dangerous curve or several consecutive curves, the first of which is to the right",
+        "A double bend or several consecutive bends, the first of which is to the right",
+        "A double dangerous curve or several consecutive curves, the first of which is to the left"
+      ]
+    },
+    {
+      "id": "III-12-5",
+      "text": "The illustration shows traffic signs indicating:",
+      "options": [
+        "The minimum permitted speed in a road length of 2000 metres",
+        "The recommended speed for a road length of 2000 metres",
+        "Minimum permitted speed after passing 2000 metres"
+      ]
+    },
+    {
+      "id": "III-13-1",
+      "text": "The illustration shows traffic signs indicating a traffic ban for motor vehicles pulling:",
+      "options": [
+        "Light trailer in the specified time",
+        "Semi-trailer in the specified time",
+        "Trailer in the specified time"
+      ]
+    },
+    {
+      "id": "III-13-2",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Mandatory exit in case of emergency",
+        "Emergency exit distance",
+        "Pedestrian guide"
+      ]
+    },
+    {
+      "id": "III-13-3",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Beginning of the traffic lane for slow vehicles",
+        "End of the lane for slow vehicles",
+        "End of traffic lane for emergency stopping"
+      ]
+    },
+    {
+      "id": "III-13-4",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Traffic ban for tarpaulin vehicles",
+        "Encountering a bumpy road",
+        "Traffic ban for tankers"
+      ]
+    },
+    {
+      "id": "III-14-1",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Minimum speed",
+        "Speed limit",
+        "Recommended speed"
+      ]
+    },
+    {
+      "id": "III-14-2",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Children on the way",
+        "School zone",
+        "Pedestrian path"
+      ]
+    },
+    {
+      "id": "III-14-3",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Loose chippings",
+        "Soft verge",
+        "Damaged pavement"
+      ]
+    },
+    {
+      "id": "III-14-4",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Traffic ban for vehicles marked with the symbol",
+        "Traffic ban for goods vehicles",
+        "Permitted traffic for vehicles marked with the symbol"
+      ]
+    },
+    {
+      "id": "III-15-1",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Crossing roads with right-of-way",
+        "Crossing the priority road",
+        "Providing a right-of-way"
+      ]
+    },
+    {
+      "id": "III-15-2",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Intersection with a roundabout",
+        "Roundabout",
+        "Mandatory U-turn"
+      ]
+    },
+    {
+      "id": "III-15-3",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Crossing roads of equal importance",
+        "STOP",
+        "Junction with a priority road"
+      ]
+    },
+    {
+      "id": "III-15-4",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Slow traffic zone",
+        "Children on the way",
+        "Children's playground"
+      ]
+    },
+    {
+      "id": "III-16-1",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Roundabout",
+        "Intersection with a roundabout",
+        "Roundabout"
+      ]
+    },
+    {
+      "id": "III-16-2",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Roadworks",
+        "Removal of landslides on the road",
+        "Stone removal works on the road"
+      ]
+    },
+    {
+      "id": "III-16-3",
+      "text": "The illustration shows traffic signs indicating:",
+      "options": [
+        "Parking on the footway across the axis of the carriageway",
+        "Parking on the footway perpendicular to the longitudinal axis of the carriageway",
+        "Parking on the footway parallel to the longitudinal axis of the carriageway"
+      ]
+    },
+    {
+      "id": "III-16-4",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "International route number",
+        "Regional road number",
+        "Motorway number"
+      ]
+    },
+    {
+      "id": "III-16-5",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Direction sign for populated places",
+        "Exit sign",
+        "Direction board"
+      ]
+    },
+    {
+      "id": "III-17-1",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Shared path for cyclists and pedestrians",
+        "Separated paths for cyclists and pedestrians",
+        "Traffic ban for cyclists and pedestrians"
+      ]
+    },
+    {
+      "id": "III-17-2",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Prohibition of passing without stopping",
+        "Prohibition of passage without stopping at the customs crossing",
+        "Prohibition of passage due to toll collection"
+      ]
+    },
+    {
+      "id": "III-17-3",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Junction with a priority road",
+        "Junction with a side road",
+        "STOP"
+      ]
+    },
+    {
+      "id": "III-17-4",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "A road crossing over a railway line with barriers or half-barriers",
+        "A road crossing over a railway line without barriers or half-barriers",
+        "Approaching the railroad crossing"
+      ]
+    },
+    {
+      "id": "III-18-1",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Left turn sign",
+        "Direction board",
+        "Sign board"
+      ]
+    },
+    {
+      "id": "III-18-2",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Prohibition of overtaking for goods vehicles",
+        "Overtaking ban for all motor vehicles",
+        "Ban on overtaking freight vehicles"
+      ]
+    },
+    {
+      "id": "III-18-3",
+      "text": "The illustration shows traffic signs indicating:",
+      "options": [
+        "Allowed to turn left in the indicated time",
+        "Prohibition of U-turns in the specified time",
+        "Prohibition of turning left in the specified time"
+      ]
+    },
+    {
+      "id": "III-18-4",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Mandatory direction first to the right, then to the left and exiting the intersection",
+        "Road with one-way traffic with a mandatory turn to the right and then to the left",
+        "The direction of movement of a vehicle that intends to turn left at an intersection where turning to the left is prohibited"
+      ]
+    },
+    {
+      "id": "III-18-5",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Priority road",
+        "End of priority road",
+        "Providing a right-of-way"
+      ]
+    },
+    {
+      "id": "III-19-1",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Trolley line",
+        "Tram line",
+        "Rail vehicle on the road"
+      ]
+    },
+    {
+      "id": "III-19-2",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Narrowing of the road on the right",
+        "Narrowing of the road on the left",
+        "The right lane is not in the right direction"
+      ]
+    },
+    {
+      "id": "III-19-3",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Traffic ban for vehicles that do not exceed a certain length",
+        "Traffic ban for vehicles that exceed a certain length",
+        "Traffic ban for heavy motor vehicles with a length of up to 10 metres"
+      ]
+    },
+    {
+      "id": "III-19-4",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Urban area",
+        "Industrial zone",
+        "Built-up area"
+      ]
+    },
+    {
+      "id": "III-19-5",
+      "text": "The illustration shows a traffic sign:",
+      "options": [
+        "Lane for the movement of goods vehicles",
+        "Way of using the traffic lane",
+        "Compulsory movement of freight vehicles"
+      ]
+    },
+    {
+      "id": "III-20-1",
+      "text": "The lights on the traffic lights as in the illustration have the following meaning:",
+      "options": [
+        "The imminent cessation of permitted vehicle movement in the direction of the arrows",
+        "The imminent end of the ban on the driver and preparation for free movement of the vehicle in the direction of the arrows",
+        "Permitted movement for the driver in the direction of the arrows"
+      ]
+    },
+    {
+      "id": "III-20-2",
+      "text": "Arrows indicating the permitted direction of movement are:",
+      "options": [
+        "Black on a green background",
+        "Green on a black background",
+        "Red colors on a green background"
+      ]
+    },
+    {
+      "id": "III-20-3",
+      "text": "A horizontally extended hand, as in the illustration, obliges:",
+      "options": [
+        "The driver in whose direction the signal is given to stop the vehicle",
+        "All road users to speed up their movement",
+        "The driver in whose direction this sign is given to speed up the movement of the vehicle"
+      ]
+    },
+    {
+      "id": "III-20-4",
+      "text": "The sign given by the police officer in the illustration:",
+      "options": [
+        "It can only be given at an intersection",
+        "It can be given at the intersection and on the road outside a built-up area",
+        "It can only be given on the road outside a built-up area"
+      ]
+    },
+    {
+      "id": "III-20-5",
+      "text": "The illustration shows a traffic delineator that marks the part of the road where:",
+      "options": [
+        "Traffic is prohibited due to an obstacle on the road",
+        "Traffic is prohibited because traffic is merging from an access road",
+        "Traffic is prohibited due to the end of the traffic lane"
+      ]
+    },
+    {
+      "id": "III-20-6",
+      "text": "The illustration shows:",
+      "options": [
+        "Traffic light to regulate detours on the right",
+        "Signal for regulating the passage of rail vehicles",
+        "Traffic light for regulating traffic lane changes"
+      ]
+    },
+    {
+      "id": "III-20-7",
+      "text": "If the police officer waves his hand slightly as in the illustration, it means that the driver in whose direction the signal is given:",
+      "options": [
+        "Should reduce speed",
+        "Should be stopped",
+        "Should speed up the movement"
+      ]
+    },
+    {
+      "id": "III-20-8",
+      "text": "The sign given by the police officer in the illustration is binding:",
+      "options": [
+        "Only outside a built-up area to the driver in whose direction that sign is given",
+        "For the driver in whose direction that sign is given",
+        "Only in a built-up area to the driver in whose direction that sign is given"
+      ]
+    },
+    {
+      "id": "III-21-1",
+      "text": "The green light arrow indicates:",
+      "options": [
+        "That the driver should pay attention to the height of the vehicle",
+        "For the driver to stop the vehicle",
+        "That the driver is allowed to move"
+      ]
+    },
+    {
+      "id": "III-21-2",
+      "text": "Light signs as in the illustration are used to regulate:",
+      "options": [
+        "Of traffic at toll plazas",
+        "Traffic on lanes with variable direction of movement",
+        "Passing through the tunnel"
+      ]
+    },
+    {
+      "id": "III-21-3",
+      "text": "A vertically raised hand with a police officer's fist position as in the illustration means:",
+      "options": [
+        "Permission to proceed for all vehicles",
+        "Permission to proceed for vehicles coming from the side",
+        "STOP for all participants"
+      ]
+    },
+    {
+      "id": "III-21-4",
+      "text": "The sign given by the police officer in the illustration:",
+      "options": [
+        "Can be given from the vehicle",
+        "It can be given from the vehicle, but only with a STOP sign",
+        "It cannot be given from a vehicle"
+      ]
+    },
+    {
+      "id": "III-21-5",
+      "text": "The traffic signal given in the illustration, when two round red lights turn on alternately, means:",
+      "options": [
+        "Prohibition of movement of the driver at the point of crossing the road over the railway",
+        "Prohibiting the movement of rail vehicles",
+        "Prohibition of movement of all road users"
+      ]
+    },
+    {
+      "id": "III-22-1",
+      "text": "The illustration shows a traffic light for traffic regulation:",
+      "options": [
+        "Bicycles only in bicycle lanes",
+        "Bicycles and mopeds only on bicycle paths",
+        "Bicycles and mopeds on bicycle lanes"
+      ]
+    },
+    {
+      "id": "III-22-2",
+      "text": "The sign given by the police officer, as in the illustration, can be given:",
+      "options": [
+        "At the intersection, but only with a stop sign",
+        "At the intersection and on the road outside a built-up area",
+        "On the road outside a built-up area, but only with a stop sign"
+      ]
+    },
+    {
+      "id": "III-22-3",
+      "text": "The sign given by the police officer in the illustration means that the drivers of the vehicle:",
+      "options": [
+        "Coming from its sides have priority",
+        "Those whose backs are turned have priority",
+        "Proceed in accordance with the meaning of the lights on the traffic lights"
+      ]
+    },
+    {
+      "id": "III-22-4",
+      "text": "The illustration shows a lane closure marker that:",
+      "options": [
+        "Indicates the slow lane",
+        "Indicates the location of the lane opening",
+        "Indicates the location of the lane closure"
+      ]
+    },
+    {
+      "id": "III-23-1",
+      "text": "The illustration shows:",
+      "options": [
+        "Device for regulating the movement of trams",
+        "Device for regulating the movement of pedestrians",
+        "A device for marking the track direction"
+      ]
+    },
+    {
+      "id": "III-23-2",
+      "text": "The horizontally detached hand of a police officer, as in the illustration, means that:",
+      "options": [
+        "The driver of that vehicle reduces the speed",
+        "The driver of that vehicle slowed down the vehicle and continued moving to the left",
+        "The driver of that vehicle is obliged to stop the vehicle"
+      ]
+    },
+    {
+      "id": "III-23-3",
+      "text": "The sign given by the police officer in the illustration:",
+      "options": [
+        "It can be given both at the intersection and on the road outside a built-up area",
+        "It can only be given in a built-up area",
+        "It can only be given on the road outside a built-up area"
+      ]
+    },
+    {
+      "id": "III-23-4",
+      "text": "The temporary traffic signal given in the illustration means:",
+      "options": [
+        "An road barrier",
+        "Vertical obstacle",
+        "Directional barrier"
+      ]
+    },
+    {
+      "id": "III-23-5",
+      "text": "The displayed light signaling should be switched on:",
+      "options": [
+        "At night and in conditions of reduced visibility",
+        "If the traffic flow is high",
+        "Only on local roads"
+      ]
+    },
+    {
+      "id": "III-24-1",
+      "text": "The position of the police officer's body with his arms horizontally spread out means that the vehicle:",
+      "options": [
+        "Those whose backs are turned have priority",
+        "Coming from its side have priority",
+        "That all drivers are obliged to stop the vehicle"
+      ]
+    },
+    {
+      "id": "III-24-2",
+      "text": "The sign given by the police officer in the illustration:",
+      "options": [
+        "It can only be given at an intersection",
+        "It can be given both at the intersection and on the road outside a built-up area",
+        "It can only be given on the road outside a built-up area"
+      ]
+    },
+    {
+      "id": "III-24-3",
+      "text": "Cross road markings represent:",
+      "options": [
+        "The transverse edge of the carriageway",
+        "Boundary line of the carriageway",
+        "Stop line"
+      ]
+    },
+    {
+      "id": "III-24-4",
+      "text": "If public city transport vehicles use the same traffic lane as rail vehicles, the device shown in the illustration is used to regulate movement:",
+      "options": [
+        "Trams and buses",
+        "Only buses",
+        "Only trams"
+      ]
+    },
+    {
+      "id": "III-25-1",
+      "text": "The combined sign of raising the hand and using the whistle, as in the illustration, represents:",
+      "options": [
+        "Prohibition of passage for all drivers",
+        "Permission to proceed for vehicles coming from the side only",
+        "Prohibition of passage for vehicles coming only from the side"
+      ]
+    },
+    {
+      "id": "III-25-2",
+      "text": "The sign given by the police officer in the illustration:",
+      "options": [
+        "It cannot be given with a whistle at an intersection",
+        "Can be given with a whistle in the intersection",
+        "Cannot be given with a STOP plate"
+      ]
+    },
+    {
+      "id": "III-25-3",
+      "text": "The illustration shows the lights on the traffic lights, and the sequence of turning on the lights is:",
+      "options": [
+        "1-2-3-4",
+        "1-4-3-2",
+        "1-3-2-4"
+      ]
+    },
+    {
+      "id": "III-25-4",
+      "text": "At traffic lights with three-color lights:",
+      "options": [
+        "The green light may be flashing",
+        "The green light cannot be flashing",
+        "The green light can be switched on with the red light"
+      ]
+    },
+    {
+      "id": "III-25-5",
+      "text": "The position of the police officer's body as in the illustration means that the vehicle:",
+      "options": [
+        "Coming from his side do not have priority",
+        "That all drivers are obliged to stop the vehicle",
+        "Coming from its side have priority"
+      ]
+    },
+    {
+      "id": "III-25-6",
+      "text": "The sign given by the police officer in the illustration:",
+      "options": [
+        "It can only be given at an intersection",
+        "It can only be given on the road outside a built-up area",
+        "It can be given both at the intersection and on the road outside a built-up area"
+      ]
+    },
+    {
+      "id": "III-26-1",
+      "text": "The illustration shows:",
+      "options": [
+        "Directional barrier",
+        "Frontal barrier",
+        "Road barrier"
+      ]
+    },
+    {
+      "id": "III-26-2",
+      "text": "The illustration shows:",
+      "options": [
+        "Traffic light to regulate the movement of all participants",
+        "Traffic light for regulating the movement of cyclists",
+        "Traffic light for regulating the movement of pedestrians"
+      ]
+    },
+    {
+      "id": "III-26-3",
+      "text": "A vertically raised hand, as in the illustration, means:",
+      "options": [
+        "Termination of orders issued by a police officer",
+        "Prohibition of passage for all drivers in traffic",
+        "That vehicles coming from the side have permission to proceed"
+      ]
+    },
+    {
+      "id": "III-26-4",
+      "text": "The sign given by the police officer in the illustration:",
+      "options": [
+        "It can only be given at an intersection",
+        "It can only be given on the road outside a built-up area",
+        "It cannot be given at an intersection"
+      ]
+    },
+    {
+      "id": "III-27-1",
+      "text": "At the marked stop, as in the illustration, the driver may stop:",
+      "options": [
+        "Passenger vehicle for passenger entry or exit",
+        "Goods vehicle only for loading or unloading",
+        "Vehicles for public transport of passengers"
+      ]
+    },
+    {
+      "id": "III-27-2",
+      "text": "Lights on at the traffic lights, as in the illustration, mean:",
+      "options": [
+        "That the driver may move in the direction of the arrow without obstructing other road users",
+        "That the driver may move in the direction of the arrow without paying attention to other road users",
+        "Prohibited movement in the direction indicated by the supplementary green arrow"
+      ]
+    },
+    {
+      "id": "III-27-3",
+      "text": "The police officer gives a signal from the vehicle, as in the illustration:",
+      "options": [
+        "In accordance with regulations",
+        "Against the regulations",
+        "In accordance with regulations only in a built-up area"
+      ]
+    },
+    {
+      "id": "III-27-4",
+      "text": "In the situation shown in the illustration, the signal given by the police officer to the driver means:",
+      "options": [
+        "To accelerate the movement of the vehicle",
+        "To overtake on the right",
+        "To stop the vehicle"
+      ]
+    },
+    {
+      "id": "IV-1-1",
+      "text": "A service brake is not required on a:",
+      "options": [
+        "Semi-trailer with three axles",
+        "A passenger vehicle with an unladen mass of up to 750 kg",
+        "Light trailer"
+      ]
+    },
+    {
+      "id": "IV-1-2",
+      "text": "The fog light on the rear of the vehicle is:",
+      "options": [
+        "Red",
+        "Amber",
+        "White"
+      ]
+    },
+    {
+      "id": "IV-1-3",
+      "text": "Mudguards on a motor vehicle must be installed to cover the width of:",
+      "options": [
+        "Only the rear wheels",
+        "Only the front wheels",
+        "All wheels"
+      ]
+    },
+    {
+      "id": "IV-1-4",
+      "text": "A road traffic casualty with chest injuries should be placed:",
+      "options": [
+        "In a lying position",
+        "To the side",
+        "In a semi-seated position"
+      ]
+    },
+    {
+      "id": "IV-1-5",
+      "text": "By burn we mean an injury caused by:",
+      "options": [
+        "Skin inflammation",
+        "Exposure to heat",
+        "Solid object puncture"
+      ]
+    },
+    {
+      "id": "IV-2-1",
+      "text": "Which of the following is a vehicle component that provides the driver with normal visibility?",
+      "options": [
+        "Fog light",
+        "Position lamp",
+        "Windshield"
+      ]
+    },
+    {
+      "id": "IV-2-2",
+      "text": "The turn signal light must be:",
+      "options": [
+        "Amber",
+        "White",
+        "Red"
+      ]
+    },
+    {
+      "id": "IV-2-3",
+      "text": "The anti-lock braking system (ABS) is part of the system for:",
+      "options": [
+        "Carriageway lighting",
+        "Power transmission",
+        "For braking"
+      ]
+    },
+    {
+      "id": "IV-2-4",
+      "text": "Immobilisation means:",
+      "options": [
+        "Applying sterile gauze to the injured part of the body",
+        "Keeping the injured part of the body immobile",
+        "Restoring the casualty to consciousness"
+      ]
+    },
+    {
+      "id": "IV-2-5",
+      "text": "What is the normal heart rate of a healthy person?",
+      "options": [
+        "Up to 60 beats in one second",
+        "60–80 beats per minute",
+        "More than 100 beats per minute"
+      ]
+    },
+    {
+      "id": "IV-3-1",
+      "text": "The free play of the steering wheel on a motor-driven vehicle must not be greater than:",
+      "options": [
+        "20 degrees",
+        "30 degrees",
+        "40 degrees"
+      ]
+    },
+    {
+      "id": "IV-3-2",
+      "text": "The following are installed as standard on the motor vehicle:",
+      "options": [
+        "Working, auxiliary and parking brake",
+        "Working and secondary brake and permanent retarder",
+        "Service and parking brake and permanent retarder"
+      ]
+    },
+    {
+      "id": "IV-3-3",
+      "text": "The maximum permitted length of a motor vehicle other than a bus is:",
+      "options": [
+        "8 metres",
+        "10 metres",
+        "12 metres"
+      ]
+    },
+    {
+      "id": "IV-3-4",
+      "text": "When fatigue occurs while driving, it is necessary to:",
+      "options": [
+        "Continue driving at a reduced speed",
+        "Consume energy drinks and continue driving",
+        "Take a rest break"
+      ]
+    },
+    {
+      "id": "IV-3-5",
+      "text": "Bleeding in an injured person is:",
+      "options": [
+        "Blood escaping from blood vessels",
+        "A closed fracture of the lower leg",
+        "Blood clotting inside a blood vessel"
+      ]
+    },
+    {
+      "id": "IV-4-1",
+      "text": "A bus must carry:",
+      "options": [
+        "Three first aid kits",
+        "Two first aid boxes",
+        "One first aid kit"
+      ]
+    },
+    {
+      "id": "IV-4-2",
+      "text": "Which of the following is not a light-signalling device?",
+      "options": [
+        "Brake lights",
+        "Turn signals",
+        "Retroreflectors"
+      ]
+    },
+    {
+      "id": "IV-4-3",
+      "text": "The parking brake of the vehicle is used by the driver:",
+      "options": [
+        "To stop the vehicle when it encounters a sudden obstacle",
+        "To prevent a stationary vehicle from moving",
+        "To prevent the vehicle from starting only while it is parked in the garage"
+      ]
+    },
+    {
+      "id": "IV-4-4",
+      "text": "Arterial bleeding in an injured person is recognized by:",
+      "options": [
+        "Slight bleeding and clotting on the injured part of the body",
+        "Blood spurting from the wound",
+        "Swelling and blue bruises of the injured part of the body"
+      ]
+    },
+    {
+      "id": "IV-4-5",
+      "text": "If a person has a head and neck injury in a traffic accident:",
+      "options": [
+        "Move the casualty as little as possible",
+        "Place him in a sitting position",
+        "Place him on his side in a lying position"
+      ]
+    },
+    {
+      "id": "IV-5-1",
+      "text": "An integral part of an internal combustion engine is:",
+      "options": [
+        "Crankshaft",
+        "Propeller shaft",
+        "Half-shaft"
+      ]
+    },
+    {
+      "id": "IV-5-2",
+      "text": "Servo steering device:",
+      "options": [
+        "Reduces the angle of rotation of the steering wheels",
+        "Reduces the total force of the driver when turning the steering wheel and provides ease of control",
+        "Reduces the diameter of the path when turning the vehicle"
+      ]
+    },
+    {
+      "id": "IV-5-3",
+      "text": "Headlamps must emit:",
+      "options": [
+        "White",
+        "Amber",
+        "Red"
+      ]
+    },
+    {
+      "id": "IV-5-4",
+      "text": "Immediately after a road traffic collision, a person involved in the collision:",
+      "options": [
+        "May consume alcoholic beverages",
+        "May consume sedatives to calm him down",
+        "May not consume alcoholic beverages"
+      ]
+    },
+    {
+      "id": "IV-5-5",
+      "text": "A casualty who is unconscious should be:",
+      "options": [
+        "Placed lying on their back",
+        "Placed lying face down",
+        "Placed in the recovery position"
+      ]
+    },
+    {
+      "id": "IV-6-1",
+      "text": "Which of the following is not classed as equipment for motor vehicles and trailers?",
+      "options": [
+        "Side mirror",
+        "Spare wheel",
+        "Spare light bulbs"
+      ]
+    },
+    {
+      "id": "IV-6-2",
+      "text": "The light emitted by daytime running lamps must be:",
+      "options": [
+        "Amber",
+        "Blue",
+        "White"
+      ]
+    },
+    {
+      "id": "IV-6-3",
+      "text": "The minimum tread depth of winter tires should be:",
+      "options": [
+        "2 mm",
+        "4 mm",
+        "1.6 mm"
+      ]
+    },
+    {
+      "id": "IV-6-4",
+      "text": "The police number is:",
+      "options": [
+        "124",
+        "112",
+        "122"
+      ]
+    },
+    {
+      "id": "IV-6-5",
+      "text": "In the case of an injured person, the following is first applied to the wound:",
+      "options": [
+        "Alcohol",
+        "Water",
+        "Sterile gauze"
+      ]
+    },
+    {
+      "id": "IV-7-1",
+      "text": "Vehicles equipped with windshield wipers must also have:",
+      "options": [
+        "Sponge for washing the windows",
+        "Windshield washers",
+        "Windshield heating device"
+      ]
+    },
+    {
+      "id": "IV-7-2",
+      "text": "The light beam of the dipped-beam headlamp should be:",
+      "options": [
+        "Asymmetric to the left",
+        "Symmetrical",
+        "Asymmetric to the right"
+      ]
+    },
+    {
+      "id": "IV-7-3",
+      "text": "The devices for removing and releasing exhaust gases must not exceed the dimensions of the vehicle:",
+      "options": [
+        "In length or width",
+        "By height",
+        "More than 0.1 meter in length"
+      ]
+    },
+    {
+      "id": "IV-7-4",
+      "text": "Post-mortem lividity and cold body are:",
+      "options": [
+        "Signs that the casualty has lost consciousness because of cold exposure",
+        "Definite signs of death",
+        "Definite signs of fatigue"
+      ]
+    },
+    {
+      "id": "IV-7-5",
+      "text": "The telephone number of the fire department is:",
+      "options": [
+        "123",
+        "122",
+        "124"
+      ]
+    },
+    {
+      "id": "IV-8-1",
+      "text": "Reversing lamps on motor vehicles must emit:",
+      "options": [
+        "White",
+        "Red",
+        "Amber"
+      ]
+    },
+    {
+      "id": "IV-8-2",
+      "text": "A motor vehicle’s service brake must act:",
+      "options": [
+        "On all wheels",
+        "Only on the front wheels",
+        "Only on the rear wheels"
+      ]
+    },
+    {
+      "id": "IV-8-3",
+      "text": "A motor vehicle that has a maximum of eight seats in addition to the driver's seat is:",
+      "options": [
+        "Bus",
+        "goods vehicle",
+        "Passenger car"
+      ]
+    },
+    {
+      "id": "IV-8-4",
+      "text": "In providing first aid in a traffic accident to an injured person:",
+      "options": [
+        "Should be rinsed with water",
+        "Should be washed with alcohol",
+        "Should not be rinsed with liquid"
+      ]
+    },
+    {
+      "id": "IV-8-5",
+      "text": "A driver is considered to be under the influence of alcohol:",
+      "options": [
+        "If the body has an alcohol content of more than 0.3 g/kg",
+        "If the body has an alcohol content of up to 0.3 g/kg",
+        "If the body has an alcohol content of up to 0.2 g/kg"
+      ]
+    },
+    {
+      "id": "IV-9-1",
+      "text": "Which of the following forms part of the steering system?",
+      "options": [
+        "Tyre",
+        "Steering wheel",
+        "Shock absorber"
+      ]
+    },
+    {
+      "id": "IV-9-2",
+      "text": "Which of the following forms part of a motor vehicle’s road-lighting equipment?",
+      "options": [
+        "Brake lights",
+        "End-outline marker lamp",
+        "Reversing light"
+      ]
+    },
+    {
+      "id": "IV-9-3",
+      "text": "Which of the following forms part of a motor vehicle’s transmission system?",
+      "options": [
+        "Gearbox",
+        "Steering wheel",
+        "Parking brake lever"
+      ]
+    },
+    {
+      "id": "IV-9-4",
+      "text": "When immobilizing an injured person, the basic rule is:",
+      "options": [
+        "Immobilize the whole body of the injured person",
+        "Immobilize two adjacent joints",
+        "Immobilize only the joint closest to the injured area"
+      ]
+    },
+    {
+      "id": "IV-9-5",
+      "text": "An injured person who loses a lot of blood has:",
+      "options": [
+        "High blood pressure",
+        "Very slow pulse",
+        "Rapid and irregular breathing"
+      ]
+    }
+  ]
+}
