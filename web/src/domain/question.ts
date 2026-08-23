@@ -74,11 +74,14 @@ export function normaliseOrder(value: string): string {
 }
 
 /**
- * The vehicle numbers a learner has to arrange. Derived from the answer's
- * length, which reveals only how many vehicles are in the photograph — something
- * they can already see.
+ * The vehicle numbers a learner has to arrange. Usually every vehicle in the
+ * photograph gets a slot, but a few questions ask only which of several
+ * pictured vehicles gets to pass — answer "1 4" out of four vehicles shown —
+ * so the tokens are the digits the answer actually names, not a synthesized
+ * 1..N run: a four-vehicle photo with a two-token answer must offer "1" and
+ * "4" to pick from, not "1" and "2".
  */
 export function orderTokens(question: OrderQuestion): readonly string[] {
-  const count = normaliseOrder(question.answer).length
-  return Array.from({ length: count }, (_, i) => String(i + 1))
+  const unique = new Set(normaliseOrder(question.answer).split(''))
+  return Array.from(unique).sort((a, b) => Number(a) - Number(b))
 }
