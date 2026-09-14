@@ -207,7 +207,7 @@ confirm exactly those appear, and confirm removing one does not touch answer his
 - [ ] T053 [P] Add deliberate progress reset with a confirmation step in web/src/routes/Settings.tsx (FR-016)
 - [ ] T054 [P] Show a persistent notice when device storage is unavailable, stating that progress will not be saved, in web/src/ui/StorageNotice.tsx (FR-020)
 - [ ] T055 [P] Verify the layout at 360 px width with no horizontal scrolling and no truncated question text, against the manual table in specs/001-offline-ticket-trainer/quickstart.md (SC-007)
-- [ ] T056 [P] Confirm the disputed-key warning appears on the three questions carrying `review` and not on the two carrying only `note`, per the flags in data/questions-IV.json (FR-004)
+- [ ] T056 [P] Confirm the disputed-key warning appears on the two questions carrying `review` (IV-4-5, IV-9-5) and on none of the 46 carrying only `note`, per the flags across data/questions-{I,II,III,IV}.json (FR-004)
 - [ ] T057 Confirm no outbound requests for content or learner data occur after first load, against the manual table in specs/001-offline-ticket-trainer/quickstart.md (SC-009)
 - [ ] T058 Run the full quickstart.md validation pass and record any deviation
 - [ ] T059 [P] Write web/README.md covering how to run, how to correct a question, and how to add a transcribed volume
@@ -325,10 +325,76 @@ and works correctly with zero translations present.
 - [X] T101 Generalise the language switcher into a value/onChange `LanguagePicker` in web/src/ui/LanguageSwitcher.tsx, replace CG/EN/RU text codes with flag emoji, and mount a second instance — with no caption, per the maintainer's call that the control is self-explanatory once one instance exists — above the question card in web/src/routes/Study.tsx, bound to `contentLanguage` (FR-033a/c)
 - [X] T102 Fix a `this`-binding bug the above surfaced: passing a class method as a bare callback prop dropped its receiver. Bound every mutating LearnerStore method once in the constructor rather than relying on every call site remembering to wrap it
 - [X] T103 Prepare the exact prompt and JSON schema for producing data/translations-en.json and data/translations-ru.json via another model, mirroring the volume III transcription handoff
+- [X] T104 Land data/translations-en.json and data/translations-ru.json — 415 entries each, produced by another model against the T103 schema and accepted by the T099 validator on id match, option count, and order-question kind
 
-**Checkpoint**: switching a question's language works end to end against a real
-translation entry, verified in a production build; falls back to Montenegrin
-cleanly with none present, which is the state this ships in.
+**Checkpoint**: switching a question's language works end to end, verified in a
+production build. Both catalogues are complete — 415/415 `en`, 415/415 `ru` — so
+the fallback to Montenegrin is now a safety net rather than the shipping state.
+
+---
+
+## Phase 16: Using It on a Phone
+
+**Written after studying on a phone rather than at a desk.** Nothing here changes
+a study rule; all of it is about reaching the next question with one thumb.
+
+- [X] T105 Add swipe-to-navigate between questions in web/src/routes/Study.tsx — drag the card left or right to move through the set
+- [X] T106 Redesign the study-screen header and move the back link into Root's own header in web/src/routes/Root.tsx, right-aligned and shown only under /study; the interface-language control becomes a compact `<select>` on Home only, and `t.study.leave` is renamed `t.study.back` across all three dictionaries
+- [X] T107 Replace the hand-rolled pointer tracking with `motion` (`drag="x"` + `AnimatePresence`) and add prev/next arrows — the hand-rolled version captured the pointer on the wrapper, which swallowed option-button clicks, and animated its exit the wrong way. Direction is derived once inside `jump()` from old-versus-new position, so swipe, arrows and the jump panel all animate correctly from one rule
+- [X] T108 Pin the prev/next arrows and the content-language picker into the fixed footer in web/src/routes/Study.tsx, so the controls never scroll away; the position/jump control stays centred above the card
+- [X] T109 Cap question illustrations by max-height (`max-h-[50vh]`) instead of forcing them to card width in web/src/ui/QuestionCard.tsx — a handful of narrow, tall crops used to blow up into blurry screen-fillers
+
+**Checkpoint**: a 160-question volume is thumb-navigable, and the controls stay
+where the thumb left them.
+
+---
+
+## Phase 17: Image Audit — Every Illustration Against Its Source
+
+**Prompted by one wrong picture noticed while studying.** Every image-bearing
+question in both illustrated volumes was compared against its original slide
+render in build/pages/: all 121 icons of volume III and all 80 photographs of
+volume II. Volumes I and IV carry no images.
+
+- [X] T110 Recrop six truncated volume III illustrations by hand from the raw page rasters — III-5-4, III-21-1, III-23-3, III-26-1, III-27-1, III-27-3 — using the same 2x/unsharp/webp85 processing the pipeline applies
+- [X] T111 Fix III-18-3, truncated on the vertical axis: the source pairs the "no left turn" sign with an "od 17-05 h" plaque underneath and only the sign was cropped. Swap II-27-a.webp and II-27-b.webp back, which had each other's filenames on disk, so II-27-4 asked about vehicle 2 while showing a photograph without one — the JSON was correct throughout
+- [X] T112 Sweep the remaining volume III icons against their source rasters and recrop the seven the first pass missed — III-6-1, III-20-3, III-22-2, III-22-3, III-23-2, III-24-1, III-25-2 — three of which had lost the very thing their question asks about (III-25-2 lost the fourth traffic light and the 1-2-3-4 numbering, leaving question 359 unanswerable; III-22-2 the officer's extended arm; III-23-2 his lowered baton arm)
+
+**Checkpoint**: no image bug remains that reading a crop against its slide can
+find. What this audit did *not* re-verify: option text character by character
+(done during transcription against a second model), answer-key correctness, and
+the translations. Three further defects existed that only reading the cropper's
+own geometry could surface — see Phase 18.
+
+---
+
+## Phase 18: Fix the Cropper at the Root
+
+**The seven hand patches of Phase 17 and the six before them were symptoms of one
+bug, and the tool rmtree's its output — so a re-extraction would have silently
+reverted all thirteen.** Closing this was the precondition for volume III ever
+being regenerated.
+
+- [X] T113 Take the icon's right edge from the layout rather than from a fraction of the slide in tools/06_crop_signs.py: the narrow left window is good for finding a band's rows, but using it as the crop's right edge is what truncated thirteen illustrations. A blank-column threshold cannot replace it — the gutter narrows to 12 px on slide 20 while a figure's own parts stand 20 px apart on slide 4 — so `question_column()` locates the few-pixel "-" bullet every question opens with, and the icon ends before it. Checked against all 107 bands: reproduces every hand crop to the pixel and trims 48 others carrying dead margin
+- [X] T114 Take a caption with the figure above it, restricted to bands MIN_HEIGHT had already discarded so no neighbouring icon can be swallowed — the 1-2-3-4 under slide 25's traffic lights is a band of its own, and discarding it is how question 359 lost the numbers it asks the reader to order
+- [X] T115 Give the bands of slides 16 and 18 outright, with the reason: they stack figures too tightly to divide by scanning — on slide 16 the plate and the sign above it share row 344. This recovers III-16-3, which had been cut in half through the pavement-parking sign its own question asks about, and drops the "od 17 - 05 h" plaque that III-18-4 had inherited from the sign before it. Slide 16 now yields five icons, its mark cross-check agrees, and data/questions-III.json follows the renumbering
+
+**Checkpoint**: volume III rebuilds byte for byte from the script, so re-running
+it is no longer something to be careful about, and T093's slide-16 mismatch is
+gone rather than documented.
+
+---
+
+## Phase 19: Order Questions — Tokens Are Not Slots
+
+**Two questions in volume II broke an assumption held since T068**, and the first
+fix for them traded one leak for another.
+
+- [X] T116 Stop synthesizing a 1..N run from the answer's length in web/src/domain/question.ts: II-12-4 (`"1 4"`) and II-14-4 (`"4 3"`) picture four vehicles but name only the two allowed through, so the picker offered "1"/"2" and never offered vehicle 4. Covered by the new web/src/domain/question.test.ts
+- [X] T117 Separate the token count from the slot count in web/src/domain/question.ts — making the tokens the answer's own digits handed the learner exactly "1" and "4", and which vehicles pass at all is half of what the question tests. Tokens are now every vehicle marked on the photograph (1..N for the highest the answer names) while the slots stay at the answer's length, so a four-vehicle photo offers 1-4 into two slots; filling the last slot disables the leftovers, a state that could not arise while the two counts were one number
+
+**Checkpoint**: an order question reveals neither the order nor the cast. Tests:
+61 passing.
 
 ---
 
