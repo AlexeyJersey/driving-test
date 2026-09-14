@@ -74,14 +74,25 @@ export function normaliseOrder(value: string): string {
 }
 
 /**
- * The vehicle numbers a learner has to arrange. Usually every vehicle in the
- * photograph gets a slot, but a few questions ask only which of several
- * pictured vehicles gets to pass — answer "1 4" out of four vehicles shown —
- * so the tokens are the digits the answer actually names, not a synthesized
- * 1..N run: a four-vehicle photo with a two-token answer must offer "1" and
- * "4" to pick from, not "1" and "2".
+ * The vehicle numbers a learner has to choose from — every vehicle marked on
+ * the photograph, i.e. 1..N for the highest number the answer names. Usually
+ * that is exactly the answer's own digits, but a few questions ask only which
+ * of several pictured vehicles gets to pass ("1 4" out of four vehicles
+ * shown): offering just "1" and "4" would hand over the half of the answer
+ * that is actually being tested — which vehicles may pass at all — leaving
+ * only their order to guess.
  */
 export function orderTokens(question: OrderQuestion): readonly string[] {
-  const unique = new Set(normaliseOrder(question.answer).split(''))
-  return Array.from(unique).sort((a, b) => Number(a) - Number(b))
+  const digits = normaliseOrder(question.answer).split('').map(Number)
+  const highest = Math.max(...digits)
+  return Array.from({ length: highest }, (_, i) => String(i + 1))
+}
+
+/**
+ * How many vehicles the answer places, i.e. how many slots to fill. Fewer than
+ * the tokens on offer whenever the question asks only about the vehicles
+ * allowed to pass.
+ */
+export function orderSlots(question: OrderQuestion): number {
+  return normaliseOrder(question.answer).length
 }

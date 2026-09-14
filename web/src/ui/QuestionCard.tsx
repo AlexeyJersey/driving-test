@@ -1,5 +1,5 @@
 import type { AnswerValue, ChoiceQuestion, OrderQuestion, Question } from '@/domain/question'
-import { isDisputed, normaliseOrder, orderTokens } from '@/domain/question'
+import { isDisputed, normaliseOrder, orderSlots, orderTokens } from '@/domain/question'
 import { useStrings } from '@/i18n/useStrings'
 
 interface QuestionCardProps {
@@ -72,13 +72,14 @@ function ChoiceOptions({ question, selected, answeredValue, onSelect }: Question
 function OrderInput({ question, selected, answeredValue, onSelect }: QuestionCardProps & { question: OrderQuestion }) {
   const answered = answeredValue !== null
   const tokens = orderTokens(question)
+  const slots = orderSlots(question)
   const current = typeof selected === 'string' ? selected.split('') : []
   const shown = answered && typeof answeredValue === 'string' ? answeredValue.split('') : current
   const correctTokens = normaliseOrder(question.answer).split('')
   const isRight = answered && normaliseOrder(String(answeredValue)) === normaliseOrder(question.answer)
 
   const append = (token: string) => {
-    if (answered || current.includes(token)) return
+    if (answered || current.includes(token) || current.length === slots) return
     onSelect([...current, token].join(''))
   }
   const removeLast = () => {
@@ -89,7 +90,7 @@ function OrderInput({ question, selected, answeredValue, onSelect }: QuestionCar
   return (
     <div className="flex flex-col gap-3">
       <div className="flex items-center gap-2">
-        {tokens.map((_, slot) => {
+        {Array.from({ length: slots }, (_, slot) => {
           const filled = shown[slot]
           const tone: Tone = !answered ? (filled ? 'selected' : 'idle') : isRight ? 'correct' : 'wrong'
           return (
@@ -122,7 +123,7 @@ function OrderInput({ question, selected, answeredValue, onSelect }: QuestionCar
             <button
               key={token}
               type="button"
-              disabled={current.includes(token)}
+              disabled={current.includes(token) || current.length === slots}
               onClick={() => append(token)}
               className="size-11 rounded-lg border border-slate-300 text-lg font-semibold tabular-nums disabled:opacity-30 dark:border-slate-600"
             >

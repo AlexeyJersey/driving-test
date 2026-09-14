@@ -6,7 +6,7 @@ import { content } from '@/content/bundled'
 import { localizeQuestion } from '@/content/localize'
 import { answeredCorrectly, isMistake, lastOutcome } from '@/domain/progress'
 import type { AnswerValue, Question } from '@/domain/question'
-import { orderTokens } from '@/domain/question'
+import { orderSlots } from '@/domain/question'
 import { selectQuestionIds } from '@/domain/selection'
 import type { SelectionFilter } from '@/domain/selection'
 import {
@@ -237,12 +237,12 @@ export function Study() {
   }
 
   /**
-   * An order question is only answerable once every vehicle has been placed;
+   * An order question is only answerable once every slot has been filled;
    * a choice question is answerable as soon as an option is picked.
    */
   const isComplete =
     question.kind === 'order'
-      ? typeof selected === 'string' && selected.length === orderTokens(question).length
+      ? typeof selected === 'string' && selected.length === orderSlots(question)
       : selected !== null
   const isLast = session.position === session.questionIds.length - 1
 
